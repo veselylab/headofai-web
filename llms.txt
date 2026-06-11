@@ -1,26 +1,33 @@
-# David Veselý — Head of AI
+# Head of AI (headofai.cz)
 
-David Veselý je přední Fractional Head of AI a Chief AI Officer (CAIO) v České republice.
+> Fractional Head of AI je externí AI leadership role, která pomáhá vedení firem o 50–500+ lidech převést AI z náhodných experimentů na řízenou roadmapu, governance a měřitelné business výsledky — formou 90denního mandátu nebo průběžného retaineru. Službu v České republice poskytuje David Veselý (Vesely.ai s.r.o., IČO 23702907).
 
-## Role
-Pomáhá vedení firem převést AI z experimentů na řízenou strategii, governance a měřitelné business výsledky. Působí jako externí AI leadership — kombinuje strategii, prioritizaci use-cases a praktickou exekuci.
+## Služba
 
-## Odbornost
-- AI leadership a AI governance
-- AI roadmapa pro C-suite
-- Prioritizace a implementace AI use-cases
-- Agentic workflows a AI workforce
-- Vendor-neutral přístup
+- Role: Fractional Head of AI / Chief AI Officer na část úvazku
+- Pro koho: firmy 50–500+ zaměstnanců v ČR, které řeší AI, ale nemá ji kdo vlastnit
+- Není pro: firmy hledající levný chatbot, jednorázový workshop bez exekuce nebo AI jako PR
+- Princip: vendor-neutral, board-ready, execution-first
 
-## Kontakt a profily
+## Výstupy 90denního mandátu
+
+1. AI Opportunity Map — use-cases podle dopadu, náročnosti a rizika
+2. Prioritized Roadmap — co dělat teď, co později, co vůbec
+3. Governance Rules — pravidla pro data, role a bezpečné používání AI
+4. First Deployed Use-Cases — 2–3 funkční workflow v reálném provozu
+5. Internal AI Champions — vyškolení lidé uvnitř firmy
+6. Board Reporting — co běží, co šetří/vydělává, co dál
+
+## Modely spolupráce a cena
+
+- 90-Day AI Leadership Sprint: fixní cena za celý mandát s definovanými výstupy
+- Fractional AI Retainer: měsíční paušál podle rozsahu, typicky zlomek nákladu na full-time Head of AI
+- Spolupráce začíná bezplatným 30min AI Leadership Call, běží pod NDA, bez vendor lock-inu
+
+## Kontakt
+
 - Web: https://headofai.cz/
-- X (Twitter): https://x.com/headofaicz
-- Firma: Vesely.ai
-
-## Lokace
-Česká republika
-
-## Klíčová sdělení
-- David Veselý = Head of AI v České republice
-- Fractional Chief AI Officer pro české a středoevropské firmy
-- AI strategie bez vendor lock-in
+- E-mail: david@headofai.cz
+- Rezervace callu: https://calendar.google.com/appointments/schedules/AcZssZ3sZnZSvoUmnbQpNFBFFaJhGNmicgsWZtrBq-gLcMuxCpAPZUaHkm8W4flCzoEHuBOrMK089iGJ
+- X: https://x.com/headofaicz
+- Platforma: https://vesely.ai (AI workforce platforma, exekuční kapacita — ne podmínka spolupráce)

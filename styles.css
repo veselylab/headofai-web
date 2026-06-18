@@ -178,6 +178,30 @@ table.compare{width:100%;border-collapse:collapse;min-width:680px;background:#ff
 .proof{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px}
 .proof .tag{display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--green-deep);background:var(--green-soft);padding:4px 10px;border-radius:6px;margin-bottom:12px}
 .proof p{font-size:.93rem;color:var(--ink-soft)}
+.quote-grid{display:grid;gap:16px}
+@media(min-width:680px){.quote-grid{grid-template-columns:1fr 1fr}}
+@media(min-width:980px){.quote-grid{grid-template-columns:repeat(3,1fr)}}
+.quote{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  padding:26px;display:flex;flex-direction:column;position:relative;
+}
+.quote::before{
+  content:"\201C";position:absolute;top:6px;left:18px;
+  font-size:3.4rem;line-height:1;color:var(--green-soft);font-weight:800;
+}
+.quote blockquote{
+  font-size:.98rem;line-height:1.6;color:var(--ink);font-weight:500;
+  margin:0 0 18px;position:relative;z-index:1;flex:1;
+}
+.quote figcaption{display:grid;gap:3px;border-top:1px solid var(--line);padding-top:14px}
+.quote__role{font-weight:700;font-size:.95rem}
+.quote__org{font-size:.88rem;color:var(--ink-soft)}
+.quote__metric{
+  margin-top:8px;font-size:.8rem;font-weight:700;color:var(--green-deep);
+  background:var(--green-soft);padding:5px 10px;border-radius:999px;justify-self:start;
+}
+.quote--feature{border-color:var(--green);box-shadow:0 6px 20px rgba(22,163,74,.12)}
+@media(min-width:980px){.quote--feature{grid-column:span 3}.quote--feature blockquote{font-size:1.12rem}}
 .offer{display:grid;gap:18px}
 @media(min-width:880px){.offer{grid-template-columns:1fr 1fr}}
 .plan{background:#fff;border:1.5px solid var(--line);border-radius:var(--radius-lg);padding:30px;display:flex;flex-direction:column}

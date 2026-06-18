@@ -120,6 +120,12 @@ h3{font-size:1.08rem;font-weight:700;line-height:1.35}
   padding:24px;
 }
 .section--soft .card{box-shadow:0 2px 8px rgba(12,14,18,.04)}
+.card__icon{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:44px;height:44px;border-radius:12px;background:var(--green-soft);
+  color:var(--green-deep);margin-bottom:14px;
+}
+.card__icon svg{width:22px;height:22px}
 .card h3{margin-bottom:8px}
 .card p{font-size:.95rem;color:var(--ink-soft)}
 .card .result{

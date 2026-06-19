@@ -200,8 +200,6 @@ table.compare{width:100%;border-collapse:collapse;min-width:680px;background:#ff
   margin-top:8px;font-size:.8rem;font-weight:700;color:var(--green-deep);
   background:var(--green-soft);padding:5px 10px;border-radius:999px;justify-self:start;
 }
-.quote--feature{border-color:var(--green);box-shadow:0 6px 20px rgba(22,163,74,.12)}
-@media(min-width:980px){.quote--feature{grid-column:span 3}.quote--feature blockquote{font-size:1.12rem}}
 .offer{display:grid;gap:18px}
 @media(min-width:880px){.offer{grid-template-columns:1fr 1fr}}
 .plan{background:#fff;border:1.5px solid var(--line);border-radius:var(--radius-lg);padding:30px;display:flex;flex-direction:column}

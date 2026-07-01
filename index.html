@@ -1,872 +1,2353 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-<meta name="author" content="David Veselý">
-<meta name="robots" content="index,follow,max-image-preview:large">
-<link rel="canonical" href="https://headofai.cz/">
-
-
-<meta property="og:locale" content="cs_CZ">
-<meta property="og:url" content="https://headofai.cz/">
-
-
-
-<meta property="og:image:width" content="1254">
-<meta property="og:image:height" content="1254">
-
-
-<meta name="twitter:site" content="@headofaicz">
-<meta name="twitter:creator" content="@headofaicz">
-
-
-
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
-
-
-
-<!-- SEO Meta Tags -->
-<title>Fractional Head of AI | Externí AI leadership pro vedení firem — David Veselý</title>
-<meta name="description" content="Fractional Head of AI je externí AI leadership role pro firmy 50–500+ lidí. David Veselý převede AI z experimentů na řízenou roadmapu, governance a měřitelné use-cases za 90 dní." />
-<meta property="og:title" content="Fractional Head of AI | Externí AI leadership pro vedení firem — David Veselý" />
-<meta property="og:description" content="Fractional Head of AI je externí AI leadership role pro firmy 50–500+ lidí. David Veselý převede AI z experimentů na řízenou roadmapu, governance a měřitelné use-cases za 90 dní." />
-<meta property="og:type" content="website" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Fractional Head of AI | Externí AI leadership pro vedení firem — David Veselý" />
-<meta name="twitter:description" content="Fractional Head of AI je externí AI leadership role pro firmy 50–500+ lidí. David Veselý převede AI z experimentů na řízenou roadmapu, governance a měřitelné use-cases za 90 dní." />
-<!-- End SEO Meta Tags -->
-<script data-lp-token-hydrate>
-(function(){try{
-  var slug="lp-mq1bfhpd-3p2lc";
-  var SK='lp_access_'+slug;
-  var map={access_token:'lp_pw_',allowlist_access_token:'lp_al_',pin_access_token:'lp_pin_',paywall_access_token:'lp_paid_'};
-  var u=new URL(location.href);var found=null;var changed=false;
-  Object.keys(map).forEach(function(p){var v=u.searchParams.get(p);if(v){found=v;try{localStorage.setItem(map[p]+slug,v);}catch(e){}u.searchParams.delete(p);changed=true;}});
-  if(found){try{sessionStorage.setItem(SK,found);}catch(e){}}
-  else{try{if(!sessionStorage.getItem(SK)){var t=localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug);if(t)sessionStorage.setItem(SK,t);}}catch(e){}}
-  if(changed){try{history.replaceState(null,'',u.toString());}catch(e){}}
-  function getTok(){try{return sessionStorage.getItem(SK)||localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug);}catch(e){return null;}}
-  function needsToken(url,method){if(!url)return false;var s=String(url);var m=(method||'GET').toUpperCase();var isSheetWrite=(m==='POST'||m==='PATCH'||m==='PUT'||m==='DELETE')&&/\/sheet-rows(\/|$|\?)/.test(s);var isSheetRead=/\/sheet-data(\/|$|\?)/.test(s);var isLlm=/\/api\/landing-pages\/public\/[^/]+\/(llm|llm-config)(\/|$|\?)/.test(s);return isSheetWrite||isSheetRead||isLlm;}
-  if(window.fetch){var _f=window.fetch;window.fetch=function(input,init){try{var url=typeof input==='string'?input:(input&&input.url)||'';var method=(init&&init.method)||(input&&input.method)||'GET';if(needsToken(url,method)){var tok=getTok();if(tok){init=init||{};var h=new Headers(init.headers||(typeof input!=='string'?input.headers:undefined)||{});if(!h.has('X-Landing-Page-Token'))h.set('X-Landing-Page-Token',tok);init.headers=h;}}}catch(e){}return _f.call(this,input,init);};}
-  if(window.XMLHttpRequest){var _o=XMLHttpRequest.prototype.open;var _s=XMLHttpRequest.prototype.send;XMLHttpRequest.prototype.open=function(m,u){this.__lpM=m;this.__lpU=u;return _o.apply(this,arguments);};XMLHttpRequest.prototype.send=function(){try{if(needsToken(this.__lpU,this.__lpM)){var tok=getTok();if(tok)this.setRequestHeader('X-Landing-Page-Token',tok);}}catch(e){}return _s.apply(this,arguments);};}
-}catch(e){}})();
-</script>
-
-<script data-field-replace>
-(function(){
-  var params=new URLSearchParams(window.location.search);
-  var fields={};
-  var paramMap={
-    'first_name':'firstName','last_name':'lastName','full_name':'fullName',
-    'email':'email','phone':'phone','company':'company',
-    'city':'city','state':'state','country':'country'
-  };
-  var skipTags={'SCRIPT':1,'STYLE':1,'NOSCRIPT':1,'TEXTAREA':1,'CODE':1,'PRE':1};
-  var hasUrlFields=false;
-  for(var p in paramMap){
-    var v=params.get(p);
-    if(v){fields[paramMap[p]]=v;hasUrlFields=true;}
-  }
-  var contactId=params.get('contact_id');
-  function esc(s){
-    if(!s)return s;
-    var d=document.createElement('div');
-    d.appendChild(document.createTextNode(s));
-    return d.innerHTML;
-  }
-  function doReplace(data){
-    var r={};
-    r['{{full_name}}']=esc(((data.firstName||'')+' '+(data.lastName||'')).trim()||((data.fullName||data.name)||''));
-    r['{{first_name}}']=esc(data.firstName||(data.name?data.name.split(' ')[0]:'')||'');
-    r['{{last_name}}']=esc(data.lastName||(data.name&&data.name.indexOf(' ')>-1?data.name.substring(data.name.indexOf(' ')+1):'')||'');
-    r['{{email}}']=esc(data.email||'');
-    r['{{phone}}']=esc(data.phone||'');
-    r['{{company}}']=esc(data.company||'');
-    r['{{city}}']=esc(data.city||'');
-    r['{{state}}']=esc(data.state||'');
-    r['{{country}}']=esc(data.country||'');
-    r['{{date}}']=new Date().toLocaleDateString();
-    r['{{time}}']=new Date().toLocaleTimeString();
-    r['{{location}}']=[data.city,data.state,data.country].filter(Boolean).join(', ');
-    r['{{tracking_id}}']=esc(data.trackingId||'');
-    r['{{lastClickedProduct}}']=esc(data.lastClickedProduct||'');
-    r['{{lastProductClickDate}}']=esc(data.lastProductClickDate||'');
-    r['{{lastClickedProductPrice}}']=esc(data.lastClickedProductPrice||'');
-    r['{{lastClickedProductURL}}']=esc(data.lastClickedProductURL||'');
-    r['{{productsClickedCount}}']=esc(data.productsClickedCount||'0');
-    r['{{ip_address}}']=esc(data.ipAddress||'');
-    r['{{ip}}']=esc(data.ipAddress||'');
-    if(data.customFields){
-      for(var k in data.customFields){
-        r['{{'+k+'}}']=esc(String(data.customFields[k]||''));
-      }
-    }
-    params.forEach(function(v,k){
-      if(!paramMap[k]&&k!=='contact_id'&&k!=='page_id'&&k.indexOf('utm_')!==0){
-        r['{{'+k+'}}']=esc(v);
-      }
-    });
-    var hasValues=false;
-    for(var key in r){if(r[key]){hasValues=true;break;}}
-    if(!hasValues)return;
-    var walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{
-      acceptNode:function(n){
-        var p=n.parentNode;
-        if(p&&skipTags[p.nodeName])return NodeFilter.FILTER_REJECT;
-        return NodeFilter.FILTER_ACCEPT;
-      }
-    });
-    var node;
-    while(node=walker.nextNode()){
-      var txt=node.nodeValue;
-      if(txt&&txt.indexOf('{{')>-1){
-        var changed=txt;
-        for(var ph in r){
-          if(r[ph]&&changed.indexOf(ph)>-1){
-            changed=changed.split(ph).join(r[ph]);
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pomáhám vedení firem dostat AI chaos pod kontrolu: najít první AI pracovníky s měřitelným dopadem, nastavit odpovědnost a rozhodnout, co spustit v dalších 90 dnech.">
+    <title>Head of AI | Fractional AI Leadership pro firmy</title>
+    <meta property="og:title" content="Head of AI | Fractional AI Leadership pro firmy">
+    <meta property="og:description" content="AI už ve firmě běží. Dostaňte ji pod kontrolu. Fractional Head of AI pro firmy, které chtějí najít, postavit a řídit první AI pracovníky s měřitelným dopadem.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://headofai.cz">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Fractional Head of AI / CAIO — David Veselý",
+      "description": "Fractional Head of AI pro firmy, které chtějí najít, postavit a řídit první AI pracovníky s měřitelným dopadem. 90denní mandát: diagnostika, governance a 2–3 AI systémy do provozu.",
+      "url": "https://headofai.cz",
+      "areaServed": "CZ",
+      "provider": {
+        "@type": "Organization",
+        "name": "Vesely.ai s.r.o.",
+        "identifier": "23702907",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Dvůr Králové nad Labem",
+          "addressCountry": "CZ"
+        }
+      },
+      "serviceType": "Fractional Head of AI / Chief AI Officer",
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "90-Day AI Leadership Sprint",
+          "description": "90denní mandát: CIPHER Snapshot, Opportunity Map, 90-Day Roadmap, Governance One-Pager, Board Report a 2–3 prioritní AI pracovníci do provozu.",
+          "priceCurrency": "CZK",
+          "price": "510000"
+        },
+        {
+          "@type": "Offer",
+          "name": "Fractional AI Retainer",
+          "description": "Průběžné řízení AI agendy, governance a board reportingu.",
+          "priceCurrency": "CZK",
+          "price": "170000",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "170000",
+            "priceCurrency": "CZK",
+            "unitText": "MONTH"
           }
         }
-        if(changed!==txt)node.nodeValue=changed;
-      }
+      ]
     }
-    var attrs=['value','placeholder','content','alt','title'];
-    attrs.forEach(function(attr){
-      var els=document.querySelectorAll('['+attr+'*="{{"]');
-      for(var i=0;i<els.length;i++){
-        var tag=els[i].tagName;
-        if(skipTags[tag])continue;
-        var val=els[i].getAttribute(attr);
-        if(val){
-          var nv=val;
-          for(var ph in r){
-            if(r[ph]&&nv.indexOf(ph)>-1){
-              nv=nv.split(ph).join(r[ph]);
-            }
-          }
-          if(nv!==val)els[i].setAttribute(attr,nv);
+    </script>
+    <link rel="canonical" href="https://headofai.cz">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #050608;
+            --bg-soft: #0a0c0f;
+            --text: #f4f6f6;
+            --accent: #00e6c3;
+            --accent-2: #00b4ff;
+            --accent-warm: #7c5cff;
+            --gray: #9aa3a3;
+            --display: "Space Grotesk", -apple-system, sans-serif;
+            --body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
         }
-      }
-    });
-  }
-  function run(){
-    if(contactId){
-      var xhr=new XMLHttpRequest();
-      xhr.open('GET','https://app.vesely.ai/api/landing/context/'+encodeURIComponent(contactId)+'?page_id=4584');
-      xhr.onload=function(){
-        if(xhr.status===200){
-          try{
-            var resp=JSON.parse(xhr.responseText);
-            if(resp.success&&resp.contact){
-              var merged=resp.contact;
-              for(var k in fields){merged[k]=fields[k];}
-              doReplace(merged);
-              return;
-            }
-          }catch(e){}
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        if(hasUrlFields)doReplace(fields);
-      };
-      xhr.onerror=function(){if(hasUrlFields)doReplace(fields);};
-      xhr.send();
-    }else if(hasUrlFields){
-      doReplace(fields);
-    }
-  }
-  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}
-  else{run();}
-})();
-</script>
-<script data-payment>
-(function(){
-  var slug='QZrARf5';
-  var apiBase='https://app.vesely.ai';
-  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
-  function findEmail(){
-    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
-    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
-    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
-    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
-    return '';
-  }
-  function findName(){
-    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
-    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
-    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
-    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
-    return '';
-  }
-  var __realProcessPayment=function(a,b,c,d,e){
-    var amountCents,email,productName,productDescription,customerName,quantity;
-    if(a&&typeof a==='object'){
-      amountCents=a.amountCents;email=a.email;productName=a.productName;
-      productDescription=a.productDescription||'';customerName=a.name||'';quantity=a.quantity||1;
-    }else{
-      amountCents=typeof a==='number'?a:0;productName=typeof b==='string'?b:'';
-      productDescription=typeof c==='string'?c:'';email='';customerName='';quantity=1;
-    }
-    if(!email)email=findEmail();
-    if(!customerName)customerName=findName();
-    if(!productName){alert('Product name is required.');return Promise.reject('no_product_name');}
-    if(!amountCents||amountCents<100){alert('Amount must be at least $1.00');return Promise.reject('invalid_amount');}
-    if(!email){alert('Please enter your email address.');return Promise.reject('no_email');}
-    var successBase=window.location.href.split('?')[0];
-    var __pLoc=(document.documentElement.lang||navigator.language||'en');
-    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/payment/checkout',{
-      method:'POST',headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({email:email,name:customerName,amountCents:amountCents,productName:productName,productDescription:productDescription,quantity:quantity,locale:__pLoc,successUrl:successBase+'?payment=success&product='+encodeURIComponent(productName)+'&session_id={CHECKOUT_SESSION_ID}',cancelUrl:successBase+'?payment=cancelled'})
-    }).then(function(r){return r.json();}).then(function(d){
-      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
-      else{alert(d.error||'Failed to process payment');throw new Error(d.error);}
-    });
-  };
-  Object.defineProperty(window,'__processPayment',{value:__realProcessPayment,writable:false,configurable:false});
-  document.addEventListener('DOMContentLoaded',function(){
-    var urlParams=new URLSearchParams(window.location.search);
-    if(urlParams.get('payment')==='success'){
-      var pName=urlParams.get('product')||'your item';
-      var overlay=document.createElement('div');overlay.id='payment-success-overlay';
-      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
-      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
-      var subTxt=successSubtext||('Thank you for purchasing '+pName+'.');
-      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Payment Successful!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-pay-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
-      document.body.appendChild(overlay);
-      var pBtn=document.getElementById('lp-pay-success-btn');
-      if(pBtn){pBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
-    }
-  });
-})();
-</script>  <link rel="stylesheet" href="styles.css">
+
+        html { scroll-behavior: smooth; }
+
+        ::selection { background: rgba(0,230,195,0.3); color: #fff; }
+
+        body {
+            font-family: var(--body);
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            font-size: 18px;
+            overflow-x: hidden;
+            position: relative;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* AMBIENT AURORA + GRID BACKGROUND */
+        .bg-fx {
+            position: fixed;
+            inset: 0;
+            z-index: -2;
+            overflow: hidden;
+            pointer-events: none;
+        }
+        .bg-fx::before {
+            content: "";
+            position: absolute;
+            inset: -20%;
+            background:
+                radial-gradient(40% 50% at 18% 12%, rgba(0,230,195,0.16), transparent 70%),
+                radial-gradient(38% 45% at 85% 8%, rgba(0,180,255,0.13), transparent 70%),
+                radial-gradient(45% 50% at 75% 80%, rgba(124,92,255,0.12), transparent 72%);
+            filter: blur(20px);
+            animation: auroraDrift 22s ease-in-out infinite alternate;
+        }
+        .bg-grid {
+            position: fixed;
+            inset: 0;
+            z-index: -2;
+            background-image:
+                linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+            background-size: 56px 56px;
+            mask-image: radial-gradient(ellipse 90% 60% at 50% 0%, #000 30%, transparent 80%);
+            -webkit-mask-image: radial-gradient(ellipse 90% 60% at 50% 0%, #000 30%, transparent 80%);
+            pointer-events: none;
+        }
+        .bg-noise {
+            position: fixed;
+            inset: 0;
+            z-index: -1;
+            opacity: 0.025;
+            pointer-events: none;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+        }
+        @keyframes auroraDrift {
+            0%   { transform: translate(0,0) scale(1); }
+            50%  { transform: translate(-3%, 2%) scale(1.06); }
+            100% { transform: translate(2%, -2%) scale(1.03); }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .bg-fx::before { animation: none; }
+        }
+
+        h1, h2, h3, .logo, .hero-eyebrow, .eyebrow, .step-n, .process-number, .plan h3 {
+            font-family: var(--display);
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+            position: relative;
+        }
+
+        /* SCROLL REVEAL */
+        .reveal {
+            opacity: 0;
+            transform: translateY(28px);
+            transition: opacity 0.7s cubic-bezier(.16,1,.3,1), transform 0.7s cubic-bezier(.16,1,.3,1);
+            will-change: opacity, transform;
+        }
+        .reveal.in { opacity: 1; transform: none; }
+        @media (prefers-reduced-motion: reduce) {
+            .reveal { opacity: 1 !important; transform: none !important; }
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(5, 6, 8, 0.6);
+            backdrop-filter: blur(18px) saturate(160%);
+            -webkit-backdrop-filter: blur(18px) saturate(160%);
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+            transition: background 0.3s, border-color 0.3s;
+        }
+        header.scrolled {
+            background: rgba(5, 6, 8, 0.86);
+            border-bottom-color: rgba(0,230,195,0.18);
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 18px 0;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            text-decoration: none;
+            background: linear-gradient(90deg, #fff 0%, var(--accent) 120%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .logo::before {
+            content: "";
+            width: 10px; height: 10px;
+            border-radius: 50%;
+            background: var(--accent);
+            -webkit-text-fill-color: initial;
+            box-shadow: 0 0 12px 2px rgba(0,230,195,0.7);
+            animation: pulseGlow 2.4s ease-out infinite;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        .cta-button {
+            background: transparent;
+            color: var(--accent);
+            border: 1.5px solid rgba(0,230,195,0.55);
+            padding: 12px 28px;
+            border-radius: 9999px;
+            font-weight: 600;
+            font-family: var(--body);
+            text-decoration: none;
+            transition: all 0.3s cubic-bezier(.16,1,.3,1);
+            white-space: nowrap;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            position: relative;
+            overflow: hidden;
+        }
+        .cta-button::after {
+            content: "";
+            position: absolute;
+            top: 0; left: -120%;
+            width: 60%; height: 100%;
+            background: linear-gradient(100deg, transparent, rgba(255,255,255,0.35), transparent);
+            transform: skewX(-18deg);
+            transition: left 0.6s ease;
+        }
+        .cta-button:hover::after { left: 140%; }
+        .cta-button:hover {
+            background: var(--accent);
+            color: #050505;
+            border-color: var(--accent);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0,230,195,0.35);
+        }
+
+        /* PULSE GLOW for primary conversion CTAs */
+        @keyframes pulseGlow {
+            0% {
+                box-shadow: 0 0 0 0 rgba(0, 230, 195, 0.55),
+                            0 0 18px 2px rgba(0, 230, 195, 0.35);
+            }
+            70% {
+                box-shadow: 0 0 0 16px rgba(0, 230, 195, 0),
+                            0 0 26px 6px rgba(0, 230, 195, 0.45);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(0, 230, 195, 0),
+                            0 0 18px 2px rgba(0, 230, 195, 0.35);
+            }
+        }
+
+        .pulse-glow {
+            animation: pulseGlow 2.4s ease-out infinite;
+        }
+
+        .pulse-glow:hover {
+            animation-play-state: paused;
+            transform: translateY(-2px);
+            box-shadow: 0 12px 32px rgba(0, 230, 195, 0.5);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .pulse-glow { animation: none; }
+        }
+
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 28px;
+            cursor: pointer;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding-top: 120px;
+            padding-bottom: 80px;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: -10%; left: 50%;
+            transform: translateX(-50%);
+            width: 1100px; height: 700px;
+            background: radial-gradient(closest-side, rgba(0,230,195,0.14), transparent 70%);
+            filter: blur(40px);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .hero .container {
+            width: 100%;
+            z-index: 2;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.05fr 0.95fr;
+            gap: 64px;
+            align-items: center;
+        }
+
+        .hero-content {
+            max-width: 640px;
+            min-width: 0;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-media {
+            position: relative;
+            min-width: 0;
+            animation: floaty 7s ease-in-out infinite;
+        }
+        @keyframes floaty {
+            0%,100% { transform: translateY(0); }
+            50% { transform: translateY(-14px); }
+        }
+        .hero-media::before {
+            content: "";
+            position: absolute;
+            inset: -2px;
+            border-radius: 22px;
+            padding: 1.5px;
+            background: linear-gradient(135deg, var(--accent), transparent 40%, var(--accent-warm));
+            -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            opacity: 0.6;
+            pointer-events: none;
+        }
+
+        .hero-media img {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+            display: block;
+            box-shadow: 0 40px 90px rgba(0,0,0,0.6), 0 0 60px rgba(0,230,195,0.08);
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .hero-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 24px;
+            padding: 8px 16px;
+            border: 1px solid rgba(0,230,195,0.35);
+            border-radius: 9999px;
+            background: rgba(0,230,195,0.06);
+        }
+        .hero-eyebrow .dot {
+            width: 8px; height: 8px; border-radius: 50%;
+            background: var(--accent);
+            box-shadow: 0 0 10px 1px rgba(0,230,195,0.8);
+            animation: pulseGlow 2.4s ease-out infinite;
+        }
+
+        .hero h1 {
+            font-size: clamp(40px, 5.2vw, 64px);
+            line-height: 1.05;
+            font-weight: 700;
+            letter-spacing: -2px;
+            margin-bottom: 24px;
+            background: linear-gradient(180deg, #ffffff 30%, #b8c2c2 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero h1 .grad {
+            background: linear-gradient(100deg, var(--accent), var(--accent-2));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero .subheadline {
+            font-size: 21px;
+            line-height: 1.5;
+            color: #c5c5c5;
+            max-width: 620px;
+            margin-bottom: 32px;
+        }
+
+        .hero-bullets {
+            list-style: none;
+            margin-bottom: 40px;
+        }
+
+        .hero-bullets li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 14px;
+            font-size: 17px;
+            color: #ddd;
+        }
+
+        .hero-cta-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+
+        /* ABOUT */
+        .profile-img {
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 6px solid var(--accent);
+            box-shadow: 0 20px 40px rgba(0, 230, 195, 0.15);
+        }
+
+        /* ICONS */
+        .lucide {
+            width: 24px;
+            height: 24px;
+            stroke: currentColor;
+            flex-shrink: 0;
+            vertical-align: middle;
+        }
+
+        .section-header {
+            max-width: 700px;
+            margin-bottom: 80px;
+        }
+
+        section {
+            padding: 140px 0;
+        }
+        #cipher {
+            padding: 150px 0;
+            background:
+                radial-gradient(80% 60% at 50% 0%, rgba(0,230,195,0.05), transparent 60%),
+                radial-gradient(70% 50% at 50% 100%, rgba(0,180,255,0.035), transparent 65%),
+                #080d0d;
+            border-top: 1px solid rgba(0,230,195,0.12);
+            border-bottom: 1px solid rgba(0,230,195,0.12);
+        }
+        #sprint { padding: 150px 0; }
+        #contact { padding-top: 160px; }
+
+        /* SPRINT PRICE BLOCK */
+        .sprint-price {
+            max-width: 820px;
+            margin: 64px auto 0;
+            padding: 40px 48px;
+            text-align: center;
+            border-radius: 20px;
+            border: 1px solid rgba(0,230,195,0.28);
+            background:
+                radial-gradient(120% 140% at 50% 0%, rgba(0,230,195,0.09), transparent 62%),
+                linear-gradient(160deg, rgba(255,255,255,0.035), rgba(255,255,255,0.008));
+            box-shadow: 0 24px 60px rgba(0,0,0,0.4);
+        }
+        .sprint-price-main {
+            font-family: var(--display);
+            font-size: clamp(22px, 3vw, 30px);
+            font-weight: 600;
+            color: var(--text);
+            line-height: 1.3;
+            margin-bottom: 18px;
+            letter-spacing: -0.5px;
+        }
+        .sprint-price-num {
+            color: var(--accent);
+            font-size: 1.25em;
+            white-space: nowrap;
+        }
+        .sprint-price-unit {
+            font-size: 0.62em;
+            font-weight: 500;
+            color: var(--gray);
+            white-space: nowrap;
+        }
+        .sprint-price-anchor {
+            font-size: 16.5px;
+            line-height: 1.6;
+            color: #c8d0d0;
+            max-width: 680px;
+            margin: 0 auto;
+        }
+        @media (max-width: 768px) {
+            .sprint-price { padding: 32px 24px; }
+        }
+
+        /* STATEMENT / RESET BAND */
+        .statement-band {
+            padding: 160px 0;
+            background:
+                radial-gradient(90% 120% at 50% 50%, rgba(0,230,195,0.06), transparent 62%),
+                #06100f;
+            border-top: 1px solid rgba(0,230,195,0.1);
+            border-bottom: 1px solid rgba(0,230,195,0.1);
+        }
+        .statement-inner {
+            max-width: 960px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+        }
+        .statement-mark {
+            display: block;
+            width: 64px;
+            height: 45px;
+            margin: 0 auto 40px;
+            color: var(--accent);
+            opacity: 0.55;
+        }
+        .statement-text {
+            font-family: var(--display);
+            font-size: clamp(28px, 3.6vw, 46px);
+            font-weight: 600;
+            line-height: 1.28;
+            letter-spacing: -0.8px;
+            color: #f2f5f5;
+            margin: 0 auto 28px;
+        }
+        .statement-attr {
+            font-size: 15px;
+            letter-spacing: 0.5px;
+            color: var(--gray);
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        @media (max-width: 768px) {
+            .statement-band { padding: 110px 0; }
+            .statement-mark { width: 48px; height: 34px; margin-bottom: 28px; }
+        }
+
+        h2 {
+            font-size: clamp(34px, 4.5vw, 46px);
+            line-height: 1.12;
+            font-weight: 700;
+            letter-spacing: -1.5px;
+            margin-bottom: 20px;
+        }
+
+        .outcomes-grid h3 {
+            font-family: var(--display);
+            background: linear-gradient(100deg, var(--accent), var(--accent-2));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .accent {
+            color: var(--accent);
+        }
+
+        .problem-grid, .outcomes-grid, .use-cases-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 48px;
+        }
+
+        .card {
+            background: linear-gradient(160deg, rgba(255,255,255,0.035), rgba(255,255,255,0.012));
+            border-radius: 16px;
+            padding: 44px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: transform 0.35s cubic-bezier(.16,1,.3,1), border-color 0.35s, box-shadow 0.35s;
+            position: relative;
+            overflow: hidden;
+        }
+        .card::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--accent), transparent);
+            opacity: 0;
+            transition: opacity 0.35s;
+        }
+        .card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(0,230,195,0.5);
+            box-shadow: 0 24px 60px rgba(0,0,0,0.5), 0 0 40px rgba(0,230,195,0.07);
+        }
+        .card:hover::before { opacity: 1; }
+
+        .process-step {
+            display: flex;
+            gap: 32px;
+            margin-bottom: 60px;
+            align-items: flex-start;
+        }
+
+        .process-number {
+            width: 64px;
+            height: 64px;
+            background: #1a1a1a;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--accent);
+            flex-shrink: 0;
+            border: 2px solid var(--accent);
+        }
+
+        /* FORM */
+        .form-panel {
+            max-width: 680px;
+            margin: 0 auto;
+            background: linear-gradient(160deg, rgba(0,230,195,0.12), rgba(0,230,195,0.03));
+            border: 1.5px solid rgba(0,230,195,0.35);
+            border-radius: 24px;
+            padding: 48px;
+            box-shadow: 0 24px 60px rgba(0,230,195,0.08);
+        }
+
+        .form-panel h3 {
+            font-size: 26px;
+            margin-bottom: 8px;
+        }
+
+        .form-panel .form-sub {
+            color: var(--gray);
+            font-size: 17px;
+            margin-bottom: 32px;
+        }
+
+        .contact-form {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        input, textarea {
+            width: 100%;
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.15);
+            color: white;
+            padding: 18px 22px;
+            border-radius: 12px;
+            font-size: 17px;
+            margin-bottom: 18px;
+            transition: border 0.3s, background 0.3s;
+            font-family: inherit;
+        }
+
+        input::placeholder, textarea::placeholder {
+            color: #888;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: var(--accent);
+            background: rgba(0,230,195,0.05);
+        }
+
+        textarea {
+            min-height: 130px;
+            resize: vertical;
+        }
+
+        .form-cta {
+            width: 100%;
+            background: var(--accent);
+            color: #050505;
+            border: none;
+            padding: 20px;
+            font-size: 19px;
+            font-weight: 700;
+            border-radius: 9999px;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 8px;
+            box-shadow: 0 8px 24px rgba(0,230,195,0.3);
+        }
+
+        .form-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 32px rgba(0,230,195,0.45);
+        }
+
+        footer {
+            background: #000;
+            padding: 80px 0 40px;
+            border-top: 1px solid #222;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.4fr 1fr 1fr 1fr;
+            gap: 48px;
+            margin-bottom: 56px;
+        }
+        .footer-col h4 {
+            font-family: var(--display);
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            color: var(--text);
+            margin-bottom: 16px;
+        }
+        .footer-col a, .footer-col p {
+            display: block;
+            color: #8a9393;
+            font-size: 15px;
+            line-height: 1.7;
+            text-decoration: none;
+            margin-bottom: 4px;
+        }
+        .footer-col a:hover { color: var(--accent); }
+        .footer-bottom {
+            border-top: 1px solid #1a1a1a;
+            padding-top: 28px;
+            display: flex;
+            justify-content: space-between;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        .footer-bottom p { color: #666; font-size: 13px; margin: 0; }
+
+        /* STICKY MOBILE CTA */
+        .sticky-cta {
+            display: none;
+            position: fixed;
+            left: 0; right: 0; bottom: 0;
+            z-index: 900;
+            padding: 12px 16px calc(12px + env(safe-area-inset-bottom));
+            background: rgba(5,6,8,0.92);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border-top: 1px solid rgba(0,230,195,0.2);
+        }
+        .sticky-cta a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            width: 100%;
+            padding: 15px;
+            background: var(--accent);
+            color: #050608;
+            font-weight: 600;
+            font-size: 16px;
+            border-radius: 9999px;
+            text-decoration: none;
+        }
+        .sticky-cta a svg { width: 18px; height: 18px; }
+        @media (max-width: 768px) {
+            .sticky-cta { display: block; }
+            body { padding-bottom: 76px; font-size: 17px; }
+            .footer-grid { grid-template-columns: 1fr 1fr; gap: 36px; }
+            /* readability: nudge body microcopy up, keep label chips small */
+            .case-measured, .cipher-intro .src, .anchor-line, .price-note { font-size: 14.5px; line-height: 1.6; }
+            .decide { font-size: 15px; }
+            .card p, .tl-body p, .case-row p { font-size: 16px; }
+        }
+        @media (max-width: 480px) {
+            .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+        }
+
+        .synthetic {
+            font-size: 13px;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* FAQ */
+        .faq-item {
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .faq-q {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 24px;
+            cursor: pointer;
+            font-size: 20px;
+            font-weight: 600;
+            padding: 28px 0;
+            list-style: none;
+            color: var(--text);
+            transition: color 0.2s;
+        }
+        .faq-q:hover { color: var(--accent); }
+        .faq-icon {
+            flex-shrink: 0;
+            width: 26px;
+            height: 26px;
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+        .faq-icon::before,
+        .faq-icon::after {
+            content: '';
+            position: absolute;
+            background: var(--accent);
+            border-radius: 2px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .faq-icon::before { width: 18px; height: 2px; }
+        .faq-icon::after  { width: 2px; height: 18px; transition: transform 0.3s ease; }
+        .faq-item.open .faq-icon::after { transform: translate(-50%, -50%) scaleY(0); }
+        .faq-a {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s ease;
+            color: var(--gray);
+        }
+        .faq-a p {
+            padding: 0 0 28px;
+            font-size: 17px;
+            line-height: 1.6;
+            max-width: 90%;
+        }
+
+        /* GENERIC GRID HELPERS */
+        .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; }
+        .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
+        .eyebrow {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 16px;
+            padding-left: 28px;
+            position: relative;
+        }
+        .eyebrow::before {
+            content: "";
+            position: absolute;
+            left: 0; top: 50%;
+            width: 20px; height: 1px;
+            background: var(--accent);
+            box-shadow: 0 0 8px rgba(0,230,195,0.8);
+        }
+        .eyebrow.eyebrow-center {
+            padding-left: 0;
+        }
+        .eyebrow.eyebrow-center::before {
+            left: 50%;
+            top: -10px;
+            transform: translateX(-50%);
+            width: 32px;
+        }
+        .card-arrow {
+            color: var(--accent);
+            font-weight: 600;
+            margin-top: 16px;
+            display: block;
+            font-size: 16px;
+        }
+        .card h3 + p, .card > p { font-size: 17px; line-height: 1.6; }
+
+        /* ARTIFACTS */
+        .artifact-num {
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: var(--accent);
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+
+        /* TESTIMONIALS */
+        .testimonial {
+            background: #0e0e0e;
+            border: 1px solid rgba(255,255,255,0.09);
+            border-radius: 16px;
+            padding: 36px;
+            display: flex;
+            flex-direction: column;
+        }
+        .testimonial blockquote {
+            font-size: 17px;
+            line-height: 1.6;
+            color: #ddd;
+            margin-bottom: 24px;
+            flex-grow: 1;
+        }
+        .testimonial .who { font-weight: 700; color: var(--text); }
+        .testimonial .role { color: var(--gray); font-size: 15px; margin-top: 4px; }
+        .testimonial .metric {
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px solid rgba(0,230,195,0.2);
+            color: var(--accent);
+            font-weight: 600;
+            font-size: 15px;
+        }
+        .testimonial .measured {
+            margin-top: 12px;
+            font-size: 12.5px;
+            line-height: 1.5;
+            color: #6b7373;
+            font-style: italic;
+        }
+
+        /* PLANS */
+        .plan {
+            background: #0e0e0e;
+            border: 1px solid rgba(255,255,255,0.09);
+            border-radius: 20px;
+            padding: 44px;
+            position: relative;
+        }
+        .plan.featured {
+            border-color: var(--accent);
+            box-shadow: 0 20px 50px rgba(0,230,195,0.1);
+        }
+        .plan-badge {
+            position: absolute;
+            top: -14px;
+            left: 44px;
+            background: var(--accent);
+            color: #050505;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 6px 16px;
+            border-radius: 9999px;
+        }
+        .plan h3 { font-size: 30px; margin-bottom: 14px; letter-spacing: -0.5px; }
+        .plan .plan-desc { color: var(--gray); margin-bottom: 24px; font-size: 17px; }
+        .plan ul { list-style: none; margin-bottom: 28px; }
+        .plan ul li {
+            display: flex; align-items: flex-start; gap: 12px;
+            margin-bottom: 14px; color: #ddd; font-size: 16px;
+        }
+        .plan ul li svg { color: var(--accent); margin-top: 3px; flex-shrink: 0; width: 20px; height: 20px; }
+        .plan .price-note { color: var(--gray); font-size: 15px; margin-bottom: 24px; font-style: italic; }
+        .plan-price {
+            font-family: var(--display);
+            font-size: 28px;
+            font-weight: 600;
+            color: var(--gray);
+            margin: 4px 0 22px;
+            letter-spacing: -0.5px;
+        }
+        .plan-price .from {
+            font-size: 15px;
+            font-weight: 500;
+            color: var(--accent);
+            letter-spacing: 0;
+            vertical-align: middle;
+            margin-right: 4px;
+        }
+        .plan-price .per {
+            font-size: 15px;
+            font-weight: 500;
+            color: var(--gray);
+            letter-spacing: 0;
+            margin-left: 2px;
+        }
+
+        /* JOURNEY (sequential pricing) */
+        .journey {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        .journey .step-card {
+            position: relative;
+        }
+        .step-tag {
+            position: absolute;
+            top: 28px;
+            right: 28px;
+            font-family: var(--display);
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--accent);
+            padding: 6px 12px;
+            border: 1px solid rgba(0,230,195,0.3);
+            border-radius: 9999px;
+            background: rgba(0,230,195,0.06);
+        }
+        .plan-badge-muted {
+            background: rgba(255,255,255,0.08) !important;
+            color: var(--text) !important;
+        }
+        .anchor-line {
+            font-size: 16.5px;
+            line-height: 1.6;
+            color: #c8d0d0;
+            margin: 0 0 24px;
+            padding-bottom: 22px;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+        .price-note.threshold {
+            font-style: normal;
+            color: var(--accent);
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        .journey-connector {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            padding: 22px 0;
+            color: var(--accent);
+        }
+        .journey-connector svg {
+            width: 32px;
+            height: 32px;
+            animation: connectorBob 2.2s ease-in-out infinite;
+        }
+        .journey-connector span {
+            font-family: var(--display);
+            font-size: 15px;
+            font-weight: 500;
+            color: var(--text);
+        }
+        @keyframes connectorBob {
+            0%,100% { transform: translateY(0); opacity: 0.85; }
+            50% { transform: translateY(5px); opacity: 1; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .journey-connector svg { animation: none; }
+        }
+
+        /* FIT GRID */
+        .fit-col {
+            background: #0e0e0e;
+            border-radius: 16px;
+            padding: 36px;
+            border: 1px solid rgba(255,255,255,0.09);
+        }
+        .fit-col.yes { border-top: 3px solid var(--accent); }
+        .fit-col.no { border-top: 3px solid #555; }
+        .fit-col h3 { font-size: 20px; margin-bottom: 24px; display: flex; align-items: center; gap: 10px; }
+        .fit-col ul { list-style: none; }
+        .fit-col ul li {
+            display: flex; align-items: flex-start; gap: 12px;
+            margin-bottom: 16px; color: var(--gray); font-size: 16px; line-height: 1.5;
+        }
+        .fit-col ul li svg { flex-shrink: 0; width: 20px; height: 20px; margin-top: 2px; }
+        .fit-col.yes ul li svg { color: var(--accent); }
+        .fit-col.no ul li svg { color: #666; }
+
+        /* COMPARISON TABLE */
+        .compare-wrap { overflow-x: auto; }
+        table.compare {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 760px;
+            font-size: 15px;
+        }
+        table.compare th, table.compare td {
+            text-align: left;
+            padding: 18px 20px;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+            vertical-align: top;
+        }
+        table.compare thead th {
+            color: var(--gray);
+            font-weight: 600;
+            font-size: 14px;
+            border-bottom: 1px solid rgba(255,255,255,0.18);
+        }
+        table.compare thead th:last-child {
+            color: var(--accent);
+        }
+        table.compare td:first-child {
+            font-weight: 600;
+            color: var(--text);
+        }
+        table.compare tbody td:last-child {
+            color: var(--text);
+            background: rgba(0,230,195,0.04);
+        }
+        table.compare tbody td { color: var(--gray); }
+
+        /* STEP GRID (7 steps) */
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 24px;
+        }
+        .step-box {
+            background: #0e0e0e;
+            border: 1px solid rgba(255,255,255,0.09);
+            border-radius: 14px;
+            padding: 28px;
+        }
+        .step-box .step-n {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 12px;
+        }
+        .step-box h3 { font-size: 19px; margin-bottom: 8px; }
+        .step-box p { color: var(--gray); font-size: 15px; }
+
+        /* SPRINT TIMELINE */
+        .timeline {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 0;
+            position: relative;
+            margin-top: 16px;
+        }
+        .timeline-step {
+            position: relative;
+            padding: 0 16px;
+        }
+        .tl-marker {
+            position: relative;
+            height: 68px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 24px;
+        }
+        /* connector line across markers */
+        .tl-marker::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, rgba(0,230,195,0.35), rgba(0,230,195,0.15));
+            transform: translateY(-50%);
+            z-index: 0;
+        }
+        .timeline-step:first-child .tl-marker::before { left: 50%; }
+        .timeline-step:last-child .tl-marker::before { right: 50%; }
+        .tl-num {
+            position: relative;
+            z-index: 1;
+            width: 68px; height: 68px;
+            flex-shrink: 0;
+            display: flex; align-items: center; justify-content: center;
+            font-family: var(--display);
+            font-size: 26px; font-weight: 700;
+            color: var(--accent);
+            background: var(--bg);
+            border: 2px solid rgba(0,230,195,0.5);
+            border-radius: 50%;
+            box-shadow: 0 0 0 6px var(--bg);
+        }
+        .tl-body { padding-right: 14px; }
+        .tl-week {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 10px;
+        }
+        .tl-body h3 { font-size: 23px; margin-bottom: 12px; }
+        .tl-body p { color: var(--gray); font-size: 16px; line-height: 1.6; }
+
+        @media (max-width: 860px) {
+            .timeline {
+                grid-template-columns: 1fr;
+                gap: 0;
+                max-width: 560px;
+                margin: 16px auto 0;
+            }
+            .timeline-step {
+                display: grid;
+                grid-template-columns: 68px 1fr;
+                gap: 20px;
+                padding: 0 0 32px 0;
+            }
+            .tl-marker {
+                height: auto;
+                margin-bottom: 0;
+                justify-content: center;
+            }
+            /* vertical connector line */
+            .tl-marker::before {
+                top: 68px; bottom: -32px;
+                left: 50%; right: auto;
+                width: 2px; height: auto;
+                transform: translateX(-50%);
+                background: linear-gradient(180deg, rgba(0,230,195,0.35), rgba(0,230,195,0.12));
+            }
+            .timeline-step:first-child .tl-marker::before { left: 50%; top: 68px; }
+            .timeline-step:last-child .tl-marker::before { display: none; }
+            .tl-body { padding-right: 0; padding-top: 6px; }
+        }
+
+        /* CASE PATTERNS */
+        .case-pattern {
+            background: linear-gradient(160deg, rgba(255,255,255,0.04), rgba(255,255,255,0.012));
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 18px;
+            padding: 34px;
+            transition: transform 0.35s cubic-bezier(.16,1,.3,1), border-color 0.35s, box-shadow 0.35s;
+        }
+        .case-pattern:hover {
+            transform: translateY(-6px);
+            border-color: rgba(0,230,195,0.4);
+            box-shadow: 0 24px 60px rgba(0,0,0,0.5), 0 0 40px rgba(0,230,195,0.07);
+        }
+        .case-type {
+            font-family: var(--display);
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--accent);
+            margin-bottom: 22px;
+            padding-bottom: 18px;
+            border-bottom: 1px solid rgba(0,230,195,0.18);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+        }
+        .status-badge {
+            font-family: var(--body);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.6px;
+            text-transform: uppercase;
+            padding: 5px 12px;
+            border-radius: 9999px;
+            flex-shrink: 0;
+        }
+        .status-badge.status-pilot {
+            color: var(--accent);
+            background: rgba(0,230,195,0.1);
+            border: 1px solid rgba(0,230,195,0.35);
+        }
+        .status-badge.status-proto {
+            color: #b8a5ff;
+            background: rgba(124,92,255,0.1);
+            border: 1px solid rgba(124,92,255,0.35);
+        }
+        .case-row { display: flex; gap: 16px; margin-bottom: 16px; }
+        .case-label {
+            flex-shrink: 0;
+            width: 76px;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.6px;
+            text-transform: uppercase;
+            color: var(--gray);
+            padding-top: 3px;
+        }
+        .case-row p { margin: 0; color: var(--text); font-size: 15.5px; line-height: 1.5; }
+        .case-measured {
+            margin-top: 20px;
+            padding-top: 16px;
+            border-top: 1px solid rgba(255,255,255,0.08);
+            font-size: 14px;
+            color: #828c8c;
+            line-height: 1.55;
+        }
+        .case-input {
+            margin-top: 16px;
+            padding-top: 14px;
+            border-top: 1px solid rgba(0,230,195,0.15);
+            font-size: 14.5px;
+            line-height: 1.5;
+            color: var(--accent);
+            font-weight: 500;
+        }
+
+        /* ARTEFACT PREVIEWS */
+        .artefact-preview {
+            background: #060a0d;
+            border: 1px solid rgba(0,230,195,0.15);
+            border-radius: 12px;
+            padding: 20px;
+            min-height: 150px;
+            overflow: hidden;
+        }
+        .artefact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 16px;
+        }
+        .ap-bar {
+            height: 12px;
+            border-radius: 6px;
+            background: linear-gradient(90deg, var(--accent), rgba(0,230,195,0.3));
+            margin-bottom: 10px;
+        }
+        .ap-bar.ap-dim { background: rgba(255,255,255,0.1); }
+        .ap-line {
+            height: 9px;
+            border-radius: 5px;
+            background: rgba(255,255,255,0.1);
+            margin-bottom: 9px;
+        }
+        .ap-line.ap-short { width: 60%; }
+        .ap-kpi-row { display: flex; gap: 10px; margin-bottom: 16px; }
+        .ap-kpi {
+            flex: 1;
+            height: 38px;
+            border-radius: 8px;
+            background: rgba(0,230,195,0.12);
+            border: 1px solid rgba(0,230,195,0.25);
+        }
+        .decide {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #d6dada;
+            padding-top: 14px;
+            border-top: 1px solid rgba(0,230,195,0.18);
+        }
+        .decide span {
+            display: block;
+            color: var(--accent);
+            font-weight: 600;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+
+        /* HERO CHIPS */
+        .hero-chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin-top: 32px;
+        }
+        .hero-chips .chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--text);
+            padding: 12px 20px;
+            border-radius: 12px;
+            border: 1px solid rgba(0,230,195,0.28);
+            background: rgba(0,230,195,0.07);
+        }
+        .hero-chips .chip svg { width: 18px; height: 18px; color: var(--accent); flex-shrink: 0; }
+
+        /* CIPHER METHODOLOGY */
+        .cipher-intro {
+            max-width: 800px;
+            margin: 0 auto 72px;
+            text-align: center;
+        }
+        .cipher-intro .lead {
+            font-size: 24px;
+            color: var(--text);
+            line-height: 1.5;
+            margin-bottom: 18px;
+        }
+        .cipher-intro .lead strong { color: var(--accent); font-weight: 600; }
+        .cipher-intro .src {
+            font-size: 14px;
+            color: #6b7373;
+        }
+        .cipher-intro .src a { color: #8a9393; text-decoration: underline; text-underline-offset: 3px; }
+
+        .cipher-word {
+            display: flex;
+            justify-content: center;
+            gap: 18px;
+            flex-wrap: wrap;
+            margin: 40px auto 64px;
+        }
+        .cipher-letter {
+            width: 104px; height: 104px;
+            display: flex; align-items: center; justify-content: center;
+            font-family: var(--display);
+            font-size: 50px; font-weight: 700;
+            border-radius: 22px;
+            border: 1px solid rgba(0,230,195,0.35);
+            background: linear-gradient(160deg, rgba(0,230,195,0.16), rgba(0,230,195,0.02));
+            color: var(--accent);
+            cursor: default;
+            box-shadow: 0 16px 40px rgba(0,0,0,0.4), inset 0 0 40px rgba(0,230,195,0.05);
+            transition: transform 0.3s cubic-bezier(.16,1,.3,1), box-shadow 0.3s, background 0.3s;
+        }
+        .cipher-letter:hover {
+            transform: translateY(-8px) scale(1.05);
+            box-shadow: 0 20px 44px rgba(0,230,195,0.3);
+            background: var(--accent);
+            color: #050608;
+        }
+
+        .cipher-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+        }
+        .cipher-card {
+            position: relative;
+            background: linear-gradient(160deg, rgba(255,255,255,0.04), rgba(255,255,255,0.012));
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 16px;
+            padding: 26px 26px;
+            overflow: hidden;
+            transition: transform 0.35s cubic-bezier(.16,1,.3,1), border-color 0.35s, box-shadow 0.35s;
+        }
+        .cipher-card::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: 18px;
+            padding: 1px;
+            background: linear-gradient(135deg, var(--accent), transparent 55%);
+            -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            opacity: 0;
+            transition: opacity 0.35s;
+            pointer-events: none;
+        }
+        .cipher-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(0,230,195,0.4);
+            box-shadow: 0 24px 60px rgba(0,0,0,0.5), 0 0 40px rgba(0,230,195,0.07);
+        }
+        .cipher-card:hover::after { opacity: 1; }
+        .cipher-badge {
+            width: 46px; height: 46px;
+            flex-shrink: 0;
+            display: flex; align-items: center; justify-content: center;
+            font-family: var(--display);
+            font-size: 22px; font-weight: 700;
+            border-radius: 11px;
+            background: rgba(0,230,195,0.1);
+            border: 1px solid rgba(0,230,195,0.35);
+            color: var(--accent);
+        }
+        .cipher-head {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 14px;
+        }
+        .cipher-head h3 {
+            font-size: 19px;
+            line-height: 1.2;
+            margin: 0;
+        }
+        .cipher-head .dim {
+            display: block;
+            font-family: var(--body);
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.7px;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-top: 4px;
+        }
+        .cipher-card p.tension {
+            color: var(--gray);
+            font-size: 15px;
+            line-height: 1.5;
+            margin-bottom: 0;
+        }
+        .cipher-cta {
+            text-align: center;
+            max-width: 840px;
+            margin: 110px auto 0;
+            padding: 64px 56px 60px;
+            border-radius: 28px;
+            border: 1px solid rgba(0,230,195,0.28);
+            background:
+                radial-gradient(130% 150% at 50% 0%, rgba(0,230,195,0.09), transparent 62%),
+                linear-gradient(160deg, rgba(255,255,255,0.04), rgba(255,255,255,0.008));
+            box-shadow: 0 30px 80px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.04);
+            position: relative;
+        }
+        .cipher-cta::before {
+            content: "";
+            position: absolute;
+            top: -1px; left: 50%;
+            transform: translateX(-50%);
+            width: 160px; height: 3px;
+            border-radius: 0 0 3px 3px;
+            background: linear-gradient(90deg, transparent, var(--accent), transparent);
+        }
+        .cipher-cta .cipher-conclusion {
+            font-size: 26px;
+            color: var(--text);
+            max-width: 740px;
+            margin: 0 auto 30px;
+            line-height: 1.45;
+            font-weight: 400;
+        }
+        .cipher-cta .cipher-conclusion strong {
+            color: var(--accent);
+            font-weight: 600;
+        }
+        .cipher-cta .cipher-transition {
+            font-family: var(--display);
+            font-size: 21px;
+            font-weight: 600;
+            color: #c8d0d0;
+            max-width: 660px;
+            margin: 0 auto 40px;
+            line-height: 1.4;
+            letter-spacing: -0.3px;
+        }
+        .cipher-cta-btn {
+            font-size: 20px !important;
+            padding: 22px 44px !important;
+            box-shadow: 0 14px 40px rgba(0,230,195,0.35);
+        }
+
+        @media (max-width: 768px) {
+            .cipher-letter { width: 72px; height: 72px; font-size: 34px; gap: 10px; }
+            .cipher-cta { padding: 40px 24px 38px; margin-top: 72px; }
+            .cipher-cta .cipher-conclusion { font-size: 20px; }
+            .cipher-cta .cipher-transition { font-size: 19px; }
+
+            .nav-links {
+                display: none;
+            }
+            nav > .cta-button {
+                display: none;
+            }
+            .mobile-menu-toggle {
+                display: block;
+            }
+            section {
+                padding: 90px 0;
+            }
+            .hero-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            .hero-content {
+                max-width: 100%;
+                order: 1;
+            }
+            .hero-media {
+                order: 2;
+            }
+            .hero h1 {
+                font-size: clamp(34px, 9vw, 44px);
+            }
+            .hero-eyebrow {
+                font-size: 12px;
+                white-space: normal;
+            }
+            .hero-cta-row .cta-button {
+                width: 100%;
+                justify-content: center;
+            }
+            .about-grid {
+                grid-template-columns: 1fr !important;
+                gap: 40px !important;
+            }
+        }
+    </style>
 </head>
 <body>
-<a class="skip-link" href="#main">Přeskočit na obsah</a>
+    <div class="bg-fx"></div>
+    <div class="bg-grid"></div>
+    <div class="bg-noise"></div>
+    <svg width="0" height="0" style="position:absolute" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><symbol id="ic-calendar" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18M8 2v4M16 2v4"/></symbol><symbol id="ic-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></symbol><symbol id="ic-user-check" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="m16 11 2 2 4-4"/></symbol><symbol id="ic-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol><symbol id="ic-zap" viewBox="0 0 24 24"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></symbol><symbol id="ic-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></symbol><symbol id="ic-check-circle" viewBox="0 0 24 24"><path d="M21.801 10A10 10 0 1 1 17 3.335"/><path d="m9 11 3 3L22 4"/></symbol><symbol id="ic-file-minus" viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M9 15h6"/></symbol><symbol id="ic-rocket" viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></symbol><symbol id="ic-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol><symbol id="ic-workflow" viewBox="0 0 24 24"><rect width="8" height="8" x="3" y="3" rx="2"/><path d="M7 11v4a2 2 0 0 0 2 2h4"/><rect width="8" height="8" x="13" y="13" rx="2"/></symbol><symbol id="ic-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol><symbol id="ic-message-square" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol><symbol id="ic-bot" viewBox="0 0 24 24"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2M20 14h2M15 13v2M9 13v2"/></symbol><symbol id="ic-file-text" viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8M16 13H8M16 17H8"/></symbol><symbol id="ic-bar-chart-3" viewBox="0 0 24 24"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="M18 17V9M13 17V5M8 17v-3"/></symbol><symbol id="ic-shield-check" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol><symbol id="ic-book-open" viewBox="0 0 24 24"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></symbol><symbol id="ic-presentation" viewBox="0 0 24 24"><path d="M2 3h20M21 3v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V3M7 21l5-5 5 5M12 16v5"/></symbol><symbol id="ic-building-2" viewBox="0 0 24 24"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2M10 6h4M10 10h4M10 14h4M10 18h4"/></symbol><symbol id="ic-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol><symbol id="ic-list" viewBox="0 0 24 24"><path d="M3 5h.01M3 12h.01M3 19h.01M8 5h13M8 12h13M8 19h13"/></symbol><symbol id="ic-hammer" viewBox="0 0 24 24"><path d="m15 12-8.5 8.5a2.12 2.12 0 1 1-3-3L12 9"/><path d="M17.64 15 22 10.64"/><path d="m20.91 11.7-1.25-1.25c-.6-.6-.93-1.4-.93-2.25v-.86L16.01 4.6a5.56 5.56 0 0 0-3.94-1.64H9l.92.82A6.18 6.18 0 0 1 12 8.4v1.56l2 2h.86c.85 0 1.65.33 2.25.93l1.25 1.25"/></symbol><symbol id="ic-trending-up" viewBox="0 0 24 24"><path d="M16 7h6v6"/><path d="m22 7-8.5 8.5-5-5L2 17"/></symbol><symbol id="ic-send" viewBox="0 0 24 24"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/><path d="m21.854 2.147-10.94 10.939"/></symbol><symbol id="ic-brain" viewBox="0 0 24 24"><path d="M12 5a3 3 0 1 0-5.997.142M12 5a3 3 0 1 1 5.997.142M12 5v14M6.003 5.142A4 4 0 0 0 3 9a4 4 0 0 0 .5 6.5M17.997 5.142A4 4 0 0 1 21 9a4 4 0 0 1-.5 6.5M5 15.5A3.5 3.5 0 0 0 8.5 19a3.5 3.5 0 0 0 3.5-3.5M19 15.5a3.5 3.5 0 0 1-3.5 3.5 3.5 3.5 0 0 1-3.5-3.5"/></symbol><symbol id="ic-sliders" viewBox="0 0 24 24"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></symbol><symbol id="ic-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol><symbol id="ic-phone" viewBox="0 0 24 24"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384z"/></symbol><symbol id="ic-briefcase" viewBox="0 0 24 24"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16M4 8h16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2z"/></symbol></svg>
+    <!-- NAVBAR -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">headofai.cz</a>
 
-<header class="site-header">
-  <div class="wrap nav">
-    <a class="logo" href="#" aria-label="Head of AI — domů">HEAD<em>OF</em>AI</a>
-    <nav class="nav__links" aria-label="Hlavní navigace">
-      <a href="#problem">Problém</a>
-      <a href="#mandat">Mandát</a>
-      <a href="#vystupy">Výstupy</a>
-      <a href="#srovnani">Srovnání</a>
-      <a href="#dukazy">Důkazy</a>
-      <a href="#spoluprace">Spolupráce</a>
-      <a href="#faq">FAQ</a>
-    </nav>
-    <a class="btn btn--primary nav__cta" href="https://calendar.google.com/appointments/schedules/AcZssZ3sZnZSvoUmnbQpNFBFFaJhGNmicgsWZtrBq-gLcMuxCpAPZUaHkm8W4flCzoEHuBOrMK089iGJ" target="_blank" rel="noopener">Domluvit AI Leadership Call</a>
-    <button class="nav__toggle" aria-expanded="false" aria-controls="mobilenav" aria-label="Otevřít menu" id="navToggle">☰</button>
-  </div>
-  <div class="wrap nav__panel" id="mobilenav">
-    <a href="#problem">Problém</a>
-    <a href="#mandat">Mandát</a>
-    <a href="#vystupy">Výstupy</a>
-    <a href="#srovnani">Srovnání</a>
-    <a href="#dukazy">Důkazy</a>
-    <a href="#spoluprace">Spolupráce</a>
-    <a href="#faq">FAQ</a>
-    <a class="btn btn--primary" href="https://calendar.google.com/appointments/schedules/AcZssZ3sZnZSvoUmnbQpNFBFFaJhGNmicgsWZtrBq-gLcMuxCpAPZUaHkm8W4flCzoEHuBOrMK089iGJ" target="_blank" rel="noopener">Domluvit AI Leadership Call</a>
-  </div>
-</header>
+                <div class="nav-links">
+                    <a href="#problem">Problém</a>
+                    <a href="#sprint">Sprint</a>
+                    <a href="#workers">AI pracovníci</a>
+                    <a href="#cipher">CIPHER</a>
+                    <a href="#about">David</a>
+                    <a href="#contact">Call</a>
+                </div>
 
-<main id="main">
+                <a href="#contact" class="cta-button pulse-glow">
+                    <svg class="lucide" style="" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ic-calendar"/></svg>
+                    Objednat AI Leadership Call
+                </a>
 
-<section class="hero">
-  <div class="wrap hero__grid">
-    <div>
-      <span class="eyebrow">Fractional Head of AI · Česká republika</span><br>
-      <span class="availability">Volné kapacity · Q3 onboarding</span>
-      <h1>Fractional Head of AI pro firmy, které chtějí převést AI z experimentů do <span class="accent">měřitelného výkonu</span>.</h1>
-      <p class="lead">Externí AI leadership pro firmy 50–500 lidí: nastavím AI směr, governance a první prioritní use-cases do 90 dnů — bez nutnosti najímat full-time AI ředitele.</p>
-      <ul class="hero__bullets">
-        <li>AI roadmapa podle byznysového dopadu</li>
-        <li>Governance a bezpečná pravidla práce s AI</li>
-        <li>První workflow / use-cases připravené k nasazení</li>
-      </ul>
-      <div class="hero__ctas">
-        <a class="btn btn--primary btn--lg" href="https://calendar.google.com/appointments/schedules/AcZssZ3sZnZSvoUmnbQpNFBFFaJhGNmicgsWZtrBq-gLcMuxCpAPZUaHkm8W4flCzoEHuBOrMK089iGJ" target="_blank" rel="noopener">Domluvit 30min AI Leadership Call</a>
-        <a class="btn btn--ghost btn--lg" href="#vystupy">Ukázat 90denní mandát</a>
-      </div>
-      <p class="hero__trust">Vendor-neutral · Board-ready · Execution-first</p>
-    </div>
-    <div class="hero__media">
-      <img src="hero-boardroom.webp" width="760" height="505" fetchpriority="high"
-           alt="David Veselý vysvětluje vedení firmy AI strategii, governance a procesní roadmapu v boardroomu.">
-    </div>
-  </div>
-</section>
+                <button class="mobile-menu-toggle" aria-label="Menu">☰</button>
+            </nav>
+        </div>
+    </header>
 
-<section class="section" id="definice" style="padding-top:0">
-  <div class="wrap">
-    <div class="definition">
-      <p><strong>Fractional Head of AI</strong> je externí AI leadership role, která pomáhá vedení firem o 50–500+ lidech převést AI z náhodných experimentů na řízenou roadmapu, governance a měřitelné business výsledky — formou 90denního mandátu nebo průběžné spolupráce na část úvazku.</p>
-      <p class="definition__note">V České republice tuto roli poskytuje David Veselý (Vesely.ai s.r.o.) pod značkou headofai.cz.</p>
-    </div>
-  </div>
-</section>
+    <!-- HERO -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <h1>AI už ve firmě běží. <span class="grad">Dostaňte ji pod kontrolu.</span></h1>
+                    <p class="subheadline">Fractional Head of AI pro firmy, které chtějí najít, postavit a řídit první AI pracovníky s měřitelným dopadem — ne další experimenty bez vlastníka.</p>
 
-<section class="section section--soft" id="problem">
-  <div class="wrap">
-    <div class="section__head">
-      <span class="eyebrow">Problém</span>
-      <h2>Nepotřebujete další AI nástroj. Potřebujete vlastníka AI směru.</h2>
-      <p class="lead">Ve většině firem AI nevázne na technologii. Vázne na prioritizaci, odpovědnosti, governance a schopnosti převést možnosti AI do konkrétního provozního výsledku.</p>
-    </div>
-    <ul class="problem-list">
-      <li>AI iniciativy vznikají nahodile v odděleních — bez vlastníka a bez priorit</li>
-      <li>Nikdo nemá celkový přehled nad riziky, náklady a dopadem</li>
-      <li>Dodavatelé tlačí vlastní řešení, ale neřídí celou architekturu</li>
-      <li>Board chce výsledek, ne další experiment</li>
-      <li>IT nechce další chaos ve stacku</li>
-      <li>Lidé používají AI bez jasných pravidel — citlivá data tečou ven</li>
-    </ul>
-    <p class="problem-cost">Co to stojí: měsíce ztraceného času, duplicitní licence, nevyužité příležitosti k automatizaci a rostoucí compliance riziko. A board mezitím ztrácí trpělivost.</p>
-  </div>
-</section>
+                    <div class="hero-cta-row">
+                        <a href="#contact" class="cta-button pulse-glow" style="background: var(--accent); color: #050608; font-size: 18px; padding: 18px 36px;">
+                            <svg class="lucide" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ic-calendar"/></svg>
+                            Objednat AI Leadership Call
+                        </a>
+                    </div>
 
-<section class="section" id="vysledek">
-  <div class="wrap">
-    <div class="section__head">
-      <span class="eyebrow">Výsledek</span>
-      <h2>Co se ve firmě reálně změní</h2>
-    </div>
-    <ul class="outcome-list">
-      <li>AI má jasného vlastníka, priority a rozpočet — chaos končí</li>
-      <li>Vedení rozhoduje na základě dat, ne dojmů z LinkedInu</li>
-      <li>První use-cases prokazatelně šetří hodiny práce každý týden</li>
-      <li>Zaměstnanci používají AI bezpečně a podle pravidel</li>
-      <li>Dodavatelé jsou řízeni, ne naopak</li>
-      <li>Board dostává srozumitelný reporting: co běží, co to nese, co je další krok</li>
-    </ul>
-  </div>
-</section>
+                    <div class="hero-chips">
+                        <span class="chip"><svg class="lucide" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ic-bot"/></svg>AI pracovníci místo experimentů</span>
+                        <span class="chip"><svg class="lucide" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ic-rocket"/></svg>90-Day AI Leadership Sprint</span>
+                        <span class="chip"><svg class="lucide" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ic-check-circle"/></svg>2–3 systémy reálně v provozu</span>
+                    </div>
+                </div>
 
-<section class="section section--soft" id="vystupy">
-  <div class="wrap">
-    <div class="section__head">
-      <span class="eyebrow">Výstupy</span>
-      <h2>Co konkrétně dostanete po 90 dnech</h2>
-    </div>
-    <div class="grid grid--3">
-      <div class="card">
-        <span class="card__icon" aria-hidden="true"><i data-lucide="map"></i></span>
-        <h3>AI Opportunity Map</h3>
-        <p>Use-cases zmapované podle dopadu, náročnosti a rizika napříč celou firmou.</p>
-        <span class="result">→ víte, kde AI vydělá nejvíc</span>
-      </div>
-      <div class="card">
-        <span class="card__icon" aria-hidden="true"><i data-lucide="list-checks"></i></span>
-        <h3>Prioritized Roadmap</h3>
-        <p>Co dělat teď, co později a co nedělat vůbec — s odpovědnostmi a termíny.</p>
-        <span class="result">→ konec nahodilých experimentů</span>
-      </div>
-      <div class="card">
-        <span class="card__icon" aria-hidden="true"><i data-lucide="shield-check"></i></span>
-        <h3>Governance Rules</h3>
-        <p>Pravidla pro data, role, odpovědnost a bezpečné používání AI v celé firmě.</p>
-        <span class="result">→ nižší riziko, klidné IT i právník</span>
-      </div>
-      <div class="card">
-        <span class="card__icon" aria-hidden="true"><i data-lucide="rocket"></i></span>
-        <h3>First Deployed Use-Cases</h3>
-        <p>2–3 funkční workflow, automatizace nebo agentic procesy v reálném provozu.</p>
-        <span class="result">→ měřitelná úspora od prvních týdnů</span>
-      </div>
-      <div class="card">
-        <span class="card__icon" aria-hidden="true"><i data-lucide="users"></i></span>
-        <h3>Internal AI Champions</h3>
-        <p>Lidé uvnitř firmy, kteří umí AI prakticky zavádět ve svých týmech.</p>
-        <span class="result">→ adopce nezávislá na externistovi</span>
-      </div>
-      <div class="card">
-        <span class="card__icon" aria-hidden="true"><i data-lucide="bar-chart-3"></i></span>
-        <h3>Board Reporting</h3>
-        <p>Pravidelný přehled: co běží, co šetří/vydělává a co je další krok.</p>
-        <span class="result">→ vedení má AI pod kontrolou</span>
-      </div>
-    </div>
-  </div>
-</section>
+                <div class="hero-media">
+                    <img src="https://github.com/veselylab/headofai-web/blob/main/hero-boardroom.webp?raw=true" alt="David Veselý vysvětluje vedení firmy AI strategii, governance a nasazení prvních AI pracovníků v boardroomu." width="640" height="420" loading="eager" decoding="async">
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section class="section" id="dukazy">
-  <div class="wrap">
-    <div class="section__head">
-      <span class="eyebrow">Důkazy</span>
-      <h2>Jak vypadá výstup v praxi</h2>
-      <p class="lead">Každé tvrzení na této stránce má za sebou konkrétní artefakt. Toto jsou tři z nich.</p>
-    </div>
-    <div class="proof-grid">
-      <div class="proof">
-        <span class="tag">Artefakt 01</span>
-        <h3>AI Opportunity Map</h3>
-        <p>Matice use-cases podle business dopadu a náročnosti. Vedení na jedné stránce vidí, kam investovat první korunu — a co s klidem odložit.</p>
-      </div>
-      <div class="proof">
-        <span class="tag">Artefakt 02</span>
-        <h3>Governance one-pager</h3>
-        <p>Pravidla práce s AI, klasifikace dat a schvalovací matice — dokument, který reálně podepíše vedení a pochopí každý zaměstnanec.</p>
-      </div>
-      <div class="proof">
-        <span class="tag">Artefakt 03</span>
-        <h3>Board report</h3>
-        <p>Měsíční jednostránkový přehled: běžící use-cases, uspořené hodiny, náklady, rizika a další krok. Žádné slidy o „potenciálu AI".</p>
-      </div>
+    <!-- PROBLEM -->
+    <section id="problem">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>AI se do firmy dostane<br>dřív než odpovědnost.</h2>
+                <p style="font-size: 19px; color: var(--gray); max-width: 720px;">Lidé používají ChatGPT. Týmy zkoušejí nástroje. Dodavatelé slibují automatizace. Vedení ale často neví, kde AI vydělává, kde šetří čas, kde vytváří riziko — a kdo za ni rozhoduje.</p>
+            </div>
+
+            <div class="problem-grid">
+                <div class="card reveal">
+                    <div style="margin-bottom: 24px;">
+                        <svg class="lucide" style="width: 42px; height: 42px; color: var(--accent);" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ic-users"/></svg>
+                    </div>
+                    <h3 style="font-size: 24px; margin-bottom: 16px;">Týmy používají AI bez řízení.</h3>
+                    <p style="color: var(--gray); font-size: 17px;">AI vzniká po odděleních, ale nikdo ji neřídí jako firemní schopnost.</p>
+                </div>
+                <div class="card reveal">
+                    <div style="margin-bottom: 24px;">
+                        <svg class="lucide" style="width: 42px; height: 42px; color: var(--accent);" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ic-target"/></svg>
+                    </div>
+                    <h3 style="font-size: 24px; margin-bottom: 16px;">Experimenty bez měření.</h3>
+                    <p style="color: var(--gray); font-size: 17px;">Firma zkouší nástroje, ale neví, kde AI reálně zvyšuje tržby, snižuje náklady nebo uvolňuje kapacitu týmu.</p>
+                </div>
+                <div class="card reveal">
+                    <div style="margin-bottom: 24px;">
+                        <svg class="lucide" style="width: 42px; height: 42px; color: var(--accent);" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ic-shield"/></svg>
+                    </div>
+                    <h3 style="font-size: 24px; margin-bottom: 16px;">Riziko bez vlastníka.</h3>
+                    <p style="color: var(--gray); font-size: 17px;">Data, právní odpovědnost, komunikace se zákazníky a kontrola výstupů zůstávají nejasné.</p>
+                </div>
+            </div>
+
+            <p class="reveal" style="text-align: center; max-width: 760px; margin: 48px auto 0; font-size: 20px; line-height: 1.5;"><strong style="color: var(--accent);">Proto nezačínám nákupem nástroje. Začínám rozhodnutím, kde má AI ekonomický smysl — a kdo za ni ponese odpovědnost.</strong></p>
+        </div>
+    </section>
+
+    <!-- 90-DAY SPRINT -->
+    <section id="sprint">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="eyebrow">Hlavní mandát</span>
+                <h2>90-Day AI Leadership Sprint</h2>
+                <p style="font-size: 19px; color: var(--gray); max-width: 760px;">Neprodávám chatbota ani samostatný audit. Na 90 dní přebírám roli externího vlastníka AI agendy — zdiagnostikuju ji, dostanu pod governance a nasadím 2–3 prioritní AI pracovníky do provozu.</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-step reveal">
+                    <div class="tl-marker"><span class="tl-num">01</span></div>
+                    <div class="tl-body">
+                        <span class="tl-week">Týden 1–3</span>
+                        <h3>Diagnose</h3>
+                        <p>CIPHER Snapshot: kde má AI ekonomický smysl, kde je riziko a kdo za ni rozhoduje.</p>
+                    </div>
+                </div>
+                <div class="timeline-step reveal">
+                    <div class="tl-marker"><span class="tl-num">02</span></div>
+                    <div class="tl-body">
+                        <span class="tl-week">Týden 3–4</span>
+                        <h3>Prioritize</h3>
+                        <p>Opportunity Map — první AI pracovníci podle dopadu, rizika a datové připravenosti.</p>
+                    </div>
+                </div>
+                <div class="timeline-step reveal">
+                    <div class="tl-marker"><span class="tl-num">03</span></div>
+                    <div class="tl-body">
+                        <span class="tl-week">Týden 5–6</span>
+                        <h3>Architect</h3>
+                        <p>Roadmapa, governance, role, pravidla a vendor-neutral návrh architektury.</p>
+                    </div>
+                </div>
+                <div class="timeline-step reveal">
+                    <div class="tl-marker"><span class="tl-num">04</span></div>
+                    <div class="tl-body">
+                        <span class="tl-week">Týden 7–10</span>
+                        <h3>Deploy</h3>
+                        <p>2–3 prioritní AI pracovníci nasazení do provozu nebo pilotního provozu.</p>
+                    </div>
+                </div>
+                <div class="timeline-step reveal">
+                    <div class="tl-marker"><span class="tl-num">05</span></div>
+                    <div class="tl-body">
+                        <span class="tl-week">Týden 11–12</span>
+                        <h3>Report</h3>
+                        <p>Board-ready přehled dopadu, rizik, rozhodnutí a dalšího kroku.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sprint-price reveal">
+                <div class="sprint-price-main">Základní fixní mandát: <span class="sprint-price-num">510&nbsp;000 Kč</span> <span class="sprint-price-unit">bez DPH / 90 dní</span></div>
+                <p class="sprint-price-anchor">Zhruba cena jednoho seniorního developera za čtvrtletí — jenže místo dalšího páru rukou dostanete AI agendu zdiagnostikovanou, pod governance a 2–3 AI pracovníky v provozu nebo pilotu.</p>
+            </div>
+
+            <div class="reveal" style="text-align: center; margin-top: 40px;">
+                <a href="#contact" class="cta-button pulse-glow" style="background: var(--accent); color: #050608; font-size: 18px; padding: 18px 36px;">
+                    <svg class="lucide" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ic-calendar"/></svg>
+                    Objednat AI Leadership Call
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CIPHER SNAPSHOT -->
+    <section id="snapshot" style="background: #0a0a0a;">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="eyebrow">První fáze sprintu</span>
+                <h2>CIPHER Snapshot: za ~20 dní víte,<br>co má smysl postavit jako první.</h2>
+                <p style="font-size: 19px; color: var(--gray); max-width: 760px;">CIPHER Snapshot není samostatná služba — je to první diagnostická fáze uvnitř sprintu. Jejím cílem není prezentace o budoucnosti AI, ale rozhodnutí pro vedení.</p>
+            </div>
+
+            <div class="grid-3">
+                <div class="card reveal">
+                    <svg class="lucide" style="width: 36px; height: 36px; margin-bottom: 20px; color: var(--accent);" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ic-trending-up"/></svg>
+                    <h3 style="font-size: 22px; margin-bottom: 12px;">První AI pracovníci s ekonomickým smyslem</h3>
+                    <p style="color: var(--gray); font-size: 17px;">Kde AI může zvýšit tržby, snížit náklady nebo uvolnit kapacitu týmu.</p>
+                </div>
+                <div class="card reveal">
+                    <svg class="lucide" style="width: 36px; height: 36px; margin-bottom: 20px; color: var(--accent);" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ic-shield"/></svg>
+                    <h3 style="font-size: 22px; margin-bottom: 12px;">Rizika a místa, kde AI nesmí běžet bez kontroly</h3>
+                    <p style="color: var(--gray); font-size: 17px;">Kde je nutný člověk, schvalování, omezení nebo jiný provozní režim.</p>
+                </div>
+                <div class="card reveal">
+                    <svg class="lucide" style="width: 36px; height: 36px; margin-bottom: 20px; color: var(--accent);" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ic-user-check"/></svg>
+                    <h3 style="font-size: 22px; margin-bottom: 12px;">Ownership model</h3>
+                    <p style="color: var(--gray); font-size: 17px;">Kdo rozhoduje, kdo schvaluje, kdo provozuje a kdo nese odpovědnost.</p>
+                </div>
+                <div class="card reveal">
+                    <svg class="lucide" style="width: 36px; height: 36px; margin-bottom: 20px; color: var(--accent);" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ic-list"/></svg>
+                    <h3 style="font-size: 22px; margin-bottom: 12px;">90denní plán nasazení</h3>
+                    <p style="color: var(--gray); font-size: 17px;">Co spustit jako první, v jakém pořadí, s jakými metrikami a odpovědnostmi.</p>
+                </div>
+                <div class="card reveal">
+                    <svg class="lucide" style="width: 36px; height: 36px; margin-bottom: 20px; color: var(--accent);" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ic-x"/></svg>
+                    <h3 style="font-size: 22px; margin-bottom: 12px;">Co nedělat</h3>
+                    <p style="color: var(--gray); font-size: 17px;">Které nápady budou drahé divadlo, technická hračka nebo riziko bez návratnosti.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI PRACOVNÍCI -->
+    <section id="workers">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="eyebrow">AI pracovníci</span>
+                <h2>Nehledáme abstraktní nápady.<br>Hledáme AI pracovníky.</h2>
+                <p style="font-size: 19px; color: var(--gray); max-width: 760px;">AI má smysl tam, kde převezme konkrétní část práce: obchod, leady, nabídky, recepci, support nebo provozní rutinu. Ne chatbot pro dobrý pocit — pracovník s měřitelným dopadem.</p>
+            </div>
+
+            <div class="grid-2">
+                <div class="card reveal">
+                    <svg class="lucide" style="width: 36px; height: 36px; margin-bottom: 20px; color: var(--accent);" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ic-message-square"/></svg>
+                    <h3 style="font-size: 22px; margin-bottom: 12px;">24/7 Social Media AI Manager</h3>
+                    <p style="color: var(--gray); font-size: 17px; margin-bottom: 16px;">Sleduje komentáře a DM, odpovídá podle pravidel značky, rozpozná obchodní příležitost a předá lead člověku nebo do CRM.</p>
+                    <span class="card-arrow">→ rychlejší reakce, víc zachycených poptávek, méně ruční komunikace</span>
+                </div>
+                <div class="card reveal">
+                    <svg class="lucide" style="width: 36px; height: 36px; margin-bottom: 20px; color: var(--accent);" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ic-phone"/></svg>
+                    <h3 style="font-size: 22px; margin-bottom: 12px;">AI Inbound Sales Caller</h3>
+                    <p style="color: var(--gray); font-size: 17px; margin-bottom: 16px;">Zavolá novému leadu do 60 sekund, kvalifikuje poptávku, zapíše výsledek a domluví další krok.</p>
+                    <span class="card-arrow">→ méně ztracených poptávek, vyšší rychlost obchodu</span>
+                </div>
+                <div class="card reveal">
+                    <svg class="lucide" style="width: 36px; height: 36px; margin-bottom: 20px; color: var(--accent);" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ic-file-text"/></svg>
+                    <h3 style="font-size: 22px; margin-bottom: 12px;">AI Quote Assistant</h3>
+                    <p style="color: var(--gray); font-size: 17px; margin-bottom: 16px;">Z e-mailu, formuláře nebo poznámek připraví návrh nabídky, dohledá kontext a předá obchodníkovi rozpracovaný výstup.</p>
+                    <span class="card-arrow">→ rychlejší nabídky, méně administrativy, vyšší kapacita obchodu</span>
+                </div>
+                <div class="card reveal">
+                    <svg class="lucide" style="width: 36px; height: 36px; margin-bottom: 20px; color: var(--accent);" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ic-bot"/></svg>
+                    <h3 style="font-size: 22px; margin-bottom: 12px;">AI Reception / Support Agent</h3>
+                    <p style="color: var(--gray); font-size: 17px; margin-bottom: 16px;">Odpovídá na opakované dotazy, řeší rezervace, změny termínů a FAQ — a předává jen výjimky.</p>
+                    <span class="card-arrow">→ menší zátěž týmu, dostupnost 24/7, konzistentní zkušenost</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATEMENT / RESET BLOCK -->
+    <section id="statement" class="statement-band">
+        <div class="container">
+            <div class="statement-inner reveal">
+                <svg class="statement-mark" viewBox="0 0 100 70" fill="currentColor" aria-hidden="true">
+                    <path d="M0 70V38C0 17 12 3 33 0l4 9C25 12 19 19 18 28h15v42H0zm50 0V38C50 17 62 3 83 0l4 9C75 12 69 19 68 28h15v42H50z"/>
+                </svg>
+                <p class="statement-text">Většina firem nepotřebuje víc AI nástrojů. Potřebuje <span class="grad">jednoho vlastníka</span>, který rozhodne, kde AI vydělává, kde je riziko — a kdo za ni ručí.</p>
+                <p class="statement-attr">— princip, podle kterého stavím každý mandát</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI SYSTÉMY Z PROVOZŮ -->
+    <section id="systems" style="background: #0a0a0a;">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="eyebrow">Z reálných provozů</span>
+                <h2>AI systémy, které už přebírají práci</h2>
+                <p style="font-size: 17px; color: var(--gray); max-width: 780px;">Některé projekty jsou anonymizované kvůli obchodní citlivosti. Důležité nejsou loga, ale typ práce, kterou AI skutečně přebírá.</p>
+            </div>
+
+            <div class="grid-2" style="max-width: 1040px; margin: 0 auto;">
+                <div class="case-pattern reveal">
+                    <div class="case-type">Hospitality / hotelový provoz <span class="status-badge status-pilot">Pilot</span></div>
+                    <div class="case-row"><span class="case-label">Systém</span><p>AI concierge, interní znalostní báze, požadavky hostů a provozní komunikace.</p></div>
+                    <div class="case-row"><span class="case-label">Přebírá</span><p>opakované dotazy hostů, interní instrukce a komunikaci mezi recepcí, housekeepingem a managementem.</p></div>
+                    <div class="case-input">Typický vstup: hotelová recepce, housekeeping, opakované dotazy hostů</div>
+                </div>
+                <div class="case-pattern reveal">
+                    <div class="case-type">B2B e-commerce / dodavatelský obchod <span class="status-badge status-pilot">Pilot</span></div>
+                    <div class="case-row"><span class="case-label">Systém</span><p>AI podpora pro reaktivaci zákazníků, follow-upy a práci s databází.</p></div>
+                    <div class="case-row"><span class="case-label">Přebírá</span><p>třídění zákazníků, návrhy zpráv, re-engagement a přípravu obchodních podkladů.</p></div>
+                    <div class="case-input">Typický vstup: databáze zákazníků, follow-up e-maily, reaktivace</div>
+                </div>
+                <div class="case-pattern reveal">
+                    <div class="case-type">Lokální premium služba <span class="status-badge status-pilot">Pilot</span></div>
+                    <div class="case-row"><span class="case-label">Systém</span><p>AI social media manager pro komentáře, DM a zachycení poptávky.</p></div>
+                    <div class="case-row"><span class="case-label">Přebírá</span><p>první reakce na komentáře a zprávy, rozpoznání příležitosti a předání leadu do dalšího kroku.</p></div>
+                    <div class="case-input">Typický vstup: komentáře, DM, zachycení poptávky</div>
+                </div>
+                <div class="case-pattern reveal">
+                    <div class="case-type">Inbound obchod / telefonická kvalifikace <span class="status-badge status-proto">Prototyp</span></div>
+                    <div class="case-row"><span class="case-label">Systém</span><p>Voice agent pro rychlou reakci na poptávky a kvalifikaci leadů.</p></div>
+                    <div class="case-row"><span class="case-label">Přebírá</span><p>první kontakt s leadem, kvalifikaci potřeby, zápis výsledku a předání obchodníkovi.</p></div>
+                    <div class="case-input">Typický vstup: nový lead, telefonát, kvalifikace, zápis výsledku</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CIPHER METODA -->
+    <section id="cipher">
+        <div class="container">
+            <div class="section-header reveal" style="max-width: 820px; text-align: center; margin-left: auto; margin-right: auto;">
+                <span class="eyebrow eyebrow-center">Metoda v pozadí</span>
+                <h2 style="font-size: clamp(38px, 5vw, 56px); letter-spacing: -1.5px; line-height: 1.1;">CIPHER je metoda v pozadí.<br>Vy ji nemusíte studovat.</h2>
+            </div>
+
+            <div class="cipher-word reveal" aria-hidden="true">
+                <div class="cipher-letter">C</div>
+                <div class="cipher-letter">I</div>
+                <div class="cipher-letter">P</div>
+                <div class="cipher-letter">H</div>
+                <div class="cipher-letter">E</div>
+                <div class="cipher-letter">R</div>
+            </div>
+
+            <div class="cipher-grid">
+                <div class="cipher-card reveal">
+                    <div class="cipher-head">
+                        <div class="cipher-badge">C</div>
+                        <h3>Context<span class="dim">Provozní kontext</span></h3>
+                    </div>
+                    <p class="tension">Kde AI už ve firmě vzniká a jaký je skutečný provozní kontext.</p>
+                </div>
+                <div class="cipher-card reveal">
+                    <div class="cipher-head">
+                        <div class="cipher-badge">I</div>
+                        <h3>Impact<span class="dim">Ekonomický dopad</span></h3>
+                    </div>
+                    <p class="tension">Kde jsou peníze, čas, kapacita, rychlost nebo náklad.</p>
+                </div>
+                <div class="cipher-card reveal">
+                    <div class="cipher-head">
+                        <div class="cipher-badge">P</div>
+                        <h3>Process<span class="dim">Vhodnost procesu</span></h3>
+                    </div>
+                    <p class="tension">Které procesy jsou vhodné pro AI pracovníka a které ne.</p>
+                </div>
+                <div class="cipher-card reveal">
+                    <div class="cipher-head">
+                        <div class="cipher-badge">H</div>
+                        <h3>Human<span class="dim">Odpovědnost</span></h3>
+                    </div>
+                    <p class="tension">Kdo rozhoduje, schvaluje, kontroluje a nese odpovědnost.</p>
+                </div>
+                <div class="cipher-card reveal">
+                    <div class="cipher-head">
+                        <div class="cipher-badge">E</div>
+                        <h3>Execution<span class="dim">Nasazení</span></h3>
+                    </div>
+                    <p class="tension">Co spustit jako první, aby to nebyl experiment bez výsledku.</p>
+                </div>
+                <div class="cipher-card reveal">
+                    <div class="cipher-head">
+                        <div class="cipher-badge">R</div>
+                        <h3>Risk<span class="dim">Kontrola rizika</span></h3>
+                    </div>
+                    <p class="tension">Co může firmu poškodit a kde musí zůstat lidská kontrola.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KDY TO DÁVÁ SMYSL -->
+    <section id="fit" style="background: #0a0a0a;">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="eyebrow">Kdy to dává smysl</span>
+                <h2>Je to pro firmy, kde AI<br>už není hračka.</h2>
+                <p style="font-size: 17px; color: var(--gray); max-width: 760px;">Největší smysl to dává u owner-led a růstových firem přibližně 20–500 lidí, kde existuje dost opakované práce na to, aby AI pracovníci dávali ekonomický smysl.</p>
+            </div>
+
+            <div class="grid-2">
+                <div class="fit-col reveal yes">
+                    <h3>Dává to smysl, pokud:</h3>
+                    <ul>
+                        <li><svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ic-check-circle"/></svg>máte opakovanou práci v obchodě, zákaznické komunikaci nebo provozu</li>
+                        <li><svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ic-check-circle"/></svg>máte leady, poptávky, rezervace, tickety nebo provozní rutinu, kterou dnes řeší lidé ručně</li>
+                        <li><svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ic-check-circle"/></svg>vedení ví, že AI bude důležitá, ale nechce kupovat nástroje naslepo</li>
+                        <li><svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ic-check-circle"/></svg>chybí člověk, který propojí business, provoz, IT, data a dodavatele</li>
+                        <li><svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ic-check-circle"/></svg>dokážete investovat řádově statisíce korun do AI agendy jako do strategické priority, ne jako do experimentu</li>
+                    </ul>
+                </div>
+                <div class="fit-col reveal no">
+                    <h3>Není to pro vás, pokud:</h3>
+                    <ul>
+                        <li><svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ic-x"/></svg>hledáte levného chatbota</li>
+                        <li><svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ic-x"/></svg>chcete inspirativní přednášku</li>
+                        <li><svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ic-x"/></svg>hledáte AI experiment za desítky tisíc korun</li>
+                        <li><svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ic-x"/></svg>nemáte podporu vedení nebo nechcete měřit dopad</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KDO ZA TÍM STOJÍ -->
+    <section id="about">
+        <div class="container">
+            <div class="about-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;">
+                <div>
+                    <img src="https://github.com/veselylab/headofai-web/blob/main/david_560.webp?raw=true" alt="David Veselý" class="profile-img" width="280" height="280" loading="lazy" decoding="async">
+                </div>
+                <div>
+                    <span class="eyebrow">Kdo za tím stojí</span>
+                    <h2>Externí Head of AI,<br>ne chatbot vendor.</h2>
+                    <p style="font-size: 18px; margin: 24px 0 28px; color: var(--gray);">
+                        Jsem David Veselý. Stavím agentic workforce platformu Vesely.ai a pomáhám vedení firem převést AI z experimentů do řízených provozních systémů. Co mě k té roli kvalifikuje:
+                    </p>
+                    <ul style="list-style: none; margin-bottom: 28px;">
+                        <li style="display:flex; align-items:flex-start; gap:12px; margin-bottom:13px; color:#ddd; font-size:16px;"><svg class="lucide" style="color:var(--accent); width:20px; height:20px; margin-top:3px; flex-shrink:0;" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ic-check-circle"/></svg>Stavím reálné AI pracovníky, nejen strategie.</li>
+                        <li style="display:flex; align-items:flex-start; gap:12px; margin-bottom:13px; color:#ddd; font-size:16px;"><svg class="lucide" style="color:var(--accent); width:20px; height:20px; margin-top:3px; flex-shrink:0;" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ic-check-circle"/></svg>CEO / founder Vesely.ai — vlastní AI agentic workforce platforma jako exekuční kapacita.</li>
+                        <li style="display:flex; align-items:flex-start; gap:12px; margin-bottom:13px; color:#ddd; font-size:16px;"><svg class="lucide" style="color:var(--accent); width:20px; height:20px; margin-top:3px; flex-shrink:0;" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ic-check-circle"/></svg>Military signals / systems background — disciplína, odpovědnost a provozní myšlení.</li>
+                        <li style="display:flex; align-items:flex-start; gap:12px; margin-bottom:13px; color:#ddd; font-size:16px;"><svg class="lucide" style="color:var(--accent); width:20px; height:20px; margin-top:3px; flex-shrink:0;" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ic-check-circle"/></svg>Praxe s AI systémy pro obchod, zákaznickou komunikaci, hospitality a provozní workflow.</li>
+                        <li style="display:flex; align-items:flex-start; gap:12px; color:#ddd; font-size:16px;"><svg class="lucide" style="color:var(--accent); width:20px; height:20px; margin-top:3px; flex-shrink:0;" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ic-check-circle"/></svg>Neprodávám chatboty. Pomáhám vedení rozhodnout, kde má AI skutečný smysl a kdo za ni ponese odpovědnost.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NABÍDKOVÁ CESTA -->
+    <section id="plans" style="background: #0a0a0a;">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="eyebrow">Nabídková cesta</span>
+                <h2>Jak spolupráce probíhá</h2>
+                <p style="font-size: 19px; color: var(--text); max-width: 760px; margin: 0 auto;">Začínáme rozhodovacím callem. Teprve když dává smysl, pokračujeme 90denním sprintem. Po sprintu může AI zůstat řízená retainerem.</p>
+            </div>
+
+            <div class="journey">
+                <!-- STEP 1 -->
+                <div class="plan reveal step-card">
+                    <div class="step-tag">Krok 1</div>
+                    <div class="plan-badge plan-badge-muted">Vstup</div>
+                    <h3>AI Leadership Call</h3>
+                    <p class="plan-desc">30minutový rozhodovací call. Pojmenujeme problém, ověříme fit a zjistíme, jestli má smysl pokračovat do sprintu.</p>
+                    <div class="plan-price"><span class="from">cena</span> 0 Kč</div>
+                    <p class="anchor-line">Výstup: jasné rozhodnutí, zda má smysl 90-Day AI Leadership Sprint. Bez prodejní prezentace.</p>
+                    <a href="#contact" class="cta-button pulse-glow" style="background: var(--accent); color: #050608; width: 100%; justify-content: center;">Objednat AI Leadership Call</a>
+                </div>
+
+                <div class="journey-connector reveal" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+                    <span>když dává smysl pokračovat</span>
+                </div>
+
+                <!-- STEP 2 -->
+                <div class="plan featured reveal step-card">
+                    <div class="step-tag">Krok 2</div>
+                    <div class="plan-badge">Hlavní mandát</div>
+                    <h3>90-Day AI Leadership Sprint</h3>
+                    <p class="plan-desc">Na 90 dní přebírám roli externího vlastníka AI agendy — zdiagnostikuju ji, dostanu pod governance a nasadím první AI pracovníky.</p>
+                    <div class="plan-price"><span class="from">základní fixní cena</span> 510 000 Kč <span class="per">bez DPH / 90 dní</span></div>
+                    <p class="anchor-line">Vyšší rozsah se potvrzuje před startem podle počtu oddělení, hloubky governance a očekávaného tempa nasazení.</p>
+                    <ul>
+                        <li><svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ic-check-circle"/></svg>CIPHER Snapshot</li>
+                        <li><svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ic-check-circle"/></svg>Opportunity Map</li>
+                        <li><svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ic-check-circle"/></svg>90-Day Roadmap</li>
+                        <li><svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ic-check-circle"/></svg>Governance One-Pager</li>
+                        <li><svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ic-check-circle"/></svg>Board Report</li>
+                        <li><svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ic-check-circle"/></svg>2–3 prioritní AI pracovníci v provozu nebo pilotu</li>
+                    </ul>
+                    <p class="price-note">CIPHER Snapshot je první diagnostická fáze sprintu, ne samostatná služba. Prvních ~20 dní rozhodne, co stavět, kde je riziko a kdo za AI rozhoduje.</p>
+                    <a href="#contact" class="cta-button pulse-glow" style="background: var(--accent); color: #050608; width: 100%; justify-content: center;">Objednat AI Leadership Call</a>
+                </div>
+
+                <div class="journey-connector reveal" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+                    <span>a teprve když to fungovalo, pokračujete</span>
+                </div>
+
+                <!-- STEP 3 -->
+                <div class="plan reveal step-card">
+                    <div class="step-tag">Krok 3</div>
+                    <div class="plan-badge plan-badge-muted">Pokračování po sprintu</div>
+                    <h3>Fractional AI Retainer</h3>
+                    <p class="plan-desc">Průběžné řízení AI agendy, vendorů, adopce, governance a board reportingu — aby AI pracovníci nezůstali bez vlastníka.</p>
+                    <div class="plan-price"><span class="from">od</span> 170 000 Kč<span class="per">/měs bez DPH</span></div>
+                    <p class="anchor-line">Průběžný dohled, měření, iterace a jasné rozhodování, co rozšiřovat, upravit nebo vypnout.</p>
+                    <ul>
+                        <li><svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ic-check-circle"/></svg>Měsíční AI steering</li>
+                        <li><svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ic-check-circle"/></svg>Prioritizace backlogu</li>
+                        <li><svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ic-check-circle"/></svg>Dohled nad implementací</li>
+                        <li><svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ic-check-circle"/></svg>Governance a risk review</li>
+                        <li><svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ic-check-circle"/></svg>Reporting pro vedení</li>
+                    </ul>
+                    <p class="price-note">Žádný závazek na začátku. Pokud Sprint dodal hodnotu, plynule přejdete na měsíční řízení. Pokud ne, nic vás neváže.</p>
+                    <a href="#contact" class="cta-button" style="width: 100%; justify-content: center;">Objednat AI Leadership Call</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINÁLNÍ CTA -->
+    <section id="contact" style="background: #0a0a0a; padding-bottom: 160px;">
+        <div class="container">
+            <div style="text-align: center; max-width: 820px; margin: 0 auto 56px;">
+                <h2>Ne další AI workshop.<br>Rozhodovací call.</h2>
+                <p style="font-size: 21px; color: var(--gray); margin-top: 24px;">Během 30 minut zjistíme, jestli vaše firma potřebuje prvního AI pracovníka, 90denní sprint — nebo nejdřív nastavit odpovědnost.</p>
+                <p style="font-size: 16px; color: #8a9393; margin-top: 18px; max-width: 680px; margin-left: auto; margin-right: auto;">Pro CEO, foundery a vedení firem, kde AI už začíná zasahovat obchod, zákaznickou komunikaci nebo provoz.</p>
+            </div>
+
+            <div class="form-panel">
+                <h3>Objednat AI Leadership Call</h3>
+                <p class="form-sub">Vyplňte základní info a ozvu se do 24 hodin.</p>
+                <form class="contact-form" id="consultationForm" onsubmit="handleSubmit(event)">
+                    <input type="text" id="name" placeholder="Jméno" required>
+                    <input type="email" id="email" placeholder="E-mail" required>
+                    <input type="text" id="company" placeholder="Firma" required>
+                    <input type="text" id="size" placeholder="Počet lidí" required>
+                    <textarea id="message" placeholder="Co dnes u AI nejvíc bolí?" required></textarea>
+
+                    <button type="submit" class="form-cta pulse-glow">
+                        <svg class="lucide" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ic-send"/></svg>
+                        Objednat AI Leadership Call
+                    </button>
+                </form>
+                <p style="text-align: center; color: #8a9393; font-size: 16px; margin-top: 20px;">Nejde o prodejní prezentaci. Cílem je zjistit, zda má 90denní mandát smysl.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="eyebrow">FAQ</span>
+                <h2>Časté otázky</h2>
+            </div>
+            <div class="faq-list" style="max-width: 820px; margin: 0 auto;">
+                <div class="faq-item">
+                    <div class="faq-q" onclick="toggleFaq(this)">
+                        Je AI Leadership Call zdarma?
+                        <span class="faq-icon"></span>
+                    </div>
+                    <div class="faq-a">
+                        <p>Ano. Je to 30min rozhodovací call pro ověření fitu. Cílem není bezplatná konzultace, ale zjistit, zda má smysl pokračovat do 90-Day AI Leadership Sprintu.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q" onclick="toggleFaq(this)">
+                        Je CIPHER Snapshot samostatná služba?
+                        <span class="faq-icon"></span>
+                    </div>
+                    <div class="faq-a">
+                        <p>Ne. CIPHER Snapshot je první diagnostická fáze uvnitř sprintu, ne samostatný produkt. Prvních ~20 dní sprintu rozhodne, co má smysl stavět, kde je riziko a kdo za AI rozhoduje.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q" onclick="toggleFaq(this)">
+                        Kolik stojí sprint?
+                        <span class="faq-icon"></span>
+                    </div>
+                    <div class="faq-a">
+                        <p>90-Day AI Leadership Sprint stojí základní fixní cenu 510&nbsp;000 Kč bez DPH za celých 90 dní. Vyšší rozsah se potvrzuje před startem podle počtu oddělení, hloubky governance a tempa nasazení.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q" onclick="toggleFaq(this)">
+                        Stavíte AI systémy, nebo jen radíte?
+                        <span class="faq-icon"></span>
+                    </div>
+                    <div class="faq-a">
+                        <p>Nejdřív rozhodujeme, co má smysl. Teprve potom se řeší, co stavět, koupit nebo integrovat. Cílem je řízený AI pracovník v provozu, ne nástroj bez vlastníka.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q" onclick="toggleFaq(this)">
+                        Co se děje po sprintu — musíme pokračovat do retaineru?
+                        <span class="faq-icon"></span>
+                    </div>
+                    <div class="faq-a">
+                        <p>Ne. Fractional AI Retainer (od 170&nbsp;000 Kč měsíčně bez DPH) není povinný ani závazek na začátku. Dává smysl jen tehdy, pokud po sprintu existuje jasný důvod pro dlouhodobé řízení AI pracovníků. Pokud ne, nic vás neváže.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q" onclick="toggleFaq(this)">
+                        Co když chceme jen chatbota?
+                        <span class="faq-icon"></span>
+                    </div>
+                    <div class="faq-a">
+                        <p>Pak to pravděpodobně není správný fit. Chatbot může být součástí řešení, ale cílem není chatbot — cílem je AI pracovník s jasnou odpovědností a měřitelným dopadem.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="#" class="logo" style="font-size: 22px;">headofai.cz</a>
+                    <p style="color: #8a9393; font-size: 15px; margin-top: 14px; max-width: 340px; line-height: 1.6;">Fractional AI leadership pro firmy, které chtějí kontrolu, měřitelný dopad a první AI pracovníky v provozu.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Kontakt</h4>
+                    <a href="mailto:hello@headofai.cz">hello@headofai.cz</a>
+                    <a href="#contact">Objednat AI Leadership Call</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Provozovatel</h4>
+                    <p>Vesely.ai s.r.o.</p>
+                    <p>IČO: 23702907</p>
+                    <p>DIČ: CZ23702907</p>
+                    <p>Česká republika</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Právní</h4>
+                    <a href="#">Zásady ochrany osobních údajů</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Vesely.ai s.r.o. · headofai.cz</p>
+                <p style="color: #555;">Vzorové situace a projekty jsou anonymizované. Každá spolupráce je individuální.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- STICKY MOBILE CTA -->
+    <div class="sticky-cta">
+        <a href="#contact">
+            <svg class="lucide" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ic-calendar"/></svg>
+            Objednat AI Leadership Call
+        </a>
     </div>
 
-    <!-- [DOPLNIT] Až budeš mít první referenci z mandátu, odkomentuj a doplň:
-    <div class="proof" style="margin-top:16px">
-      <span class="tag">Case study</span>
-      <h3>[DOPLNIT: obor firmy, počet lidí]</h3>
-      <p>Výchozí stav: [DOPLNIT]. Po 90 dnech: [DOPLNIT: počet use-cases, uspořené hodiny/měsíc, konkrétní metrika].</p>
-      <p><em>„[DOPLNIT: citace klienta]" — [DOPLNIT: jméno, role]</em></p>
-    </div>
-    -->
-  </div>
-</section>
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                if (this.getAttribute('href') !== '#') {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
 
-<section class="section section--soft" id="reference">
-  <div class="wrap">
-    <div class="section__head">
-      <span class="eyebrow">Reference</span>
-      <h2>Co říká vedení firem po mandátu</h2>
-      <p class="lead">Reference jsou kvůli NDA anonymizované na úroveň role a oboru. Čísla úspor a ROI odpovídají reálným výstupům mandátů.</p>
-    </div>
-    <div class="quote-grid">
-      <figure class="quote">
-        <blockquote>„Za 90 dní jsme měli kompletní Opportunity Map, schválené governance a tři live use-cases. Poprvé máme AI pod kontrolou a board dostává reálná čísla místo buzzwordů."</blockquote>
-        <figcaption>
-          <span class="quote__role">CEO</span>
-          <span class="quote__org">Strojírenská firma · 220 zaměstnanců</span>
-          <span class="quote__metric">Úspora ~650 hodin/měsíc po nasazení</span>
-        </figcaption>
-      </figure>
-      <figure class="quote">
-        <blockquote>„Nejlepší investice do AI, jakou jsme udělali. Governance one-pager podepsal board během jednoho meetingu a během prvního měsíce jsme ušetřili přes 420 hodin administrativy v dokumentech a reportingu."</blockquote>
-        <figcaption>
-          <span class="quote__role">CFO</span>
-          <span class="quote__org">Advokátní kancelář &amp; poradenská skupina · 180 lidí</span>
-          <span class="quote__metric">ROI přes 6× v prvním roce</span>
-        </figcaption>
-      </figure>
-      <figure class="quote">
-        <blockquote>„Místo dalšího experimentování máme teď jasnou prioritizaci a fungujícího interního znalostního asistenta. David dokázal propojit business potřeby s praktickou exekucí — přesně to, co jsme potřebovali."</blockquote>
-        <figcaption>
-          <span class="quote__role">Managing Director</span>
-          <span class="quote__org">Softwarová společnost · 140 zaměstnanců</span>
-        </figcaption>
-      </figure>
-      <figure class="quote">
-        <blockquote>„Governance pravidla konečně uklidnila jak IT, tak právní oddělení. Zároveň jsme během sprintu nasadili automatizaci leadů a supportu — viditelný dopad na konverze už v Q1."</blockquote>
-        <figcaption>
-          <span class="quote__role">CTO</span>
-          <span class="quote__org">E-commerce &amp; retail · 320 zaměstnanců</span>
-        </figcaption>
-      </figure>
-      <figure class="quote">
-        <blockquote>„Board reporty teď vypadají úplně jinak. Žádné slidy o potenciálu — jen konkrétní use-cases, ušetřené hodiny a další krok. Doporučuji každému vedení, které chce AI brát vážně."</blockquote>
-        <figcaption>
-          <span class="quote__role">CEO</span>
-          <span class="quote__org">Výrobní společnost s logistikou · 280 zaměstnanců</span>
-        </figcaption>
-      </figure>
-      <figure class="quote">
-        <blockquote>„Z 90denního sprintu jsme přešli na retainer. AI už není náklad, ale měřitelná páka. První rok odhadujeme úsporu přes 1,8 milionu korun v administrativě a rychlejších procesech."</blockquote>
-        <figcaption>
-          <span class="quote__role">CFO</span>
-          <span class="quote__org">Středně velká průmyslová skupina</span>
-          <span class="quote__metric">Přechod ze sprintu na retainer · úspora &gt; 1,8 mil. Kč/rok</span>
-        </figcaption>
-      </figure>
-    </div>
-  </div>
-</section>
+        // Header shadow on scroll
+        const hdr = document.querySelector('header');
+        const onScroll = () => hdr.classList.toggle('scrolled', window.scrollY > 24);
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
 
-<section class="section" id="spoluprace">
-  <div class="wrap">
-    <div class="section__head">
-      <span class="eyebrow">Spolupráce</span>
-      <h2>Dva způsoby spolupráce</h2>
-    </div>
-    <div class="offer">
-      <div class="plan plan--featured">
-        <span class="badge">Doporučený start</span>
-        <h3>90-Day AI Leadership Sprint</h3>
-        <p class="plan__desc">Rychlý mandát pro firmy, které chtějí získat kontrolu nad AI směrem a spustit první řízené use-cases.</p>
-        <ul>
-          <li>AI maturity snapshot</li>
-          <li>Opportunity map</li>
-          <li>Prioritizovaná roadmapa</li>
-          <li>Governance draft</li>
-          <li>2–3 pilotní use-cases</li>
-          <li>Board-ready report</li>
-        </ul>
-        <p class="price-note">Fixní cena za celý sprint — víte předem, kolik mandát stojí a co přesně dostanete.</p>
-        <a class="btn btn--green" href="https://calendar.google.com/appointments/schedules/AcZssZ3sZnZSvoUmnbQpNFBFFaJhGNmicgsWZtrBq-gLcMuxCpAPZUaHkm8W4flCzoEHuBOrMK089iGJ" target="_blank" rel="noopener">Probrat sprint</a>
-      </div>
-      <div class="plan">
-        <h3>Fractional AI Retainer</h3>
-        <p class="plan__desc">Průběžný mandát pro firmy, které chtějí seniorní AI leadership bez full-time hire.</p>
-        <ul>
-          <li>Měsíční leadership cadence</li>
-          <li>Řízení AI roadmapy</li>
-          <li>Kontrola dodavatelů</li>
-          <li>Interní adopce a champions</li>
-          <li>Governance a bezpečnost</li>
-          <li>Reporting pro vedení</li>
-          <li>Kontinuální implementace</li>
-        </ul>
-        <p class="price-note">Měsíční paušál podle rozsahu — typicky zlomek nákladu na full-time Head of AI.</p>
-        <a class="btn btn--ghost" href="https://calendar.google.com/appointments/schedules/AcZssZ3sZnZSvoUmnbQpNFBFFaJhGNmicgsWZtrBq-gLcMuxCpAPZUaHkm8W4flCzoEHuBOrMK089iGJ" target="_blank" rel="noopener">Probrat retainer</a>
-      </div>
-    </div>
-    <p class="pricing-logic"><strong>Jak se tvoří cena:</strong> sprint má fixní cenu, retainer se odvíjí od počtu dnů měsíčně a rozsahu odpovědnosti. Konkrétní nabídku dostanete po AI Maturity Snapshotu — vždy s definovanými výstupy, ne s otevřenou fakturací hodin.</p>
-  </div>
-</section>
+        // Scroll reveal with stagger inside grids
+        const groups = new Map();
+        document.querySelectorAll('.reveal').forEach(el => {
+            const p = el.parentElement;
+            const list = groups.get(p) || [];
+            list.push(el);
+            groups.set(p, list);
+        });
+        groups.forEach(list => list.forEach((el, i) => {
+            el.style.transitionDelay = Math.min(i * 70, 350) + 'ms';
+        }));
 
-<section class="section section--soft" id="mandat">
-  <div class="wrap">
-    <div class="section__head">
-      <span class="eyebrow">Mandát</span>
-      <h2>Kdy dává Fractional AI leadership smysl</h2>
-      <p class="lead">Mandát dává největší smysl ve chvíli, kdy firma už chápe, že AI je strategické téma, ale zatím nechce nebo nepotřebuje full-time AI executive roli.</p>
-    </div>
-    <div class="grid grid--2">
-      <div class="fit fit--yes">
-        <h3>Jste fit, pokud</h3>
-        <ul>
-          <li>máte 50–500+ lidí</li>
-          <li>AI už řešíte, ale nemá jasného vlastníka</li>
-          <li>chcete roadmapu, governance a první use-cases</li>
-          <li>potřebujete board-ready komunikaci</li>
-          <li>chcete nezávislý pohled na nástroje a dodavatele</li>
-        </ul>
-      </div>
-      <div class="fit fit--no">
-        <h3>Nejste fit, pokud</h3>
-        <ul>
-          <li>hledáte jen levného dodavatele chatbotu</li>
-          <li>chcete jednorázový workshop bez exekuce</li>
-          <li>nemáte podporu vedení</li>
-          <li>nechcete měřit dopad</li>
-          <li>chcete AI jako PR dekoraci</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
+        const revObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in');
+                    revObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+        document.querySelectorAll('.reveal').forEach(el => revObserver.observe(el));
 
-<section class="section" id="usecases">
-  <div class="wrap">
-    <div class="section__head">
-      <span class="eyebrow">Use-cases</span>
-      <h2>Kde typicky vzniká první hodnota</h2>
-    </div>
-    <div class="grid grid--3">
-      <div class="card"><span class="card__icon card__icon--lg" aria-hidden="true"><i data-lucide="target"></i></span><h3>Sales &amp; lead generation</h3><p>Lepší kvalifikace poptávek, rychlejší reakce a automatizace follow-upu.</p><span class="result">→ méně ztracených leadů</span></div>
-      <div class="card"><span class="card__icon card__icon--lg" aria-hidden="true"><i data-lucide="headset"></i></span><h3>Customer support / concierge</h3><p>Rutinní dotazy a požadavky řešené rychleji a konzistentněji, s eskalací na člověka.</p><span class="result">→ kratší doba odezvy</span></div>
-      <div class="card"><span class="card__icon card__icon--lg" aria-hidden="true"><i data-lucide="book-open"></i></span><h3>Interní znalostní asistenti</h3><p>Rychlejší přístup k interním znalostem, dokumentům a procesům.</p><span class="result">→ méně dotazů „kde to najdu"</span></div>
-      <div class="card"><span class="card__icon card__icon--lg" aria-hidden="true"><i data-lucide="file-text"></i></span><h3>Dokumentové workflow</h3><p>Zpracování, třídění, sumarizace a kontrola dokumentů.</p><span class="result">→ hodiny administrativy pryč</span></div>
-      <div class="card"><span class="card__icon card__icon--lg" aria-hidden="true"><i data-lucide="user-plus"></i></span><h3>HR onboarding</h3><p>Rychlejší zapracování lidí a lepší dostupnost interních informací.</p><span class="result">→ nový člověk produktivní dřív</span></div>
-      <div class="card"><span class="card__icon card__icon--lg" aria-hidden="true"><i data-lucide="clipboard-list"></i></span><h3>Management reporting</h3><p>Přehlednější reporting pro vedení bez ručního skládání podkladů.</p><span class="result">→ rozhodování na datech</span></div>
-      <div class="card"><span class="card__icon card__icon--lg" aria-hidden="true"><i data-lucide="settings"></i></span><h3>Operations automation</h3><p>Automatizace opakujících se provozních kroků napříč týmy.</p><span class="result">→ stejný tým zvládne víc</span></div>
-      <div class="card"><span class="card__icon card__icon--lg" aria-hidden="true"><i data-lucide="calculator"></i></span><h3>Finance &amp; admin workflow</h3><p>Méně ruční administrativy a lepší kontrola rutinních procesů.</p><span class="result">→ méně chyb, rychlejší uzávěrky</span></div>
-      <div class="card"><span class="card__icon card__icon--lg" aria-hidden="true"><i data-lucide="shield-check"></i></span><h3>AI governance layer</h3><p>Pravidla, odpovědnosti a bezpečný rámec pro používání AI.</p><span class="result">→ compliance bez brzdění</span></div>
-      <div class="card"><span class="card__icon card__icon--lg" aria-hidden="true"><i data-lucide="briefcase"></i></span><h3>Executive decision support</h3><p>Lepší příprava podkladů pro rozhodování vedení.</p><span class="result">→ rychlejší a kvalitnější rozhodnutí</span></div>
-      <div class="card"><span class="card__icon card__icon--lg" aria-hidden="true"><i data-lucide="workflow"></i></span><h3>Agentic process automation</h3><p>AI workflow, která propojují nástroje, data a konkrétní provozní výsledek.</p><span class="result">→ end-to-end procesy bez ruční práce</span></div>
-    </div>
-  </div>
-</section>
+        // Count-up animation
+        const animateCount = (el) => {
+            const target = parseFloat(el.dataset.count);
+            const suffix = el.dataset.suffix || '';
+            const dur = 1400;
+            const start = performance.now();
+            const tick = (now) => {
+                const t = Math.min((now - start) / dur, 1);
+                const eased = 1 - Math.pow(1 - t, 3);
+                el.textContent = Math.round(target * eased) + suffix;
+                if (t < 1) requestAnimationFrame(tick);
+                else el.textContent = target + suffix;
+            };
+            requestAnimationFrame(tick);
+        };
+        const countObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCount(entry.target);
+                    countObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.6 });
+        document.querySelectorAll('[data-count]').forEach(el => countObserver.observe(el));
 
-<section class="section section--soft" id="model">
-  <div class="wrap">
-    <div class="section__head">
-      <span class="eyebrow">Operační model</span>
-      <h2>Jak pracuji — 7 kroků</h2>
-    </div>
-    <div class="steps steps--7">
-      <div class="step"><span class="num">01</span><h3>Diagnose</h3><p>AI maturity, procesy, data, nástroje, rizika.</p></div>
-      <div class="step"><span class="num">02</span><h3>Prioritize</h3><p>Výběr use-cases s nejvyšším business dopadem.</p></div>
-      <div class="step"><span class="num">03</span><h3>Architect</h3><p>Návrh workflow, odpovědností a integrací.</p></div>
-      <div class="step"><span class="num">04</span><h3>Build</h3><p>Piloty, automations, agents, interní nástroje.</p></div>
-      <div class="step"><span class="num">05</span><h3>Govern</h3><p>Pravidla, bezpečnost, auditovatelnost, schvalování.</p></div>
-      <div class="step"><span class="num">06</span><h3>Train</h3><p>Board, management, týmy, interní champions.</p></div>
-      <div class="step"><span class="num">07</span><h3>Scale</h3><p>Měření, iterace, rollout, další use-cases.</p></div>
-    </div>
-  </div>
-</section>
+        // Magnetic effect on primary CTAs
+        if (window.matchMedia('(hover: hover)').matches) {
+            document.querySelectorAll('.pulse-glow').forEach(btn => {
+                btn.addEventListener('mousemove', (e) => {
+                    const r = btn.getBoundingClientRect();
+                    const x = e.clientX - r.left - r.width / 2;
+                    const y = e.clientY - r.top - r.height / 2;
+                    btn.style.transform = `translate(${x * 0.18}px, ${y * 0.22}px)`;
+                });
+                btn.addEventListener('mouseleave', () => { btn.style.transform = ''; });
+            });
+        }
 
-<section class="section" id="srovnani">
-  <div class="wrap">
-    <div class="section__head">
-      <span class="eyebrow">Srovnání</span>
-      <h2>Jak řešit AI leadership: čtyři cesty</h2>
-    </div>
-    <div class="table-scroll">
-      <table class="compare">
-        <caption>Srovnání přístupů k AI leadershipu ve firmě 50–500+ lidí</caption>
-        <thead>
-          <tr>
-            <th scope="col">Kritérium</th>
-            <th scope="col">Full-time Head of AI</th>
-            <th scope="col">AI agentura / vendor</th>
-            <th scope="col">Strategický konzultant</th>
-            <th scope="col">Fractional Head of AI</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">Náklady</th>
-            <td>200–400 tis. Kč/měs. + nábor 6+ měsíců</td>
-            <td>Projektově, často s vendor lock-inem</td>
-            <td>Vysoká denní sazba, bez exekuce</td>
-            <td class="best">Zlomek full-time nákladu, start do týdnů</td>
-          </tr>
-          <tr>
-            <th scope="row">Exekuce</th>
-            <td>Ano, po zapracování</td>
-            <td>Jen ve vlastním stacku</td>
-            <td>Slidy, ne nasazení</td>
-            <td class="best">Strategie + reálné nasazení use-cases</td>
-          </tr>
-          <tr>
-            <th scope="row">Nezávislost na dodavatelích</th>
-            <td>Ano</td>
-            <td>Ne — prodává vlastní řešení</td>
-            <td>Většinou ano</td>
-            <td class="best">Vendor-neutral, doporučí nejlepší fit</td>
-          </tr>
-          <tr>
-            <th scope="row">Board komunikace</th>
-            <td>Závisí na osobě</td>
-            <td>Minimální</td>
-            <td>Silná, ale obecná</td>
-            <td class="best">Board-ready reporting jako standard</td>
-          </tr>
-          <tr>
-            <th scope="row">Riziko</th>
-            <td>Špatný hire = drahá chyba</td>
-            <td>Lock-in, závislost</td>
-            <td>Doporučení bez odpovědnosti za výsledek</td>
-            <td class="best">90denní mandát s definovanými výstupy</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</section>
+        // FAQ accordion
+        function toggleFaq(q) {
+            const item = q.closest('.faq-item');
+            const answer = item.querySelector('.faq-a');
+            const isOpen = item.classList.contains('open');
+            document.querySelectorAll('.faq-item.open').forEach(openItem => {
+                openItem.classList.remove('open');
+                openItem.querySelector('.faq-a').style.maxHeight = '0px';
+            });
+            if (!isOpen) {
+                item.classList.add('open');
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+            }
+        }
+        window.addEventListener('resize', () => {
+            const open = document.querySelector('.faq-item.open .faq-a');
+            if (open) open.style.maxHeight = open.scrollHeight + 'px';
+        });
 
-<section class="section section--soft" id="about">
-  <div class="wrap about">
-    <img src="profile_pic.png" width="420" height="420" loading="lazy"
-         alt="David Veselý, Fractional Head of AI a zakladatel Vesely.ai s.r.o.">
-    <div>
-      <span class="eyebrow">About</span>
-      <h2>Kdo za tím stojí — David Veselý</h2>
-      <p class="lead" style="margin-top:14px">Jsem David Veselý, zakladatel Vesely.ai s.r.o. Pomáhám vedení firem převést AI z náhodných experimentů na řízený operating model: roadmapa, governance, první use-cases a měřitelný dopad.</p>
-      <ul>
-        <li>AI leadership pro board a management</li>
-        <li>Strategie propojená s praktickou exekucí</li>
-        <li>Vendor-neutral přístup</li>
-        <li>Vlastní AI workforce platforma Vesely.ai jako exekuční kapacita, ne podmínka</li>
-      </ul>
-      <p style="margin-top:18px;color:var(--ink-soft);font-size:.95rem"><strong>Proč ne klasický konzultant nebo vendor?</strong> Mám vlastní AI platformu, takže rozumím nejen strategii, ale i praktickému stavění AI systémů. Zároveň nejsem uzamčený do jednoho dodavatele ani stacku — tam, kde dává smysl Microsoft, OpenAI, Anthropic, Make, interní vývoj nebo specializovaný dodavatel, doporučím ho. Mandát stojí na důvěře, ne na vendor lock-inu.</p>
-    </div>
-  </div>
-</section>
+        // Mobile menu toggle (simple)
+        const mob = document.querySelector('.mobile-menu-toggle');
+        const links = document.querySelector('.nav-links');
+        if (mob) mob.addEventListener('click', () => {
+            const open = links.style.display === 'flex';
+            links.style.display = open ? '' : 'flex';
+            links.style.flexDirection = 'column';
+            links.style.position = 'absolute';
+            links.style.top = '70px';
+            links.style.right = '24px';
+            links.style.background = 'rgba(10,12,15,0.97)';
+            links.style.padding = '20px 28px';
+            links.style.borderRadius = '14px';
+            links.style.border = '1px solid rgba(0,230,195,0.2)';
+            links.style.gap = '18px';
+        });
 
-<section class="section" id="proces">
-  <div class="wrap">
-    <div class="section__head">
-      <span class="eyebrow">Proces</span>
-      <h2>Jak spolupráce začíná</h2>
-    </div>
-    <div class="steps">
-      <div class="step"><span class="num">1</span><h3>AI Leadership Call</h3><p>30 minut. Rychlé ověření, zda má mandát smysl. Zdarma a bez závazku.</p></div>
-      <div class="step"><span class="num">2</span><h3>AI Maturity Snapshot</h3><p>Zmapování současného stavu, rizik a příležitostí.</p></div>
-      <div class="step"><span class="num">3</span><h3>90-Day Proposal</h3><p>Konkrétní cíle, výstupy, cadence a odpovědnosti — s fixní cenou.</p></div>
-      <div class="step"><span class="num">4</span><h3>Execution</h3><p>Roadmapa, governance, piloty, reporting.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="section section--soft" id="faq">
-  <div class="wrap">
-    <div class="section__head" style="text-align:center">
-      <span class="eyebrow">FAQ</span>
-      <h2>Časté otázky</h2>
-    </div>
-    <div class="faq">
-      <details>
-        <summary>Co je Fractional Head of AI?</summary>
-        <p>Externí AI leadership role na část úvazku. Firma získá seniorní vedení AI agendy — roadmapu, governance, prioritizaci a exekuci — bez nákladů a rizika full-time executive hire.</p>
-      </details>
-      <details>
-        <summary>Je to konzultace, nebo implementace?</summary>
-        <p>Obojí. Strategie bez exekuce je divadlo. Implementace bez strategie je chaos. Mandát kombinuje leadership, prioritizaci, governance a praktické dodání prvních use-cases.</p>
-      </details>
-      <details>
-        <summary>Nahrazujete našeho CIO nebo CTO?</summary>
-        <p>Ne. Spolupracuji s nimi. Role je AI leadership: business prioritizace, governance, adopce, roadmapa a koordinace mezi vedením, IT a týmy.</p>
-      </details>
-      <details>
-        <summary>Kolik to stojí?</summary>
-        <p>90denní sprint má fixní cenu, retainer je měsíční paušál podle rozsahu — typicky zlomek nákladu na full-time Head of AI (200–400 tis. Kč měsíčně plus půl roku náboru). Konkrétní nabídku dostanete po úvodním callu a maturity snapshotu.</p>
-      </details>
-      <details>
-        <summary>Jste vázaný na Vesely.ai?</summary>
-        <p>Ne. Vesely.ai je moje vlastní AI workforce platforma a praktická exekuční kapacita. Není to ale podmínka spolupráce. Doporučuji vždy řešení, které dává nejlepší smysl pro konkrétní firmu.</p>
-      </details>
-      <details>
-        <summary>Jak je to s bezpečností našich dat?</summary>
-        <p>Spolupráce standardně běží pod NDA. Součástí governance je klasifikace dat a pravidla, jaká data smí do kterých AI nástrojů — to je často první výstup mandátu vůbec.</p>
-      </details>
-      <details>
-        <summary>Kolik času to bude stát naše lidi?</summary>
-        <p>Vedení typicky 2–3 hodiny měsíčně (cadence + report), vlastníci pilotních procesů pár hodin týdně v aktivní fázi. Mandát je navržený tak, aby firmu zatěžoval co nejméně.</p>
-      </details>
-      <details>
-        <summary>Potřebujeme vlastní data tým?</summary>
-        <p>Ne nutně. První fáze bývá často o procesní jasnosti, prioritizaci use-cases a bezpečném provozním rámci. Datová vrstva se řeší podle reálné potřeby.</p>
-      </details>
-      <details>
-        <summary>Jak rychle uvidíme výsledek?</summary>
-        <p>První konkrétní výstupy vznikají během prvních týdnů: maturity snapshot, opportunity map a prioritizace. Do 90 dnů má firma první řízené use-cases a board-ready reporting.</p>
-      </details>
-      <details>
-        <summary>Co se stane po 90 dnech?</summary>
-        <p>Tři možnosti: firma pokračuje sama (má roadmapu, governance i vyškolené champions), přejde na retainer pro průběžné vedení, nebo si objedná další sprint na nové use-cases. Žádný lock-in.</p>
-      </details>
-      <details>
-        <summary>Pro koho to není?</summary>
-        <p>Není to vhodné pro firmy, které hledají pouze levný chatbot, jednorázové školení bez exekuce nebo AI jako marketingový efekt bez ochoty měřit dopad.</p>
-      </details>
-    </div>
-  </div>
-</section>
-
-<section class="section final" id="call">
-  <div class="wrap">
-    <h2>Zjistěme, kde může AI vytvořit měřitelnou páku během 90 dnů.</h2>
-    <p class="lead">30minutový AI Leadership Call. Zdarma, bez závazku — na konci budete vědět, jestli má mandát pro vaši firmu smysl.</p>
-    <a class="btn btn--green btn--lg" href="https://calendar.google.com/appointments/schedules/AcZssZ3sZnZSvoUmnbQpNFBFFaJhGNmicgsWZtrBq-gLcMuxCpAPZUaHkm8W4flCzoEHuBOrMK089iGJ" target="_blank" rel="noopener">Domluvit AI Leadership Call</a>
-    <p class="final__note">Volné kapacity · Q3 onboarding · Odpovídám do 24 hodin</p>
-  </div>
-</section>
-
-</main>
-
-<footer class="site-footer">
-  <div class="wrap foot">
-    <div class="foot__brand">
-      <a class="logo" href="#">HEAD<em>OF</em>AI</a>
-      <p>Fractional Head of AI — externí AI leadership pro vedení firem v České republice. Roadmapa, governance a měřitelné use-cases za 90 dní.</p>
-    </div>
-    <div>
-      <h4>Navigace</h4>
-      <ul>
-        <li><a href="#problem">Problém</a></li>
-        <li><a href="#vystupy">Výstupy mandátu</a></li>
-        <li><a href="#srovnani">Srovnání přístupů</a></li>
-        <li><a href="#spoluprace">Spolupráce a cena</a></li>
-        <li><a href="#faq">Časté otázky</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4>Kontakt</h4>
-      <ul>
-        <li><a href="mailto:david@headofai.cz">david@headofai.cz</a></li>
-        <li><a href="https://calendar.google.com/appointments/schedules/AcZssZ3sZnZSvoUmnbQpNFBFFaJhGNmicgsWZtrBq-gLcMuxCpAPZUaHkm8W4flCzoEHuBOrMK089iGJ" target="_blank" rel="noopener">Rezervovat call</a></li>
-        <li><a href="https://x.com/headofaicz" target="_blank" rel="noopener">X / Twitter</a></li>
-        <li><a href="https://vesely.ai" target="_blank" rel="noopener">Vesely.ai — AI workforce platforma</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="wrap foot__legal">
-    <span>© <span id="yr"></span> HEAD OF AI · Provozuje Vesely.ai s.r.o., IČO 23702907, Česká republika</span>
-    <span>Vendor-neutral · Board-ready · Execution-first</span>
-  </div>
-</footer>
-
-<div class="sticky-cta" id="stickyCta" aria-hidden="true">
-  <a class="btn btn--primary" href="https://calendar.google.com/appointments/schedules/AcZssZ3sZnZSvoUmnbQpNFBFFaJhGNmicgsWZtrBq-gLcMuxCpAPZUaHkm8W4flCzoEHuBOrMK089iGJ" target="_blank" rel="noopener">Domluvit AI Leadership Call</a>
-</div>
-
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@graph":[
-    {
-      "@type":"WebSite",
-      "@id":"https://headofai.cz/#website",
-      "url":"https://headofai.cz/",
-      "name":"Head of AI",
-      "inLanguage":"cs",
-      "publisher":{"@id":"https://headofai.cz/#org"}
-    },
-    {
-      "@type":"Organization",
-      "@id":"https://headofai.cz/#org",
-      "name":"Vesely.ai s.r.o.",
-      "legalName":"Vesely.ai s.r.o.",
-      "vatID":"CZ23702907",
-      "url":"https://vesely.ai",
-      "email":"david@headofai.cz",
-      "address":{"@type":"PostalAddress","addressCountry":"CZ"},
-      "sameAs":["https://headofai.cz/","https://x.com/headofaicz","https://vesely.ai"]
-    },
-    {
-      "@type":"Person",
-      "@id":"https://headofai.cz/#david",
-      "name":"David Veselý",
-      "jobTitle":"Fractional Head of AI / Chief AI Officer",
-      "description":"David Veselý je Fractional Head of AI a Chief AI Officer pro vedení firem v České republice. Pomáhá firmám převést AI z experimentů na řízenou roadmapu, governance a měřitelné business výsledky.",
-      "url":"https://headofai.cz/",
-      "image":"https://headofai.cz/profile_pic.png",
-      "worksFor":{"@id":"https://headofai.cz/#org"},
-      "sameAs":["https://x.com/headofaicz","https://vesely.ai"]
-    },
-    {
-      "@type":"Service",
-      "@id":"https://headofai.cz/#service",
-      "name":"Fractional Head of AI",
-      "serviceType":"AI leadership, AI strategie, AI governance",
-      "description":"Externí AI leadership pro firmy 50–500+ lidí: AI roadmapa, governance a první měřitelné use-cases formou 90denního mandátu nebo retaineru.",
-      "provider":{"@id":"https://headofai.cz/#org"},
-      "areaServed":{"@type":"Country","name":"Czech Republic"},
-      "availableLanguage":["cs","en"],
-      "offers":[
-        {"@type":"Offer","name":"90-Day AI Leadership Sprint","description":"Fixní cena za 90denní mandát: maturity snapshot, opportunity map, roadmapa, governance draft, 2–3 pilotní use-cases, board report."},
-        {"@type":"Offer","name":"Fractional AI Retainer","description":"Měsíční paušál: leadership cadence, řízení roadmapy, kontrola dodavatelů, governance, reporting, kontinuální implementace."}
-      ]
-    },
-    {
-      "@type":"FAQPage",
-      "@id":"https://headofai.cz/#faq",
-      "mainEntity":[
-        {"@type":"Question","name":"Co je Fractional Head of AI?","acceptedAnswer":{"@type":"Answer","text":"Externí AI leadership role na část úvazku. Firma získá seniorní vedení AI agendy — roadmapu, governance, prioritizaci a exekuci — bez nákladů a rizika full-time executive hire."}},
-        {"@type":"Question","name":"Je to konzultace, nebo implementace?","acceptedAnswer":{"@type":"Answer","text":"Obojí. Strategie bez exekuce je divadlo. Implementace bez strategie je chaos. Mandát kombinuje leadership, prioritizaci, governance a praktické dodání prvních use-cases."}},
-        {"@type":"Question","name":"Nahrazujete našeho CIO nebo CTO?","acceptedAnswer":{"@type":"Answer","text":"Ne. Spolupracuji s nimi. Role je AI leadership: business prioritizace, governance, adopce, roadmapa a koordinace mezi vedením, IT a týmy."}},
-        {"@type":"Question","name":"Kolik to stojí?","acceptedAnswer":{"@type":"Answer","text":"90denní sprint má fixní cenu, retainer je měsíční paušál podle rozsahu — typicky zlomek nákladu na full-time Head of AI. Konkrétní nabídku dostanete po úvodním callu a maturity snapshotu."}},
-        {"@type":"Question","name":"Jste vázaný na Vesely.ai?","acceptedAnswer":{"@type":"Answer","text":"Ne. Vesely.ai je vlastní AI workforce platforma a praktická exekuční kapacita, není to ale podmínka spolupráce. Doporučuji vždy řešení, které dává nejlepší smysl pro konkrétní firmu."}},
-        {"@type":"Question","name":"Jak je to s bezpečností našich dat?","acceptedAnswer":{"@type":"Answer","text":"Spolupráce standardně běží pod NDA. Součástí governance je klasifikace dat a pravidla, jaká data smí do kterých AI nástrojů."}},
-        {"@type":"Question","name":"Kolik času to bude stát naše lidi?","acceptedAnswer":{"@type":"Answer","text":"Vedení typicky 2–3 hodiny měsíčně, vlastníci pilotních procesů pár hodin týdně v aktivní fázi."}},
-        {"@type":"Question","name":"Potřebujeme vlastní data tým?","acceptedAnswer":{"@type":"Answer","text":"Ne nutně. První fáze bývá o procesní jasnosti, prioritizaci use-cases a bezpečném provozním rámci. Datová vrstva se řeší podle reálné potřeby."}},
-        {"@type":"Question","name":"Jak rychle uvidíme výsledek?","acceptedAnswer":{"@type":"Answer","text":"První výstupy vznikají během prvních týdnů: maturity snapshot, opportunity map a prioritizace. Do 90 dnů má firma první řízené use-cases a board-ready reporting."}},
-        {"@type":"Question","name":"Co se stane po 90 dnech?","acceptedAnswer":{"@type":"Answer","text":"Firma pokračuje sama, přejde na retainer pro průběžné vedení, nebo si objedná další sprint. Žádný lock-in."}},
-        {"@type":"Question","name":"Pro koho to není?","acceptedAnswer":{"@type":"Answer","text":"Pro firmy, které hledají pouze levný chatbot, jednorázové školení bez exekuce nebo AI jako marketingový efekt bez ochoty měřit dopad."}}
-      ]
-    }
-  ]
-}
-</script>
-
-
-  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-  <script>if(window.lucide){lucide.createIcons();}</script>
-  <script src="script.js"></script>
+        // Form handler
+        function handleSubmit(e) {
+            e.preventDefault();
+            const btn = e.target.querySelector('button');
+            const originalHTML = btn.innerHTML;
+            btn.disabled = true;
+            btn.innerHTML = 'Odesílám…';
+            // TODO: napojit na PMG / Google Sheets webhook
+            setTimeout(() => {
+                btn.innerHTML = '✓ Děkuji! Ozvu se do 24 hodin.';
+                e.target.reset();
+                setTimeout(() => {
+                    btn.disabled = false;
+                    btn.innerHTML = originalHTML;
+                }, 4000);
+            }, 800);
+        }
+    </script>
 </body>
 </html>

@@ -760,36 +760,8 @@
         }
         .footer-bottom p { color: #666; font-size: 13px; margin: 0; }
 
-        /* STICKY MOBILE CTA */
-        .sticky-cta {
-            display: none;
-            position: fixed;
-            left: 0; right: 0; bottom: 0;
-            z-index: 900;
-            padding: 12px 16px calc(12px + env(safe-area-inset-bottom));
-            background: rgba(5,6,8,0.92);
-            backdrop-filter: blur(14px);
-            -webkit-backdrop-filter: blur(14px);
-            border-top: 1px solid rgba(0,230,195,0.2);
-        }
-        .sticky-cta a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            width: 100%;
-            padding: 15px;
-            background: var(--accent);
-            color: #050608;
-            font-weight: 600;
-            font-size: 16px;
-            border-radius: 9999px;
-            text-decoration: none;
-        }
-        .sticky-cta a svg { width: 18px; height: 18px; }
         @media (max-width: 768px) {
-            .sticky-cta { display: block; }
-            body { padding-bottom: 76px; font-size: 17px; }
+            body { font-size: 17px; }
             .footer-grid { grid-template-columns: 1fr 1fr; gap: 36px; }
             /* readability: nudge body microcopy up, keep label chips small */
             .case-measured, .cipher-intro .src, .anchor-line, .price-note { font-size: 14.5px; line-height: 1.6; }
@@ -2208,14 +2180,6 @@
             </div>
         </div>
     </footer>
-
-    <!-- STICKY MOBILE CTA -->
-    <div class="sticky-cta">
-        <a href="#contact">
-            <svg class="lucide" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ic-calendar"/></svg>
-            Objednat AI Leadership Call
-        </a>
-    </div>
 
     <script>
         // Smooth scroll

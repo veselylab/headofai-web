@@ -1919,9 +1919,10 @@
                 <p class="form-sub">Vyplňte základní info a ozvu se do 24 hodin.</p>
                 <form class="contact-form" id="consultationForm" onsubmit="handleSubmit(event)">
                     <input type="text" id="name" name="name" autocomplete="name" placeholder="Jméno" required>
-                    <input type="email" id="email" name="email" autocomplete="email" inputmode="email" placeholder="E-mail" required>
+                    <input type="text" id="role" name="role" autocomplete="organization-title" placeholder="Role ve firmě" required>
                     <input type="text" id="company" name="company" autocomplete="organization" placeholder="Firma" required>
-                    <input type="text" id="size" name="size" inputmode="numeric" placeholder="Počet lidí" required>
+                    <input type="email" id="email" name="email" autocomplete="email" inputmode="email" placeholder="E-mail" required>
+                    <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel" placeholder="Telefon" required>
                     <textarea id="message" name="message" placeholder="Co dnes u AI nejvíc bolí?" required></textarea>
                     <input type="checkbox" name="botcheck" tabindex="-1" style="display:none" aria-hidden="true">
 

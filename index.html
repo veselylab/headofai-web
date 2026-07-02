@@ -1923,6 +1923,7 @@
                     <input type="text" id="company" name="company" autocomplete="organization" placeholder="Firma" required>
                     <input type="text" id="size" name="size" inputmode="numeric" placeholder="Počet lidí" required>
                     <textarea id="message" name="message" placeholder="Co dnes u AI nejvíc bolí?" required></textarea>
+                    <input type="checkbox" name="botcheck" tabindex="-1" style="display:none" aria-hidden="true">
 
                     <button type="submit" class="form-cta pulse-glow">
                         <svg class="lucide" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ic-send"/></svg>
@@ -2143,22 +2144,40 @@
             if (e.matches) closeMenu();
         });
 
-        // Form handler
-        function handleSubmit(e) {
+        // Form handler — odesílá přes Web3Forms na david@headofai.cz
+        async function handleSubmit(e) {
             e.preventDefault();
-            const btn = e.target.querySelector('button');
+            const form = e.target;
+            const btn = form.querySelector('button');
             const originalHTML = btn.innerHTML;
             btn.disabled = true;
             btn.innerHTML = 'Odesílám…';
-            // TODO: napojit na PMG / Google Sheets webhook
+
+            const formData = new FormData(form);
+            formData.append('access_key', 'de8800b9-f4ab-4a3b-a619-7bcaa5729430');
+            formData.append('subject', 'Nová poptávka z headofai.cz — AI Leadership Call');
+            formData.append('from_name', 'headofai.cz');
+
+            try {
+                const res = await fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    body: formData
+                });
+                const out = await res.json();
+                if (out.success) {
+                    btn.innerHTML = '✓ Děkuji! Ozvu se do 24 hodin.';
+                    form.reset();
+                } else {
+                    btn.innerHTML = '⚠ Odeslání selhalo — napište na hello@headofai.cz';
+                }
+            } catch (err) {
+                btn.innerHTML = '⚠ Chyba připojení — zkuste to prosím znovu';
+            }
+
             setTimeout(() => {
-                btn.innerHTML = '✓ Děkuji! Ozvu se do 24 hodin.';
-                e.target.reset();
-                setTimeout(() => {
-                    btn.disabled = false;
-                    btn.innerHTML = originalHTML;
-                }, 4000);
-            }, 800);
+                btn.disabled = false;
+                btn.innerHTML = originalHTML;
+            }, 5000);
         }
     </script>
 </body>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, follow">
+    <meta name="description" content="Zásady ochrany osobních údajů — headofai.cz, Vesely.ai s.r.o.">
+    <title>Zásady ochrany osobních údajů | headofai.cz</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%2300e6c3'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #050608;
+            --bg-soft: #0a0c0f;
+            --text: #f4f6f6;
+            --accent: #00e6c3;
+            --accent-2: #00b4ff;
+            --accent-warm: #7c5cff;
+            --gray: #9aa3a3;
+            --display: "Space Grotesk", -apple-system, sans-serif;
+            --body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html { scroll-behavior: smooth; overflow-x: hidden; }
+
+        ::selection { background: rgba(0,230,195,0.3); color: #fff; }
+
+        body {
+            font-family: var(--body);
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            font-size: 17px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+        .container { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+
+        /* HEADER */
+        header {
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+            background: rgba(5,6,8,0.9);
+        }
+        nav {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 20px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+        .logo {
+            font-family: var(--display);
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            background: linear-gradient(90deg, #fff 0%, var(--accent) 120%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .logo::before {
+            content: "";
+            width: 9px; height: 9px;
+            border-radius: 50%;
+            background: var(--accent);
+            box-shadow: 0 0 12px 2px rgba(0,230,195,0.7);
+        }
+        .back-link {
+            font-family: var(--body);
+            font-size: 15px;
+            font-weight: 500;
+            color: var(--gray);
+        }
+        .back-link:hover { color: var(--accent); text-decoration: none; }
+
+        /* CONTENT */
+        main { padding: 64px 0 80px; }
+
+        h1 {
+            font-family: var(--display);
+            font-size: clamp(30px, 5vw, 40px);
+            font-weight: 700;
+            letter-spacing: -1px;
+            line-height: 1.15;
+            margin-bottom: 12px;
+        }
+        .updated {
+            color: var(--gray);
+            font-size: 15px;
+            margin-bottom: 48px;
+            padding-bottom: 28px;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+
+        h2 {
+            font-family: var(--display);
+            font-size: 22px;
+            font-weight: 600;
+            letter-spacing: -0.3px;
+            color: var(--text);
+            margin: 44px 0 16px;
+        }
+        h2 .num { color: var(--accent); margin-right: 10px; }
+
+        p { margin-bottom: 16px; color: var(--text); }
+        p.muted { color: var(--gray); }
+
+        ul { list-style: none; margin: 0 0 16px; }
+        ul li {
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 10px;
+            color: var(--text);
+        }
+        ul li::before {
+            content: "";
+            position: absolute;
+            left: 4px; top: 12px;
+            width: 6px; height: 6px;
+            border-radius: 50%;
+            background: var(--accent);
+        }
+
+        .card {
+            background: linear-gradient(160deg, rgba(255,255,255,0.035), rgba(255,255,255,0.012));
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 14px;
+            padding: 24px 28px;
+            margin-bottom: 8px;
+        }
+        .card p:last-child { margin-bottom: 0; }
+        .card strong { color: var(--text); font-weight: 600; }
+
+        .todo {
+            color: var(--accent-warm);
+            font-weight: 600;
+        }
+
+        /* FOOTER */
+        footer {
+            border-top: 1px solid rgba(255,255,255,0.08);
+            padding: 36px 0;
+        }
+        footer .container {
+            display: flex;
+            justify-content: space-between;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        footer p { color: var(--gray); font-size: 13px; margin: 0; }
+
+        @media (max-width: 600px) {
+            main { padding: 44px 0 56px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/" class="logo">headofai.cz</a>
+            <a href="/" class="back-link">← Zpět na hlavní stránku</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Zásady ochrany osobních údajů</h1>
+            <p class="updated">Poslední aktualizace: 3. července 2026</p>
+
+            <p>Tyto zásady popisují, jak nakládáme s osobními údaji, které nám poskytnete prostřednictvím webu <strong>headofai.cz</strong>, zejména přes kontaktní formulář. Zpracování probíhá v souladu s nařízením (EU) 2016/679 (GDPR).</p>
+
+            <h2><span class="num">1.</span>Správce osobních údajů</h2>
+            <div class="card">
+                <p><strong>Vesely.ai s.r.o.</strong></p>
+                <p>IČO: 23702907, DIČ: CZ23702907</p>
+                <p>Sídlo: Žireč 179, 544 04 Dvůr Králové nad Labem, Česká republika</p>
+                <p>E-mail: <a href="mailto:hello@headofai.cz">hello@headofai.cz</a></p>
+                <p class="muted">Správce nejmenoval pověřence pro ochranu osobních údajů. Ve všech záležitostech ochrany osobních údajů se obracejte na výše uvedený e-mail.</p>
+            </div>
+
+            <h2><span class="num">2.</span>Jaké údaje zpracováváme</h2>
+            <p>Přes kontaktní formulář na webu zpracováváme údaje, které do něj vyplníte:</p>
+            <ul>
+                <li>jméno</li>
+                <li>role (funkce ve firmě)</li>
+                <li>název firmy</li>
+                <li>e-mailová adresa</li>
+                <li>telefonní číslo</li>
+                <li>obsah zprávy (popis toho, co u AI řešíte)</li>
+            </ul>
+            <p>Dále mohou být zpracovány technické údaje nezbytné pro doručení zprávy (např. IP adresa), a to prostřednictvím poskytovatelů uvedených v bodě 5.</p>
+
+            <h2><span class="num">3.</span>Účel a právní základ zpracování</h2>
+            <ul>
+                <li><strong>Vyřízení vaší poptávky a domluvení AI Leadership Callu</strong> — právní základ: čl. 6 odst. 1 písm. b) GDPR (jednání o smlouvě a opatření přijatá před jejím uzavřením na vaši žádost).</li>
+                <li><strong>Navazující obchodní komunikace</strong> související s vaší poptávkou — právní základ: čl. 6 odst. 1 písm. f) GDPR (oprávněný zájem správce vést komunikaci k poptávané službě).</li>
+            </ul>
+            <p>Neprovádíme nevyžádaný marketing. Vaše údaje <strong>nepředáváme třetím stranám k marketingovým účelům</strong> ani je neprodáváme.</p>
+
+            <h2><span class="num">4.</span>Doba uchování</h2>
+            <p>Osobní údaje z poptávky uchováváme <strong>3 roky od posledního kontaktu</strong>. Pokud na základě poptávky vznikne smluvní vztah, uchováváme údaje po dobu trvání smlouvy a následně po dobu vyžadovanou zákonnými lhůtami (zejména účetními a daňovými).</p>
+
+            <h2><span class="num">5.</span>Příjemci a zpracovatelé</h2>
+            <p>K zajištění provozu webu a doručení zpráv využíváme tyto poskytovatele:</p>
+            <ul>
+                <li><strong>Hosting webu:</strong> GitHub Pages (GitHub, Inc.) — web je statický a hostovaný na této platformě.</li>
+                <li><strong>Odeslání a doručení formuláře:</strong> Web3Forms (web3forms.com) — data z formuláře jsou přes tuto službu doručena na e-mail správce.</li>
+                <li><strong>Webové fonty:</strong> Google Fonts (Google) — při načtení stránky se stahují fonty ze serverů Google.</li>
+                <li><strong>Obrázky:</strong> načítány z platformy GitHub.</li>
+            </ul>
+            <p class="muted">Někteří z uvedených poskytovatelů mohou zpracovávat údaje mimo EU/EHP. <span class="todo">[DOPLNIT: potvrdit přesné právní subjekty zpracovatelů a záruky pro předání údajů mimo EU/EHP — např. standardní smluvní doložky.]</span></p>
+
+            <h2><span class="num">6.</span>Cookies a analytika</h2>
+            <p>Web <strong>nepoužívá žádné analytické ani marketingové cookies</strong> a nenastavuje vlastní cookies. Neprovozujeme žádné analytické, sledovací ani remarketingové nástroje.</p>
+            <p class="muted">Pro zobrazení používá web fonty Google Fonts a obrázky z platformy GitHub, které se načítají z externích serverů; při tom může dojít k přenosu IP adresy návštěvníka. Nejde o cookies ani o sledování chování.</p>
+
+            <h2><span class="num">7.</span>Vaše práva</h2>
+            <p>Ve vztahu ke svým osobním údajům máte právo:</p>
+            <ul>
+                <li>na přístup k údajům a na jejich kopii;</li>
+                <li>na opravu nepřesných údajů;</li>
+                <li>na výmaz („právo být zapomenut“);</li>
+                <li>na omezení zpracování;</li>
+                <li>na přenositelnost údajů;</li>
+                <li>vznést námitku proti zpracování založenému na oprávněném zájmu.</li>
+            </ul>
+            <p>Svá práva uplatníte na e-mailu <a href="mailto:hello@headofai.cz">hello@headofai.cz</a>. Máte také právo podat stížnost u dozorového úřadu:</p>
+            <div class="card">
+                <p><strong>Úřad pro ochranu osobních údajů (ÚOOÚ)</strong></p>
+                <p>Pplk. Sochora 27, 170 00 Praha 7</p>
+                <p><a href="https://uoou.gov.cz" target="_blank" rel="noopener">uoou.gov.cz</a></p>
+            </div>
+
+            <h2><span class="num">8.</span>Závěrečná ustanovení</h2>
+            <p>Tyto zásady může správce v případě potřeby aktualizovat; aktuální znění je vždy dostupné na této stránce. Změny nabývají účinnosti okamžikem zveřejnění.</p>
+            <p class="muted">Účinné od 3. července 2026.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Vesely.ai s.r.o. · headofai.cz</p>
+            <p><a href="/" class="back-link">Zpět na hlavní stránku</a></p>
+        </div>
+    </footer>
+</body>
+</html>

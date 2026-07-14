@@ -139,7 +139,7 @@
       </div>
     </div>
     <div>
-      <div style="font-family:var(--font-heading);font-size:clamp(32px,5vw,44px);font-weight:600;color:var(--color-accent-300)">>3</div>
+      <div style="font-family:var(--font-heading);font-size:clamp(32px,5vw,44px);font-weight:600;color:var(--color-accent-300)">3+</div>
       <div style="font-size:12px;opacity:0.75;letter-spacing:0.03em">
         {{ t.t012 }}
       </div>
@@ -823,7 +823,7 @@
       {{ t.t157 }}
     </h2>
     <div style="display:flex;flex-direction:column;gap:1px;background:var(--color-divider);border:1px solid var(--color-divider)">
-      <details style="background:var(--color-bg);padding:18px 20px">
+      <details name="faq" style="background:var(--color-bg);padding:18px 20px">
         <summary style="cursor:pointer;font-family:var(--font-heading);font-weight:600;font-size:16px">
           {{ t.t158 }}
         </summary>
@@ -831,7 +831,7 @@
           {{ t.t159 }}
         </p>
       </details>
-      <details style="background:var(--color-bg);padding:18px 20px">
+      <details name="faq" style="background:var(--color-bg);padding:18px 20px">
         <summary style="cursor:pointer;font-family:var(--font-heading);font-weight:600;font-size:16px">
           {{ t.t160 }}
         </summary>
@@ -839,7 +839,7 @@
           {{ t.t161 }}
         </p>
       </details>
-      <details style="background:var(--color-bg);padding:18px 20px">
+      <details name="faq" style="background:var(--color-bg);padding:18px 20px">
         <summary style="cursor:pointer;font-family:var(--font-heading);font-weight:600;font-size:16px">
           {{ t.t162 }}
         </summary>
@@ -848,7 +848,7 @@
           <sc-if value="{{ hidePricing }}" hint-placeholder-val="{{ false }}">{{ t.t164 }}</sc-if>
         </p>
       </details>
-      <details style="background:var(--color-bg);padding:18px 20px">
+      <details name="faq" style="background:var(--color-bg);padding:18px 20px">
         <summary style="cursor:pointer;font-family:var(--font-heading);font-weight:600;font-size:16px">
           {{ t.t165 }}
         </summary>
@@ -856,7 +856,7 @@
           {{ t.t166 }}
         </p>
       </details>
-      <details style="background:var(--color-bg);padding:18px 20px">
+      <details name="faq" style="background:var(--color-bg);padding:18px 20px">
         <summary style="cursor:pointer;font-family:var(--font-heading);font-weight:600;font-size:16px">
           {{ t.t167 }}
         </summary>
@@ -961,7 +961,7 @@ t041:{cs:"Ověřit fit →",en:"Check the fit →",sk:"Overiť fit →",de:"Pass
 t042:{cs:"AI pracovníci",en:"AI workers",sk:"AI pracovníci",de:"KI-Mitarbeiter",uk:"AI-працівники",ar:"عمّال الذكاء الاصطناعي"},
 t043:{cs:"13 příkladů AI operátorů s přímým dopadem na P&L",en:"13 example AI operators with direct P&L impact",sk:"13 príkladov AI operátorov s priamym dopadom na P&L",de:"13 Beispiele für KI-Operatoren mit direktem P&L-Effekt",uk:"13 прикладів AI-операторів із прямим впливом на P&L",ar:"13 مثالًا لمشغّلي ذكاء اصطناعي بأثر مباشر على الأرباح والخسائر"},
 t044:{cs:"Ilustrativní výběr, ne kompletní nabídka. Skutečný scope vychází z CIPHER Snapshotu, seřazený podle míst, kde firmám nejčastěji unikají tržby, marže a pracovní čas.",en:"An illustrative selection, not the full offering. The real scope comes from the CIPHER Snapshot, ranked by where revenue, margin and time most often leak.",sk:"Ilustratívny výber, nie kompletná ponuka. Skutočný scope vychádza z CIPHER Snapshotu, zoradený podľa miest, kde firmám najčastejšie unikajú tržby, marže a pracovný čas.",de:"Eine beispielhafte Auswahl, kein vollständiges Angebot. Der tatsächliche Umfang ergibt sich aus dem CIPHER Snapshot, geordnet danach, wo Unternehmen am häufigsten Umsatz, Marge und Zeit verlieren.",uk:"Ілюстративна добірка, а не повний перелік. Реальний обсяг випливає з CIPHER Snapshot, впорядкований за тим, де компанії найчастіше втрачають виручку, маржу і робочий час.",ar:"هذه مجرد أمثلة توضيحية وليست العرض الكامل. يُحدَّد النطاق الفعلي عبر تقرير CIPHER Snapshot، مرتّبًا حسب أكثر المواضع التي تُهدر فيها الشركات الإيرادات والهوامش والوقت."},
-t045:{cs:"MARKETING &amp; OBCHOD",en:"MARKETING &amp; SALES",sk:"MARKETING &amp; OBCHOD",de:"MARKETING &amp; VERTRIEB",uk:"МАРКЕТИНГ &amp; ПРОДАЖІ",ar:"التسويق والمبيعات"},
+t045:{cs:"MARKETING & OBCHOD",en:"MARKETING & SALES",sk:"MARKETING & OBCHOD",de:"MARKETING & VERTRIEB",uk:"МАРКЕТИНГ & ПРОДАЖІ",ar:"التسويق والمبيعات"},
 t046:{cs:"Website Conversion Agent",en:"Website Conversion Agent",sk:"Website Conversion Agent",de:"Website Conversion Agent",uk:"Website Conversion Agent",ar:"وكيل تحويل الموقع الإلكتروني"},
 t047:{cs:"Přivítá návštěvníka podle kontextu stránky, odpoví na jeho dotazy, rozpozná záměr, doporučí vhodné řešení, kvalifikuje ho a dovede k rezervaci schůzky, poptávce nebo nákupu.",en:"Greets the visitor based on page context, answers questions, spots intent, recommends the right solution, qualifies them, and drives them to a meeting, request, or purchase.",sk:"Privíta návštevníka podľa kontextu stránky, odpovie na jeho otázky, rozpozná zámer, odporučí vhodné riešenie, kvalifikuje ho a dovedie k rezervácii stretnutia, dopytu alebo nákupu.",de:"Begrüßt den Besucher je nach Seitenkontext, beantwortet Fragen, erkennt die Absicht, empfiehlt die passende Lösung, qualifiziert ihn und führt zur Terminbuchung, Anfrage oder zum Kauf.",uk:"Вітає відвідувача відповідно до контексту сторінки, відповідає на запитання, розпізнає намір, рекомендує потрібне рішення, кваліфікує його та веде до запису на зустріч, запиту чи покупки.",ar:"يرحّب بالزائر بحسب سياق الصفحة، ويجيب عن أسئلته، ويحدد نيته، ويوصي بالحل المناسب، ويؤهّله، ويقوده إلى حجز اجتماع أو تقديم طلب أو الشراء."},
 t048:{cs:"vyšší konverze webu, méně anonymních odchodů",en:"higher site conversion, fewer anonymous drop-offs",sk:"vyššia konverzia webu, menej anonymných odchodov",de:"höhere Website-Konversion, weniger anonyme Abbrüche",uk:"вища конверсія сайту, менше анонімних відходів",ar:"معدل تحويل أعلى للموقع وتراجع في المغادرة المجهولة"},
@@ -974,7 +974,7 @@ t054:{cs:"reakce do minut, méně ztracených poptávek",en:"reply in minutes, f
 t055:{cs:"Outbound Pipeline Agent",en:"Outbound Pipeline Agent",sk:"Outbound Pipeline Agent",de:"Outbound Pipeline Agent",uk:"Outbound Pipeline Agent",ar:"وكيل بناء خط المبيعات الصادر"},
 t056:{cs:"Vyhledává a aktivně oslovuje prospekty podle zadaného profilu zákazníka.",en:"Finds and actively reaches out to prospects matching a defined customer profile.",sk:"Vyhľadáva a aktívne oslovuje prospektov podľa zadaného profilu zákazníka.",de:"Findet Interessenten nach definiertem Kundenprofil und spricht sie aktiv an.",uk:"Знаходить і активно контактує з потенційними клієнтами за заданим профілем.",ar:"يبحث عن العملاء المحتملين المطابقين لملف تعريف محدد ويتواصل معهم بفاعلية."},
 t057:{cs:"plnější pipeline bez nárůstu obchodního týmu",en:"fuller pipeline without growing the sales team",sk:"plnší pipeline bez nárastu obchodného tímu",de:"volle Pipeline ohne Wachstum des Vertriebsteams",uk:"наповненіший пайплайн без розширення відділу продажів",ar:"خط مبيعات أكثر امتلاءً دون توسيع فريق المبيعات"},
-t058:{cs:"Proposal &amp; Follow-up Agent",en:"Proposal &amp; Follow-up Agent",sk:"Proposal &amp; Follow-up Agent",de:"Proposal &amp; Follow-up Agent",uk:"Proposal &amp; Follow-up Agent",ar:"وكيل العروض والمتابعة"},
+t058:{cs:"Proposal & Follow-up Agent",en:"Proposal & Follow-up Agent",sk:"Proposal & Follow-up Agent",de:"Proposal & Follow-up Agent",uk:"Proposal & Follow-up Agent",ar:"وكيل العروض والمتابعة"},
 t059:{cs:"Připravuje nabídky a kalkulace a hlídá obchodní follow-up, dokud zákazník nerozhodne.",en:"Drafts proposals and pricing, and tracks follow-up until the customer decides.",sk:"Pripravuje ponuky a kalkulácie a stráži obchodný follow-up, kým zákazník nerozhodne.",de:"Erstellt Angebote und Kalkulationen und verfolgt das Follow-up, bis der Kunde entscheidet.",uk:"Готує пропозиції та розрахунки і відстежує follow-up, поки клієнт не прийме рішення.",ar:"يعد العروض والتسعير ويتابع المتابعة البيعية حتى يتخذ العميل قراره."},
 t060:{cs:"rychlejší nabídky, vyšší close rate",en:"faster quotes, higher close rate",sk:"rýchlejšie ponuky, vyšší close rate",de:"schnellere Angebote, höhere Abschlussquote",uk:"швидші пропозиції, вищий рівень закриття угод",ar:"عروض أسعار أسرع ونسبة إغلاق صفقات أعلى"},
 t061:{cs:"AI Social Media Manager",en:"AI Social Media Manager",sk:"AI Social Media Manager",de:"AI Social Media Manager",uk:"AI Social Media Manager",ar:"مدير وسائل التواصل الاجتماعي بالذكاء الاصطناعي"},
@@ -997,7 +997,7 @@ t077:{cs:"vyšší marže bez nových zákazníků",en:"higher margin with no ne
 t078:{cs:"Procurement Agent",en:"Procurement Agent",sk:"Procurement Agent",de:"Procurement Agent",uk:"Procurement Agent",ar:"وكيل المشتريات"},
 t079:{cs:"Kontroluje náklady, podmínky dodavatelů a odhaluje nevyužívané licence a předplatné.",en:"Checks costs, vendor terms, and flags unused licenses and subscriptions.",sk:"Kontroluje náklady, podmienky dodávateľov a odhaľuje nevyužívané licencie a predplatné.",de:"Prüft Kosten, Lieferantenkonditionen und deckt ungenutzte Lizenzen und Abos auf.",uk:"Перевіряє витрати, умови постачальників і виявляє невикористані ліцензії та підписки.",ar:"يراجع التكاليف وشروط الموردين ويكتشف التراخيص والاشتراكات غير المستخدمة."},
 t080:{cs:"přímá úspora na fixních nákladech",en:"direct savings on fixed costs",sk:"priama úspora na fixných nákladoch",de:"direkte Einsparung bei Fixkosten",uk:"пряма економія на постійних витратах",ar:"وفورات مباشرة في التكاليف الثابتة"},
-t081:{cs:"PROVOZ &amp; INTERNÍ SLUŽBY",en:"OPERATIONS &amp; INTERNAL SERVICES",sk:"PREVÁDZKA &amp; INTERNÉ SLUŽBY",de:"BETRIEB &amp; INTERNE DIENSTE",uk:"ОПЕРАЦІЇ &amp; ВНУТРІШНІ СЕРВІСИ",ar:"العمليات والخدمات الداخلية"},
+t081:{cs:"PROVOZ & INTERNÍ SLUŽBY",en:"OPERATIONS & INTERNAL SERVICES",sk:"PREVÁDZKA & INTERNÉ SLUŽBY",de:"BETRIEB & INTERNE DIENSTE",uk:"ОПЕРАЦІЇ & ВНУТРІШНІ СЕРВІСИ",ar:"العمليات والخدمات الداخلية"},
 t082:{cs:"Back-office Agent",en:"Back-office Agent",sk:"Back-office Agent",de:"Back-Office Agent",uk:"Back-office Agent",ar:"وكيل العمليات الخلفية"},
 t083:{cs:"Zpracovává e-maily, faktury, smlouvy a objednávky bez ručního přepisování.",en:"Processes emails, invoices, contracts and orders with no manual re-keying.",sk:"Spracúva e-maily, faktúry, zmluvy a objednávky bez ručného prepisovania.",de:"Verarbeitet E-Mails, Rechnungen, Verträge und Bestellungen ohne manuelle Neuerfassung.",uk:"Обробляє листи, рахунки, договори та замовлення без ручного перенесення даних.",ar:"يعالج الرسائل الإلكترونية والفواتير والعقود والطلبات دون إعادة إدخال يدوية."},
 t084:{cs:"méně chyb, hodiny administrativy zpět týmu",en:"fewer errors, hours of admin back to the team",sk:"menej chýb, hodiny administratívy naspäť tímu",de:"weniger Fehler, gewonnene Verwaltungsstunden fürs Team",uk:"менше помилок, повернуті команді години на адміністрування",ar:"أخطاء أقل وساعات عمل إداري تُعاد إلى الفريق"},
@@ -1019,7 +1019,7 @@ t099:{cs:"Připravenost stakeholderů",en:"Stakeholder readiness",sk:"Pripraveno
 t100:{cs:"Governance, odpovědnost a hranice.",en:"Governance, accountability, and boundaries.",sk:"Governance, zodpovednosť a hranice.",de:"Governance, Verantwortlichkeit und Grenzen.",uk:"Управління, відповідальність і межі.",ar:"الحوكمة والمساءلة والحدود."},
 t101:{cs:"Připravenost zdrojů",en:"Resource readiness",sk:"Pripravenosť zdrojov",de:"Ressourcen-Bereitschaft",uk:"Готовність ресурсів",ar:"جاهزية الموارد"},
 t102:{cs:"Nejmenší dostatečný model a infrastruktura.",en:"The smallest sufficient model and infrastructure.",sk:"Najmenší dostatočný model a infraštruktúra.",de:"Das kleinste ausreichende Modell und die passende Infrastruktur.",uk:"Найменша достатня модель та інфраструктура.",ar:"أصغر نموذج وبنية تحتية كافيين."},
-t103:{cs:"Vychází z frameworku CIPHER: Armanios & Tucci (2025), Building organizational and project readiness for AI: A dialectical approach. ",en:"Based on the CIPHER framework: Armanios &amp; Tucci (2025), Building organizational and project readiness for AI: A dialectical approach. ",sk:"Vychádza z frameworku CIPHER: Armanios & Tucci (2025), Building organizational and project readiness for AI: A dialectical approach. ",de:"Basiert auf dem CIPHER-Framework: Armanios & Tucci (2025), Building organizational and project readiness for AI: A dialectical approach. ",uk:"На основі фреймворку CIPHER: Armanios & Tucci (2025), Building organizational and project readiness for AI: A dialectical approach. ",ar:"مبني على إطار CIPHER: Armanios & Tucci (2025), Building organizational and project readiness for AI: A dialectical approach. "},
+t103:{cs:"Vychází z frameworku CIPHER: Armanios & Tucci (2025), Building organizational and project readiness for AI: A dialectical approach. ",en:"Based on the CIPHER framework: Armanios & Tucci (2025), Building organizational and project readiness for AI: A dialectical approach. ",sk:"Vychádza z frameworku CIPHER: Armanios & Tucci (2025), Building organizational and project readiness for AI: A dialectical approach. ",de:"Basiert auf dem CIPHER-Framework: Armanios & Tucci (2025), Building organizational and project readiness for AI: A dialectical approach. ",uk:"На основі фреймворку CIPHER: Armanios & Tucci (2025), Building organizational and project readiness for AI: A dialectical approach. ",ar:"مبني على إطار CIPHER: Armanios & Tucci (2025), Building organizational and project readiness for AI: A dialectical approach. "},
 t103link:{cs:"Open-access paper ↗",en:"Open-access paper ↗",sk:"Open-access paper ↗",de:"Open-access paper ↗",uk:"Open-access paper ↗",ar:"الورقة البحثية المفتوحة ↗"},
 t104:{cs:"Praktickým výstupem je CIPHER Snapshot: stručná mapa připravenosti, kritických napětí a doporučených kroků pro pilot, odklad nebo zastavení iniciativy.",en:"The practical output is the CIPHER Snapshot: a concise map of readiness, critical tensions, and recommended next steps — pilot, delay, or stop the initiative.",sk:"Praktickým výstupom je CIPHER Snapshot: stručná mapa pripravenosti, kritických napätí a odporúčaných krokov pre pilot, odklad alebo zastavenie iniciatívy.",de:"Das praktische Ergebnis ist der CIPHER Snapshot: eine knappe Übersicht über Bereitschaft, kritische Spannungen und empfohlene nächste Schritte — Pilot, Verzögerung oder Stopp der Initiative.",uk:"Практичний результат — CIPHER Snapshot: стисла карта готовності, критичних напружень і рекомендованих кроків — пілот, відкладення чи зупинка ініціативи.",ar:"الناتج العملي هو تقرير CIPHER Snapshot: خريطة موجزة للجاهزية والتوترات الحرجة والخطوات الموصى بها — تجربة، أو تأجيل، أو إيقاف المبادرة."},
 t105:{cs:"Kdy to dává smysl",en:"When it fits",sk:"Kedy to dáva zmysel",de:"Wann es passt",uk:"Коли це доречно",ar:"متى يكون هذا مناسبًا"},

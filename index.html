@@ -47,6 +47,9 @@
     #mandate-flow .flow-arrow { border-top:none !important; padding:0 4px; }
     #mandate-flow .flow-arrow svg { transform:none; }
   }
+  @media (max-width:559px) {
+    #problem-grid > div { padding-left:24px !important; padding-right:24px !important; }
+  }
   a { color: var(--color-accent-700); }
   a:hover { color: var(--color-accent-800); }
 </style>
@@ -56,7 +59,7 @@
 
 <!-- NAV -->
 <nav class="nav" style="position:sticky;top:0;z-index:50;background:color-mix(in srgb, var(--color-bg) 92%, transparent);backdrop-filter:blur(6px);border-bottom:1px solid var(--color-divider);flex-wrap:wrap;padding:14px clamp(20px,4vw,48px)">
-  <a href="#top" class="nav-brand" style="letter-spacing:-0.01em">headofai<span style="color:var(--color-accent)">.cz</span></a>
+  <a href="#top" class="nav-brand" style="font-size:24px;letter-spacing:-0.01em">headofai<span style="color:var(--color-accent)">.cz</span></a>
   <a href="#problem">
     {{ t.t001 }}
   </a>
@@ -86,7 +89,7 @@
       </div>
     </sc-if>
   </div>
-  <a href="#kontakt" class="btn btn-primary" style="white-space:nowrap">
+  <a href="#kontakt" class="btn btn-primary" style="white-space:nowrap;font-size:15px;padding:14px 26px">
     {{ t.t006 }}
   </a>
 </nav>
@@ -162,7 +165,7 @@
   <p style="max-width:66ch;opacity:0.8;margin-bottom:48px;font-size:16px">
     {{ t.t017 }}
   </p>
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:0;border-top:1px solid var(--color-divider)">
+  <div id="problem-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:0;border-top:1px solid var(--color-divider)">
     <div style="padding:28px 24px 28px 0;border-bottom:1px solid var(--color-divider)">
       <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:12px"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><line x1="17" x2="22" y1="8" y2="13"></line><line x1="22" x2="17" y1="8" y2="13"></line></svg>
       <h4 style="margin-bottom:8px">

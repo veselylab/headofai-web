@@ -34,14 +34,10 @@
     a:hover { color: #f5edd9; text-decoration: underline; }
     @media (prefers-reduced-motion: reduce) { [data-faq-motion] { transition: none !important; } }
     @keyframes fadeUp { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
-    #footer-contact { text-align: center; }
-    #footer-contact p { justify-content: center; }
     @media (max-width: 768px) {
       #nav-links { display: none !important; }
       #bio-card { max-width: 100% !important; text-align: center; }
       #bio-photo { margin: 0 auto; }
-      #footer-contact { text-align: left; }
-      #footer-contact p { justify-content: flex-start; }
     }
   </style>
 </helmet>
@@ -170,7 +166,6 @@
               <div style="display: flex; align-items: center; gap: 10px;"><h3 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(22px, 2.6vw, 28px); margin: 0;">{{ t.t_st2_title }}</h3></div>
               <span style="font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent-400); border: 1px solid color-mix(in srgb, #c8ae71 30%, transparent); padding: 3px 8px; white-space: nowrap;">{{ t.t_st2_tag }}</span>
               <span style="flex: 1;"></span>
-              <p style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 22px; margin: 0; color: var(--color-accent-200); white-space: nowrap;">750 000 CZK <span style="font-family: var(--font-body); font-weight: 400; font-size: 12px; color: color-mix(in srgb, var(--color-text) 48%, transparent);">{{ t.t_sprint_per }}</span></p>
               
             </div>
             
@@ -297,7 +292,7 @@
                 <h3 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(20px, 2.4vw, 26px); margin: 0; max-width: 30ch;">{{ t.t_spr_result_h }}</h3>
                 <p style="font-size: 13px; line-height: 1.55; max-width: 52ch; margin: 8px 0 0; color: color-mix(in srgb, var(--color-text) 58%, transparent);"><strong style="color: color-mix(in srgb, var(--color-text) 85%, transparent);">{{ t.t_spr_result_b1 }}</strong>{{ t.t_spr_result_b2 }}</p>
               </div>
-              <a href="#kontakt" class="btn btn-primary" style="text-decoration: none; padding: 12px 22px; font-size: 14px;">{{ t.t_spr_cta }}</a>
+              <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 12px;"><p style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 28px; margin: 0; color: var(--color-accent-200); white-space: nowrap;">750 000 CZK <span style="font-family: var(--font-body); font-weight: 400; font-size: 12px; color: color-mix(in srgb, var(--color-text) 48%, transparent);">{{ t.t_sprint_per }}</span></p><a href="#kontakt" class="btn btn-primary" style="text-decoration: none; padding: 12px 22px; font-size: 14px;">{{ t.t_spr_cta }}</a></div>
             </div>
           </div>
         </div>
@@ -611,7 +606,7 @@ const STRINGS = {
   t_op8_i:{cs:"↗ vyšší marže",en:"↗ higher margin",sk:"↗ vyššia marža",de:"↗ höhere Marge",uk:"↗ вища маржа",ar:"↗ هامش أعلى"},
   t_op9_b:{cs:"Odpovídá podle směrnic a spouští HR/IT procesy.",en:"Answers per internal policy and triggers HR/IT processes.",sk:"Odpovedá podľa smerníc a spúšťa HR/IT procesy.",de:"Antwortet gemäß Richtlinien und stößt HR/IT-Prozesse an.",uk:"Відповідає згідно з політиками й запускає HR/IT-процеси.",ar:"يجيب وفق السياسات ويشغّل عمليات الموارد البشرية وتقنية المعلومات."},
   t_op9_i:{cs:"↗ méně dotazů na HR a IT",en:"↗ fewer HR and IT tickets",sk:"↗ menej dopytov na HR a IT",de:"↗ weniger HR- und IT-Anfragen",uk:"↗ менше звернень до HR та IT",ar:"↗ استفسارات أقل للموارد البشرية وتقنية المعلومات"},
-  t_spr_result_head:{cs:"Výsledek sprintu · 90 dní · 750 000 CZK bez DPH",en:"Sprint outcome · 90 days · CZK 750,000 excl. VAT",sk:"Výsledok šprintu · 90 dní · 750 000 CZK bez DPH",de:"Sprint-Ergebnis · 90 Tage · 750.000 CZK zzgl. MwSt.",uk:"Результат спринту · 90 днів · 750 000 CZK без ПДВ",ar:"نتيجة السبرنت · ٩٠ يومًا · ٧٥٠٬٠٠٠ CZK غير شامل الضريبة"},
+  t_spr_result_head:{cs:"Výsledek sprintu · 90 dní",en:"Sprint outcome · 90 days",sk:"Výsledok šprintu · 90 dní",de:"Sprint-Ergebnis · 90 Tage",uk:"Результат спринту · 90 днів",ar:"نتيجة السبرنت · ٩٠ يومًا"},
   t_spr_result_h:{cs:"AI má vlastníka, pravidla a první prokazatelný výkon.",en:"AI has an owner, rules and first provable performance.",sk:"AI má vlastníka, pravidlá a prvý preukázateľný výkon.",de:"KI hat einen Verantwortlichen, Regeln und die erste nachweisbare Leistung.",uk:"ШІ має власника, правила та перший доведений результат.",ar:"أصبح للذكاء الاصطناعي مالك، وقواعد، وأول أداء يمكن إثباته."},
   t_spr_result_b1:{cs:"Do realizace jdeme jen tehdy, pokud očekávaný roční dopad výrazně převyšuje investici. Když čísla nevycházejí, doporučím projekt zastavit.",en:"We only proceed to build if the expected annual impact clearly exceeds the investment. If the numbers don't add up, I'll recommend stopping the project.",sk:"Do realizácie ideme len vtedy, ak očakávaný ročný dopad výrazne prevyšuje investíciu. Keď čísla nevychádzajú, odporučím projekt zastaviť.",de:"Wir gehen nur dann in die Umsetzung, wenn die erwartete Jahreswirkung die Investition deutlich übersteigt. Wenn die Zahlen nicht aufgehen, empfehle ich, das Projekt zu stoppen.",uk:"До реалізації йдемо лише тоді, коли очікуваний річний вплив суттєво перевищує інвестицію. Якщо цифри не сходяться, рекомендую зупинити проєкт.",ar:"لا ننتقل إلى التنفيذ إلا إذا كان الأثر السنوي المتوقع يفوق الاستثمار بوضوح. وإذا لم تتوافق الأرقام، أوصي بإيقاف المشروع."},
   t_spr_result_b2:{cs:"Interní Head of AI vás první rok stojí miliony a půl roku náboru — sprint dodá výsledky za jedno čtvrtletí.",en:"An in-house Head of AI costs you millions and half a year of hiring in year one — the sprint delivers results in a single quarter.",sk:"Interný Head of AI vás prvý rok stojí milióny a pol roka náboru — šprint dodá výsledky za jeden štvrťrok.",de:"Ein interner Head of AI kostet Sie im ersten Jahr Millionen und ein halbes Jahr Rekrutierung — der Sprint liefert Ergebnisse in einem einzigen Quartal.",uk:"Внутрішній Head of AI коштує вам мільйони й пів року найму в перший рік — спринт дає результати за один квартал.",ar:"يكلّفك Head of AI داخلي ملايين ونصف عام من التوظيف في السنة الأولى — بينما يقدّم السبرنت النتائج في ربع سنة واحد."},

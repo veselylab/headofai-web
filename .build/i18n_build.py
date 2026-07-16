@@ -50,7 +50,7 @@ k('t_stat4_k','tržby, náklady nebo riziko','revenue, cost or risk')
 k('t_unit_days','90 dní','90 days')
 
 # 01 PROBLEM
-k('t_p_eyebrow','01 · Problém','01 · Problem')
+# t_p_eyebrow zruseno — eyebrow "Problém" reuse t_nav_problem (bez cisla)
 k('t_p_h2','AI aktivita není AI výkon.','AI activity is not AI performance.')
 k('t_p1_h','AI bez vlastníka','AI with no owner')
 k('t_p1_b','Vzniká po odděleních, ale nikdo ji neřídí jako firemní schopnost.','It grows across departments, but no one runs it as a company capability.')
@@ -62,7 +62,7 @@ k('t_p4_h','Pokrok bez orientace','Progress without direction')
 k('t_p4_b','Možnosti AI rostou rychleji, než se v nich firmy dokážou zorientovat.','AI capabilities grow faster than companies can keep up with.')
 
 # 02 SOLUTION
-k('t_s_eyebrow','02 · Řešení a cena','02 · Approach & pricing')
+# t_s_eyebrow zruseno — eyebrow "Řešení a cena" reuse t_nav_solution (bez cisla)
 k('t_s_h2','Z chaosu do řízeného výkonu. Čtyři kroky.','From chaos to managed performance. Four steps.')
 k('t_s_lead','Neprodávám audit do šuplíku ani izolovaný chatbot. Na prvních 90 dní přebírám mandát k řízení AI agendy — od rozhodnutí po provoz. Krok 1 je zdarma, kroky 2–3 tvoří fixní 90denní sprint, krok 4 je volitelné pokračování.','I don\'t sell a shelved audit or an isolated chatbot. For the first 90 days I take the mandate to run your AI agenda — from decision to operation. Step 1 is free, steps 2–3 form the fixed 90-day sprint, step 4 is optional continuation.')
 k('t_s_result','Výsledek: AI má vlastníka, pravidla a první prokazatelný výkon.','Outcome: AI has an owner, rules and first provable performance.')
@@ -133,7 +133,7 @@ k('t_ret_body','Průběžné řízení AI agendy jako externí Head of AI: portf
 # 03 FIT
 
 # 04 ABOUT
-k('t_ab_eyebrow','04 · Kdo za tím stojí','04 · Who stands behind it')
+k('t_ab_eyebrow','Kdo za tím stojí','Who stands behind it')
 k('t_ab_role','Zakladatel · Vesely.ai s.r.o.','Founder · Vesely.ai s.r.o.')
 k('t_ab_p1','Pomáhám vedení firem dostat AI pod kontrolu: určit priority, nastavit governance, nasadit první AI pracovníky a měřit jejich skutečný dopad.','I help company leadership get AI under control: set priorities, establish governance, deploy the first AI workers and measure their real impact.')
 k('t_ab_p2a','Doporučuji jen přístupy, které jsem si ověřil v reálném provozu nebo na vlastním kapitálu. Na platformě ','I only recommend approaches I\'ve verified myself, in real operation or with my own capital. On the ')
@@ -152,7 +152,7 @@ k('t_pr7','AI dodavatel může dodat nástroj. Nemá ale vlastnit vaši AI strat
 k('t_pr8','Neprodávám chatboty. Pomáhám vedení firem převzít kontrolu nad AI.','I don\'t sell chatbots. I help leadership take control of AI.')
 
 # 05 CONTACT
-k('t_c_eyebrow','05 · Ne další AI workshop','05 · Not another AI workshop')
+k('t_c_eyebrow','Ne další AI workshop','Not another AI workshop')
 k('t_c_h2','Rozhodovací call.','A decision call.')
 k('t_c_lead','Během 30 minut zjistíme, jestli vaše firma potřebuje prvního AI pracovníka, 90denní sprint — nebo nejdřív nastavit odpovědnost.','In 30 minutes we\'ll find out whether your company needs a first AI worker, the 90-day sprint — or to set accountability first.')
 k('t_c_note1','ozvu se do 24 hodin','I reply within 24 hours')
@@ -168,7 +168,7 @@ k('t_f_consent','Odesláním souhlasíte se zpracováním osobních údajů.','B
 k('t_f_privacy','Zásady ochrany osobních údajů','Privacy policy')
 
 # 06 FAQ
-k('t_faq_eyebrow','06 · FAQ','06 · FAQ')
+k('t_faq_eyebrow','FAQ','FAQ')
 k('t_faq_h2','Časté otázky','Frequently asked questions')
 k('t_faq_q1','Co bude po 90 dnech ve firmě skutečně hotové?','What will actually be done in the company after 90 days?')
 k('t_faq_a1','Po 90 dnech má AI agenda jasného vlastníka, schválené priority a pravidla pro data, oprávnění a lidské schvalování. Nejméně jeden prioritní AI pracovník běží v reálném provozu s definovanými KPI. Vedení dostane přehled dosaženého dopadu a doporučení pro další období.','After 90 days the AI agenda has a clear owner, approved priorities and rules for data, permissions and human approval. At least one priority AI worker runs in real operation with defined KPIs. Leadership gets an overview of the impact achieved and a recommendation for the next period.')

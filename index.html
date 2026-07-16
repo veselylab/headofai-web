@@ -34,6 +34,11 @@
     a:hover { color: #f5edd9; text-decoration: underline; }
     @media (prefers-reduced-motion: reduce) { [data-faq-motion] { transition: none !important; } }
     @keyframes fadeUp { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+    @media (max-width: 768px) {
+      #nav-links { display: none !important; }
+      #bio-card { max-width: 100% !important; text-align: center; }
+      #bio-photo { margin: 0 auto; }
+    }
   </style>
 </helmet>
 <div style="--color-bg: #161718; --color-surface: #212224; --color-text: #f2f2f3; --color-divider: color-mix(in srgb, #f2f2f3 13%, transparent); --color-accent: #c8ae71; --color-accent-100: #f5edd9; --color-accent-200: #ebdcb8; --color-accent-300: #ddc794; --color-accent-400: #d3b97e; --color-accent-500: #c8ae71; --color-accent-600: #ac9358; --color-accent-700: #86733f; --color-accent-800: #5f512c; --color-accent-900: #3a3119; --color-accent-2: #c8ae71; --color-accent-2-100: #f5edd9; --color-accent-2-800: #5f512c; background: var(--color-bg); color: var(--color-text); font-family: var(--font-body); min-height: 100vh;">
@@ -41,7 +46,7 @@
   <header style="position: sticky; top: 0; z-index: 50; backdrop-filter: blur(14px); background: color-mix(in srgb, #161718 55%, transparent); border-bottom: 1px solid var(--color-divider);">
     <nav aria-label="Hlavní navigace" style="max-width: 1120px; margin: 0 auto; display: flex; align-items: center; gap: clamp(12px, 3vw, 32px); padding: 14px clamp(16px, 4vw, 48px); flex-wrap: wrap;">
       <a href="#top" style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 26px; color: var(--color-text); letter-spacing: -0.01em; line-height: 1;">headofai<span style="color: var(--color-accent);">.cz</span></a>
-      <div style="display: flex; gap: clamp(12px, 2.5vw, 24px); flex: 1; flex-wrap: wrap;">
+      <div id="nav-links" style="display: flex; gap: clamp(12px, 2.5vw, 24px); flex: 1; flex-wrap: wrap; justify-content: center;">
         <a href="#problem" style="color: color-mix(in srgb, var(--color-text) 62%, transparent); font-size: 14px;" style-hover="color: var(--color-text); text-decoration: none;">Problém</a>
         <a href="#reseni" style="color: color-mix(in srgb, var(--color-text) 62%, transparent); font-size: 14px;" style-hover="color: var(--color-text); text-decoration: none;">Řešení a cena</a>
         <a href="#o-mne" style="color: color-mix(in srgb, var(--color-text) 62%, transparent); font-size: 14px;" style-hover="color: var(--color-text); text-decoration: none;">O mně</a>
@@ -346,8 +351,8 @@
       <div style="max-width: 1120px; margin: 0 auto; padding: clamp(56px, 9vw, 100px) clamp(16px, 4vw, 48px);">
         <span style="display: block; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-400); margin-bottom: 48px;">04 · Kdo za tím stojí</span>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px;">
-          <div style="max-width: 300px;">
-            <div style="width: 168px; height: 168px;">
+          <div id="bio-card" style="max-width: 300px;">
+            <div id="bio-photo" style="width: 168px; height: 168px;">
               <img src="assets/profile.webp" alt="Foto Davida Veselého" width="168" height="168" style="width: 168px; height: 168px; border-radius: 50%; object-fit: cover; display: block;">
             </div>
             <h3 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 24px; margin: 20px 0 0;">David Veselý</h3>

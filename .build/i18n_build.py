@@ -65,7 +65,7 @@ k('t_p4_b','Možnosti AI rostou rychleji, než se v nich firmy dokážou zorient
 # t_s_eyebrow zruseno — eyebrow "Řešení a cena" reuse t_nav_solution (bez cisla)
 k('t_s_h2','Z chaosu do řízeného výkonu. Čtyři kroky.','From chaos to managed performance. Four steps.')
 k('t_s_lead','Neprodávám audit do šuplíku ani izolovaný chatbot. Na prvních 90 dní přebírám mandát k řízení AI agendy — od rozhodnutí po provoz. Krok 1 je zdarma, kroky 2–3 tvoří fixní 90denní sprint, krok 4 je volitelné pokračování.','I don\'t sell a shelved audit or an isolated chatbot. For the first 90 days I take the mandate to run your AI agenda — from decision to operation. Step 1 is free, steps 2–3 form the fixed 90-day sprint, step 4 is optional continuation.')
-k('t_s_result','Výsledek: AI má vlastníka, pravidla a první prokazatelný výkon.','Outcome: AI has an owner, rules and first provable performance.')
+# t_s_result zruseno (odebrano ze stranky)
 # step 1
 k('t_st1_title','AI Leadership Call','AI Leadership Call')
 k('t_st1_tag','Vstup','Entry')

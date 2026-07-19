@@ -8,8 +8,8 @@
 <body>
 <x-dc>
 <helmet>
-  <title>headofai.cz — Fractional Head of AI</title>
-  <meta name="description" content="Fractional AI leadership pro firmy, které chtějí kontrolu, měřitelný dopad a první AI pracovníky v provozu. 90denní mandát: priority, governance, nasazení.">
+  <title>headofai.cz — Fractional Head of AI / CAIO pro firmy</title>
+  <meta name="description" content="Fractional Head of AI / CAIO pro firmy: za 90 dní AI pod kontrolou — priority, governance dle EU AI Act a první AI pracovníci s měřitelným dopadem.">
   <link rel="canonical" href="https://headofai.cz">
   <meta name="theme-color" content="#161718">
   <meta property="og:title" content="headofai.cz — Fractional Head of AI">
@@ -252,6 +252,7 @@
             </div>
             
             <p style="font-size: 14px; line-height: 1.6; margin: 12px 0 0; max-width: 70ch; color: color-mix(in srgb, var(--color-text) 58%, transparent);">{{ t.t_st3_body }}</p>
+            <p style="font-size: 14px; line-height: 1.6; margin: 14px 0 0; max-width: 70ch; color: color-mix(in srgb, var(--color-text) 72%, transparent); border-left: 2px solid color-mix(in srgb, #c8ae71 45%, transparent); padding-left: 14px;">{{ t.t_st3_data }}</p>
             <h4 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: color-mix(in srgb, var(--color-text) 48%, transparent); margin: 24px 0 12px;">{{ t.t_cat_rev }}</h4>
               <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px;">
                 <article style="border: 1px solid var(--color-divider); padding: 18px; background: var(--color-bg); transition: border-color 0.2s;" style-hover="border-color: color-mix(in srgb, #c8ae71 45%, transparent);">
@@ -306,6 +307,14 @@
                 <p style="font-size: 13px; margin: 10px 0 0; color: var(--color-accent-300);">{{ t.t_op9_i }}</p>
               </article>
               </div>
+            <h4 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: color-mix(in srgb, var(--color-text) 48%, transparent); margin: 32px 0 12px;">{{ t.t_gov_label }}</h4>
+            <div style="border: 1px solid color-mix(in srgb, #c8ae71 35%, transparent); background: color-mix(in srgb, #c8ae71 5%, transparent); padding: clamp(20px, 3vw, 26px);">
+              <h5 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(17px, 2vw, 20px); margin: 0 0 16px;">{{ t.t_gov_h }}</h5>
+              <p style="display: flex; gap: 10px; font-size: 14px; line-height: 1.55; margin: 0 0 10px; color: color-mix(in srgb, var(--color-text) 78%, transparent);"><span style="color: var(--color-accent); flex-shrink: 0;">+</span>{{ t.t_gov_b1 }}</p>
+              <p style="display: flex; gap: 10px; font-size: 14px; line-height: 1.55; margin: 0 0 10px; color: color-mix(in srgb, var(--color-text) 78%, transparent);"><span style="color: var(--color-accent); flex-shrink: 0;">+</span>{{ t.t_gov_b2 }}</p>
+              <p style="display: flex; gap: 10px; font-size: 14px; line-height: 1.55; margin: 0; color: color-mix(in srgb, var(--color-text) 78%, transparent);"><span style="color: var(--color-accent); flex-shrink: 0;">+</span>{{ t.t_gov_b3 }}</p>
+              <p style="font-size: 13px; line-height: 1.5; margin: 16px 0 0; color: color-mix(in srgb, var(--color-text) 55%, transparent);">{{ t.t_gov_note }}</p>
+            </div>
             <div style="border: 1px solid color-mix(in srgb, #c8ae71 45%, transparent); background: color-mix(in srgb, #c8ae71 7%, transparent); padding: clamp(20px, 3vw, 28px); margin-top: 28px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
               <div>
                 <span style="display: block; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-400); margin-bottom: 8px;">{{ t.t_spr_result_head }}</span>
@@ -332,6 +341,7 @@
                 <span style="display: block; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-400); margin-bottom: 8px;">{{ t.t_ret_result_label }}</span>
                 <h3 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(20px, 2.4vw, 26px); margin: 0; max-width: 34ch;">{{ t.t_ret_result_h }}</h3>
                 <p style="font-size: 13px; line-height: 1.55; max-width: 60ch; margin: 8px 0 0; color: color-mix(in srgb, var(--color-text) 58%, transparent);">{{ t.t_ret_body }}</p>
+                <p style="font-size: 13px; line-height: 1.55; max-width: 60ch; margin: 10px 0 0; color: color-mix(in srgb, var(--color-text) 58%, transparent);">{{ t.t_ret_adoption }}</p>
               </div>
               <p style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 28px; margin: 0; color: var(--color-accent-200); white-space: nowrap;">od 170 000 CZK <span style="font-family: var(--font-body); font-weight: 400; font-size: 12px; color: color-mix(in srgb, var(--color-text) 48%, transparent);">{{ t.t_ret_per }}</span></p>
             </div>
@@ -490,6 +500,28 @@
               </div>
             </div>
           </div>
+          <div style="border-top: 1px solid var(--color-divider);">
+            <button type="button" id="faq-q7" aria-controls="faq-a7" aria-expanded="{{ faqExp7 }}" onClick="{{ faqOpen7 }}" style="display: flex; justify-content: space-between; align-items: center; gap: 16px; width: 100%; padding: 20px 0; background: none; border: none; cursor: pointer; text-align: left; font-family: var(--font-body); color: var(--color-text);" style-focus="outline: 2px solid var(--color-accent); outline-offset: 2px;">
+              <span style="font-size: 16px; line-height: 1.4;">{{ t.t_faq_q8 }}</span>
+              <span aria-hidden="true" style="color: var(--color-accent-400); font-size: 20px; line-height: 1; flex-shrink: 0; transform: {{ faqIcon7 }}; transition: transform 240ms ease;" data-faq-motion="1">+</span>
+            </button>
+            <div id="faq-a7" role="region" aria-labelledby="faq-q7" style="display: grid; grid-template-rows: {{ faqRows7 }}; transition: grid-template-rows 240ms ease;" data-faq-motion="1">
+              <div style="overflow: hidden; min-height: 0;">
+                <p style="font-size: 15px; line-height: 1.7; margin: 0; padding: 0 0 22px; max-width: 66ch; color: color-mix(in srgb, var(--color-text) 82%, transparent);">{{ t.t_faq_a8 }}</p>
+              </div>
+            </div>
+          </div>
+          <div style="border-top: 1px solid var(--color-divider);">
+            <button type="button" id="faq-q8" aria-controls="faq-a8" aria-expanded="{{ faqExp8 }}" onClick="{{ faqOpen8 }}" style="display: flex; justify-content: space-between; align-items: center; gap: 16px; width: 100%; padding: 20px 0; background: none; border: none; cursor: pointer; text-align: left; font-family: var(--font-body); color: var(--color-text);" style-focus="outline: 2px solid var(--color-accent); outline-offset: 2px;">
+              <span style="font-size: 16px; line-height: 1.4;">{{ t.t_faq_q9 }}</span>
+              <span aria-hidden="true" style="color: var(--color-accent-400); font-size: 20px; line-height: 1; flex-shrink: 0; transform: {{ faqIcon8 }}; transition: transform 240ms ease;" data-faq-motion="1">+</span>
+            </button>
+            <div id="faq-a8" role="region" aria-labelledby="faq-q8" style="display: grid; grid-template-rows: {{ faqRows8 }}; transition: grid-template-rows 240ms ease;" data-faq-motion="1">
+              <div style="overflow: hidden; min-height: 0;">
+                <p style="font-size: 15px; line-height: 1.7; margin: 0; padding: 0 0 22px; max-width: 66ch; color: color-mix(in srgb, var(--color-text) 82%, transparent);">{{ t.t_faq_a9 }}</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -529,7 +561,7 @@ const STRINGS = {
   t_nav_solution:{cs:"Řešení a cena",en:"Approach & pricing",sk:"Riešenie a cena",de:"Ansatz & Preis",uk:"Рішення та ціна",ar:"النهج والسعر"},
   t_nav_about:{cs:"O mně",en:"About",sk:"O mne",de:"Über mich",uk:"Про мене",ar:"نبذة عني"},
   t_nav_cta:{cs:"Objednat call",en:"Book a call",sk:"Objednať hovor",de:"Call buchen",uk:"Забронювати дзвінок",ar:"احجز مكالمة"},
-  t_hero_eyebrow:{cs:"Fractional Head of AI",en:"Fractional Head of AI",sk:"Fractional Head of AI",de:"Fractional Head of AI",uk:"Fractional Head of AI",ar:"Fractional Head of AI"},
+  t_hero_eyebrow:{cs:"Fractional Head of AI / CAIO",en:"Fractional Head of AI / CAIO",sk:"Fractional Head of AI",de:"Fractional Head of AI",uk:"Fractional Head of AI",ar:"Fractional Head of AI"},
   t_hero_h1a:{cs:"AI už ve vaší firmě běží.",en:"AI is already running in your company.",sk:"AI už vo vašej firme beží.",de:"KI läuft bereits in Ihrem Unternehmen.",uk:"ШІ у вашій компанії вже працює.",ar:"الذكاء الاصطناعي يعمل بالفعل في شركتك."},
   t_hero_h1b:{cs:"Převezměte nad ní kontrolu.",en:"Take control of it.",sk:"Prevezmite nad ňou kontrolu.",de:"Übernehmen Sie die Kontrolle.",uk:"Візьміть це під контроль.",ar:"استعد السيطرة عليه."},
   t_hero_after:{cs:"Po 90 dnech",en:"After 90 days",sk:"Po 90 dňoch",de:"Nach 90 Tagen",uk:"Через 90 днів",ar:"بعد ٩٠ يومًا"},
@@ -612,7 +644,7 @@ const STRINGS = {
   t_ret_result_h:{cs:"Průběžně řízený výkon a měřený dopad.",en:"Continuously managed performance and measured impact.",sk:"Priebežne riadený výkon a meraný dopad.",de:"Laufend gesteuerte Leistung und gemessene Wirkung.",uk:"Постійно керований результат і виміряний вплив.",ar:"أداء مُدار باستمرار وأثر مقاس."},
   t_ret_body:{cs:"Průběžné řízení AI agendy jako externí Head of AI: portfolio iniciativ, vendoři, adopce a board reporting. Pokračujeme, jen pokud sprint prokázal hodnotu.",en:"Ongoing management of the AI agenda as your fractional Head of AI: initiative portfolio, vendors, adoption and board reporting. We continue only if the sprint proved its value.",sk:"Priebežné riadenie AI agendy ako externý Head of AI: portfólio iniciatív, vendori, adopcia a board reporting. Pokračujeme, len ak šprint preukázal hodnotu.",de:"Laufende Steuerung der KI-Agenda als Ihr Fractional Head of AI: Initiativen-Portfolio, Anbieter, Adoption und Board-Reporting. Wir machen nur weiter, wenn der Sprint seinen Wert belegt hat.",uk:"Постійне керування AI-агендою як зовнішній Head of AI: портфель ініціатив, вендори, адопція та board reporting. Продовжуємо, лише якщо спринт довів цінність.",ar:"إدارة مستمرة لأجندة الذكاء الاصطناعي بصفتي Head of AI خارجيًا: محفظة المبادرات، المورّدون، التبنّي، وتقارير مجلس الإدارة. نستمر فقط إذا أثبت السبرنت قيمته."},
   t_ab_eyebrow:{cs:"Kdo za tím stojí",en:"Who stands behind it",sk:"Kto za tým stojí",de:"Wer dahintersteckt",uk:"Хто за цим стоїть",ar:"من وراء هذا المشروع"},
-  t_ab_role:{cs:"Zakladatel · Vesely.ai s.r.o.",en:"Founder · Vesely.ai s.r.o.",sk:"Zakladateľ · Vesely.ai s.r.o.",de:"Gründer · Vesely.ai s.r.o.",uk:"Засновник · Vesely.ai s.r.o.",ar:"المؤسس · Vesely.ai s.r.o."},
+  t_ab_role:{cs:"Zakladatel · Vesely.ai s.r.o. · fractional CAIO",en:"Founder · Vesely.ai s.r.o. · fractional CAIO",sk:"Zakladateľ · Vesely.ai s.r.o. · fractional CAIO",de:"Gründer · Vesely.ai s.r.o. · fractional CAIO",uk:"Засновник · Vesely.ai s.r.o. · fractional CAIO",ar:"المؤسس · Vesely.ai s.r.o. · fractional CAIO"},
   t_ab_p1:{cs:"Pomáhám vedení firem dostat AI pod kontrolu: určit priority, nastavit governance, nasadit první AI pracovníky a měřit jejich skutečný dopad.",en:"I help company leadership get AI under control: set priorities, establish governance, deploy the first AI workers and measure their real impact.",sk:"Pomáham vedeniu firiem dostať AI pod kontrolu: určiť priority, nastaviť governance, nasadiť prvých AI pracovníkov a merať ich skutočný dopad.",de:"Ich helfe der Führung, KI unter Kontrolle zu bringen: Prioritäten setzen, Governance einrichten, die ersten KI-Mitarbeiter einführen und ihre echte Wirkung messen.",uk:"Я допомагаю керівництву компаній взяти ШІ під контроль: визначити пріоритети, налаштувати управління, впровадити перших AI-працівників і виміряти їхній реальний ефект.",ar:"أساعد قيادات الشركات على السيطرة على الذكاء الاصطناعي: تحديد الأولويات، وإرساء الحوكمة، ونشر أول عمّال ذكاء اصطناعي، وقياس أثرهم الحقيقي."},
   t_ab_p2a:{cs:"Doporučuji jen přístupy, které jsem si ověřil v reálném provozu nebo na vlastním kapitálu. Na platformě ",en:"I only recommend approaches I've verified myself, in real operation or with my own capital. On the ",sk:"Odporúčam len prístupy, ktoré som si overil v reálnej prevádzke alebo na vlastnom kapitáli. Na platforme ",de:"Ich empfehle nur Ansätze, die ich selbst im echten Betrieb oder mit eigenem Kapital geprüft habe. Auf der Plattform ",uk:"Я рекомендую лише підходи, які перевірив сам — у реальній роботі або власним капіталом. На платформі ",ar:"أوصي فقط بالأساليب التي تحققت منها بنفسي، إما في التشغيل الفعلي أو بمالي الخاص. على منصة "},
   t_ab_p2b:{cs:" provozuji AI pracovníky v produkčním nasazení. Ve venture studiu ",en:" platform I run AI workers in production. In the ",sk:" prevádzkujem AI pracovníkov v produkčnom nasadení. Vo venture studiu ",de:" betreibe ich KI-Mitarbeiter im Produktivbetrieb. Im Venture Studio ",uk:" я експлуатую AI-працівників у продакшн-режимі. У venture-студії ",ar:" أُشغّل عمّال ذكاء اصطناعي في بيئة إنتاجية. وفي استوديو "},
@@ -671,7 +703,19 @@ const STRINGS = {
   t_fit_no:{cs:"Není to pro vás, pokud",en:"Not for you if",sk:"Nie je to pre vás, ak",de:"Nichts für Sie, wenn",uk:"Це не для вас, якщо",ar:"ليس لك إذا"},
   t_fit_n1:{cs:"hledáte levného chatbota",en:"you want a cheap chatbot",sk:"hľadáte lacného chatbota",de:"Sie einen billigen Chatbot suchen",uk:"ви шукаєте дешевого чат-бота",ar:"تبحث عن روبوت محادثة رخيص"},
   t_fit_n2:{cs:"chcete inspirativní přednášku",en:"you want an inspirational talk",sk:"chcete inšpiratívnu prednášku",de:"Sie einen inspirierenden Vortrag wollen",uk:"вам потрібна лише надихаюча лекція",ar:"تريد محاضرة ملهمة فقط"},
-  t_fit_n3:{cs:"nemáte podporu vedení nebo nechcete měřit dopad",en:"you lack leadership support or won't measure impact",sk:"nemáte podporu vedenia alebo nechcete merať dopad",de:"Ihnen die Unterstützung der Führung fehlt oder Sie Wirkung nicht messen wollen",uk:"вам бракує підтримки керівництва або ви не хочете вимірювати ефект",ar:"تفتقر إلى دعم الإدارة أو لا ترغب في قياس الأثر"}
+  t_fit_n3:{cs:"nemáte podporu vedení nebo nechcete měřit dopad",en:"you lack leadership support or won't measure impact",sk:"nemáte podporu vedenia alebo nechcete merať dopad",de:"Ihnen die Unterstützung der Führung fehlt oder Sie Wirkung nicht messen wollen",uk:"вам бракує підтримки керівництва або ви не хочете вимірювати ефект",ar:"تفتقر إلى دعم الإدارة أو لا ترغب في قياس الأثر"},
+  t_gov_label:{cs:"AI Governance",en:"AI Governance",sk:"AI Governance",de:"KI-Governance",uk:"Управління ШІ",ar:"حوكمة الذكاء الاصطناعي"},
+  t_gov_h:{cs:"Pravidla, která obstojí před auditem",en:"Rules that survive an audit",sk:"Pravidlá, ktoré obstoja pred auditom",de:"Regeln, die einem Audit standhalten",uk:"Правила, що витримають аудит",ar:"قواعد تصمد أمام التدقيق"},
+  t_gov_b1:{cs:"Registr AI use-casů — přehled, kde všude ve firmě AI běží a co dělá",en:"AI use-case registry — a live map of where AI runs in your company and what it does",sk:"Register AI use-casov — prehľad, kde všade vo firme AI beží a čo robí",de:"AI-Use-Case-Register — eine Live-Übersicht, wo im Unternehmen KI läuft und was sie tut",uk:"Реєстр AI use-case-ів — жива мапа, де в компанії працює ШІ і що робить",ar:"سجل حالات استخدام الذكاء الاصطناعي — خريطة حيّة لأماكن عمله في شركتك وما يفعله"},
+  t_gov_b2:{cs:"Pravidla použití AI pro zaměstnance — co je povoleno, co ne a s jakými daty",en:"AI usage policy for employees — what's allowed, what isn't, and with which data",sk:"Pravidlá používania AI pre zamestnancov — čo je povolené, čo nie a s akými dátami",de:"KI-Nutzungsrichtlinie für Mitarbeiter — was erlaubt ist, was nicht und mit welchen Daten",uk:"Політика використання ШІ для працівників — що дозволено, що ні та з якими даними",ar:"سياسة استخدام الذكاء الاصطناعي للموظفين — ما المسموح وما الممنوع وبأي بيانات"},
+  t_gov_b3:{cs:"Odpovědnostní matice — u každého nasazení je jasné, kdo za výstup ručí",en:"Accountability matrix — every deployment has a named owner for its output",sk:"Matica zodpovednosti — pri každom nasadení je jasné, kto za výstup ručí",de:"Verantwortungsmatrix — jeder Einsatz hat einen benannten Verantwortlichen für sein Ergebnis",uk:"Матриця відповідальності — у кожного впровадження є названий власник за результат",ar:"مصفوفة المساءلة — لكل تطبيق مالك محدد مسؤول عن مخرجاته"},
+  t_gov_note:{cs:"Nastaveno s ohledem na EU AI Act, GDPR a interní compliance.",en:"Aligned with the EU AI Act, GDPR and your internal compliance.",sk:"Nastavené s ohľadom na EU AI Act, GDPR a internú compliance.",de:"Ausgerichtet am EU AI Act, an der DSGVO und Ihrer internen Compliance.",uk:"Налаштовано з огляду на EU AI Act, GDPR та вашу внутрішню compliance.",ar:"مُعدّ بما يتوافق مع قانون الذكاء الاصطناعي الأوروبي وGDPR والامتثال الداخلي لديكم."},
+  t_st3_data:{cs:"Agenty zprovozním nad vašimi stávajícími systémy a daty — CRM, ERP, e-mail, tabulky. Žádná výměna infrastruktury, žádný rok trvající datový projekt.",en:"Agents run on top of your existing systems and data — CRM, ERP, e-mail, spreadsheets. No infrastructure swap, no year-long data project.",sk:"Agentov zprevádzkujem nad vašimi existujúcimi systémami a dátami — CRM, ERP, e-mail, tabuľky. Žiadna výmena infraštruktúry, žiadny rok trvajúci dátový projekt.",de:"Die Agenten laufen auf Ihren bestehenden Systemen und Daten — CRM, ERP, E-Mail, Tabellen. Kein Infrastrukturwechsel, kein jahrelanges Datenprojekt.",uk:"Агентів запускаю над вашими наявними системами й даними — CRM, ERP, e-mail, таблиці. Жодної заміни інфраструктури, жодного річного дата-проєкту.",ar:"أُشغِّل الوكلاء فوق أنظمتكم وبياناتكم الحالية — CRM وERP والبريد والجداول. دون استبدال البنية التحتية ودون مشروع بيانات يستغرق عامًا."},
+  t_ret_adoption:{cs:"Součástí je adopce a proškolení vašeho týmu — lidé vědí, kdy výstupu agenta věřit, kdy zasáhnout a jak s ním pracovat. AI, kterou tým sabotuje, nevydělává.",en:"Includes team adoption and training — your people know when to trust an agent's output, when to step in, and how to work with it. AI your team resists never pays off.",sk:"Súčasťou je adopcia a preškolenie vášho tímu — ľudia vedia, kedy výstupu agenta veriť, kedy zasiahnuť a ako s ním pracovať. AI, ktorú tím sabotuje, nezarába.",de:"Inklusive Adoption und Schulung Ihres Teams — Ihre Leute wissen, wann sie dem Output eines Agenten vertrauen, wann sie eingreifen und wie sie mit ihm arbeiten. KI, die das Team ablehnt, zahlt sich nie aus.",uk:"Включає адопцію та навчання вашої команди — люди знають, коли довіряти результату агента, коли втрутитися і як з ним працювати. ШІ, який команда саботує, не приносить прибутку.",ar:"يشمل تبنّي وتدريب فريقكم — يعرف موظفوكم متى يثقون بمخرجات الوكيل ومتى يتدخلون وكيف يعملون معه. الذكاء الاصطناعي الذي يقاومه الفريق لا يعود بأي ربح."},
+  t_faq_q8:{cs:"Pomůžete nám s EU AI Act?",en:"Can you help us with the EU AI Act?",sk:"Pomôžete nám s EU AI Act?",de:"Helfen Sie uns mit dem EU AI Act?",uk:"Чи допоможете нам з EU AI Act?",ar:"هل تساعدوننا بشأن قانون الذكاء الاصطناعي الأوروبي؟"},
+  t_faq_a8:{cs:"Ano. Součástí sprintu je zmapování vašich AI use-casů, jejich zařazení podle rizikových kategorií AI Actu a nastavení pravidel a odpovědností tak, abyste byli připraveni na dotazy auditora i zákazníků. Nejsem právní kancelář — na finální právní výklad spolupracuji s vaším právníkem.",en:"Yes. The sprint includes mapping your AI use cases, classifying them under the AI Act risk categories, and setting rules and ownership so you're ready for auditors and customers. I'm not a law firm — for final legal interpretation I work with your counsel.",sk:"Áno. Súčasťou šprintu je zmapovanie vašich AI use-casov, ich zaradenie podľa rizikových kategórií AI Actu a nastavenie pravidiel a zodpovedností tak, aby ste boli pripravení na otázky audítora aj zákazníkov. Nie som právna kancelária — na finálny právny výklad spolupracujem s vaším právnikom.",de:"Ja. Der Sprint umfasst die Erfassung Ihrer KI-Use-Cases, ihre Einordnung nach den Risikokategorien des AI Act sowie das Festlegen von Regeln und Verantwortlichkeiten, damit Sie für Auditoren und Kunden gerüstet sind. Ich bin keine Kanzlei — für die endgültige rechtliche Auslegung arbeite ich mit Ihrem Anwalt zusammen.",uk:"Так. Спринт включає мапування ваших AI use-case-ів, їх класифікацію за категоріями ризику AI Act і встановлення правил та відповідальності, щоб ви були готові до запитань аудиторів і клієнтів. Я не юридична фірма — для остаточного правового тлумачення співпрацюю з вашим юристом.",ar:"نعم. يشمل السبرنت حصر حالات استخدام الذكاء الاصطناعي لديكم، وتصنيفها وفق فئات المخاطر في قانون الذكاء الاصطناعي، ووضع القواعد والمسؤوليات لتكونوا جاهزين لأسئلة المدققين والعملاء. لستُ مكتب محاماة — وللتفسير القانوني النهائي أتعاون مع مستشاركم القانوني."},
+  t_faq_q9:{cs:"Co to udělá s naším týmem?",en:"What happens to our team?",sk:"Čo to urobí s naším tímom?",de:"Was passiert mit unserem Team?",uk:"Що це зробить з нашою командою?",ar:"ماذا سيحدث لفريقنا؟"},
+  t_faq_a9:{cs:"Agenti přebírají repetitivní práci, ne lidi. Součástí nasazení je proškolení týmu a jasná pravidla, kdo agenty řídí a kontroluje. Cílem je tým, který s AI pracuje sebevědomě — ne tým, který se jí bojí.",en:"Agents take over repetitive work, not people. Every deployment includes team training and clear rules on who runs and reviews the agents. The goal is a team that works with AI confidently — not one that fears it.",sk:"Agenti preberajú repetitívnu prácu, nie ľudí. Súčasťou nasadenia je preškolenie tímu a jasné pravidlá, kto agentov riadi a kontroluje. Cieľom je tím, ktorý s AI pracuje sebavedomo — nie tím, ktorý sa jej bojí.",de:"Agenten übernehmen repetitive Arbeit, nicht Menschen. Jeder Einsatz umfasst Teamschulung und klare Regeln, wer die Agenten steuert und prüft. Ziel ist ein Team, das souverän mit KI arbeitet — nicht eines, das sie fürchtet.",uk:"Агенти беруть на себе рутинну роботу, а не людей. Кожне впровадження включає навчання команди та чіткі правила, хто керує й перевіряє агентів. Мета — команда, яка впевнено працює зі ШІ, а не боїться його.",ar:"يتولى الوكلاء العمل المتكرر، لا البشر. يشمل كل تطبيق تدريب الفريق وقواعد واضحة لمن يدير الوكلاء ويراجعهم. والهدف فريق يعمل مع الذكاء الاصطناعي بثقة — لا فريق يخافه."}
 };
 class Component extends DCLogic {
   state = { faqOpen: 0, lang: null, langMenuOpen: false };
@@ -684,7 +728,7 @@ class Component extends DCLogic {
     const li = LANGS.find((l) => l.c === lang) || LANGS[0];
     const langList = LANGS.map((l) => ({ flag: l.f, name: l.n, code: l.c, select: () => this.setLang(l.c) }));
     const vals = { t, dir: lang === 'ar' ? 'rtl' : 'ltr', langFlag: li.f, langLabel: li.c.toUpperCase(), langMenuOpen: this.state.langMenuOpen, toggleLangMenu: this.toggleLangMenu, langList };
-    for (let i = 0; i < 7; i++) {
+    for (let i = 0; i < 9; i++) {
       const open = this.state.faqOpen === i;
       vals['faqExp' + i] = open;
       vals['faqRows' + i] = open ? '1fr' : '0fr';

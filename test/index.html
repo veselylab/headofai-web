@@ -59,7 +59,7 @@
 
   <main id="top">
 
-    <section aria-label="Úvod" style="position: relative; overflow: hidden; background: radial-gradient(ellipse 900px 480px at 78% -10%, color-mix(in srgb, #c8ae71 9%, transparent), transparent 70%), repeating-linear-gradient(to right, color-mix(in srgb, #f2f2f3 2.5%, transparent) 0 1px, transparent 1px 96px), repeating-linear-gradient(to bottom, color-mix(in srgb, #f2f2f3 2.5%, transparent) 0 1px, transparent 1px 96px);">
+    <section aria-label="Úvod" style="position: relative; overflow: hidden; background: radial-gradient(ellipse 900px 480px at 78% -10%, color-mix(in srgb, #c8ae71 9%, transparent), transparent 70%);">
       <div style="max-width: 1120px; margin: 0 auto; padding: clamp(72px, 12vw, 150px) clamp(16px, 4vw, 48px) clamp(56px, 8vw, 100px);">
         <span style="display: inline-flex; align-items: center; gap: 10px; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-400); border: 1px solid color-mix(in srgb, #c8ae71 35%, transparent); padding: 6px 12px; animation: fadeUp 0.7s ease both;"><span style="width: 6px; height: 6px; background: var(--color-accent); border-radius: 50%;"></span>{{ t.t_hero_eyebrow }}</span>
         <h1 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(42px, 8.5vw, 88px); line-height: 1.02; letter-spacing: -0.02em; margin: 28px 0 0; animation: fadeUp 0.7s ease 0.08s both;">
@@ -379,6 +379,7 @@
                 <p style="font-size: 13px; line-height: 1.55; max-width: 60ch; margin: 8px 0 0; color: color-mix(in srgb, var(--color-text) 58%, transparent);">{{ t.t_ret_body }}</p>
                 <p style="font-size: 13px; line-height: 1.55; max-width: 60ch; margin: 10px 0 0; color: color-mix(in srgb, var(--color-text) 58%, transparent);">{{ t.t_ret_adoption }}</p>
                 <p style="font-size: 13px; line-height: 1.55; max-width: 60ch; margin: 10px 0 0; color: color-mix(in srgb, var(--color-text) 58%, transparent);">{{ t.t_ret_endstate }}</p>
+                <p style="font-size: 13px; line-height: 1.55; max-width: 60ch; margin: 10px 0 0; color: color-mix(in srgb, var(--color-text) 58%, transparent);">{{ t.t_ret_improve }}</p>
               </div>
               <p style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 28px; margin: 0; color: var(--color-accent-200); white-space: nowrap;">od 170 000 CZK <span style="font-family: var(--font-body); font-weight: 400; font-size: 12px; color: color-mix(in srgb, var(--color-text) 48%, transparent);">{{ t.t_ret_per }}</span></p>
             </div>
@@ -788,7 +789,8 @@ const STRINGS = {
   t_st3_bridge:{cs:"S pravidly v ruce nasazujeme — bezpečně a rychle →",en:"With rules in hand, we deploy — safely and fast →"},
   t_sprint_bracket:{cs:"90denní sprint · fixní cena",en:"90-day sprint · fixed price"},
   t_st3gov_tag:{cs:"90denní sprint · Týdny 3–5",en:"90-day sprint · Weeks 3–5"},
-  t_st4dep_tag:{cs:"90denní sprint · Týdny 4–12",en:"90-day sprint · Weeks 4–12"}
+  t_st4dep_tag:{cs:"90denní sprint · Týdny 4–12",en:"90-day sprint · Weeks 4–12"},
+  t_ret_improve:{cs:"Průběžné zlepšování a inovace — portfolio ladíme podle dat, rozšiřujeme o nové příležitosti a nasazujeme nové AI schopnosti, jak vznikají.",en:"Continuous improvement & innovation — we tune the portfolio on data, expand it with new opportunities and roll out new AI capabilities as they emerge."}
 };
 class Component extends DCLogic {
   state = { faqOpen: 0, lang: null, langMenuOpen: false };

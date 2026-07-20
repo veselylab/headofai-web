@@ -254,6 +254,7 @@ k('t_sprint_bracket','90denní sprint · fixní cena','90-day sprint · fixed pr
 k('t_st3gov_tag','90denní sprint · Týdny 3–5','90-day sprint · Weeks 3–5')
 k('t_st4dep_tag','90denní sprint · Týdny 4–12','90-day sprint · Weeks 4–12')
 
+k('t_ret_improve','Průběžné zlepšování a inovace — portfolio ladíme podle dat, rozšiřujeme o nové příležitosti a nasazujeme nové AI schopnosti, jak vznikají.','Continuous improvement & innovation — we tune the portfolio on data, expand it with new opportunities and roll out new AI capabilities as they emerge.')
 # ---- doplnit TM (stara verze) pro jazyky, kde mame shodu ----
 for cs, key in K.items():
     src = TM.get(cs)

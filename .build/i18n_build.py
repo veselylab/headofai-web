@@ -6,7 +6,7 @@ import re, json, sys, os
 _B = os.path.dirname(os.path.abspath(__file__))
 _REPO = os.path.dirname(_B)
 
-SRC = os.path.join(_REPO, '.source.html')
+SRC = os.environ.get('I18N_SRC') or os.path.join(_REPO, '.source.html')
 OUT = sys.argv[1] if len(sys.argv) > 1 else SRC
 TM  = json.load(open(os.path.join(_B, 'TM.json'), encoding='utf-8'))
 

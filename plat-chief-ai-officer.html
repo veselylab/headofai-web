@@ -89,6 +89,17 @@
     .cta-block .btn { display: inline-block; text-decoration: none; padding: 13px 24px; font-size: 15px; }
     /* ==== /ŠABLONA ČLÁNKU ==== */
 
+    /* Související průvodce (cross-link cluster) */
+    .related { margin: 52px 0 0; padding-top: 30px; border-top: 1px solid var(--color-divider); }
+    .related h2 { margin: 0; }
+    .related-list { margin: 20px 0 0; padding: 0; list-style: none; }
+    .related-list li { margin: 0; padding: 0; }
+    .related-list li::before { content: none; }
+    .related-list a { display: flex; justify-content: space-between; align-items: baseline; gap: 20px; padding: 16px 0; border-bottom: 1px solid var(--color-divider); font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 18px; line-height: 1.3; color: var(--color-text); text-decoration: none; }
+    .related-list li:first-child a { border-top: 1px solid var(--color-divider); }
+    .related-list a:hover { color: var(--color-accent); }
+    .related-list a .arrow { color: var(--color-accent); flex: none; }
+
     @media (max-width: 768px) { #nav-links { display: none !important; } }
   </style>
 </head>
@@ -244,6 +255,16 @@
             <p>Fractional model dává smysl firmám, které potřebují zkušené AI vedení, ale ještě nemají práci ani rozpočet na full-time seniorní roli — typicky firmám o 50 až 500 zaměstnancích. Místo celkového ročního nákladu 2,5 až 4,5 milionu Kč a několika měsíců náboru platí měsíční paušál podle rozsahu, typicky zlomek full-time nákladu, s flexibilním závazkem a nižším rizikem.</p>
           </details>
         </div>
+
+        <!-- Související průvodce -->
+        <nav class="related" aria-label="Související průvodce">
+          <h2>Související průvodce</h2>
+          <ul class="related-list">
+            <li><a href="/co-je-head-of-ai"><span>Co je Head of AI / Chief AI Officer? Průvodce rolí</span><span class="arrow" aria-hidden="true">→</span></a></li>
+            <li><a href="/kdy-firma-potrebuje-head-of-ai"><span>Kdy firma potřebuje Head of AI (a kdy ještě ne)</span><span class="arrow" aria-hidden="true">→</span></a></li>
+            <li><a href="/fractional-vs-fulltime-caio"><span>Fractional Head of AI vs full-time CAIO</span><span class="arrow" aria-hidden="true">→</span></a></li>
+          </ul>
+        </nav>
 
         <!-- 8. CTA -->
         <div class="cta-block">

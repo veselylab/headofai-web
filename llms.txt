@@ -24,10 +24,17 @@
 - Fractional AI Retainer: měsíční paušál podle rozsahu, typicky zlomek nákladu na full-time Head of AI
 - Spolupráce začíná bezplatným 30min AI Leadership Call, běží pod NDA, bez vendor lock-inu
 
+## Průvodce (články)
+
+- https://headofai.cz/co-je-head-of-ai — Co je Head of AI / Chief AI Officer: co role dělá, čím se liší od CTO, CDO a AI Engineera a jaké kompetence vyžaduje.
+- https://headofai.cz/plat-chief-ai-officer — Plat Head of AI / Chief AI Officer: reálná rozpětí v ČR podle velikosti firmy, srovnání se zahraničím a náklad fractional modelu.
+- https://headofai.cz/kdy-firma-potrebuje-head-of-ai — Kdy firma potřebuje Head of AI: 7 signálů, kdy roli ještě nepotřebujete a srovnání full-time vs fractional vs konzultant.
+- https://headofai.cz/fractional-vs-fulltime-caio — Fractional Head of AI vs full-time CAIO: definice modelu, srovnání nákladů a rizika a pro koho se hodí a pro koho ne.
+
 ## Kontakt
 
 - Web: https://headofai.cz/
-- E-mail: david@headofai.cz
+- E-mail: hello@headofai.cz
 - Rezervace callu: https://calendar.google.com/appointments/schedules/AcZssZ3sZnZSvoUmnbQpNFBFFaJhGNmicgsWZtrBq-gLcMuxCpAPZUaHkm8W4flCzoEHuBOrMK089iGJ
 - X: https://x.com/headofaicz
 - Platforma: https://vesely.ai (AI workforce platforma, exekuční kapacita — ne podmínka spolupráce)

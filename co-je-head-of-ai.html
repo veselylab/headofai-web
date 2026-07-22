@@ -89,6 +89,17 @@
     .cta-block .btn { display: inline-block; text-decoration: none; padding: 13px 24px; font-size: 15px; }
     /* ==== /ŠABLONA ČLÁNKU ==== */
 
+    /* Související průvodce (cross-link cluster) */
+    .related { margin: 52px 0 0; padding-top: 30px; border-top: 1px solid var(--color-divider); }
+    .related h2 { margin: 0; }
+    .related-list { margin: 20px 0 0; padding: 0; list-style: none; }
+    .related-list li { margin: 0; padding: 0; }
+    .related-list li::before { content: none; }
+    .related-list a { display: flex; justify-content: space-between; align-items: baseline; gap: 20px; padding: 16px 0; border-bottom: 1px solid var(--color-divider); font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 18px; line-height: 1.3; color: var(--color-text); text-decoration: none; }
+    .related-list li:first-child a { border-top: 1px solid var(--color-divider); }
+    .related-list a:hover { color: var(--color-accent); }
+    .related-list a .arrow { color: var(--color-accent); flex: none; }
+
     @media (max-width: 768px) { #nav-links { display: none !important; } }
   </style>
 </head>
@@ -223,6 +234,16 @@
             <p>Full-time seniorní Head of AI v ČR vyjde řádově na 3–4 miliony Kč ročně včetně nákladů, plus několik měsíců náboru a riziko špatné volby. Fractional Head of AI stojí zlomek této částky — platí se za mandát nebo měsíční paušál podle rozsahu, typicky od nižších statisíců korun.</p>
           </details>
         </div>
+
+        <!-- Související průvodce -->
+        <nav class="related" aria-label="Související průvodce">
+          <h2>Související průvodce</h2>
+          <ul class="related-list">
+            <li><a href="/plat-chief-ai-officer"><span>Plat Head of AI / Chief AI Officer: ČR vs zahraničí</span><span class="arrow" aria-hidden="true">→</span></a></li>
+            <li><a href="/kdy-firma-potrebuje-head-of-ai"><span>Kdy firma potřebuje Head of AI (a kdy ještě ne)</span><span class="arrow" aria-hidden="true">→</span></a></li>
+            <li><a href="/fractional-vs-fulltime-caio"><span>Fractional Head of AI vs full-time CAIO</span><span class="arrow" aria-hidden="true">→</span></a></li>
+          </ul>
+        </nav>
 
         <!-- 8. CTA -->
         <div class="cta-block">

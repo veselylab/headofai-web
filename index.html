@@ -107,6 +107,16 @@
     .plus { color: var(--color-accent); flex: none; }
     .todo { display: inline-block; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: #e0a04a; border: 1px dashed color-mix(in srgb, #e0a04a 55%, transparent); padding: 2px 7px; margin-bottom: 10px; }
 
+    /* Průvodce (odkazy na články) — decentní, bez gold akcentu */
+    .guide-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin-top: 40px; }
+    .guide-card { display: flex; flex-direction: column; border: 1px solid var(--color-divider); background: color-mix(in srgb, var(--color-surface) 35%, transparent); padding: 22px 24px; text-decoration: none; color: var(--color-text); transition: border-color 0.2s, background 0.2s; }
+    .guide-card:hover { border-color: color-mix(in srgb, var(--color-text) 32%, transparent); background: color-mix(in srgb, var(--color-surface) 55%, transparent); text-decoration: none; }
+    .guide-card .gt { font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 20px; line-height: 1.2; letter-spacing: -0.01em; }
+    .guide-card .gd { font-size: 14.5px; line-height: 1.55; margin: 8px 0 0; color: color-mix(in srgb, var(--color-text) 58%, transparent); }
+    .guide-card .garw { margin: 14px 0 0; font-size: 14px; color: color-mix(in srgb, var(--color-text) 42%, transparent); }
+    .guide-card:hover .garw { color: color-mix(in srgb, var(--color-text) 72%, transparent); }
+    @media (max-width: 620px) { .guide-grid { grid-template-columns: 1fr; } }
+
     @media (max-width: 900px) { .g4 { grid-template-columns: repeat(2, 1fr); } .g3 { grid-template-columns: 1fr; } .g2 { grid-template-columns: 1fr; } }
     @media (max-width: 820px) { .bio-grid { grid-template-columns: 1fr; } }
     @media (max-width: 700px) { .eco-row { grid-template-columns: 1fr; } }
@@ -581,6 +591,37 @@
           <p style="font-size: 14px; line-height: 1.55; margin: 0; color: color-mix(in srgb, var(--color-text) 60%, transparent);">Odpovím osobně do jednoho pracovního dne a navrhnu termín 30minutového hovoru.</p>
           <p style="font-size: 13px; margin: 0; color: color-mix(in srgb, var(--color-text) 42%, transparent);">Odesláním souhlasíte se zpracováním osobních údajů. <a href="/zasady-ochrany-osobnich-udaju.html">Zásady ochrany osobních údajů</a></p>
         </form>
+      </div>
+    </section>
+
+    <!-- 9b. PRŮVODCE (odkazy na články) -->
+    <section id="pruvodce" class="section" aria-label="Průvodce rolí Head of AI">
+      <div class="wrap">
+        <span class="eyebrow">Průvodce</span>
+        <h2 class="h2">Průvodce rolí Head of AI</h2>
+        <p class="lead" style="margin: 22px 0 0;">Role Head of AI je v Česku nová. Tady najdete odpovědi na nejčastější otázky — od definice po plat a načasování.</p>
+        <div class="guide-grid">
+          <a class="guide-card" href="/co-je-head-of-ai">
+            <span class="gt">Co je Head of AI / Chief AI Officer</span>
+            <span class="gd">Co role obnáší, čím se liší od CTO, CDO a AI Engineera a kdy ji firma potřebuje.</span>
+            <span class="garw">Číst průvodce →</span>
+          </a>
+          <a class="guide-card" href="/plat-chief-ai-officer">
+            <span class="gt">Plat Head of AI: ČR vs zahraničí</span>
+            <span class="gd">Kolik stojí Head of AI v Česku i v zahraničí — a proč se vyplatí fractional model.</span>
+            <span class="garw">Číst průvodce →</span>
+          </a>
+          <a class="guide-card" href="/kdy-firma-potrebuje-head-of-ai">
+            <span class="gt">Kdy firma potřebuje Head of AI</span>
+            <span class="gd">Signály, podle kterých poznáte, že je čas dát AI jasného vlastníka.</span>
+            <span class="garw">Číst průvodce →</span>
+          </a>
+          <a class="guide-card" href="/fractional-vs-fulltime-caio">
+            <span class="gt">Fractional vs full-time CAIO</span>
+            <span class="gd">Kdy stačí part-time CAIO a kdy se vyplatí full-time role.</span>
+            <span class="garw">Číst průvodce →</span>
+          </a>
+        </div>
       </div>
     </section>
 

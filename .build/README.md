@@ -1,5 +1,11 @@
 # Build tooling pro headofai.cz (i18n)
 
+> **NEAKTUÁLNÍ OD 2026-07-22 — TENTO BUILD NESPOUŠTĚJ.**
+> Produkce je od commitu `7e809f5` standalone CZ verze (bývalá `/test`) a `index.html`
+> se edituje **přímo**. `.source.html` je zamrzlý 6jazyčný zdroj a je o desítky změn pozadu.
+> Spuštění buildu níže by `index.html` přegenerovalo ze `.source.html` a produkční obsah
+> zahodilo. Text níže platí jen pro případ, že se i18n verze bude oživovat.
+
 `../index.html` (produkce) je **GENEROVANÝ**. Needituj ho přímo — přepíše se při dalším buildu.
 
 ## Architektura

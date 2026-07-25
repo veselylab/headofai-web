@@ -277,34 +277,6 @@
       </div>
     </section>
 
-    <!-- 5. SOCIAL PROOF — DOČASNĚ SKRYTO, doplnit reálné case studies později (TODO-DAVID) -->
-    <!-- HIDDEN-START
-    <section class="section" aria-label="Výsledky">
-      <div class="wrap">
-        <span class="eyebrow">Výsledky</span>
-        <h2 class="h2"><span class="accent">Výsledky</span>, ne sliby.</h2>
-        <p class="lead" style="margin: 22px 0 0;">Anonymizované výstupy z reálných nasazení.</p>
-        <div class="grid g3" style="margin-top: 44px;">
-          <div class="card">
-            <p class="todo">TODO-DAVID</p>
-            <p style="font-size: 14px; letter-spacing: 0.04em; text-transform: uppercase; margin: 0; color: color-mix(in srgb, var(--color-text) 50%, transparent);">[typ firmy, velikost]</p>
-            <p style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 22px; line-height: 1.25; margin: 14px 0 0;">[konkrétní výsledek s číslem nebo časem]</p>
-          </div>
-          <div class="card">
-            <p class="todo">TODO-DAVID</p>
-            <p style="font-size: 14px; letter-spacing: 0.04em; text-transform: uppercase; margin: 0; color: color-mix(in srgb, var(--color-text) 50%, transparent);">[typ firmy, velikost]</p>
-            <p style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 22px; line-height: 1.25; margin: 14px 0 0;">[konkrétní výsledek s číslem nebo časem]</p>
-          </div>
-          <div class="card">
-            <p class="todo">TODO-DAVID</p>
-            <p style="font-size: 14px; letter-spacing: 0.04em; text-transform: uppercase; margin: 0; color: color-mix(in srgb, var(--color-text) 50%, transparent);">[typ firmy, velikost]</p>
-            <p style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 22px; line-height: 1.25; margin: 14px 0 0;">[konkrétní výsledek s číslem nebo časem]</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    HIDDEN-END -->
-
     <!-- 6. CO ZÍSKÁTE ZA 90 DNÍ -->
     <section id="vystupy" class="section" aria-label="Výstupy prvních 90 dnů">
       <div class="wrap">
@@ -528,6 +500,42 @@
         <p style="font-size: 15px; line-height: 1.6; text-align: center; max-width: 60ch; margin: 16px auto 0; color: color-mix(in srgb, var(--color-text) 58%, transparent);">Modelová čísla — vaše spočítáme v diagnostice na vašich datech. Když nevyjdou, doporučím sprint nezahajovat.</p>
       </div>
     </section>
+
+    <!-- 7b. DŮKAZ (case studies)
+
+         STAV: připraveno, ZÁMĚRNĚ NERENDEROVÁNO.
+
+         Podmínka pro zapnutí: alespoň jeden úplný, ověřený případ se všemi
+         čtyřmi údaji (výchozí stav, zásah, výsledek, doba měření).
+         Nikdy nezobrazuj prázdné karty ani placeholdery návštěvníkovi.
+         Nikdy nedoplňuj čísla, jména firem ani výsledky odhadem.
+
+         Zapnutí: smaž řádek HIDDEN START níže a řádek HIDDEN END pod sekcí,
+         vyplň placeholdery a nepoužité karty smaž. Komponenta podporuje
+         1 až 3 case studies; při jedné kartě změň třídu g3 na g2 nebo nech
+         kartu přes celou šířku.
+
+         Varianta pro vlastní provoz (Vesely.ai, VeselyLab, OmegaTeam.ai):
+         eyebrow změň na "Důkaz z vlastní provozní laboratoře". Označení
+         musí zůstat explicitní a nezaměnitelné s klientským casem.
+
+         HIDDEN START
+    <section id="dukaz" class="section" aria-label="Důkaz">
+      <div class="wrap">
+        <span class="eyebrow">Důkaz</span>
+        <h2 class="h2">Změřený <span class="accent">dopad</span>, ne popis metody.</h2>
+        <div class="grid g3" style="margin-top: 44px; text-align: left;">
+          <div class="card" style="text-align: left;">
+            <p style="font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; margin: 0; color: color-mix(in srgb, var(--color-text) 50%, transparent);">[DOPLNIT: typ firmy, velikost, obor — anonymizovaně, např. „výrobní firma, 180 lidí"]</p>
+            <p style="font-size: 15px; line-height: 1.6; margin: 16px 0 0; color: color-mix(in srgb, var(--color-text) 78%, transparent);"><strong>Výchozí stav:</strong> [DOPLNIT: měřitelná hodnota před nasazením]</p>
+            <p style="font-size: 15px; line-height: 1.6; margin: 10px 0 0; color: color-mix(in srgb, var(--color-text) 78%, transparent);"><strong>Zásah:</strong> [DOPLNIT: co konkrétně bylo nasazeno]</p>
+            <p style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(19px, 2.2vw, 23px); line-height: 1.25; margin: 16px 0 0; color: var(--color-accent-200);">Výsledek: [DOPLNIT: měřitelná hodnota po nasazení]</p>
+            <p style="font-size: 14px; line-height: 1.6; margin: 12px 0 0; color: color-mix(in srgb, var(--color-text) 55%, transparent);">Doba měření: [DOPLNIT: období]</p>
+          </div>
+        </div>
+      </div>
+    </section>
+         HIDDEN END -->
 
     <!-- 8. MANDÁT A CENY -->
     <section id="ceny" class="section" aria-label="Mandát a ceny">

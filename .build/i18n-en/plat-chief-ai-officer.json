@@ -1,0 +1,755 @@
+{
+ "source": "plat-chief-ai-officer.html",
+ "strings": [
+  {
+   "id": 0,
+   "kind": "title",
+   "ctx": "<title>",
+   "cs": "Plat Head of AI / Chief AI Officer: ČR vs zahraničí | headofai.cz"
+  },
+  {
+   "id": 1,
+   "kind": "meta",
+   "ctx": "description",
+   "cs": "Plat Head of AI / Chief AI Officer (CAIO): reálná rozpětí v ČR podle velikosti firmy, srovnání se zahraničím a náklad fractional modelu. Odhad 2026."
+  },
+  {
+   "id": 2,
+   "kind": "meta",
+   "ctx": "author",
+   "cs": "David Veselý"
+  },
+  {
+   "id": 3,
+   "kind": "meta",
+   "ctx": "og:title",
+   "cs": "Plat Head of AI / Chief AI Officer: Kolik si vydělá v ČR a v zahraničí"
+  },
+  {
+   "id": 4,
+   "kind": "meta",
+   "ctx": "og:description",
+   "cs": "Reálná rozpětí platů Head of AI / CAIO v ČR i zahraničí, co plat ovlivňuje a srovnání fractional vs full-time. Odhad na základě trhu 2026."
+  },
+  {
+   "id": 5,
+   "kind": "meta",
+   "ctx": "og:site_name",
+   "cs": "headofai.cz"
+  },
+  {
+   "id": 6,
+   "kind": "ld",
+   "ctx": "ld.description",
+   "cs": "Reálná rozpětí platů Head of AI / Chief AI Officer v ČR podle velikosti firmy, srovnání se zahraničím, co plat ovlivňuje a srovnání fractional vs full-time modelu. Odhad na základě trhu 2026."
+  },
+  {
+   "id": 7,
+   "kind": "ld",
+   "ctx": "ld.publisher.name",
+   "cs": "Vesely.ai s.r.o."
+  },
+  {
+   "id": 8,
+   "kind": "ld",
+   "ctx": "ld.itemListElement[0].name",
+   "cs": "Domů"
+  },
+  {
+   "id": 9,
+   "kind": "ld",
+   "ctx": "ld.itemListElement[1].name",
+   "cs": "Plat Head of AI / Chief AI Officer"
+  },
+  {
+   "id": 10,
+   "kind": "ld",
+   "ctx": "ld.mainEntity[0].name",
+   "cs": "Kolik si vydělá Head of AI v Česku?"
+  },
+  {
+   "id": 11,
+   "kind": "ld",
+   "ctx": "ld.mainEntity[0].acceptedAnswer.text",
+   "cs": "Podle odhadu trhu k roku 2026 se hrubá měsíční mzda Head of AI / Chief AI Officer v ČR pohybuje řádově od 120 000 do 350 000 Kč podle velikosti firmy a seniority. Celkový roční náklad zaměstnavatele — tedy mzda včetně odvodů a bonusů — vychází zhruba na 2,5 až 4,5 milionu Kč. Role je nová, takže rozpětí odpovídá srovnatelným seniorním tech-leadership pozicím jako CTO nebo senior director."
+  },
+  {
+   "id": 12,
+   "kind": "ld",
+   "ctx": "ld.mainEntity[1].name",
+   "cs": "Jaký je rozdíl mezi platem Head of AI a CTO?"
+  },
+  {
+   "id": 13,
+   "kind": "ld",
+   "ctx": "ld.mainEntity[1].acceptedAnswer.text",
+   "cs": "V Česku jsou obě role srovnatelně placené — jde o seniorní vedení s odpovědností za technologickou oblast. Konkrétní výše závisí spíš na velikosti firmy, oboru a rozsahu mandátu než na názvu pozice. Head of AI se od CTO liší zaměřením: neodpovídá za celý technologický stack, ale za to, aby AI přinášela měřitelný byznysový dopad."
+  },
+  {
+   "id": 14,
+   "kind": "ld",
+   "ctx": "ld.mainEntity[2].name",
+   "cs": "Proč je plat CAIO v USA vyšší než v ČR?"
+  },
+  {
+   "id": 15,
+   "kind": "ld",
+   "ctx": "ld.mainEntity[2].acceptedAnswer.text",
+   "cs": "Hlavní roli hraje velikost trhu, silná konkurence o AI talent, vyšší životní náklady a hlavně equity — v USA a ve startupech tvoří akcie nebo podíly často větší část odměny než základní mzda. Celková odměna seniorního AI lídra v americké technologické firmě proto může několikanásobně přesáhnout základní plat."
+  },
+  {
+   "id": 16,
+   "kind": "ld",
+   "ctx": "ld.mainEntity[3].name",
+   "cs": "Co nejvíc ovlivňuje plat Head of AI?"
+  },
+  {
+   "id": 17,
+   "kind": "ld",
+   "ctx": "ld.mainEntity[3].acceptedAnswer.text",
+   "cs": "Nejvíc rozhoduje seniorita a prokazatelný track record, obor (finance, technologie a e-commerce platí nadprůměrně), velikost a fáze firmy, rozsah odpovědnosti (jen strategie versus i exekuce a vedení týmů) a existence equity nebo bonusové složky. Právě equity dělá největší rozdíl mezi ČR a zahraničím."
+  },
+  {
+   "id": 18,
+   "kind": "ld",
+   "ctx": "ld.mainEntity[4].name",
+   "cs": "Kdy se místo full-time vyplatí fractional Head of AI?"
+  },
+  {
+   "id": 19,
+   "kind": "ld",
+   "ctx": "ld.mainEntity[4].acceptedAnswer.text",
+   "cs": "Fractional model dává smysl firmám, které potřebují zkušené AI vedení, ale ještě nemají práci ani rozpočet na full-time seniorní roli — typicky firmám o 50 až 500 zaměstnancích. Místo celkového ročního nákladu 2,5 až 4,5 milionu Kč a několika měsíců náboru platí měsíční paušál podle rozsahu, typicky zlomek full-time nákladu, s flexibilním závazkem a nižším rizikem."
+  },
+  {
+   "id": 20,
+   "kind": "attr",
+   "ctx": "aria-label",
+   "cs": "Hlavní navigace"
+  },
+  {
+   "id": 21,
+   "kind": "attr",
+   "ctx": "aria-label",
+   "cs": "Drobečková navigace"
+  },
+  {
+   "id": 22,
+   "kind": "attr",
+   "ctx": "aria-label",
+   "cs": "Související průvodce"
+  },
+  {
+   "id": 23,
+   "kind": "text",
+   "ctx": "",
+   "cs": "headofai"
+  },
+  {
+   "id": 24,
+   "kind": "text",
+   "ctx": "",
+   "cs": ".cz"
+  },
+  {
+   "id": 25,
+   "kind": "text",
+   "ctx": "",
+   "cs": "O mně"
+  },
+  {
+   "id": 26,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Proces"
+  },
+  {
+   "id": 27,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Ceny"
+  },
+  {
+   "id": 28,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Domluvit call"
+  },
+  {
+   "id": 29,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Plat Head of AI / Chief AI Officer:"
+  },
+  {
+   "id": 30,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Kolik si vydělá v ČR a v zahraničí"
+  },
+  {
+   "id": 31,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Publikováno"
+  },
+  {
+   "id": 32,
+   "kind": "text",
+   "ctx": "",
+   "cs": "22. července 2026"
+  },
+  {
+   "id": 33,
+   "kind": "text",
+   "ctx": "",
+   "cs": "· David Veselý"
+  },
+  {
+   "id": 34,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Plat"
+  },
+  {
+   "id": 35,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Head of AI"
+  },
+  {
+   "id": 36,
+   "kind": "text",
+   "ctx": "",
+   "cs": "(Chief AI Officer, CAIO) se v Česku pohybuje řádově od"
+  },
+  {
+   "id": 37,
+   "kind": "text",
+   "ctx": "",
+   "cs": "120 000 do 350 000 Kč měsíčně hrubého"
+  },
+  {
+   "id": 38,
+   "kind": "text",
+   "ctx": "",
+   "cs": "podle velikosti firmy a seniority. Celkový roční náklad zaměstnavatele včetně odvodů a bonusů typicky vychází na"
+  },
+  {
+   "id": 39,
+   "kind": "text",
+   "ctx": "",
+   "cs": "2,5 až 4,5 milionu Kč"
+  },
+  {
+   "id": 40,
+   "kind": "text",
+   "ctx": "",
+   "cs": ". V USA a západní Evropě je odměna výrazně vyšší, hlavně kvůli equity."
+  },
+  {
+   "id": 41,
+   "kind": "text",
+   "ctx": "",
+   "cs": "(Odhad na základě trhu, 2026 — role je nová, čísla vycházejí ze srovnatelných seniorních tech-leadership pozic.)"
+  },
+  {
+   "id": 42,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Plat Head of AI v Česku"
+  },
+  {
+   "id": 43,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Head of AI /"
+  },
+  {
+   "id": 44,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Chief AI Officer"
+  },
+  {
+   "id": 45,
+   "kind": "text",
+   "ctx": "",
+   "cs": "je seniorní vedoucí role, takže se její odměna pohybuje na úrovni srovnatelných pozic jako CTO nebo senior director. Protože je role v ČR nová, přesná tržní data zatím chybí — následující rozpětí jsou"
+  },
+  {
+   "id": 46,
+   "kind": "text",
+   "ctx": "",
+   "cs": "odhad na základě trhu k roku 2026"
+  },
+  {
+   "id": 47,
+   "kind": "text",
+   "ctx": "",
+   "cs": ", ne výsledek plošného průzkumu."
+  },
+  {
+   "id": 48,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Typ firmy"
+  },
+  {
+   "id": 49,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Hrubá měsíční mzda (odhad)"
+  },
+  {
+   "id": 50,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Celkový roční náklad zaměstnavatele"
+  },
+  {
+   "id": 51,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Scale-up / menší firma (50–150 lidí)"
+  },
+  {
+   "id": 52,
+   "kind": "text",
+   "ctx": "",
+   "cs": "≈ 120 000 – 200 000 Kč"
+  },
+  {
+   "id": 53,
+   "kind": "text",
+   "ctx": "",
+   "cs": "≈ 2 – 3 mil. Kč"
+  },
+  {
+   "id": 54,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Střední firma / korporát (150–1000)"
+  },
+  {
+   "id": 55,
+   "kind": "text",
+   "ctx": "",
+   "cs": "≈ 200 000 – 300 000 Kč"
+  },
+  {
+   "id": 56,
+   "kind": "text",
+   "ctx": "",
+   "cs": "≈ 3 – 4,5 mil. Kč"
+  },
+  {
+   "id": 57,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Velký / nadnárodní korporát"
+  },
+  {
+   "id": 58,
+   "kind": "text",
+   "ctx": "",
+   "cs": "300 000 Kč+ a bonusy"
+  },
+  {
+   "id": 59,
+   "kind": "text",
+   "ctx": "",
+   "cs": "4,5 mil. Kč+"
+  },
+  {
+   "id": 60,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Rozpětí zahrnuje jak čistě strategické role, tak pozice, které kombinují strategii s exekucí a vedením týmu. Čím širší mandát a čím větší dopad na tržby a náklady, tím výš se odměna posouvá."
+  },
+  {
+   "id": 61,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Srovnání se zahraničím"
+  },
+  {
+   "id": 62,
+   "kind": "text",
+   "ctx": "",
+   "cs": "V USA a západní Evropě role Chief AI Officer existuje déle a je placená výrazně štědřeji. Následující čísla jsou orientační odhad tržních rozpětí k roku 2026:"
+  },
+  {
+   "id": 63,
+   "kind": "text",
+   "ctx": "",
+   "cs": "USA:"
+  },
+  {
+   "id": 64,
+   "kind": "text",
+   "ctx": "",
+   "cs": "základní mzda seniorního AI lídra typicky v řádu 200 000 – 400 000+ USD ročně. S equity a bonusy může celková odměna ve velkých technologických firmách několikanásobně vzrůst."
+  },
+  {
+   "id": 65,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Západní Evropa (Německo, Nizozemsko, UK):"
+  },
+  {
+   "id": 66,
+   "kind": "text",
+   "ctx": "",
+   "cs": "základní mzda zhruba 120 000 – 250 000+ EUR ročně, výš ve financích a technologických hubech."
+  },
+  {
+   "id": 67,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Česko:"
+  },
+  {
+   "id": 68,
+   "kind": "text",
+   "ctx": "",
+   "cs": "nižší základní mzdy než v západní Evropě, ale i výrazně nižší životní náklady — a zatím minimum rolí s velkou equity složkou."
+  },
+  {
+   "id": 69,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Hlavní důvod rozdílu není jen mzda, ale"
+  },
+  {
+   "id": 70,
+   "kind": "text",
+   "ctx": "",
+   "cs": "equity"
+  },
+  {
+   "id": 71,
+   "kind": "text",
+   "ctx": "",
+   "cs": ". V USA a ve startupech tvoří akcie nebo podíly často větší část odměny než základní plat — v Česku je taková struktura zatím vzácná."
+  },
+  {
+   "id": 72,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Co plat Head of AI ovlivňuje"
+  },
+  {
+   "id": 73,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Uvnitř těchto rozpětí rozhoduje o konkrétní výši několik faktorů:"
+  },
+  {
+   "id": 74,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Seniorita a track record"
+  },
+  {
+   "id": 75,
+   "kind": "text",
+   "ctx": "",
+   "cs": "— prokazatelné výsledky z reálných AI nasazení posouvají odměnu nejvíc."
+  },
+  {
+   "id": 76,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Obor"
+  },
+  {
+   "id": 77,
+   "kind": "text",
+   "ctx": "",
+   "cs": "— finance, technologie a e-commerce platí nadprůměrně; tradiční odvětví méně."
+  },
+  {
+   "id": 78,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Velikost a fáze firmy"
+  },
+  {
+   "id": 79,
+   "kind": "text",
+   "ctx": "",
+   "cs": "— větší firma nebo rychle rostoucí scale-up znamená vyšší odpovědnost i odměnu."
+  },
+  {
+   "id": 80,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Rozsah role"
+  },
+  {
+   "id": 81,
+   "kind": "text",
+   "ctx": "",
+   "cs": "— čistá strategie versus strategie plus exekuce a vedení týmů."
+  },
+  {
+   "id": 82,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Equity a bonusy"
+  },
+  {
+   "id": 83,
+   "kind": "text",
+   "ctx": "",
+   "cs": "— podíl na výsledku dokáže celkovou odměnu zásadně zvednout, zejména v zahraničí a startupech."
+  },
+  {
+   "id": 84,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Alternativa: fractional Head of AI"
+  },
+  {
+   "id": 85,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Ne každá firma má práci ani rozpočet na Head of AI na plný úvazek. Pro firmy o 50–500 zaměstnancích proto dává smysl"
+  },
+  {
+   "id": 86,
+   "kind": "text",
+   "ctx": "",
+   "cs": "fractional model"
+  },
+  {
+   "id": 87,
+   "kind": "text",
+   "ctx": "",
+   "cs": "— tatáž role na část úvazku. Srovnání celkových nákladů (TCO):"
+  },
+  {
+   "id": 88,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Kritérium"
+  },
+  {
+   "id": 89,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Full-time Head of AI"
+  },
+  {
+   "id": 90,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Fractional Head of AI"
+  },
+  {
+   "id": 91,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Roční náklad"
+  },
+  {
+   "id": 92,
+   "kind": "text",
+   "ctx": "",
+   "cs": "≈ 2,5 – 4,5 mil. Kč (mzda + odvody + bonusy)"
+  },
+  {
+   "id": 93,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Měsíční paušál podle rozsahu — typicky zlomek full-time nákladu"
+  },
+  {
+   "id": 94,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Nábor"
+  },
+  {
+   "id": 95,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Několik měsíců hledání vzácného profilu"
+  },
+  {
+   "id": 96,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Nasazení v řádu týdnů"
+  },
+  {
+   "id": 97,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Závazek"
+  },
+  {
+   "id": 98,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Trvalý pracovní poměr"
+  },
+  {
+   "id": 99,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Flexibilní, výpověď měsíc předem"
+  },
+  {
+   "id": 100,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Riziko"
+  },
+  {
+   "id": 101,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Špatná volba je drahá a těžko vratná"
+  },
+  {
+   "id": 102,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Nižší — mandát s definovanými výstupy"
+  },
+  {
+   "id": 103,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Kdy dává smysl"
+  },
+  {
+   "id": 104,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Firma s trvalou full-time zátěží pro roli"
+  },
+  {
+   "id": 105,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Firma bez full-time potřeby (50–500 lidí)"
+  },
+  {
+   "id": 106,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Fractional model není levnější náhrada, ale jiný poměr rizika a nákladu: firma získá zkušené AI vedení bez celoročního závazku a bez náboru. Přesně takto funguje"
+  },
+  {
+   "id": 107,
+   "kind": "text",
+   "ctx": "",
+   "cs": "fractional Head of AI na headofai.cz"
+  },
+  {
+   "id": 108,
+   "kind": "text",
+   "ctx": "",
+   "cs": "— s mandátem a měřitelnými výstupy místo trvalého úvazku."
+  },
+  {
+   "id": 109,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Časté otázky"
+  },
+  {
+   "id": 110,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Podle odhadu trhu k roku 2026 se hrubá měsíční mzda Head of AI / Chief AI Officer v ČR pohybuje řádově od 120 000 do 350 000 Kč podle velikosti firmy a seniority. Celkový roční náklad zaměstnavatele — mzda včetně odvodů a bonusů — vychází zhruba na 2,5 až 4,5 milionu Kč. Role je nová, takže rozpětí odpovídá srovnatelným seniorním tech-leadership pozicím jako CTO nebo senior director."
+  },
+  {
+   "id": 111,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Co je Head of AI / Chief AI Officer? Průvodce rolí"
+  },
+  {
+   "id": 112,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Kdy firma potřebuje Head of AI (a kdy ještě ne)"
+  },
+  {
+   "id": 113,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Fractional Head of AI vs full-time CAIO"
+  },
+  {
+   "id": 114,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Zvažujete, jestli se vám vyplatí Head of AI na plný úvazek, nebo"
+  },
+  {
+   "id": 115,
+   "kind": "text",
+   "ctx": "",
+   "cs": "? Podívejte se, jak to funguje v praxi."
+  },
+  {
+   "id": 116,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Přejít na headofai.cz"
+  },
+  {
+   "id": 117,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Fractional AI leadership pro firmy, které chtějí kontrolu, měřitelný dopad a první AI pracovníky v provozu."
+  },
+  {
+   "id": 118,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Kontakt"
+  },
+  {
+   "id": 119,
+   "kind": "text",
+   "ctx": "",
+   "cs": "hello@headofai.cz"
+  },
+  {
+   "id": 120,
+   "kind": "text",
+   "ctx": "",
+   "cs": "@headofaicz"
+  },
+  {
+   "id": 121,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Provozovatel"
+  },
+  {
+   "id": 122,
+   "kind": "text",
+   "ctx": "",
+   "cs": "IČO: 23702907 · DIČ: CZ23702907"
+  },
+  {
+   "id": 123,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Česko"
+  },
+  {
+   "id": 124,
+   "kind": "text",
+   "ctx": "",
+   "cs": "© 2026 Vesely.ai s.r.o. · headofai.cz"
+  }
+ ]
+}

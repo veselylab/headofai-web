@@ -1,0 +1,707 @@
+{
+ "source": "fractional-vs-fulltime-caio.html",
+ "strings": [
+  {
+   "id": 0,
+   "kind": "title",
+   "ctx": "<title>",
+   "cs": "Fractional Head of AI vs full-time CAIO: Co se vyplatí | headofai.cz"
+  },
+  {
+   "id": 1,
+   "kind": "meta",
+   "ctx": "description",
+   "cs": "Fractional Head of AI vs full-time CAIO: definice modelu, srovnání nákladů a rizika a pro koho se model hodí a pro koho ne. Průvodce pro firmy v ČR."
+  },
+  {
+   "id": 2,
+   "kind": "meta",
+   "ctx": "author",
+   "cs": "David Veselý"
+  },
+  {
+   "id": 3,
+   "kind": "meta",
+   "ctx": "og:title",
+   "cs": "Fractional Head of AI vs full-time CAIO: Co se firmě vyplatí"
+  },
+  {
+   "id": 4,
+   "kind": "meta",
+   "ctx": "og:description",
+   "cs": "Definice fractional Head of AI, srovnání s full-time CAIO, pro koho se model hodí a pro koho ne a jak spolupráce vypadá v praxi."
+  },
+  {
+   "id": 5,
+   "kind": "meta",
+   "ctx": "og:site_name",
+   "cs": "headofai.cz"
+  },
+  {
+   "id": 6,
+   "kind": "ld",
+   "ctx": "ld.description",
+   "cs": "Definice fractional Head of AI, srovnání s full-time CAIO z hlediska nákladů, rychlosti a rizika, pro koho se model hodí a pro koho ne a jak spolupráce vypadá v praxi."
+  },
+  {
+   "id": 7,
+   "kind": "ld",
+   "ctx": "ld.publisher.name",
+   "cs": "Vesely.ai s.r.o."
+  },
+  {
+   "id": 8,
+   "kind": "ld",
+   "ctx": "ld.itemListElement[0].name",
+   "cs": "Domů"
+  },
+  {
+   "id": 9,
+   "kind": "ld",
+   "ctx": "ld.itemListElement[1].name",
+   "cs": "Fractional Head of AI vs full-time CAIO"
+  },
+  {
+   "id": 10,
+   "kind": "ld",
+   "ctx": "ld.mainEntity[0].name",
+   "cs": "Co je fractional Head of AI?"
+  },
+  {
+   "id": 11,
+   "kind": "ld",
+   "ctx": "ld.mainEntity[0].acceptedAnswer.text",
+   "cs": "Fractional Head of AI je zkušený AI lídr, kterého firma najme na část úvazku místo na plný. Přebírá stejnou odpovědnost jako full-time Head of AI — priority, governance, nasazení AI a reporting vedení — ale jen v rozsahu, který firma reálně potřebuje. Hodí se firmám, které potřebují AI vedení, ale nemají práci ani rozpočet na full-time roli."
+  },
+  {
+   "id": 12,
+   "kind": "ld",
+   "ctx": "ld.mainEntity[1].name",
+   "cs": "Kolik dní v měsíci fractional Head of AI pracuje?"
+  },
+  {
+   "id": 13,
+   "kind": "ld",
+   "ctx": "ld.mainEntity[1].acceptedAnswer.text",
+   "cs": "Rozsah se řídí potřebou firmy a fází spolupráce, ne fixní tabulkou. Na začátku, při nastartování AI agendy, bývá zapojení intenzivnější — typicky v řádu jednoho až dvou dní v týdnu. V průběžném režimu pak stačí několik dní v měsíci na řízení portfolia, priorit a reporting. Rozsah se domlouvá předem a dá se měnit."
+  },
+  {
+   "id": 14,
+   "kind": "ld",
+   "ctx": "ld.mainEntity[2].name",
+   "cs": "Jaký je rozdíl mezi fractional Head of AI a konzultantem?"
+  },
+  {
+   "id": 15,
+   "kind": "ld",
+   "ctx": "ld.mainEntity[2].acceptedAnswer.text",
+   "cs": "Konzultant nebo agentura dodá konkrétní projekt nebo doporučení, ale nepřebírá odpovědnost za celou AI agendu. Fractional Head of AI má mandát rozhodovat napříč firmou, držet priority, governance a rozpočet a odpovídat za dopad — jen na část úvazku. Je to vedoucí role, ne dodávka."
+  },
+  {
+   "id": 16,
+   "kind": "ld",
+   "ctx": "ld.mainEntity[3].name",
+   "cs": "Vyplatí se fractional model víc než full-time?"
+  },
+  {
+   "id": 17,
+   "kind": "ld",
+   "ctx": "ld.mainEntity[3].acceptedAnswer.text",
+   "cs": "Pro firmy, které nemají trvalou full-time zátěž pro tuto roli — typicky firmy o 50 až 500 zaměstnancích — obvykle ano. Získají seniorní AI vedení bez celoročního mzdového nákladu, bez několika měsíců náboru a s flexibilním závazkem. Firma s trvalou full-time potřebou naopak časem směřuje k internímu Head of AI."
+  },
+  {
+   "id": 18,
+   "kind": "ld",
+   "ctx": "ld.mainEntity[4].name",
+   "cs": "Přejde fractional Head of AI někdy na full-time roli?"
+  },
+  {
+   "id": 19,
+   "kind": "ld",
+   "ctx": "ld.mainEntity[4].acceptedAnswer.text",
+   "cs": "Ano, a je to přirozený cíl. Když AI agenda doroste do full-time role, fractional Head of AI pomůže interního nástupce najít, zaškolit a předat mu fungující systém — registr, pravidla, agenty i metriky. Smyslem není vytvořit trvalou závislost, ale předat řízenou agendu internímu vlastníkovi."
+  },
+  {
+   "id": 20,
+   "kind": "attr",
+   "ctx": "aria-label",
+   "cs": "Hlavní navigace"
+  },
+  {
+   "id": 21,
+   "kind": "attr",
+   "ctx": "aria-label",
+   "cs": "Drobečková navigace"
+  },
+  {
+   "id": 22,
+   "kind": "attr",
+   "ctx": "aria-label",
+   "cs": "Související průvodce"
+  },
+  {
+   "id": 23,
+   "kind": "text",
+   "ctx": "",
+   "cs": "headofai"
+  },
+  {
+   "id": 24,
+   "kind": "text",
+   "ctx": "",
+   "cs": ".cz"
+  },
+  {
+   "id": 25,
+   "kind": "text",
+   "ctx": "",
+   "cs": "O mně"
+  },
+  {
+   "id": 26,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Proces"
+  },
+  {
+   "id": 27,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Ceny"
+  },
+  {
+   "id": 28,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Domluvit call"
+  },
+  {
+   "id": 29,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Fractional Head of AI vs full-time CAIO:"
+  },
+  {
+   "id": 30,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Co se firmě vyplatí"
+  },
+  {
+   "id": 31,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Publikováno"
+  },
+  {
+   "id": 32,
+   "kind": "text",
+   "ctx": "",
+   "cs": "22. července 2026"
+  },
+  {
+   "id": 33,
+   "kind": "text",
+   "ctx": "",
+   "cs": "· David Veselý"
+  },
+  {
+   "id": 34,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Fractional Head of AI"
+  },
+  {
+   "id": 35,
+   "kind": "text",
+   "ctx": "",
+   "cs": "je zkušený AI lídr, kterého firma najme na část úvazku místo na plný. Přebírá stejnou odpovědnost jako full-time"
+  },
+  {
+   "id": 36,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Chief AI Officer"
+  },
+  {
+   "id": 37,
+   "kind": "text",
+   "ctx": "",
+   "cs": "— priority, governance, nasazení AI a reporting vedení — ale jen v rozsahu, který firma reálně potřebuje. Pro firmy střední velikosti je to nejrychlejší a nejméně rizikový způsob, jak získat AI vedení bez celoročního závazku a náboru za miliony."
+  },
+  {
+   "id": 38,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Co je fractional Head of AI"
+  },
+  {
+   "id": 39,
+   "kind": "text",
+   "ctx": "",
+   "cs": "„Fractional\" znamená na zlomek úvazku. Fractional Head of AI je tedy plnohodnotná vedoucí role — ne konzultace, ne jednorázový projekt — jen vykonávaná v rozsahu, který odpovídá reálné potřebě firmy. Model dobře funguje proto, že většina firem střední velikosti potřebuje zkušené AI vedení, ale ne na plných pět dní v týdnu."
+  },
+  {
+   "id": 40,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Rozsah zapojení se řídí fází spolupráce, ne fixní tabulkou:"
+  },
+  {
+   "id": 41,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Nastartování je intenzivnější"
+  },
+  {
+   "id": 42,
+   "kind": "text",
+   "ctx": "",
+   "cs": "— při rozjezdu AI agendy typicky v řádu jednoho až dvou dní v týdnu."
+  },
+  {
+   "id": 43,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Průběžný režim je lehčí"
+  },
+  {
+   "id": 44,
+   "kind": "text",
+   "ctx": "",
+   "cs": "— na řízení portfolia, priorit a reporting stačí několik dní v měsíci."
+  },
+  {
+   "id": 45,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Odpovědnost je stejná jako u full-time role"
+  },
+  {
+   "id": 46,
+   "kind": "text",
+   "ctx": "",
+   "cs": "— mandát rozhodovat, držet governance a odpovídat za dopad. Liší se jen čas, ne míra vlastnictví agendy."
+  },
+  {
+   "id": 47,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Rozsah se domlouvá předem a dá se v čase měnit podle toho, jak AI agenda ve firmě roste."
+  },
+  {
+   "id": 48,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Fractional vs full-time: srovnání"
+  },
+  {
+   "id": 49,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Obě varianty přinášejí seniorní AI vedení. Liší se v tom, kolik firmu stojí, jak rychle nastoupí a jaké riziko nesou:"
+  },
+  {
+   "id": 50,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Kritérium"
+  },
+  {
+   "id": 51,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Full-time CAIO"
+  },
+  {
+   "id": 52,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Náklad"
+  },
+  {
+   "id": 53,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Měsíční paušál nebo mandát — zlomek full-time nákladu"
+  },
+  {
+   "id": 54,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Celý roční mzdový náklad v řádu milionů Kč"
+  },
+  {
+   "id": 55,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Rychlost nástupu"
+  },
+  {
+   "id": 56,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Dny až týdny"
+  },
+  {
+   "id": 57,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Měsíce náboru vzácného profilu"
+  },
+  {
+   "id": 58,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Závazek"
+  },
+  {
+   "id": 59,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Flexibilní, výpověď měsíc předem"
+  },
+  {
+   "id": 60,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Trvalý pracovní poměr"
+  },
+  {
+   "id": 61,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Seniorita"
+  },
+  {
+   "id": 62,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Rovnou seniorní profil s praxí z reálných nasazení"
+  },
+  {
+   "id": 63,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Podle toho, koho se podaří najmout"
+  },
+  {
+   "id": 64,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Riziko"
+  },
+  {
+   "id": 65,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Nízké — ohraničený mandát s výstupy"
+  },
+  {
+   "id": 66,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Špatná volba je drahá a těžko vratná"
+  },
+  {
+   "id": 67,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Konkrétní čísla nákladů obou variant rozebírá článek o"
+  },
+  {
+   "id": 68,
+   "kind": "text",
+   "ctx": "",
+   "cs": "platu Head of AI"
+  },
+  {
+   "id": 69,
+   "kind": "text",
+   "ctx": "",
+   "cs": ". Zjednodušeně: fractional model mění velký fixní roční náklad na flexibilní výdaj podle skutečné potřeby."
+  },
+  {
+   "id": 70,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Pro koho je fractional model"
+  },
+  {
+   "id": 71,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Fractional Head of AI dává největší smysl firmám v konkrétní fázi:"
+  },
+  {
+   "id": 72,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Firmy o 50–500 zaměstnancích."
+  },
+  {
+   "id": 73,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Dost velké na to, aby AI ovlivňovala byznys, ale bez trvalé full-time zátěže pro samostatnou roli."
+  },
+  {
+   "id": 74,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Firmy, kde AI už ovlivňuje výsledky."
+  },
+  {
+   "id": 75,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Řeší se priority, governance a nasazení — ale zatím na to není full-time kapacita."
+  },
+  {
+   "id": 76,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Firmy, které chtějí seniorní profil."
+  },
+  {
+   "id": 77,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Na zkušeného AI lídra by ve full-time náboru buď nedosáhly, nebo by ho hledaly měsíce."
+  },
+  {
+   "id": 78,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Firmy, které chtějí rychle a bez rizika."
+  },
+  {
+   "id": 79,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Potřebují výsledky v řádu měsíců, ne dlouhý nábor s nejistým koncem."
+  },
+  {
+   "id": 80,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Jestli si nejste jistí, jestli je čas na roli obecně, pomůže článek"
+  },
+  {
+   "id": 81,
+   "kind": "text",
+   "ctx": "",
+   "cs": "kdy firma potřebuje Head of AI"
+  },
+  {
+   "id": 82,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Pro koho fractional model není"
+  },
+  {
+   "id": 83,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Upřímně — fractional Head of AI není univerzální odpověď. Nedává smysl v těchto situacích:"
+  },
+  {
+   "id": 84,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Velké firmy s trvalou full-time zátěží."
+  },
+  {
+   "id": 85,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Když je AI agenda tak velká, že zaměstná člověka na plný úvazek i s týmem, směřujte rovnou k internímu Head of AI."
+  },
+  {
+   "id": 86,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Firmy, kde AI zatím neovlivňuje byznys."
+  },
+  {
+   "id": 87,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Pokud jde o okrajové experimenty, žádnou vedoucí roli — ani fractional — zatím nepotřebujete."
+  },
+  {
+   "id": 88,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Firmy hledající levného implementátora."
+  },
+  {
+   "id": 89,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Když potřebujete postavit jeden konkrétní systém, hledáte dodavatele, ne AI vedení."
+  },
+  {
+   "id": 90,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Firmy bez podpory vedení."
+  },
+  {
+   "id": 91,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Bez mandátu a ochoty vedení rozhodovat nemá role žádnou páku, ať už je na plný úvazek, nebo na část."
+  },
+  {
+   "id": 92,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Jak fractional spolupráce vypadá v praxi"
+  },
+  {
+   "id": 93,
+   "kind": "text",
+   "ctx": "",
+   "cs": "V praxi má fractional spolupráce typicky dvě fáze, které navazují na model"
+  },
+  {
+   "id": 94,
+   "kind": "text",
+   "ctx": "",
+   "cs": "na headofai.cz"
+  },
+  {
+   "id": 95,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Úvodní sprint."
+  },
+  {
+   "id": 96,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Ohraničený mandát s jasnými výstupy — diagnostika a priority, governance a první nasazení AI pracovníků do provozu. Nastartuje AI agendu a ověří, že model ve firmě funguje."
+  },
+  {
+   "id": 97,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Navazující retainer."
+  },
+  {
+   "id": 98,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Průběžné řízení AI agendy jako"
+  },
+  {
+   "id": 99,
+   "kind": "text",
+   "ctx": "",
+   "cs": "fractional Head of AI"
+  },
+  {
+   "id": 100,
+   "kind": "text",
+   "ctx": "",
+   "cs": "— portfolio iniciativ, vendoři, adopce a board reporting, v lehčím měsíčním rozsahu."
+  },
+  {
+   "id": 101,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Sprint firmu nezavazuje k pokračování — retainer běží jen tehdy, když úvodní fáze prokázala hodnotu. Konkrétní rozsah, výstupy a ceny obou fází najdete přímo na"
+  },
+  {
+   "id": 102,
+   "kind": "text",
+   "ctx": "",
+   "cs": "homepage"
+  },
+  {
+   "id": 103,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Časté otázky"
+  },
+  {
+   "id": 104,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Co je Head of AI / Chief AI Officer? Průvodce rolí"
+  },
+  {
+   "id": 105,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Plat Head of AI / Chief AI Officer: ČR vs zahraničí"
+  },
+  {
+   "id": 106,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Kdy firma potřebuje Head of AI (a kdy ještě ne)"
+  },
+  {
+   "id": 107,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Zvažujete fractional Head of AI pro vaši firmu? Na homepage najdete, jak spolupráce a ceny fungují konkrétně."
+  },
+  {
+   "id": 108,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Zobrazit model a ceny"
+  },
+  {
+   "id": 109,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Fractional AI leadership pro firmy, které chtějí kontrolu, měřitelný dopad a první AI pracovníky v provozu."
+  },
+  {
+   "id": 110,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Kontakt"
+  },
+  {
+   "id": 111,
+   "kind": "text",
+   "ctx": "",
+   "cs": "hello@headofai.cz"
+  },
+  {
+   "id": 112,
+   "kind": "text",
+   "ctx": "",
+   "cs": "@headofaicz"
+  },
+  {
+   "id": 113,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Provozovatel"
+  },
+  {
+   "id": 114,
+   "kind": "text",
+   "ctx": "",
+   "cs": "IČO: 23702907 · DIČ: CZ23702907"
+  },
+  {
+   "id": 115,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Česko"
+  },
+  {
+   "id": 116,
+   "kind": "text",
+   "ctx": "",
+   "cs": "© 2026 Vesely.ai s.r.o. · headofai.cz"
+  }
+ ]
+}

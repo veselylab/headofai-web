@@ -31,6 +31,16 @@
 - https://headofai.cz/kdy-firma-potrebuje-head-of-ai — Kdy firma potřebuje Head of AI: 7 signálů, kdy roli ještě nepotřebujete a srovnání full-time vs fractional vs konzultant.
 - https://headofai.cz/fractional-vs-fulltime-caio — Fractional Head of AI vs full-time CAIO: definice modelu, srovnání nákladů a rizika a pro koho se hodí a pro koho ne.
 
+## English version
+
+Celý web existuje i v angličtině, obsahově shodný s českou verzí:
+
+- https://headofai.cz/en/ — homepage
+- https://headofai.cz/en/what-is-head-of-ai — What is a Head of AI / Chief AI Officer
+- https://headofai.cz/en/chief-ai-officer-salary — Head of AI / Chief AI Officer pay: Czech Republic vs abroad
+- https://headofai.cz/en/when-does-a-company-need-a-head-of-ai — When a company needs a Head of AI
+- https://headofai.cz/en/fractional-vs-fulltime-caio — Fractional Head of AI vs full-time CAIO
+
 ## Kontakt
 
 - Web: https://headofai.cz/

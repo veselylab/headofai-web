@@ -1,0 +1,2003 @@
+{
+ "source": "index.html",
+ "strings": [
+  {
+   "id": 0,
+   "kind": "title",
+   "ctx": "<title>",
+   "cs": "headofai.cz — Fractional Head of AI / CAIO pro české firmy"
+  },
+  {
+   "id": 1,
+   "kind": "meta",
+   "ctx": "description",
+   "cs": "Fractional Head of AI / CAIO: priority, governance dle EU AI Act a první AI pracovníci v měřeném provozu do 90 dní. Bez náboru za miliony."
+  },
+  {
+   "id": 2,
+   "kind": "meta",
+   "ctx": "og:site_name",
+   "cs": "headofai.cz"
+  },
+  {
+   "id": 3,
+   "kind": "meta",
+   "ctx": "twitter:description",
+   "cs": "Fractional Head of AI / Chief AI Officer: priority, governance dle EU AI Act a první AI pracovníci v měřeném provozu do 90 dní."
+  },
+  {
+   "id": 4,
+   "kind": "meta",
+   "ctx": "author",
+   "cs": "David Veselý"
+  },
+  {
+   "id": 5,
+   "kind": "ld",
+   "ctx": "ld.description",
+   "cs": "Fractional AI leadership pro firmy: 90denní mandát, governance a první AI pracovníci v provozu."
+  },
+  {
+   "id": 6,
+   "kind": "ld",
+   "ctx": "ld.provider.name",
+   "cs": "Vesely.ai s.r.o."
+  },
+  {
+   "id": 7,
+   "kind": "ld",
+   "ctx": "ld.makesOffer[0].name",
+   "cs": "AI Leadership Call"
+  },
+  {
+   "id": 8,
+   "kind": "ld",
+   "ctx": "ld.makesOffer[1].name",
+   "cs": "90-Day AI Leadership Sprint"
+  },
+  {
+   "id": 9,
+   "kind": "ld",
+   "ctx": "ld.makesOffer[2].name",
+   "cs": "Fractional AI Retainer"
+  },
+  {
+   "id": 10,
+   "kind": "ld",
+   "ctx": "ld.jobTitle",
+   "cs": "Fractional Head of AI / Chief AI Officer (CAIO)"
+  },
+  {
+   "id": 11,
+   "kind": "ld",
+   "ctx": "ld.description",
+   "cs": "Fractional Head of AI a Chief AI Officer pro české firmy — určuje priority, nastavuje AI governance dle EU AI Act a nasazuje AI pracovníky do měřitelného provozu."
+  },
+  {
+   "id": 12,
+   "kind": "ld",
+   "ctx": "ld.areaServed.name",
+   "cs": "Česká republika"
+  },
+  {
+   "id": 13,
+   "kind": "ld",
+   "ctx": "ld.mainEntity[0].name",
+   "cs": "Co bude po 90 dnech ve firmě skutečně hotové?"
+  },
+  {
+   "id": 14,
+   "kind": "ld",
+   "ctx": "ld.mainEntity[0].acceptedAnswer.text",
+   "cs": "Po 90 dnech má AI agenda jasného vlastníka, schválené priority a pravidla pro data, oprávnění a lidské schvalování. Podle technické složitosti schválených use-casů běží 1–3 prioritní AI pracovníci s definovanými KPI, minimálně jeden v měřeném reálném provozu. Vedení dostane přehled dosaženého dopadu a doporučení pro další období."
+  },
+  {
+   "id": 15,
+   "kind": "ld",
+   "ctx": "ld.mainEntity[1].name",
+   "cs": "Jakou dáváte garanci?"
+  },
+  {
+   "id": 16,
+   "kind": "ld",
+   "ctx": "ld.mainEntity[1].acceptedAnswer.text",
+   "cs": "Konkrétní výši úspor nebo tržeb nelze poctivě garantovat, protože závisí také na datech, procesech, lidech a rozhodnutích klienta. Garantuji sjednané výstupy, transparentní měření a jasnou rozhodovací bránu. Pokud diagnostika neodhalí příležitost, jejíž očekávaný přínos obhájí další investici, doporučím projekt zastavit. Další fáze se bez rozhodnutí klienta nerealizuje ani nefakturuje. Nesplněný sjednaný výstup dokončím bez dodatečné odměny."
+  },
+  {
+   "id": 17,
+   "kind": "ld",
+   "ctx": "ld.mainEntity[2].name",
+   "cs": "Kolik času a lidí budete potřebovat z naší strany?"
+  },
+  {
+   "id": 18,
+   "kind": "ld",
+   "ctx": "ld.mainEntity[2].acceptedAnswer.text",
+   "cs": "CEO nebo člen vedení je potřeba při zahájení, prioritizaci a klíčových rozhodnutích. Průběžně spolupracuji s jedním interním garantem a vlastníky dotčených procesů. Nevytvářím zbytečnou pracovní skupinu ani nekonečnou sérii workshopů. Konkrétní časovou náročnost stanovíme před každou fází."
+  },
+  {
+   "id": 19,
+   "kind": "ld",
+   "ctx": "ld.mainEntity[3].name",
+   "cs": "Je to poradenství, implementace, nebo dočasná náhrada interního Head of AI?"
+  },
+  {
+   "id": 20,
+   "kind": "ld",
+   "ctx": "ld.mainEntity[3].acceptedAnswer.text",
+   "cs": "Všechno tři — v tomhle pořadí. Sprint je implementace s mandátem, retainer je fractional Head of AI. A když AI agenda doroste do full-time role, pomůžu vám interního Head of AI najít, zaškolit a předat mu fungující systém — registr, pravidla, agenty i metriky. Nekončím odchodem, končím předáním."
+  },
+  {
+   "id": 21,
+   "kind": "ld",
+   "ctx": "ld.mainEntity[4].name",
+   "cs": "Jak řešíte bezpečnost dat a odpovědnost AI pracovníků?"
+  },
+  {
+   "id": 22,
+   "kind": "ld",
+   "ctx": "ld.mainEntity[4].acceptedAnswer.text",
+   "cs": "Stavím vendor-neutral: frontier modely (Anthropic, OpenAI, Google) vybírám podle úlohy, ne podle partnerství. Firemní data zůstávají ve vašich systémech — agenti k nim přistupují přes API s řízenými oprávněními, nic se nepřelévá do cizích trénovacích dat. Každý agent má definované místo, kde rozhoduje člověk, a vlastníka, který za výstup ručí. Každé nasazení má interního vlastníka, definovaná oprávnění, auditovatelný provoz a pravidla lidského schvalování. Používáme minimální oprávnění, minimalizaci předávaných dat, kontrolované fallbacky a možnost zásah vrátit. Do produkce nejde systém, u něhož není jasné, kdo odpovídá za jeho rozhodnutí a výstupy."
+  },
+  {
+   "id": 23,
+   "kind": "ld",
+   "ctx": "ld.mainEntity[5].name",
+   "cs": "Jaké jsou platební podmínky a co není zahrnuto v ceně?"
+  },
+  {
+   "id": 24,
+   "kind": "ld",
+   "ctx": "ld.mainEntity[5].acceptedAnswer.text",
+   "cs": "Cena 90denního mandátu je 750 000 Kč bez DPH a fakturuje se ve třech měsíčních platbách po 250 000 Kč bez DPH, vždy před zahájením příslušné třicetidenní fáze. Za první platbu dostáváte kompletní decision pack — mapu AI aktivit, priority s odhadem dopadu v Kč a doporučení pokračovat, nebo projekt zastavit. Externí licence, cloud a služby třetích stran nejsou zahrnuty, pokud není uvedeno jinak. Každý takový náklad klient předem schvaluje a hradí přímo dodavateli. Nepřijímám provize za doporučení technologií. Fractional retainer se fakturuje měsíčně předem."
+  },
+  {
+   "id": 25,
+   "kind": "ld",
+   "ctx": "ld.mainEntity[6].name",
+   "cs": "Doteď jsme Head of AI neměli. Proč ho potřebujeme právě teď?"
+  },
+  {
+   "id": 26,
+   "kind": "ld",
+   "ctx": "ld.mainEntity[6].acceptedAnswer.text",
+   "cs": "Možná ho ještě nepotřebujete. Tato role začíná dávat smysl ve chvíli, kdy AI ovlivňuje tržby, náklady, firemní data, zákazníky nebo rozhodování zaměstnanců. Bez jasného vlastníka se AI agenda nezastaví — její směr fakticky určují zaměstnanci, IT a dodavatelé podle vlastních priorit. Úkolem Head of AI není přidat další manažerskou vrstvu, ale sjednotit odpovědnost, zastavit slabé experimenty a soustředit investice tam, kde mají měřitelný dopad. Pokud je AI stále jen okrajový experiment, tuto roli zatím nepotřebujete."
+  },
+  {
+   "id": 27,
+   "kind": "attr",
+   "ctx": "alt",
+   "cs": "Vlastní provozní a ověřovací prostředí: Vesely.ai, VeselyLab.com a OmegaTeam.ai — ověřeno v praxi, řízeno ve prospěch klienta přes HeadOfAI.cz"
+  },
+  {
+   "id": 28,
+   "kind": "attr",
+   "ctx": "aria-label",
+   "cs": "Hlavní navigace"
+  },
+  {
+   "id": 29,
+   "kind": "attr",
+   "ctx": "aria-label",
+   "cs": "Úvod"
+  },
+  {
+   "id": 30,
+   "kind": "attr",
+   "ctx": "aria-label",
+   "cs": "Výstupy"
+  },
+  {
+   "id": 31,
+   "kind": "attr",
+   "ctx": "aria-label",
+   "cs": "Problém"
+  },
+  {
+   "id": 32,
+   "kind": "attr",
+   "ctx": "aria-label",
+   "cs": "Pro koho to je"
+  },
+  {
+   "id": 33,
+   "kind": "attr",
+   "ctx": "aria-label",
+   "cs": "O mně"
+  },
+  {
+   "id": 34,
+   "kind": "attr",
+   "ctx": "aria-label",
+   "cs": "Výstupy prvních 90 dnů"
+  },
+  {
+   "id": 35,
+   "kind": "attr",
+   "ctx": "aria-label",
+   "cs": "Proces"
+  },
+  {
+   "id": 36,
+   "kind": "attr",
+   "ctx": "aria-label",
+   "cs": "Matematika návratnosti"
+  },
+  {
+   "id": 37,
+   "kind": "attr",
+   "ctx": "aria-label",
+   "cs": "Důkaz"
+  },
+  {
+   "id": 38,
+   "kind": "attr",
+   "ctx": "aria-label",
+   "cs": "Mandát a ceny"
+  },
+  {
+   "id": 39,
+   "kind": "attr",
+   "ctx": "aria-label",
+   "cs": "Kontakt"
+  },
+  {
+   "id": 40,
+   "kind": "attr",
+   "ctx": "aria-label",
+   "cs": "Objednávka callu"
+  },
+  {
+   "id": 41,
+   "kind": "attr",
+   "ctx": "aria-label",
+   "cs": "Průvodce rolí Head of AI"
+  },
+  {
+   "id": 42,
+   "kind": "attr",
+   "ctx": "aria-label",
+   "cs": "Časté otázky"
+  },
+  {
+   "id": 43,
+   "kind": "js",
+   "ctx": "inline <script>",
+   "cs": "Skrýt další use-casy"
+  },
+  {
+   "id": 44,
+   "kind": "js",
+   "ctx": "inline <script>",
+   "cs": "Další use-casy z portfolia"
+  },
+  {
+   "id": 45,
+   "kind": "js",
+   "ctx": "inline <script>",
+   "cs": "Nová poptávka z headofai.cz — AI Leadership Call"
+  },
+  {
+   "id": 46,
+   "kind": "js",
+   "ctx": "inline <script>",
+   "cs": "text-align:center;padding:22px 6px"
+  },
+  {
+   "id": 47,
+   "kind": "js",
+   "ctx": "inline <script>",
+   "cs": "font-size:14px;color:color-mix(in srgb,var(--color-text) 55%,transparent)"
+  },
+  {
+   "id": 48,
+   "kind": "js",
+   "ctx": "inline <script>",
+   "cs": "Domluvit AI Leadership Call"
+  },
+  {
+   "id": 49,
+   "kind": "js",
+   "ctx": "inline <script>",
+   "cs": "Odeslání selhalo — napište prosím na hello@headofai.cz"
+  },
+  {
+   "id": 50,
+   "kind": "js",
+   "ctx": "inline <script>",
+   "cs": "Chyba připojení — zkuste to prosím znovu."
+  },
+  {
+   "id": 51,
+   "kind": "js",
+   "ctx": "inline <script>",
+   "cs": "form[aria-label=\"Objednávka callu\"]"
+  },
+  {
+   "id": 52,
+   "kind": "js",
+   "ctx": "inline <script>",
+   "cs": "form[aria-label=\"Objednávka callu\"] button"
+  },
+  {
+   "id": 53,
+   "kind": "text",
+   "ctx": "",
+   "cs": "headofai"
+  },
+  {
+   "id": 54,
+   "kind": "text",
+   "ctx": "",
+   "cs": ".cz"
+  },
+  {
+   "id": 55,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Ceny"
+  },
+  {
+   "id": 56,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Domluvit call"
+  },
+  {
+   "id": 57,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Pro české firmy, které řeší AI"
+  },
+  {
+   "id": 58,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Head of AI / Chief AI Officer"
+  },
+  {
+   "id": 59,
+   "kind": "text",
+   "ctx": "",
+   "cs": "AI už ve vaší firmě běží."
+  },
+  {
+   "id": 60,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Převezměte nad ní kontrolu."
+  },
+  {
+   "id": 61,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Na úrovni vedení určím priority, nastavím pravidla a dostanu první AI pracovníky do měřitelného provozu. Každá iniciativa musí obhájit návratnost nebo snížení rizika."
+  },
+  {
+   "id": 62,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Zobrazit výstupy prvních 90 dnů"
+  },
+  {
+   "id": 63,
+   "kind": "text",
+   "ctx": "",
+   "cs": "90 dní · 3 rozhodovací brány · žádná další fáze bez vašeho go"
+  },
+  {
+   "id": 64,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Priority do 30 dnů"
+  },
+  {
+   "id": 65,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Jasné pořadí, kam nasadit AI jako první."
+  },
+  {
+   "id": 66,
+   "kind": "text",
+   "ctx": "",
+   "cs": "První pilot do 90 dnů"
+  },
+  {
+   "id": 67,
+   "kind": "text",
+   "ctx": "",
+   "cs": "1–3 prioritní AI pracovníci podle složitosti — aspoň jeden v měřeném provozu."
+  },
+  {
+   "id": 68,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Jasný vlastník AI agendy"
+  },
+  {
+   "id": 69,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Jedna odpovědná role na straně vedení."
+  },
+  {
+   "id": 70,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Board reporting a ROI"
+  },
+  {
+   "id": 71,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Dopad v tržbách, nákladech nebo riziku."
+  },
+  {
+   "id": 72,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Kdy dává fractional Head of AI smysl"
+  },
+  {
+   "id": 73,
+   "kind": "text",
+   "ctx": "",
+   "cs": "AI aktivita není AI"
+  },
+  {
+   "id": 74,
+   "kind": "text",
+   "ctx": "",
+   "cs": "výkon"
+  },
+  {
+   "id": 75,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Nástroje se množí, experimenty přibývají — ale nikdo neřídí AI jako firemní schopnost s vlastníkem, pravidly a měřeným dopadem. Tady začíná moje role."
+  },
+  {
+   "id": 76,
+   "kind": "text",
+   "ctx": "",
+   "cs": "AI bez vlastníka"
+  },
+  {
+   "id": 77,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Vzniká po odděleních, ale nikdo ji neřídí jako firemní schopnost."
+  },
+  {
+   "id": 78,
+   "kind": "text",
+   "ctx": "",
+   "cs": "→ řeší krok 01"
+  },
+  {
+   "id": 79,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Pokrok bez orientace"
+  },
+  {
+   "id": 80,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Možnosti AI rostou rychleji, než se v nich firmy dokážou zorientovat."
+  },
+  {
+   "id": 81,
+   "kind": "text",
+   "ctx": "",
+   "cs": "→ řeší krok 02"
+  },
+  {
+   "id": 82,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Riziko bez hranic"
+  },
+  {
+   "id": 83,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Data odtékají do cizích modelů, u výstupů agentů není jasné, kdo za ně ručí. Regulace tenhle problém nevytváří — jen ho zviditelňuje."
+  },
+  {
+   "id": 84,
+   "kind": "text",
+   "ctx": "",
+   "cs": "→ řeší krok 03"
+  },
+  {
+   "id": 85,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Aktivita bez P&amp;L"
+  },
+  {
+   "id": 86,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Měří se počet nástrojů a promptů — ne tržby, náklad a uvolněná kapacita."
+  },
+  {
+   "id": 87,
+   "kind": "text",
+   "ctx": "",
+   "cs": "→ řeší krok 04"
+  },
+  {
+   "id": 88,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Pro koho to"
+  },
+  {
+   "id": 89,
+   "kind": "text",
+   "ctx": "",
+   "cs": "je"
+  },
+  {
+   "id": 90,
+   "kind": "text",
+   "ctx": "",
+   "cs": "— a pro koho ne."
+  },
+  {
+   "id": 91,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Dává smysl, pokud"
+  },
+  {
+   "id": 92,
+   "kind": "text",
+   "ctx": "",
+   "cs": "dokážete pojmenovat příležitost nebo riziko za jednotky milionů ročně"
+  },
+  {
+   "id": 93,
+   "kind": "text",
+   "ctx": "",
+   "cs": "máte opakovanou práci v obchodě, komunikaci nebo provozu"
+  },
+  {
+   "id": 94,
+   "kind": "text",
+   "ctx": "",
+   "cs": "vedení ví, že AI bude důležitá, ale nechce kupovat nástroje naslepo"
+  },
+  {
+   "id": 95,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Není to pro vás, pokud"
+  },
+  {
+   "id": 96,
+   "kind": "text",
+   "ctx": "",
+   "cs": "hledáte levného chatbota"
+  },
+  {
+   "id": 97,
+   "kind": "text",
+   "ctx": "",
+   "cs": "chcete inspirativní přednášku"
+  },
+  {
+   "id": 98,
+   "kind": "text",
+   "ctx": "",
+   "cs": "nemáte podporu vedení nebo nechcete měřit dopad"
+  },
+  {
+   "id": 99,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Kdo za tím stojí"
+  },
+  {
+   "id": 100,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Proč svěřit AI zrovna"
+  },
+  {
+   "id": 101,
+   "kind": "text",
+   "ctx": "",
+   "cs": "mně"
+  },
+  {
+   "id": 102,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Fractional Head of AI"
+  },
+  {
+   "id": 103,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Pomáhám vedení firem převzít kontrolu nad AI: určit priority, nastavit governance, nasadit první AI pracovníky a měřit jejich skutečný dopad."
+  },
+  {
+   "id": 104,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Nejsem prodejce nástrojů ani teoretik, který AI zná jen z prezentací. AI systémy sám stavím, financuji a provozuji. Na platformě"
+  },
+  {
+   "id": 105,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Vesely.ai"
+  },
+  {
+   "id": 106,
+   "kind": "text",
+   "ctx": "",
+   "cs": "vytvářím a nasazuji AI pracovníky do produkce, ve venture studiu"
+  },
+  {
+   "id": 107,
+   "kind": "text",
+   "ctx": "",
+   "cs": "VeselyLab.com"
+  },
+  {
+   "id": 108,
+   "kind": "text",
+   "ctx": "",
+   "cs": "ověřuji automatizované byznysové modely na reálném trhu a zákaznickou akvizici pro"
+  },
+  {
+   "id": 109,
+   "kind": "text",
+   "ctx": "",
+   "cs": "OmegaTeam.ai"
+  },
+  {
+   "id": 110,
+   "kind": "text",
+   "ctx": "",
+   "cs": "zajišťuje tým autonomních AI agentů pod mým dohledem."
+  },
+  {
+   "id": 111,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Tato tři prostředí tvoří mou provozní laboratoř. Ověřuji v ní technologii, ekonomiku i provozní model dřív, než něco doporučím klientovi. Co skutečně funguje, se nepozná v zasedací místnosti, ale v reálném provozu. Vaši AI agendu proto nestavím na hype, ale na přístupech, které sám používám a financuji vlastním kapitálem."
+  },
+  {
+   "id": 112,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Zastupuji zájem vedení vaší firmy, ne dodavatele. Každá iniciativa musí prokázat návratnost, snížení rizika nebo jasný strategický přínos. Když čísla nevycházejí, doporučím projekt odložit nebo zastavit. Výsledkem jsou jasné priority, odpovědnost, měřitelné výstupy a board report místo neurčitých slibů."
+  },
+  {
+   "id": 113,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Head of AI se stává klíčovou rolí pro řízení technologické změny — a někdo za tuto oblast ve vaší firmě ponese odpovědnost. Na headofai.cz pomáhám firmám tuto roli obsadit včas, dřív než jejich AI agendu začnou fakticky řídit dodavatelé, jednotliví zaměstnanci a nahodile zaváděné nástroje."
+  },
+  {
+   "id": 114,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Provozní principy"
+  },
+  {
+   "id": 115,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Business na prvním místě. AI až na druhém."
+  },
+  {
+   "id": 116,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Důkazy, ne hype."
+  },
+  {
+   "id": 117,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Malé piloty. Rychlá zpětná vazba."
+  },
+  {
+   "id": 118,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Stavím jen to, co vytváří měřitelnou hodnotu."
+  },
+  {
+   "id": 119,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Každý AI systém má vlastníka."
+  },
+  {
+   "id": 120,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Jednoduché architektury přežijí déle."
+  },
+  {
+   "id": 121,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Co získáte během prvních"
+  },
+  {
+   "id": 122,
+   "kind": "text",
+   "ctx": "",
+   "cs": "90 dnů"
+  },
+  {
+   "id": 123,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Jmenovaný vlastník AI agendy"
+  },
+  {
+   "id": 124,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Jedna odpovědná role na straně vedení s mandátem rozhodovat."
+  },
+  {
+   "id": 125,
+   "kind": "text",
+   "ctx": "",
+   "cs": "CIPHER Snapshot a 1–3 priority"
+  },
+  {
+   "id": 126,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Mapa připravenosti s odhadem ročního dopadu v Kč — místo desítek experimentů."
+  },
+  {
+   "id": 127,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Governance a kontrola nad AI"
+  },
+  {
+   "id": 128,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Registr AI use-casů, pravidla použití, odpovědnostní matice a zdokumentované školení jako jedno z opatření k naplňování čl. 4 EU AI Act."
+  },
+  {
+   "id": 129,
+   "kind": "text",
+   "ctx": "",
+   "cs": "AI pracovníci v provozu s KPI"
+  },
+  {
+   "id": 130,
+   "kind": "text",
+   "ctx": "",
+   "cs": "1–3 prioritní AI pracovníci podle technické složitosti schválených use-casů — minimálně jeden v měřeném reálném provozu."
+  },
+  {
+   "id": 131,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Board report s měřeným dopadem"
+  },
+  {
+   "id": 132,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Přehled dosaženého dopadu proti cíli a doporučení pro další období."
+  },
+  {
+   "id": 133,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Z chaosu do řízeného výkonu."
+  },
+  {
+   "id": 134,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Pět kroků."
+  },
+  {
+   "id": 135,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Krok 1 je zdarma, kroky 2–4 tvoří fixní 90denní sprint, krok 5 je volitelné pokračování. Rozklikněte krok pro detail."
+  },
+  {
+   "id": 136,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Vstup · 0 CZK"
+  },
+  {
+   "id": 137,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Rozhodovací call, ne prodejní prezentace. Pojmenujeme problém a ověříme fit."
+  },
+  {
+   "id": 138,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Výstup: jasné go/no-go a jmenovaný vlastník AI agendy."
+  },
+  {
+   "id": 139,
+   "kind": "text",
+   "ctx": "",
+   "cs": "30 minut · bez přípravy · přímo s Davidem Veselým. Pojmenujeme problém, ověříme fit — a řekneme si na rovinu, jestli dává smysl pokračovat."
+  },
+  {
+   "id": 140,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Diagnostika — CIPHER Snapshot"
+  },
+  {
+   "id": 141,
+   "kind": "text",
+   "ctx": "",
+   "cs": "90denní sprint · Týdny 1–3"
+  },
+  {
+   "id": 142,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Každý AI use case posuzuji přes šest napětí připravenosti — kde je páka, kde riziko, kdo rozhoduje."
+  },
+  {
+   "id": 143,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Výstup: 1–3 priority s odhadem ročního dopadu v Kč."
+  },
+  {
+   "id": 144,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Co uděláme"
+  },
+  {
+   "id": 145,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Posoudím vaše AI use-casy přes šest napětí připravenosti CIPHER"
+  },
+  {
+   "id": 146,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Zmapuji data, procesy a odpovědnosti, na kterých use-casy stojí"
+  },
+  {
+   "id": 147,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Spočítám ekonomickou páku každého kandidáta — tržby, náklad, riziko"
+  },
+  {
+   "id": 148,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Cognitive"
+  },
+  {
+   "id": 149,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Má tým úsudek poznat, kde AI pomůže a kde škodí?"
+  },
+  {
+   "id": 150,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Informational"
+  },
+  {
+   "id": 151,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Je problém dobře vymezený a máte k němu data?"
+  },
+  {
+   "id": 152,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Projection"
+  },
+  {
+   "id": 153,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Umíte záměr přeložit do zadání, které jde postavit?"
+  },
+  {
+   "id": 154,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Haptic"
+  },
+  {
+   "id": 155,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Kde pracuje AI — a kde musí zůstat člověk a kontrola?"
+  },
+  {
+   "id": 156,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Exchange"
+  },
+  {
+   "id": 157,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Kdo rozhoduje, kdo nese odpovědnost, kde jsou hranice?"
+  },
+  {
+   "id": 158,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Resource"
+  },
+  {
+   "id": 159,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Stačí lidé, rozpočet a nejmenší dostatečné řešení?"
+  },
+  {
+   "id": 160,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Vychází z frameworku CIPHER (Armanios &amp; Tucci, 2025) —"
+  },
+  {
+   "id": 161,
+   "kind": "text",
+   "ctx": "",
+   "cs": "open-access paper ↗"
+  },
+  {
+   "id": 162,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Co dostanete"
+  },
+  {
+   "id": 163,
+   "kind": "text",
+   "ctx": "",
+   "cs": "CIPHER Snapshot — mapa připravenosti s doporučením pilot / odklad / stop"
+  },
+  {
+   "id": 164,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Prioritizované portfolio schválené vedením"
+  },
+  {
+   "id": 165,
+   "kind": "text",
+   "ctx": "",
+   "cs": "AI Governance"
+  },
+  {
+   "id": 166,
+   "kind": "text",
+   "ctx": "",
+   "cs": "90denní sprint · Týdny 3–5"
+  },
+  {
+   "id": 167,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Pravidla a odpovědnosti nastavím dřív, než agenti půjdou do provozu."
+  },
+  {
+   "id": 168,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Výstup: governance, registr a doložitelná opatření k čl. 4 EU AI Act."
+  },
+  {
+   "id": 169,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Nastavím pravidla a odpovědnosti dřív, než agenti půjdou do provozu"
+  },
+  {
+   "id": 170,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Vymezím, kde rozhoduje AI a kde zůstává člověk"
+  },
+  {
+   "id": 171,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Pravidla, která obstojí před auditem"
+  },
+  {
+   "id": 172,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Registr AI use-casů — přehled, kde všude ve firmě AI běží a co dělá"
+  },
+  {
+   "id": 173,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Pravidla použití AI pro zaměstnance — co je povoleno, co ne a s jakými daty"
+  },
+  {
+   "id": 174,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Odpovědnostní matice — u každého nasazení je jasné, kdo za výstup ručí"
+  },
+  {
+   "id": 175,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Zdokumentované, kontextové školení zaměstnanců — jedno z opatření k doložitelnému naplňování čl. 4 EU AI Act"
+  },
+  {
+   "id": 176,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Nastaveno s ohledem na EU AI Act, GDPR a interní compliance."
+  },
+  {
+   "id": 177,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Nasazení AI pracovníků"
+  },
+  {
+   "id": 178,
+   "kind": "text",
+   "ctx": "",
+   "cs": "90denní sprint · Týdny 4–12"
+  },
+  {
+   "id": 179,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Nasadím prioritní AI pracovníky nad vaše systémy a data — bez výměny infrastruktury."
+  },
+  {
+   "id": 180,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Výstup: každý agent má KPI v tržbách, nákladech nebo riziku — a dashboard."
+  },
+  {
+   "id": 181,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Navrhnu vendor-neutral architekturu nad vašimi systémy"
+  },
+  {
+   "id": 182,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Nasadím 1–3 prioritní AI pracovníky podle technické složitosti schválených use-casů — minimálně jednoho v měřeném reálném provozu"
+  },
+  {
+   "id": 183,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Nastavím měření dopadu a lidskou kontrolu u každého agenta"
+  },
+  {
+   "id": 184,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Počet a hloubku nasazení stanovíme po diagnostice podle technické složitosti use-casů a připravenosti vašich systémů. Konkrétní rozsah, odpovědnosti a akceptační kritéria potvrdíme ve smlouvě."
+  },
+  {
+   "id": 185,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Vlajkové use-casy"
+  },
+  {
+   "id": 186,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Website Conversion Agent"
+  },
+  {
+   "id": 187,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Kvalifikuje návštěvníky a vede je k rezervaci či nákupu."
+  },
+  {
+   "id": 188,
+   "kind": "text",
+   "ctx": "",
+   "cs": "↗ vyšší konverze webu"
+  },
+  {
+   "id": 189,
+   "kind": "text",
+   "ctx": "",
+   "cs": "24/7 Voice Agent"
+  },
+  {
+   "id": 190,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Přijímá hovory, kvalifikuje a rezervuje schůzky nonstop."
+  },
+  {
+   "id": 191,
+   "kind": "text",
+   "ctx": "",
+   "cs": "↗ méně zmeškaných hovorů"
+  },
+  {
+   "id": 192,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Back-office Agent"
+  },
+  {
+   "id": 193,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Zpracuje e-maily, faktury a objednávky bez přepisování."
+  },
+  {
+   "id": 194,
+   "kind": "text",
+   "ctx": "",
+   "cs": "↗ hodiny administrativy zpět"
+  },
+  {
+   "id": 195,
+   "kind": "text",
+   "ctx": "",
+   "cs": "{{ moreLabel }}"
+  },
+  {
+   "id": 196,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Zvýšení tržeb"
+  },
+  {
+   "id": 197,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Inbound Lead Agent"
+  },
+  {
+   "id": 198,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Zpracuje poptávky z formulářů, e-mailu a DM během minut."
+  },
+  {
+   "id": 199,
+   "kind": "text",
+   "ctx": "",
+   "cs": "↗ reakce do minut"
+  },
+  {
+   "id": 200,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Retention Agent"
+  },
+  {
+   "id": 201,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Řídí retenci, obnovy smluv a upsell u zákazníků."
+  },
+  {
+   "id": 202,
+   "kind": "text",
+   "ctx": "",
+   "cs": "↗ nižší churn, vyšší LTV"
+  },
+  {
+   "id": 203,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Snížení provozních nákladů"
+  },
+  {
+   "id": 204,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Customer Care Agent"
+  },
+  {
+   "id": 205,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Řeší podporu, na člověka eskaluje jen výjimky."
+  },
+  {
+   "id": 206,
+   "kind": "text",
+   "ctx": "",
+   "cs": "↗ dostupnost 24/7"
+  },
+  {
+   "id": 207,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Cashflow Agent"
+  },
+  {
+   "id": 208,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Hlídá pohledávky, páruje platby, upomíná."
+  },
+  {
+   "id": 209,
+   "kind": "text",
+   "ctx": "",
+   "cs": "↗ nižší DSO"
+  },
+  {
+   "id": 210,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Omezení rizika a závislosti na lidech"
+  },
+  {
+   "id": 211,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Revenue Control Agent"
+  },
+  {
+   "id": 212,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Odhaluje nevyfakturované výkony a úniky marže."
+  },
+  {
+   "id": 213,
+   "kind": "text",
+   "ctx": "",
+   "cs": "↗ vyšší marže"
+  },
+  {
+   "id": 214,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Internal Service Desk Agent"
+  },
+  {
+   "id": 215,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Odpovídá dle směrnic, spouští HR/IT procesy."
+  },
+  {
+   "id": 216,
+   "kind": "text",
+   "ctx": "",
+   "cs": "↗ méně dotazů na HR a IT"
+  },
+  {
+   "id": 217,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Agenty zprovozním nad vašimi stávajícími systémy a daty — CRM, ERP, e-mail, tabulky. Žádná výměna infrastruktury, žádný rok trvající datový projekt."
+  },
+  {
+   "id": 218,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Architekturu a výběr technologií řídím v zájmu vašeho vedení. Implementaci dodáme buď my, nebo partner, kterého si vyberete. Licence a služby třetích stran hradíte přímo jim a za doporučení nepřijímám provize."
+  },
+  {
+   "id": 219,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Volitelné · od 170 000 CZK / měs"
+  },
+  {
+   "id": 220,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Průběžné řízení AI agendy jako externí Head of AI. Pokračujeme, jen pokud sprint prokázal hodnotu."
+  },
+  {
+   "id": 221,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Výstup: měsíční board report — dopad portfolia proti cíli, rizika, další priority."
+  },
+  {
+   "id": 222,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Průběžné řízení AI agendy jako externí Head of AI: portfolio iniciativ, vendoři, adopce a board reporting. Součástí je adopce a proškolení vašeho týmu — lidé vědí, kdy výstupu agenta věřit a kdy zasáhnout."
+  },
+  {
+   "id": 223,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Cílový stav není závislost na mně — je to interní vlastník, kterému předám řízený systém. Portfolio ladíme podle dat a rozšiřujeme o nové příležitosti, jak vznikají."
+  },
+  {
+   "id": 224,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Návratnost"
+  },
+  {
+   "id": 225,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Spočítejte si to"
+  },
+  {
+   "id": 226,
+   "kind": "text",
+   "ctx": "",
+   "cs": "sami"
+  },
+  {
+   "id": 227,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Konzervativní čísla. Dosaďte si vlastní."
+  },
+  {
+   "id": 228,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Roční provozní přínos"
+  },
+  {
+   "id": 229,
+   "kind": "text",
+   "ctx": "",
+   "cs": "10 zmeškaných hovorů měsíčně × zakázka 30 000 Kč × 20 % konverze"
+  },
+  {
+   "id": 230,
+   "kind": "text",
+   "ctx": "",
+   "cs": "= 720 000 Kč tržeb ročně"
+  },
+  {
+   "id": 231,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Přínos je hrubá marže z nich — při 35 % ≈ 250 000 Kč ročně."
+  },
+  {
+   "id": 232,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Jednorázově uvolněný kapitál"
+  },
+  {
+   "id": 233,
+   "kind": "text",
+   "ctx": "",
+   "cs": "DSO kratší o 7 dní při obratu 50 mil. Kč"
+  },
+  {
+   "id": 234,
+   "kind": "text",
+   "ctx": "",
+   "cs": "≈ 959 000 Kč jednorázově uvolněno z pracovního kapitálu"
+  },
+  {
+   "id": 235,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Roční přínos je úspora financování — při 6% ceně peněz ≈ 58 000 Kč ročně."
+  },
+  {
+   "id": 236,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Uvolněná kapacita"
+  },
+  {
+   "id": 237,
+   "kind": "text",
+   "ctx": "",
+   "cs": "2 lidé × 8 hodin administrativy týdně na osobu = 832 hodin ročně"
+  },
+  {
+   "id": 238,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Při plném nákladu práce 480 Kč za hodinu ≈ 400 000 Kč kapacity ročně"
+  },
+  {
+   "id": 239,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Peníze z toho vzniknou, až kapacitu přealokujete, odstraníte přesčasy nebo díky ní nenaberete dalšího člověka."
+  },
+  {
+   "id": 240,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Tři různé ekonomické kategorie, ne tři"
+  },
+  {
+   "id": 241,
+   "kind": "text",
+   "ctx": "",
+   "cs": "srovnatelné výnosy"
+  },
+  {
+   "id": 242,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Modelová čísla — vaše spočítáme v diagnostice na vašich datech. Když nevyjdou, doporučím sprint nezahajovat."
+  },
+  {
+   "id": 243,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Změřený"
+  },
+  {
+   "id": 244,
+   "kind": "text",
+   "ctx": "",
+   "cs": "dopad"
+  },
+  {
+   "id": 245,
+   "kind": "text",
+   "ctx": "",
+   "cs": ", ne popis metody."
+  },
+  {
+   "id": 246,
+   "kind": "text",
+   "ctx": "",
+   "cs": "[DOPLNIT: typ firmy, velikost, obor — anonymizovaně, např. „výrobní firma, 180 lidí\"]"
+  },
+  {
+   "id": 247,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Výchozí stav:"
+  },
+  {
+   "id": 248,
+   "kind": "text",
+   "ctx": "",
+   "cs": "[DOPLNIT: měřitelná hodnota před nasazením]"
+  },
+  {
+   "id": 249,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Zásah:"
+  },
+  {
+   "id": 250,
+   "kind": "text",
+   "ctx": "",
+   "cs": "[DOPLNIT: co konkrétně bylo nasazeno]"
+  },
+  {
+   "id": 251,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Výsledek: [DOPLNIT: měřitelná hodnota po nasazení]"
+  },
+  {
+   "id": 252,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Doba měření: [DOPLNIT: období]"
+  },
+  {
+   "id": 253,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Jasný mandát, jasná"
+  },
+  {
+   "id": 254,
+   "kind": "text",
+   "ctx": "",
+   "cs": "cena"
+  },
+  {
+   "id": 255,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Do realizace jdeme jen tehdy, pokud očekávaný roční dopad výrazně převyšuje investici. Když čísla nevycházejí, doporučím projekt zastavit."
+  },
+  {
+   "id": 256,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Interní Head of AI"
+  },
+  {
+   "id": 257,
+   "kind": "text",
+   "ctx": "",
+   "cs": "3–4 mil. Kč ročně · 6 měsíců náboru · riziko špatné volby"
+  },
+  {
+   "id": 258,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Agentura na jeden projekt"
+  },
+  {
+   "id": 259,
+   "kind": "text",
+   "ctx": "",
+   "cs": "statisíce Kč · bez odpovědnosti za celkovou AI agendu"
+  },
+  {
+   "id": 260,
+   "kind": "text",
+   "ctx": "",
+   "cs": "AI Leadership Sprint"
+  },
+  {
+   "id": 261,
+   "kind": "text",
+   "ctx": "",
+   "cs": "750 000 Kč · výsledky za jedno čtvrtletí · stop-point každých 30 dní"
+  },
+  {
+   "id": 262,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Vstup"
+  },
+  {
+   "id": 263,
+   "kind": "text",
+   "ctx": "",
+   "cs": "0 CZK"
+  },
+  {
+   "id": 264,
+   "kind": "text",
+   "ctx": "",
+   "cs": "30 minut. Jasné go/no-go rozhodnutí."
+  },
+  {
+   "id": 265,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Zmapuji vaši situaci a AI připravenost"
+  },
+  {
+   "id": 266,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Řeknu vám, zda sprint dává smysl nebo ne"
+  },
+  {
+   "id": 267,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Odejdete se jmenovaným interním vlastníkem AI"
+  },
+  {
+   "id": 268,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Žádný závazek, žádný prodejní tlak"
+  },
+  {
+   "id": 269,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Rezervovat call zdarma"
+  },
+  {
+   "id": 270,
+   "kind": "text",
+   "ctx": "",
+   "cs": "90denní sprint · fixní cena"
+  },
+  {
+   "id": 271,
+   "kind": "text",
+   "ctx": "",
+   "cs": "750 000 CZK"
+  },
+  {
+   "id": 272,
+   "kind": "text",
+   "ctx": "",
+   "cs": "/ 90 dní bez DPH"
+  },
+  {
+   "id": 273,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Diagnostika, governance a nasazení AI pracovníků."
+  },
+  {
+   "id": 274,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Kompletní mapa AI aktivit s prioritami v Kč"
+  },
+  {
+   "id": 275,
+   "kind": "text",
+   "ctx": "",
+   "cs": "AI governance — registr, pravidla, odpovědnosti"
+  },
+  {
+   "id": 276,
+   "kind": "text",
+   "ctx": "",
+   "cs": "1–3 prioritní AI pracovníci podle technické složitosti use-casů — minimálně jeden v měřeném reálném provozu"
+  },
+  {
+   "id": 277,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Předání internímu vlastníkovi"
+  },
+  {
+   "id": 278,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Rozhodujete po etapách. Bez vašeho go nevzniká další závazek."
+  },
+  {
+   "id": 279,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Fakturace ve 3 platbách po 250 000 Kč. Po každých 30 dnech rozhodujete, zda schválíte další fázi — každé rozhodnutí je závazek maximálně na dalších 250 000 Kč. Při plném dokončení je celková cena 750 000 Kč."
+  },
+  {
+   "id": 280,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Ekonomický práh sprintu: zahájíme jej pouze tehdy, pokud diagnostika na vašich datech ukáže realistický potenciál vrátit jeho cenu do dvanácti měsíců."
+  },
+  {
+   "id": 281,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Volitelné · po sprintu"
+  },
+  {
+   "id": 282,
+   "kind": "text",
+   "ctx": "",
+   "cs": "od 170 000 CZK"
+  },
+  {
+   "id": 283,
+   "kind": "text",
+   "ctx": "",
+   "cs": "/ měsíc"
+  },
+  {
+   "id": 284,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Polovina nákladu interního Head of AI. Bez náboru."
+  },
+  {
+   "id": 285,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Board report — dopad, rizika, priority"
+  },
+  {
+   "id": 286,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Řízení pipeline nových AI příležitostí"
+  },
+  {
+   "id": 287,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Vendor management bez provizí"
+  },
+  {
+   "id": 288,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Adopci a proškolení týmu"
+  },
+  {
+   "id": 289,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Sledování regulatorních změn a dopadu na vaše nasazení"
+  },
+  {
+   "id": 290,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Výpověď měsíc předem. Končí předáním internímu vlastníkovi."
+  },
+  {
+   "id": 291,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Ne další AI workshop"
+  },
+  {
+   "id": 292,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Domluvme si"
+  },
+  {
+   "id": 293,
+   "kind": "text",
+   "ctx": "",
+   "cs": "rozhodovací call"
+  },
+  {
+   "id": 294,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Během 30 minut zjistíme, jestli vaše firma potřebuje prvního AI pracovníka, 90denní sprint — nebo nejdřív nastavit odpovědnost."
+  },
+  {
+   "id": 295,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Ozvu se do 24 hodin."
+  },
+  {
+   "id": 296,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Bez prodejní prezentace."
+  },
+  {
+   "id": 297,
+   "kind": "text",
+   "ctx": "",
+   "cs": "hello@headofai.cz"
+  },
+  {
+   "id": 298,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Jméno"
+  },
+  {
+   "id": 299,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Pracovní e-mail"
+  },
+  {
+   "id": 300,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Firma"
+  },
+  {
+   "id": 301,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Odpovím osobně do jednoho pracovního dne a navrhnu termín 30minutového hovoru."
+  },
+  {
+   "id": 302,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Odesláním souhlasíte se zpracováním osobních údajů."
+  },
+  {
+   "id": 303,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Zásady ochrany osobních údajů"
+  },
+  {
+   "id": 304,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Průvodce"
+  },
+  {
+   "id": 305,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Role Head of AI je v Česku nová. Tady najdete odpovědi na nejčastější otázky — od definice po plat a načasování."
+  },
+  {
+   "id": 306,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Co je Head of AI / Chief AI Officer"
+  },
+  {
+   "id": 307,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Co role obnáší, čím se liší od CTO, CDO a AI Engineera a kdy ji firma potřebuje."
+  },
+  {
+   "id": 308,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Číst průvodce →"
+  },
+  {
+   "id": 309,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Plat Head of AI: ČR vs zahraničí"
+  },
+  {
+   "id": 310,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Kolik stojí Head of AI v Česku i v zahraničí — a proč se vyplatí fractional model."
+  },
+  {
+   "id": 311,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Kdy firma potřebuje Head of AI"
+  },
+  {
+   "id": 312,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Signály, podle kterých poznáte, že je čas dát AI jasného vlastníka."
+  },
+  {
+   "id": 313,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Fractional vs full-time CAIO"
+  },
+  {
+   "id": 314,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Kdy stačí part-time CAIO a kdy se vyplatí full-time role."
+  },
+  {
+   "id": 315,
+   "kind": "text",
+   "ctx": "",
+   "cs": "FAQ"
+  },
+  {
+   "id": 316,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Stavím vendor-neutral: frontier modely (Anthropic, OpenAI, Google) vybírám podle úlohy, ne podle partnerství. Firemní data zůstávají ve vašich systémech — agenti k nim přistupují přes API s řízenými oprávněními, nic se nepřelévá do cizích trénovacích dat. Každý agent má definované místo, kde rozhoduje člověk, a vlastníka, který za výstup ručí. Používáme minimální oprávnění, minimalizaci předávaných dat, kontrolované fallbacky a možnost zásah vrátit. Do produkce nejde systém, u něhož není jasné, kdo odpovídá za jeho rozhodnutí a výstupy."
+  },
+  {
+   "id": 317,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Možná ho ještě nepotřebujete. Tato role začíná dávat smysl ve chvíli, kdy AI ovlivňuje tržby, náklady, firemní data, zákazníky nebo rozhodování zaměstnanců. Bez jasného vlastníka se AI agenda nezastaví — její směr fakticky určují zaměstnanci, IT a dodavatelé podle vlastních priorit. Úkolem Head of AI není přidat další manažerskou vrstvu, ale sjednotit odpovědnost, zastavit slabé experimenty a soustředit investice tam, kde mají měřitelný dopad."
+  },
+  {
+   "id": 318,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Pomůžete nám s EU AI Act?"
+  },
+  {
+   "id": 319,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Ano, v rozsahu, který se vás reálně týká — a bez strašení."
+  },
+  {
+   "id": 320,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Většina firem není poskytovatelem vysoce rizikového AI systému. Nejčastěji se vás tak týká čl. 4 a podle konkrétního způsobu nasazení také čl. 50."
+  },
+  {
+   "id": 321,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Čl. 4 (AI gramotnost) platí od 2. února 2025. Nařízení (EU) 2026/1744 — Digital Omnibus na AI, které vstoupilo v platnost 27. července 2026 — jeho znění změnilo: nemusíte garantovat konkrétní úroveň gramotnosti u každého jednotlivce, ale nadále musíte přijímat přiměřená opatření podporující její rozvoj. Je to povinnost úsilí, ne garantovaného výsledku."
+  },
+  {
+   "id": 322,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Transparenční povinnosti podle čl. 50 se obecně použijí od 2. srpna 2026 podle role firmy a způsobu použití AI. Pro poskytovatele systémů generujících syntetický obsah, které byly na trhu před tímto datem, platí pro čl. 50 odst. 2 přechodné období do 2. prosince 2026."
+  },
+  {
+   "id": 323,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Hlavní povinnosti pro vysoce rizikové systémy se použijí od 2. prosince 2027 (Annex III) a od 2. srpna 2028 (Annex I)."
+  },
+  {
+   "id": 324,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Governance u vás nastavuji primárně kvůli kontrole nad daty a odpovědností. Soulad s regulací je důsledek, ne hlavní důvod. Nejsem advokát a finální právní posouzení patří vašemu právnímu zástupci — dodám podklady, ne právní stanovisko."
+  },
+  {
+   "id": 325,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Co to udělá s naším týmem?"
+  },
+  {
+   "id": 326,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Agenti přebírají repetitivní práci, ne lidi. Součástí nasazení je proškolení týmu a jasná pravidla, kdo agenty řídí a kontroluje. Cílem je tým, který s AI pracuje sebevědomě — ne tým, který se jí bojí."
+  },
+  {
+   "id": 327,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Fractional AI leadership pro firmy, které chtějí kontrolu, měřitelný dopad a první AI pracovníky v provozu."
+  },
+  {
+   "id": 328,
+   "kind": "text",
+   "ctx": "",
+   "cs": "@headofaicz"
+  },
+  {
+   "id": 329,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Provozovatel"
+  },
+  {
+   "id": 330,
+   "kind": "text",
+   "ctx": "",
+   "cs": "IČO: 23702907 · DIČ: CZ23702907"
+  },
+  {
+   "id": 331,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Česko"
+  },
+  {
+   "id": 332,
+   "kind": "text",
+   "ctx": "",
+   "cs": "© 2026 Vesely.ai s.r.o. · headofai.cz"
+  }
+ ]
+}

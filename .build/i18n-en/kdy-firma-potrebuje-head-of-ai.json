@@ -1,0 +1,725 @@
+{
+ "source": "kdy-firma-potrebuje-head-of-ai.html",
+ "strings": [
+  {
+   "id": 0,
+   "kind": "title",
+   "ctx": "<title>",
+   "cs": "Kdy firma potřebuje Head of AI (a kdy ještě ne) | headofai.cz"
+  },
+  {
+   "id": 1,
+   "kind": "meta",
+   "ctx": "description",
+   "cs": "Kdy firma potřebuje Head of AI: 7 signálů, kdy ho ještě nepotřebujete a srovnání full-time vs fractional vs konzultant. Praktický průvodce pro CEO."
+  },
+  {
+   "id": 2,
+   "kind": "meta",
+   "ctx": "author",
+   "cs": "David Veselý"
+  },
+  {
+   "id": 3,
+   "kind": "meta",
+   "ctx": "og:title",
+   "cs": "Kdy vaše firma potřebuje Head of AI (a kdy ještě ne)"
+  },
+  {
+   "id": 4,
+   "kind": "meta",
+   "ctx": "og:description",
+   "cs": "7 signálů, že firmu brzdí chybějící AI leadership, kdy ho ještě nepotřebujete a tři cesty, jak roli obsadit. Praktický průvodce pro CEO."
+  },
+  {
+   "id": 5,
+   "kind": "meta",
+   "ctx": "og:site_name",
+   "cs": "headofai.cz"
+  },
+  {
+   "id": 6,
+   "kind": "ld",
+   "ctx": "ld.description",
+   "cs": "7 signálů, že firmu brzdí chybějící AI leadership, kdy Head of AI ještě nepotřebujete, srovnání full-time vs fractional vs konzultant a jak vypadá prvních 90 dní."
+  },
+  {
+   "id": 7,
+   "kind": "ld",
+   "ctx": "ld.publisher.name",
+   "cs": "Vesely.ai s.r.o."
+  },
+  {
+   "id": 8,
+   "kind": "ld",
+   "ctx": "ld.itemListElement[0].name",
+   "cs": "Domů"
+  },
+  {
+   "id": 9,
+   "kind": "ld",
+   "ctx": "ld.itemListElement[1].name",
+   "cs": "Kdy firma potřebuje Head of AI"
+  },
+  {
+   "id": 10,
+   "kind": "ld",
+   "ctx": "ld.mainEntity[0].name",
+   "cs": "Jak poznám, že je čas na Head of AI?"
+  },
+  {
+   "id": 11,
+   "kind": "ld",
+   "ctx": "ld.mainEntity[0].acceptedAnswer.text",
+   "cs": "Nejjasnější signál je, že AI aktivita ve firmě roste, ale nikdo ji nevlastní. Pilotní projekty se nedostávají do provozu, každé oddělení používá vlastní nástroje, nikdo neodpovídá za AI rozpočet ani za soulad s EU AI Act. Jakmile AI ovlivňuje tržby, náklady nebo firemní data a chybí za ni jasná odpovědnost, je čas roli obsadit."
+  },
+  {
+   "id": 12,
+   "kind": "ld",
+   "ctx": "ld.mainEntity[1].name",
+   "cs": "Musíme mít nejdřív hotová data, než najmeme Head of AI?"
+  },
+  {
+   "id": 13,
+   "kind": "ld",
+   "ctx": "ld.mainEntity[1].acceptedAnswer.text",
+   "cs": "Ne. Dokonalá data nejsou podmínkou — jednou z prvních věcí, které Head of AI udělá, je právě zmapování stavu dat, procesů a rizik. Potřebujete ale základní digitalizaci: fungující systémy, procesy a alespoň nějaká využitelná data. Pokud firma teprve zavádí základní nástroje, začněte tím, ne AI leadershipem."
+  },
+  {
+   "id": 14,
+   "kind": "ld",
+   "ctx": "ld.mainEntity[2].name",
+   "cs": "Nestačí nám konzultant nebo agentura?"
+  },
+  {
+   "id": 15,
+   "kind": "ld",
+   "ctx": "ld.mainEntity[2].acceptedAnswer.text",
+   "cs": "Konzultant nebo agentura dodá konkrétní projekt nebo doporučení, ale nepřebírá odpovědnost za celou AI agendu firmy. Head of AI má mandát rozhodovat napříč odděleními, držet priority, governance a rozpočet a odpovídat za dopad. Když potřebujete vyřešit jeden problém, stačí dodavatel. Když potřebujete, aby AI někdo vlastnil a řídil, potřebujete roli."
+  },
+  {
+   "id": 16,
+   "kind": "ld",
+   "ctx": "ld.mainEntity[3].name",
+   "cs": "Kdy Head of AI ještě nepotřebujeme?"
+  },
+  {
+   "id": 17,
+   "kind": "ld",
+   "ctx": "ld.mainEntity[3].acceptedAnswer.text",
+   "cs": "Pokud je vaše firma malá, AI u vás zatím neovlivňuje byznys a jde jen o okrajové experimenty, samostatná role je předčasná. Stejně tak pokud chybí základní digitalizace nebo využitelná data — nejdřív dává smysl postavit základ. Tato upřímnost je záměrná: špatné načasování role stojí peníze a nedává výsledky."
+  },
+  {
+   "id": 18,
+   "kind": "ld",
+   "ctx": "ld.mainEntity[4].name",
+   "cs": "Co se stane během prvních 90 dní s Head of AI?"
+  },
+  {
+   "id": 19,
+   "kind": "ld",
+   "ctx": "ld.mainEntity[4].acceptedAnswer.text",
+   "cs": "Prvních 90 dní má jasnou strukturu: diagnostika a posouzení připravenosti (CIPHER Snapshot) s prioritami podle dopadu v Kč, nastavení governance a souladu s EU AI Act, nasazení prvních prioritních AI pracovníků do reálného provozu a board report s měřeným dopadem. Cílem je jasný vlastník, schválené priority a první výsledky, ne dlouhý audit bez exekuce."
+  },
+  {
+   "id": 20,
+   "kind": "attr",
+   "ctx": "aria-label",
+   "cs": "Hlavní navigace"
+  },
+  {
+   "id": 21,
+   "kind": "attr",
+   "ctx": "aria-label",
+   "cs": "Drobečková navigace"
+  },
+  {
+   "id": 22,
+   "kind": "attr",
+   "ctx": "aria-label",
+   "cs": "Související průvodce"
+  },
+  {
+   "id": 23,
+   "kind": "text",
+   "ctx": "",
+   "cs": "headofai"
+  },
+  {
+   "id": 24,
+   "kind": "text",
+   "ctx": "",
+   "cs": ".cz"
+  },
+  {
+   "id": 25,
+   "kind": "text",
+   "ctx": "",
+   "cs": "O mně"
+  },
+  {
+   "id": 26,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Proces"
+  },
+  {
+   "id": 27,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Ceny"
+  },
+  {
+   "id": 28,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Domluvit call"
+  },
+  {
+   "id": 29,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Kdy vaše firma potřebuje Head of AI"
+  },
+  {
+   "id": 30,
+   "kind": "text",
+   "ctx": "",
+   "cs": "(a kdy ještě ne)"
+  },
+  {
+   "id": 31,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Publikováno"
+  },
+  {
+   "id": 32,
+   "kind": "text",
+   "ctx": "",
+   "cs": "22. července 2026"
+  },
+  {
+   "id": 33,
+   "kind": "text",
+   "ctx": "",
+   "cs": "· David Veselý"
+  },
+  {
+   "id": 34,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Firma potřebuje"
+  },
+  {
+   "id": 35,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Head of AI"
+  },
+  {
+   "id": 36,
+   "kind": "text",
+   "ctx": "",
+   "cs": "ve chvíli, kdy AI začíná ovlivňovat tržby, náklady, firemní data nebo rozhodování — a nikdo za ni nenese jasnou odpovědnost. Pokud se u vás množí AI experimenty bez vlastníka, priorit a pravidel, je čas roli obsadit. Dokud je AI jen okrajový pokus bez dopadu na byznys, počká."
+  },
+  {
+   "id": 37,
+   "kind": "text",
+   "ctx": "",
+   "cs": "7 signálů, že firmu brzdí chybějící AI leadership"
+  },
+  {
+   "id": 38,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Roli"
+  },
+  {
+   "id": 39,
+   "kind": "text",
+   "ctx": "",
+   "cs": "firma zpravidla nepotřebuje kvůli jednomu velkému rozhodnutí, ale proto, že se hromadí menší symptomy. Pokud u vás poznáváte tři a víc z nich, chybí vám jasný vlastník AI:"
+  },
+  {
+   "id": 40,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Pilotní projekty umírají."
+  },
+  {
+   "id": 41,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Spousta ukázek a pilotů, ale málokdy se něco dostane do reálného provozu a začne přinášet výsledek."
+  },
+  {
+   "id": 42,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Každé oddělení si hraje s AI po svém."
+  },
+  {
+   "id": 43,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Nekoordinované nástroje, duplicitní experimenty a nikdo nemá celkový přehled, co ve firmě běží."
+  },
+  {
+   "id": 44,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Nikdo nevlastní AI rozpočet."
+  },
+  {
+   "id": 45,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Utrácí se za nástroje a licence, ale nikdo neodpovídá za jejich návratnost ani za to, jestli dávají smysl."
+  },
+  {
+   "id": 46,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Roste compliance riziko."
+  },
+  {
+   "id": 47,
+   "kind": "text",
+   "ctx": "",
+   "cs": "EU AI Act a povinnost AI gramotnosti platí, ale nikdo neřídí soulad ani nedokumentuje, jak se AI ve firmě používá."
+  },
+  {
+   "id": 48,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Firemní data odtékají do externích služeb."
+  },
+  {
+   "id": 49,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Zaměstnanci vkládají citlivá data do veřejných AI nástrojů bez pravidel a bez přehledu."
+  },
+  {
+   "id": 50,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Vedení neumí rozhodnout, co dělat dřív."
+  },
+  {
+   "id": 51,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Nápadů je hodně, ale chybí priority s odhadem dopadu — a tak se nedělá nic pořádně."
+  },
+  {
+   "id": 52,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Konkurence vás začíná předbíhat."
+  },
+  {
+   "id": 53,
+   "kind": "text",
+   "ctx": "",
+   "cs": "AI mění váš trh, zákaznickou zkušenost i náklady, a vy na to reagujete nahodile, ne strategicky."
+  },
+  {
+   "id": 54,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Kdy Head of AI ještě nepotřebujete"
+  },
+  {
+   "id": 55,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Špatné načasování role stojí peníze a nepřinese výsledky. Buďme upřímní — v těchto situacích samostatný Head of AI zatím nedává smysl:"
+  },
+  {
+   "id": 56,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Jste malá firma."
+  },
+  {
+   "id": 57,
+   "kind": "text",
+   "ctx": "",
+   "cs": "U několika desítek lidí zvládne AI agendu majitel nebo jeden schopný nadšenec bez samostatné vedoucí role."
+  },
+  {
+   "id": 58,
+   "kind": "text",
+   "ctx": "",
+   "cs": "AI zatím neovlivňuje váš byznys."
+  },
+  {
+   "id": 59,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Pokud jde o okrajové experimenty bez dopadu na tržby, náklady nebo zákazníky, role je předčasná."
+  },
+  {
+   "id": 60,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Chybí základní digitalizace."
+  },
+  {
+   "id": 61,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Bez fungujících systémů, procesů a alespoň nějakých využitelných dat je AI leadership stavba od střechy. Nejdřív základ."
+  },
+  {
+   "id": 62,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Hledáte jen jednorázové řešení."
+  },
+  {
+   "id": 63,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Když potřebujete vyřešit jeden konkrétní problém, stačí dodavatel — ne trvalá role."
+  },
+  {
+   "id": 64,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Tahle upřímnost je záměrná: pokud vám řeknu, že roli zatím nepotřebujete, ušetřím vám peníze i zklamání. Head of AI má smysl teprve tehdy, kdy AI reálně ovlivňuje výsledky firmy."
+  },
+  {
+   "id": 65,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Tři cesty, jak roli obsadit"
+  },
+  {
+   "id": 66,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Když už Head of AI potřebujete, máte tři možnosti. Liší se náklady, mírou odpovědnosti i tím, jestli někdo skutečně přebere vaši AI agendu:"
+  },
+  {
+   "id": 67,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Kritérium"
+  },
+  {
+   "id": 68,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Full-time Head of AI"
+  },
+  {
+   "id": 69,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Fractional Head of AI"
+  },
+  {
+   "id": 70,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Konzultant / agentura"
+  },
+  {
+   "id": 71,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Náklad"
+  },
+  {
+   "id": 72,
+   "kind": "text",
+   "ctx": "",
+   "cs": "≈ 2,5–4,5 mil. Kč ročně"
+  },
+  {
+   "id": 73,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Měsíční paušál, zlomek full-time"
+  },
+  {
+   "id": 74,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Za projekt nebo hodiny"
+  },
+  {
+   "id": 75,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Odpovědnost"
+  },
+  {
+   "id": 76,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Trvalá, interní"
+  },
+  {
+   "id": 77,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Mandát s výstupy, průběžná"
+  },
+  {
+   "id": 78,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Za dodávku, ne za agendu"
+  },
+  {
+   "id": 79,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Exekuce"
+  },
+  {
+   "id": 80,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Ano"
+  },
+  {
+   "id": 81,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Často jen doporučení"
+  },
+  {
+   "id": 82,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Kdy dává smysl"
+  },
+  {
+   "id": 83,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Trvalá full-time zátěž pro roli"
+  },
+  {
+   "id": 84,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Firma 50–500 lidí bez full-time potřeby"
+  },
+  {
+   "id": 85,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Jednorázový, ohraničený problém"
+  },
+  {
+   "id": 86,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Hlavní riziko"
+  },
+  {
+   "id": 87,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Drahý a pomalý nábor"
+  },
+  {
+   "id": 88,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Nízké, flexibilní závazek"
+  },
+  {
+   "id": 89,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Bez mandátu se agenda nezmění"
+  },
+  {
+   "id": 90,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Podrobné srovnání nákladů full-time a fractional modelu najdete v článku o"
+  },
+  {
+   "id": 91,
+   "kind": "text",
+   "ctx": "",
+   "cs": "platu Head of AI"
+  },
+  {
+   "id": 92,
+   "kind": "text",
+   "ctx": "",
+   "cs": ". Pro většinu českých firem střední velikosti je fractional cesta nejlepším poměrem rizika a nákladu."
+  },
+  {
+   "id": 93,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Jak vypadá prvních 90 dní s Head of AI"
+  },
+  {
+   "id": 94,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Dobrý Head of AI nezačíná dlouhým auditem bez konce. Prvních 90 dní má jasnou strukturu, která vede od chaosu k řízenému výkonu — na headofai.cz podle"
+  },
+  {
+   "id": 95,
+   "kind": "text",
+   "ctx": "",
+   "cs": "metodiky CIPHER"
+  },
+  {
+   "id": 96,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Diagnostika (CIPHER Snapshot)."
+  },
+  {
+   "id": 97,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Posouzení připravenosti a zmapování, kde AI ve firmě vzniká, co stojí a kde je riziko — s prioritami podle odhadu dopadu v Kč."
+  },
+  {
+   "id": 98,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Governance."
+  },
+  {
+   "id": 99,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Pravidla pro data, oprávnění a lidské schvalování a soulad s EU AI Act — dřív, než cokoli jde do provozu."
+  },
+  {
+   "id": 100,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Nasazení."
+  },
+  {
+   "id": 101,
+   "kind": "text",
+   "ctx": "",
+   "cs": "První prioritní AI pracovníci jdou do reálného provozu nad vašimi systémy, s definovanými KPI."
+  },
+  {
+   "id": 102,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Board report."
+  },
+  {
+   "id": 103,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Přehled dosaženého dopadu proti cíli a doporučení pro další období."
+  },
+  {
+   "id": 104,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Cílem prvních 90 dní je jasný vlastník AI agendy, schválené priority a první měřitelné výsledky — ne prezentace do šuplíku."
+  },
+  {
+   "id": 105,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Časté otázky"
+  },
+  {
+   "id": 106,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Co je Head of AI / Chief AI Officer? Průvodce rolí"
+  },
+  {
+   "id": 107,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Plat Head of AI / Chief AI Officer: ČR vs zahraničí"
+  },
+  {
+   "id": 108,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Fractional Head of AI vs full-time CAIO"
+  },
+  {
+   "id": 109,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Nejste si jistí, jestli je čas na"
+  },
+  {
+   "id": 110,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Za 30 minut nezávazného callu si to ujasníme. Řeknu vám na rovinu, jestli roli potřebujete — i když je odpověď „ještě ne\"."
+  },
+  {
+   "id": 111,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Domluvit AI Leadership Call"
+  },
+  {
+   "id": 112,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Fractional AI leadership pro firmy, které chtějí kontrolu, měřitelný dopad a první AI pracovníky v provozu."
+  },
+  {
+   "id": 113,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Kontakt"
+  },
+  {
+   "id": 114,
+   "kind": "text",
+   "ctx": "",
+   "cs": "hello@headofai.cz"
+  },
+  {
+   "id": 115,
+   "kind": "text",
+   "ctx": "",
+   "cs": "@headofaicz"
+  },
+  {
+   "id": 116,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Provozovatel"
+  },
+  {
+   "id": 117,
+   "kind": "text",
+   "ctx": "",
+   "cs": "IČO: 23702907 · DIČ: CZ23702907"
+  },
+  {
+   "id": 118,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Česko"
+  },
+  {
+   "id": 119,
+   "kind": "text",
+   "ctx": "",
+   "cs": "© 2026 Vesely.ai s.r.o. · headofai.cz"
+  }
+ ]
+}

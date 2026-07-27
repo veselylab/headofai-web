@@ -1,0 +1,677 @@
+{
+ "source": "co-je-head-of-ai.html",
+ "strings": [
+  {
+   "id": 0,
+   "kind": "title",
+   "ctx": "<title>",
+   "cs": "Co je Head of AI / Chief AI Officer? Průvodce rolí | headofai.cz"
+  },
+  {
+   "id": 1,
+   "kind": "meta",
+   "ctx": "description",
+   "cs": "Co je Head of AI / Chief AI Officer (CAIO)? Kompletní český průvodce: co role dělá, čím se liší od CTO, CDO a AI Engineera a kdy ji firma potřebuje."
+  },
+  {
+   "id": 2,
+   "kind": "meta",
+   "ctx": "author",
+   "cs": "David Veselý"
+  },
+  {
+   "id": 3,
+   "kind": "meta",
+   "ctx": "og:title",
+   "cs": "Co je Head of AI / Chief AI Officer? Kompletní průvodce rolí"
+  },
+  {
+   "id": 4,
+   "kind": "meta",
+   "ctx": "og:description",
+   "cs": "Kompletní český průvodce rolí Head of AI / Chief AI Officer: odpovědnosti, srovnání s CTO/CDO/AI Engineerem, kompetence a český kontext."
+  },
+  {
+   "id": 5,
+   "kind": "meta",
+   "ctx": "og:site_name",
+   "cs": "headofai.cz"
+  },
+  {
+   "id": 6,
+   "kind": "ld",
+   "ctx": "ld.description",
+   "cs": "Kompletní český průvodce rolí Head of AI / Chief AI Officer: odpovědnosti, srovnání s CTO, CDO a AI Engineerem, potřebné kompetence a český kontext."
+  },
+  {
+   "id": 7,
+   "kind": "ld",
+   "ctx": "ld.publisher.name",
+   "cs": "Vesely.ai s.r.o."
+  },
+  {
+   "id": 8,
+   "kind": "ld",
+   "ctx": "ld.itemListElement[0].name",
+   "cs": "Domů"
+  },
+  {
+   "id": 9,
+   "kind": "ld",
+   "ctx": "ld.itemListElement[1].name",
+   "cs": "Co je Head of AI / Chief AI Officer"
+  },
+  {
+   "id": 10,
+   "kind": "ld",
+   "ctx": "ld.mainEntity[0].name",
+   "cs": "Je Head of AI to samé co Chief AI Officer?"
+  },
+  {
+   "id": 11,
+   "kind": "ld",
+   "ctx": "ld.mainEntity[0].acceptedAnswer.text",
+   "cs": "Ano, v praxi jde o synonyma pro tutéž roli — nejvyššího odpovědného za umělou inteligenci ve firmě. Označení Chief AI Officer (CAIO) je častější ve velkých korporacích a v angloamerickém prostředí, Head of AI se používá i v menších a středních firmách. Náplň je stejná: vlastnit AI agendu, určovat priority a odpovídat za dopad."
+  },
+  {
+   "id": 12,
+   "kind": "ld",
+   "ctx": "ld.mainEntity[1].name",
+   "cs": "Musí Head of AI umět programovat?"
+  },
+  {
+   "id": 13,
+   "kind": "ld",
+   "ctx": "ld.mainEntity[1].acceptedAnswer.text",
+   "cs": "Nemusí sám psát produkční kód, ale potřebuje technický úsudek — rozumět tomu, co je s dnešní AI reálně proveditelné, kolik to stojí, jaká jsou rizika a jak posoudit řešení a dodavatele. Bez technické hloubky se z role stává prázdný manažer, bez byznysového pohledu zase inženýr bez mandátu. Klíčová je právě kombinace obojího."
+  },
+  {
+   "id": 14,
+   "kind": "ld",
+   "ctx": "ld.mainEntity[2].name",
+   "cs": "Kdy má firma najmout Head of AI?"
+  },
+  {
+   "id": 15,
+   "kind": "ld",
+   "ctx": "ld.mainEntity[2].acceptedAnswer.text",
+   "cs": "Ve chvíli, kdy AI začíná ovlivňovat tržby, náklady, firemní data, zákazníky nebo rozhodování zaměstnanců — a nikdo za ni nenese jasnou odpovědnost. Dokud je AI jen okrajový experiment, samostatná role není nutná. Jakmile ale AI aktivita roste bez vlastníka, pravidel a měření, firma potřebuje někoho, kdo ji převezme."
+  },
+  {
+   "id": 16,
+   "kind": "ld",
+   "ctx": "ld.mainEntity[3].name",
+   "cs": "Co je fractional Head of AI?"
+  },
+  {
+   "id": 17,
+   "kind": "ld",
+   "ctx": "ld.mainEntity[3].acceptedAnswer.text",
+   "cs": "Fractional Head of AI je tatáž role vykonávaná na část úvazku. Hodí se firmám o 50–500+ zaměstnancích, které potřebují zkušené AI vedení, ale ještě nemají práci na plný úvazek ani rozpočet na full-time seniorní roli. Firma získá strategii i exekuci s definovaným mandátem a výstupy, bez nákladu a rizika náboru za miliony korun ročně."
+  },
+  {
+   "id": 18,
+   "kind": "ld",
+   "ctx": "ld.mainEntity[4].name",
+   "cs": "Kolik Head of AI stojí?"
+  },
+  {
+   "id": 19,
+   "kind": "ld",
+   "ctx": "ld.mainEntity[4].acceptedAnswer.text",
+   "cs": "Full-time seniorní Head of AI v ČR vyjde řádově na 3–4 miliony Kč ročně včetně nákladů, plus několik měsíců náboru a riziko špatné volby. Fractional Head of AI stojí zlomek této částky — platí se za mandát nebo měsíční paušál podle rozsahu, typicky od nižších statisíců korun."
+  },
+  {
+   "id": 20,
+   "kind": "attr",
+   "ctx": "aria-label",
+   "cs": "Hlavní navigace"
+  },
+  {
+   "id": 21,
+   "kind": "attr",
+   "ctx": "aria-label",
+   "cs": "Drobečková navigace"
+  },
+  {
+   "id": 22,
+   "kind": "attr",
+   "ctx": "aria-label",
+   "cs": "Související průvodce"
+  },
+  {
+   "id": 23,
+   "kind": "text",
+   "ctx": "",
+   "cs": "headofai"
+  },
+  {
+   "id": 24,
+   "kind": "text",
+   "ctx": "",
+   "cs": ".cz"
+  },
+  {
+   "id": 25,
+   "kind": "text",
+   "ctx": "",
+   "cs": "O mně"
+  },
+  {
+   "id": 26,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Proces"
+  },
+  {
+   "id": 27,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Ceny"
+  },
+  {
+   "id": 28,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Domluvit call"
+  },
+  {
+   "id": 29,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Co je Head of AI / Chief AI Officer?"
+  },
+  {
+   "id": 30,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Kompletní průvodce rolí"
+  },
+  {
+   "id": 31,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Publikováno"
+  },
+  {
+   "id": 32,
+   "kind": "text",
+   "ctx": "",
+   "cs": "22. července 2026"
+  },
+  {
+   "id": 33,
+   "kind": "text",
+   "ctx": "",
+   "cs": "· David Veselý"
+  },
+  {
+   "id": 34,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Head of AI"
+  },
+  {
+   "id": 35,
+   "kind": "text",
+   "ctx": "",
+   "cs": "(anglicky"
+  },
+  {
+   "id": 36,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Chief AI Officer"
+  },
+  {
+   "id": 37,
+   "kind": "text",
+   "ctx": "",
+   "cs": ", zkráceně"
+  },
+  {
+   "id": 38,
+   "kind": "text",
+   "ctx": "",
+   "cs": "CAIO"
+  },
+  {
+   "id": 39,
+   "kind": "text",
+   "ctx": "",
+   "cs": ") je vedoucí role odpovědná za to, aby umělá inteligence ve firmě přinášela měřitelný byznysový výsledek, ne jen náklady a nekoordinované experimenty. Sjednocuje AI aktivitu pod jednoho vlastníka, určuje priority podle dopadu, nastavuje pravidla pro data a bezpečnost a řídí nasazení AI do reálného provozu. Spojuje strategii, technologii a řízení změny do jedné odpovědnosti."
+  },
+  {
+   "id": 40,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Co Head of AI reálně dělá"
+  },
+  {
+   "id": 41,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Role"
+  },
+  {
+   "id": 42,
+   "kind": "text",
+   "ctx": "",
+   "cs": "není o sledování trendů ani o pořádání workshopů. Je to provozní odpovědnost za to, jak firma s umělou inteligencí zachází — od strategie až po měřený dopad. V praxi Head of AI:"
+  },
+  {
+   "id": 43,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Vlastní AI agendu."
+  },
+  {
+   "id": 44,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Je jediným jasným vlastníkem, u kterého končí odpovědnost za směr, priority a rozhodnutí ohledně AI."
+  },
+  {
+   "id": 45,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Určuje priority podle návratnosti."
+  },
+  {
+   "id": 46,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Z desítek nápadů vybírá ty, které mají obhajitelný dopad na tržby, náklady nebo riziko — a slabé zastavuje."
+  },
+  {
+   "id": 47,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Nastavuje governance."
+  },
+  {
+   "id": 48,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Definuje pravidla pro data, bezpečnost, lidské schvalování a soulad s regulací (v EU zejména EU AI Act)."
+  },
+  {
+   "id": 49,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Řídí nasazení do provozu."
+  },
+  {
+   "id": 50,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Dohlíží na to, aby se z pilotů staly reálně používané workflow s vlastníkem a měřenými KPI."
+  },
+  {
+   "id": 51,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Reportuje vedení a boardu."
+  },
+  {
+   "id": 52,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Převádí technický pokrok do řeči byznysu: co běží, co to šetří nebo vydělává, co dál."
+  },
+  {
+   "id": 53,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Denní náplň se pohybuje mezi třemi světy: jednání s vedením o prioritách a rozpočtu, práce s týmy a dodavateli na konkrétních nasazeních a průběžná kontrola rizik a výsledků. Head of AI je most mezi vedením, které rozhoduje, a technikou, která staví."
+  },
+  {
+   "id": 54,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Head of AI vs CTO vs CDO vs AI Engineer"
+  },
+  {
+   "id": 55,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Head of AI se často plete s existujícími rolemi. Rozdíl je v zaměření — kdo za co odpovídá a v jakém horizontu:"
+  },
+  {
+   "id": 56,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Hlavní zaměření"
+  },
+  {
+   "id": 57,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Co primárně řeší"
+  },
+  {
+   "id": 58,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Strategie vs exekuce"
+  },
+  {
+   "id": 59,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Head of AI / CAIO"
+  },
+  {
+   "id": 60,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Byznysový dopad AI napříč celou firmou"
+  },
+  {
+   "id": 61,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Priority, governance, návratnost a nasazení AI do provozu"
+  },
+  {
+   "id": 62,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Obojí — mostí vedení a techniku"
+  },
+  {
+   "id": 63,
+   "kind": "text",
+   "ctx": "",
+   "cs": "CTO"
+  },
+  {
+   "id": 64,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Technologie a vývoj produktu jako celku"
+  },
+  {
+   "id": 65,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Architektura, inženýrské týmy, technologický stack"
+  },
+  {
+   "id": 66,
+   "kind": "text",
+   "ctx": "",
+   "cs": "AI je jen část širší technické agendy"
+  },
+  {
+   "id": 67,
+   "kind": "text",
+   "ctx": "",
+   "cs": "CDO (Chief Data Officer)"
+  },
+  {
+   "id": 68,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Data jako firemní aktivum"
+  },
+  {
+   "id": 69,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Datová governance, kvalita, dostupnost a využití dat"
+  },
+  {
+   "id": 70,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Připravuje půdu pro AI, ale neřídí AI produkty"
+  },
+  {
+   "id": 71,
+   "kind": "text",
+   "ctx": "",
+   "cs": "AI / ML Engineer"
+  },
+  {
+   "id": 72,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Implementace konkrétních řešení"
+  },
+  {
+   "id": 73,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Staví, integruje a nasazuje modely a AI agenty"
+  },
+  {
+   "id": 74,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Exekuce, ne firemní strategie ani mandát"
+  },
+  {
+   "id": 75,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Zjednodušeně: CTO odpovídá za technologii, CDO za data, AI Engineer staví řešení — ale nikdo z nich nemá mandát vlastnit AI jako firemní schopnost s odpovědností za dopad. Přesně tuto mezeru zaplňuje Head of AI."
+  },
+  {
+   "id": 76,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Jaké kompetence role vyžaduje"
+  },
+  {
+   "id": 77,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Head of AI stojí na průsečíku tří oblastí. Chybí-li jedna, role nefunguje:"
+  },
+  {
+   "id": 78,
+   "kind": "text",
+   "ctx": "",
+   "cs": "1. Strategie a byznys"
+  },
+  {
+   "id": 79,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Schopnost přeložit možnosti AI do priorit s návratností a obhájit je před vedením a boardem. Bez byznysového pohledu se AI mění na nákladnou sbírku experimentů bez dopadu."
+  },
+  {
+   "id": 80,
+   "kind": "text",
+   "ctx": "",
+   "cs": "2. Technologie"
+  },
+  {
+   "id": 81,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Dostatečná technická hloubka na posouzení proveditelnosti, dodavatelů, architektury a rizik. Head of AI nemusí sám kódovat, ale musí poznat, co je reálné, co je hype a kolik to bude stát."
+  },
+  {
+   "id": 82,
+   "kind": "text",
+   "ctx": "",
+   "cs": "3. Change management a governance"
+  },
+  {
+   "id": 83,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Zavádění pravidel, adopce v týmech, řízení rizik a soulad s regulací. Nasazení AI je z velké části organizační změna — lidé musí vědět, kdy výstupu AI věřit a kdy zasáhnout."
+  },
+  {
+   "id": 84,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Head of AI v českém kontextu"
+  },
+  {
+   "id": 85,
+   "kind": "text",
+   "ctx": "",
+   "cs": "V USA a západní Evropě už role Chief AI Officer existuje ve velkých firmách několik let. V Česku teprve vzniká — a má to několik důvodů:"
+  },
+  {
+   "id": 86,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Pozdější vlna adopce."
+  },
+  {
+   "id": 87,
+   "kind": "text",
+   "ctx": "",
+   "cs": "České firmy nasazují AI ve větším měřítku později, takže potřeba samostatného vlastníka přichází až teď."
+  },
+  {
+   "id": 88,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Velikost firem."
+  },
+  {
+   "id": 89,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Většina českých firem je střední velikosti a nemá práci pro full-time Head of AI — proto zde dává smysl fractional (částečný) model."
+  },
+  {
+   "id": 90,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Tlak regulace."
+  },
+  {
+   "id": 91,
+   "kind": "text",
+   "ctx": "",
+   "cs": "EU AI Act a povinnost AI gramotnosti nutí firmy AI řídit, ne jen používat — a to vyžaduje odpovědnou roli."
+  },
+  {
+   "id": 92,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Nedostatek profilů."
+  },
+  {
+   "id": 93,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Lidí, kteří spojují byznys, technologii i governance, je málo. Poptávka po roli roste rychleji než nabídka."
+  },
+  {
+   "id": 94,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Výsledkem je, že mnoho českých firem AI aktivitu má, ale nikdo ji nevlastní jako firemní schopnost. Tuto mezeru na headofai.cz zaplňuji jako"
+  },
+  {
+   "id": 95,
+   "kind": "text",
+   "ctx": "",
+   "cs": "fractional Head of AI"
+  },
+  {
+   "id": 96,
+   "kind": "text",
+   "ctx": "",
+   "cs": "pro české firmy."
+  },
+  {
+   "id": 97,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Časté otázky"
+  },
+  {
+   "id": 98,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Plat Head of AI / Chief AI Officer: ČR vs zahraničí"
+  },
+  {
+   "id": 99,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Kdy firma potřebuje Head of AI (a kdy ještě ne)"
+  },
+  {
+   "id": 100,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Fractional Head of AI vs full-time CAIO"
+  },
+  {
+   "id": 101,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Řešíte AI ve firmě, ale nemá ji kdo vlastnit? Podívejte se, jak funguje"
+  },
+  {
+   "id": 102,
+   "kind": "text",
+   "ctx": "",
+   "cs": "v praxi."
+  },
+  {
+   "id": 103,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Přejít na headofai.cz"
+  },
+  {
+   "id": 104,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Fractional AI leadership pro firmy, které chtějí kontrolu, měřitelný dopad a první AI pracovníky v provozu."
+  },
+  {
+   "id": 105,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Kontakt"
+  },
+  {
+   "id": 106,
+   "kind": "text",
+   "ctx": "",
+   "cs": "hello@headofai.cz"
+  },
+  {
+   "id": 107,
+   "kind": "text",
+   "ctx": "",
+   "cs": "@headofaicz"
+  },
+  {
+   "id": 108,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Provozovatel"
+  },
+  {
+   "id": 109,
+   "kind": "text",
+   "ctx": "",
+   "cs": "IČO: 23702907 · DIČ: CZ23702907"
+  },
+  {
+   "id": 110,
+   "kind": "text",
+   "ctx": "",
+   "cs": "Česko"
+  },
+  {
+   "id": 111,
+   "kind": "text",
+   "ctx": "",
+   "cs": "© 2026 Vesely.ai s.r.o. · headofai.cz"
+  }
+ ]
+}

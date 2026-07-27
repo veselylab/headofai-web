@@ -6,7 +6,7 @@
   <title>Fractional Head of AI vs full-time CAIO: Co se vyplatí | headofai.cz</title>
   <meta name="description" content="Fractional Head of AI vs full-time CAIO: definice modelu, srovnání nákladů a rizika a pro koho se model hodí a pro koho ne. Průvodce pro firmy v ČR.">
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
-  <link rel="canonical" href="https://headofai.cz/fractional-vs-fulltime-caio">
+  <link rel="canonical" href="https://headofai.cz/fractional-vs-fulltime-caio"><link rel="alternate" hreflang="cs" href="https://headofai.cz/fractional-vs-fulltime-caio"><link rel="alternate" hreflang="en" href="https://headofai.cz/en/fractional-vs-fulltime-caio"><link rel="alternate" hreflang="x-default" href="https://headofai.cz/fractional-vs-fulltime-caio">
   <meta name="author" content="David Veselý">
   <meta name="theme-color" content="#161718">
   <meta property="og:type" content="article">
@@ -100,7 +100,12 @@
     .related-list a:hover { color: var(--color-accent); }
     .related-list a .arrow { color: var(--color-accent); flex: none; }
 
-    @media (max-width: 768px) { #nav-links { display: none !important; } header nav > a.btn { margin-left: auto; } }
+    @media (max-width: 768px) { #nav-links { display: none !important; } header nav > .lang-switch { margin-left: auto; } }
+    .lang-switch { display: flex; align-items: center; gap: 8px; }
+    .lang-switch a { display: block; width: 26px; height: 18px; border-radius: 3px; overflow: hidden; line-height: 0; opacity: 0.45; box-shadow: 0 0 0 1px rgba(255,255,255,0.16); transition: opacity 180ms ease, box-shadow 180ms ease; }
+    .lang-switch a:hover, .lang-switch a:focus-visible { opacity: 0.9; }
+    .lang-switch a[aria-current="true"] { opacity: 1; box-shadow: 0 0 0 1px var(--color-accent); }
+    .lang-switch svg { display: block; width: 100%; height: 100%; }
   </style>
 </head>
 
@@ -116,7 +121,7 @@
         <a href="/#proces" style="color: color-mix(in srgb, var(--color-text) 62%, transparent); font-size: 15px; text-decoration: none;">Proces</a>
         <a href="/#ceny" style="color: color-mix(in srgb, var(--color-text) 62%, transparent); font-size: 15px; text-decoration: none;">Ceny</a>
       </div>
-      <a href="/#kontakt" class="btn btn-primary" style="text-decoration: none; padding: 11px 20px; font-size: 14px; white-space: nowrap;">Domluvit call</a>
+      <div class="lang-switch" role="group" aria-label="Jazyk"><a href="/fractional-vs-fulltime-caio" hreflang="cs" title="Česky" aria-label="Česky" aria-current="true"><svg viewBox="0 0 6 4" aria-hidden="true" focusable="false"><path fill="#fff" d="M0 0h6v2H0z"/><path fill="#d7141a" d="M0 2h6v2H0z"/><path fill="#11457e" d="M0 0l3 2-3 2z"/></svg></a><a href="/en/fractional-vs-fulltime-caio" hreflang="en" title="English" aria-label="English"><svg viewBox="0 0 60 30" aria-hidden="true" focusable="false"><path fill="#012169" d="M0 0h60v30H0z"/><path stroke="#fff" stroke-width="6" d="M0 0l60 30M60 0L0 30"/><path stroke="#c8102e" stroke-width="4" d="M0 0l60 30M60 0L0 30"/><path stroke="#fff" stroke-width="10" d="M30 0v30M0 15h60"/><path stroke="#c8102e" stroke-width="6" d="M30 0v30M0 15h60"/></svg></a></div><a href="/#kontakt" class="btn btn-primary" style="text-decoration: none; padding: 11px 20px; font-size: 14px; white-space: nowrap;">Domluvit call</a>
     </nav>
   </header>
 

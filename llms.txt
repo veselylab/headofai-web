@@ -28,22 +28,22 @@
 
 Rozcestník: https://headofai.cz/blog/ — česká znalostní báze o řízení AI ve firmě pro foundery, CEO a vedení. Pokrývá vlastnictví AI agendy, role Head of AI / Chief AI Officer / CAIO, AI governance, registr AI systémů, EU AI Act v kontextu řízení firmy, řízení dodavatelů, měření návratnosti AI a reporting AI agendy boardu.
 
-- https://headofai.cz/eu-ai-act-zmeny-2026-pro-ceske-firmy — EU AI Act po AI Omnibusu: co musí český CEO udělat teď. Co změnilo nařízení (EU) 2026/1744 účinné od 27. 7. 2026 (odklad přílohy III na 2. 12. 2027, regulované výrobky 2. 8. 2028, zmírněný čl. 4 o AI gramotnosti, transparentnost dle čl. 50 od 2. 8. 2026), rozdíl rolí provider vs deployer, sedm typických use-casů české firmy, struktura registru AI systémů a třicetidenní plán pro CEO. Praktická analýza pro vedení, ne právní stanovisko.
+<!-- BLOG:LINKS -->
+- https://headofai.cz/eu-ai-act-zmeny-2026-pro-ceske-firmy — EU AI Act po AI Omnibusu: co musí český CEO udělat teď. Co změnilo nařízení (EU) 2026/1744 účinné od 27. 7. 2026 (odklad přílohy III na 2. 12. 2027, regulované výrobky 2. 8. 2028, zmírněný čl. 4 o AI gramotnosti, transparentnost dle čl. 50 od 2. 8. 2026), rozdíl rolí provider vs deployer, sedm typických use-casů české firmy, struktura registru AI systémů a třicetidenní plán pro CEO.
 - https://headofai.cz/chief-ai-officer — Chief AI Officer (CAIO): kdo ve firmě odpovídá za AI. Pět složek mandátu role, srovnání s IT/CTO/právním oddělením/CEO, čtyři oblasti řízení (portfolio, governance, dodavatelé, dopad), KPI a kdy stačí externí CAIO.
 - https://headofai.cz/co-je-head-of-ai — Co je Head of AI / Chief AI Officer: co role dělá, čím se liší od CTO, CDO a AI Engineera, jak se liší označení Head of AI / Chief AI Officer / CAIO a jaké kompetence role vyžaduje.
-- https://headofai.cz/plat-chief-ai-officer — Plat Head of AI / Chief AI Officer: reálná rozpětí v ČR podle velikosti firmy, srovnání se zahraničím a náklad fractional modelu.
 - https://headofai.cz/kdy-firma-potrebuje-head-of-ai — Kdy firma potřebuje Head of AI: 7 signálů, kdy roli ještě nepotřebujete a srovnání full-time vs fractional vs konzultant.
 - https://headofai.cz/fractional-vs-fulltime-caio — Fractional Head of AI vs full-time CAIO: definice modelu, srovnání nákladů a rizika a pro koho se hodí a pro koho ne.
+- https://headofai.cz/plat-chief-ai-officer — Plat Head of AI / Chief AI Officer: reálná rozpětí v ČR podle velikosti firmy, srovnání se zahraničím a náklad fractional modelu.
 
-## English version
-
-Celý web existuje i v angličtině, obsahově shodný s českou verzí:
-
-- https://headofai.cz/en/ — homepage
-- https://headofai.cz/en/what-is-head-of-ai — What is a Head of AI / Chief AI Officer
-- https://headofai.cz/en/chief-ai-officer-salary — Head of AI / Chief AI Officer pay: Czech Republic vs abroad
-- https://headofai.cz/en/when-does-a-company-need-a-head-of-ai — When a company needs a Head of AI
-- https://headofai.cz/en/fractional-vs-fulltime-caio — Fractional Head of AI vs full-time CAIO
+Anglické mutace:
+- https://headofai.cz/en/eu-ai-act-after-the-omnibus — The EU AI Act after the Omnibus: what a CEO must do now. What Regulation (EU) 2026/1744 changed, provider vs deployer roles, seven typical use cases, the structure of an AI system register and a thirty-day plan for the CEO.
+- https://headofai.cz/en/chief-ai-officer — Chief AI Officer (CAIO): who is accountable for AI. The five components of the role's mandate, comparison with IT/CTO/legal/CEO, four areas of management (portfolio, governance, vendors, impact), KPIs and when a fractional CAIO is enough.
+- https://headofai.cz/en/what-is-head-of-ai — What is a Head of AI / Chief AI Officer: what the role does, how it differs from a CTO, CDO and AI Engineer, and what competencies it requires.
+- https://headofai.cz/en/when-does-a-company-need-a-head-of-ai — When a company needs a Head of AI: 7 signals, when you do not need the role yet, and full-time vs fractional vs consultant.
+- https://headofai.cz/en/fractional-vs-fulltime-caio — Fractional Head of AI vs full-time CAIO: definition of the model, comparison of cost and risk, and who it suits.
+- https://headofai.cz/en/chief-ai-officer-salary — Head of AI / Chief AI Officer pay: real ranges in Czechia by company size, comparison with other markets and the cost of the fractional model.
+<!-- /BLOG:LINKS -->
 
 ## Kontakt
 

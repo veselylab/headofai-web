@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The EU AI Act after the Omnibus: what a CEO must do now | headofai.cz</title>
+  <meta name="description" content="The AI Omnibus deferred some high-risk obligations, not executive accountability. What applies from 2 August 2026, how to build an AI system register and what a CEO should approve this week.">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+  <link rel="canonical" href="https://headofai.cz/en/eu-ai-act-after-the-omnibus"><link rel="alternate" hreflang="cs" href="https://headofai.cz/eu-ai-act-zmeny-2026-pro-ceske-firmy"><link rel="alternate" hreflang="en" href="https://headofai.cz/en/eu-ai-act-after-the-omnibus"><link rel="alternate" hreflang="x-default" href="https://headofai.cz/eu-ai-act-zmeny-2026-pro-ceske-firmy">
+  <meta name="author" content="David Veselý">
+  <meta name="theme-color" content="#161718">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="The EU AI Act after the Omnibus: what a CEO must do now">
+  <meta property="og:description" content="What Regulation (EU) 2026/1744 changed, what was not deferred — and a thirty-day plan to get AI in your company under control.">
+  <meta property="og:url" content="https://headofai.cz/en/eu-ai-act-after-the-omnibus">
+  <meta property="og:site_name" content="headofai.cz">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:image" content="https://headofai.cz/assets/blog/eu-act.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@headofaicz">
+  <meta name="twitter:creator" content="@headofaicz">
+  <meta name="twitter:image" content="https://headofai.cz/assets/blog/eu-act.webp">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="/_ds/industry-0ef2ebb3-0745-41f6-a970-aac61ad8f5fb/styles.css">
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Article","headline":"The EU AI Act after the Omnibus: what a CEO must do now","description":"The AI Omnibus deferred part of the obligations for high-risk systems, not executive accountability for the AI already running in the company. What applies from 2 August 2026, how to build an AI system register and what a CEO should approve this week.","datePublished":"2026-07-28","dateModified":"2026-07-29","inLanguage":"en-GB","articleSection":"Regulatory analysis","author":{"@type":"Person","name":"David Veselý","url":"https://headofai.cz"},"publisher":{"@type":"Organization","name":"Vesely.ai s.r.o.","url":"https://headofai.cz"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://headofai.cz/en/eu-ai-act-after-the-omnibus"},"image":"https://headofai.cz/assets/blog/eu-act.webp","about":[{"@type":"Thing","name":"EU AI Act"},{"@type":"Thing","name":"AI governance"},{"@type":"Thing","name":"Executive accountability for AI"},{"@type":"Thing","name":"AI system register"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://headofai.cz/en/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://headofai.cz/en/blog/"},{"@type":"ListItem","position":3,"name":"The EU AI Act after the Omnibus","item":"https://headofai.cz/en/eu-ai-act-after-the-omnibus"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does the AI Act apply to a company whose staff merely use ChatGPT?","acceptedAnswer":{"@type":"Answer","text":"Yes. The company is generally a deployer of an AI system and is subject at minimum to the obligation to take proportionate measures supporting AI literacy. Depending on how it is used, obligations relating to transparency, personal data protection, employment law or a specific regulated process may be added."}},{"@type":"Question","name":"Do we have to label every text produced with AI?","acceptedAnswer":{"@type":"Answer","text":"No. The AI Act does not impose a general obligation to label every text AI was involved in. Specific obligations apply for example to deepfake content and to certain texts published for the purpose of informing the public on matters of public interest. Human review and taking editorial responsibility also matter."}},{"@type":"Question","name":"Is sending staff a set of AI usage rules enough?","acceptedAnswer":{"@type":"Answer","text":"Simply circulating a document may not be proportionate. Measures should reflect the systems in use, the experience of the users, the purpose of use and the associated risks. The company should be able to evidence what it did and why it considered that proportionate."}},{"@type":"Question","name":"Are we legally required to appoint an AI officer or Head of AI?","acceptedAnswer":{"@type":"Answer","text":"No. The AI Act does not mandate a specific organisational structure. The company must, however, ensure obligations are met and AI is used responsibly. With multiple systems across departments, keeping consistent rules, accountability and impact measurement without a single owner is very difficult."}},{"@type":"Question","name":"If the high-risk rules were deferred, can we wait before preparing?","acceptedAnswer":{"@type":"Answer","text":"Technically you have more time to meet the specific high-risk requirements. Operationally, waiting makes no sense. Classification, contracts, data flows, human oversight and documentation are hard to retrofit into a finished system. And the other legal and operational requirements continue to apply."}},{"@type":"Question","name":"Does a Head of AI replace a lawyer?","acceptedAnswer":{"@type":"Answer","text":"No. A Head of AI prepares the system register, use case classification, operating rules, technical groundwork and the accountability model. A specialist lawyer should confirm contested legal questions. The point of a Head of AI is to make sure the legal conclusion does not stay on paper but is reflected in architecture, processes and day-to-day operations."}}]}
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { margin: 0; text-wrap: pretty; }
+    *, *::before, *::after { box-sizing: border-box; }
+    a { color: #e7e2d6; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; text-decoration-color: color-mix(in srgb, #e7e2d6 32%, transparent); }
+    a:hover { color: #ffffff; text-decoration-color: currentColor; }
+    img { max-width: 100%; }
+
+    /* ---- převzato z homepage (konzistence) ---- */
+    .wrap { max-width: 1180px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); }
+    .accent { color: var(--color-accent); }
+
+    /* ==== ZNOVUPOUŽITELNÁ ŠABLONA ČLÁNKU (kopíruj pro další články) ==== */
+    .article { max-width: 760px; margin: 0 auto; padding: clamp(30px, 6vw, 56px) clamp(20px, 4vw, 40px) clamp(48px, 7vw, 80px); }
+    .breadcrumb { font-size: 13px; letter-spacing: 0.01em; color: color-mix(in srgb, var(--color-text) 45%, transparent); margin: 0 0 26px; }
+    .breadcrumb a { color: color-mix(in srgb, var(--color-text) 62%, transparent); }
+    .breadcrumb span { color: color-mix(in srgb, var(--color-text) 32%, transparent); margin: 0 8px; }
+    .article-h1 { font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(32px, 5.5vw, 52px); line-height: 1.08; letter-spacing: -0.02em; margin: 0; }
+    .article-meta { font-size: 14px; color: color-mix(in srgb, var(--color-text) 48%, transparent); margin: 18px 0 0; }
+    .article-hero { margin: 26px 0 0; }
+    .article-hero img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; border: 1px solid var(--color-divider); }
+    .article-answer { font-size: clamp(18px, 2.2vw, 21px); line-height: 1.62; color: color-mix(in srgb, var(--color-text) 85%, transparent); margin: 26px 0 0; padding: 24px 0 0; border-top: 1px solid var(--color-divider); }
+    .article-answer strong { color: var(--color-text); font-weight: 600; }
+
+    .prose h2 { font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(26px, 3.6vw, 34px); line-height: 1.15; letter-spacing: -0.01em; margin: 52px 0 0; }
+    .prose h3 { font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 20px; margin: 32px 0 0; }
+    .prose p { font-size: 17px; line-height: 1.75; color: color-mix(in srgb, var(--color-text) 80%, transparent); margin: 18px 0 0; }
+    .prose strong { color: var(--color-text); font-weight: 600; }
+    .prose ul { margin: 18px 0 0; padding: 0; list-style: none; }
+    .prose li { position: relative; padding-left: 22px; font-size: 17px; line-height: 1.7; color: color-mix(in srgb, var(--color-text) 80%, transparent); margin: 0 0 10px; }
+    .prose li:last-child { margin-bottom: 0; }
+    .prose li::before { content: "+"; position: absolute; left: 0; top: 0; color: var(--color-accent); font-weight: 600; }
+    .prose ol { margin: 18px 0 0; padding: 0 0 0 24px; }
+    .prose ol li { padding-left: 6px; }
+    .prose ol li::before { content: none; }
+
+    .table-wrap { overflow-x: auto; margin: 26px 0 0; border: 1px solid var(--color-divider); }
+    table.cmp { border-collapse: collapse; width: 100%; min-width: 660px; font-size: 15px; }
+    table.cmp th, table.cmp td { text-align: left; padding: 14px 16px; border-bottom: 1px solid var(--color-divider); vertical-align: top; line-height: 1.5; }
+    table.cmp thead th { font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 16px; color: var(--color-text); background: color-mix(in srgb, var(--color-surface) 50%, transparent); }
+    table.cmp tbody th { font-weight: 600; color: var(--color-text); }
+    table.cmp td { color: color-mix(in srgb, var(--color-text) 72%, transparent); }
+    table.cmp tbody tr:last-child th, table.cmp tbody tr:last-child td { border-bottom: none; }
+    table.cmp .role-hi th, table.cmp .role-hi td { background: color-mix(in srgb, #c8ae71 8%, transparent); }
+    table.cmp .role-hi th { color: var(--color-accent-100); }
+
+    .faq { margin: 26px 0 0; border-top: 1px solid var(--color-divider); }
+    .faq-item { border-bottom: 1px solid var(--color-divider); }
+    .faq-item summary { cursor: pointer; list-style: none; padding: 20px 0; font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 20px; line-height: 1.25; color: var(--color-text); display: flex; justify-content: space-between; gap: 16px; align-items: center; }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after { content: "+"; color: color-mix(in srgb, var(--color-text) 55%, transparent); font-size: 24px; line-height: 1; flex: none; }
+    .faq-item[open] summary::after { content: "\2212"; }
+    .faq-item p { font-size: 16px; line-height: 1.7; color: color-mix(in srgb, var(--color-text) 78%, transparent); margin: 0; padding: 0 0 22px; max-width: 66ch; }
+
+    .cta-block { border: 1px solid color-mix(in srgb, #c8ae71 45%, transparent); background: color-mix(in srgb, #c8ae71 7%, transparent); padding: clamp(24px, 4vw, 34px); margin: 52px 0 0; text-align: center; }
+    .cta-block p { font-size: 18px; line-height: 1.6; margin: 0 0 20px; color: var(--color-text); }
+    .cta-block .btn { display: inline-block; text-decoration: none; padding: 13px 24px; font-size: 15px; }
+    /* ==== /ŠABLONA ČLÁNKU ==== */
+
+    /* Zvýrazněná otázka / závěr pro vedení */
+    .callout { border-left: 2px solid var(--color-accent); padding: 4px 0 4px 20px; margin: 28px 0 0; }
+    .callout p { font-size: clamp(17px, 2vw, 19px); line-height: 1.6; color: var(--color-text); margin: 0; }
+
+    /* Blok use-casu: role + problém */
+    .uc-meta { display: flex; flex-wrap: wrap; gap: 8px 22px; margin: 14px 0 0; font-size: 14.5px; line-height: 1.5; color: color-mix(in srgb, var(--color-text) 55%, transparent); }
+    .uc-meta b { color: color-mix(in srgb, var(--color-text) 78%, transparent); font-weight: 600; }
+
+    /* Poznámky pod čarou / zdroje */
+    .fn { font-size: 12px; vertical-align: super; line-height: 0; margin-left: 1px; }
+    .fn a { text-decoration: none; color: var(--color-accent); }
+    .prose ol.sources { margin: 26px 0 0; padding: 0; list-style: none; counter-reset: src; }
+    .prose ol.sources li { position: relative; padding: 14px 0 14px 34px; border-bottom: 1px solid var(--color-divider); font-size: 15px; line-height: 1.6; color: color-mix(in srgb, var(--color-text) 68%, transparent); margin: 0; }
+    .prose ol.sources li::before { counter-increment: src; content: "[" counter(src) "]"; position: absolute; left: 0; top: 14px; color: var(--color-accent); font-size: 13px; }
+    .sources li b { color: color-mix(in srgb, var(--color-text) 88%, transparent); font-weight: 600; }
+    .sources li a { color: inherit; text-decoration: none; }
+    .sources li a:hover b { color: var(--color-accent); }
+    .sources li a:hover { text-decoration: none; }
+    .src-dom { display: inline-block; margin-left: 6px; font-size: 13px; color: color-mix(in srgb, var(--color-text) 40%, transparent); white-space: nowrap; }
+    .src-dom::before { content: "↗ "; color: var(--color-accent); }
+    .disclaimer { font-size: 14px; line-height: 1.65; color: color-mix(in srgb, var(--color-text) 48%, transparent); margin: 22px 0 0; font-style: italic; }
+
+    /* Související průvodce (cross-link cluster) */
+    .related { margin: 52px 0 0; padding-top: 30px; border-top: 1px solid var(--color-divider); }
+    .related h2 { margin: 0; }
+    .related-list { margin: 20px 0 0; padding: 0; list-style: none; }
+    .related-list li { margin: 0; padding: 0; }
+    .related-list li::before { content: none; }
+    .related-list a { display: flex; justify-content: space-between; align-items: baseline; gap: 20px; padding: 16px 0; border-bottom: 1px solid var(--color-divider); font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 18px; line-height: 1.3; color: var(--color-text); text-decoration: none; }
+    .related-list li:first-child a { border-top: 1px solid var(--color-divider); }
+    .related-list a:hover { color: var(--color-accent); }
+    .related-list a .arrow { color: var(--color-accent); flex: none; }
+
+    @media (max-width: 768px) { #nav-links { display: none !important; } header nav > .lang-switch { margin-left: auto; } }
+    .lang-switch { display: flex; align-items: center; gap: 8px; }
+    .lang-switch a { display: block; width: 26px; height: 18px; border-radius: 3px; overflow: hidden; line-height: 0; opacity: 0.45; box-shadow: 0 0 0 1px rgba(255,255,255,0.16); transition: opacity 180ms ease, box-shadow 180ms ease; }
+    .lang-switch a:hover, .lang-switch a:focus-visible { opacity: 0.9; }
+    .lang-switch a[aria-current="true"] { opacity: 1; box-shadow: 0 0 0 1px var(--color-accent); }
+    .lang-switch svg { display: block; width: 100%; height: 100%; }
+  </style>
+</head>
+
+<body>
+<div style="--color-bg: #161718; --color-surface: #212224; --color-text: #f2f2f3; --color-divider: color-mix(in srgb, #f2f2f3 13%, transparent); --color-accent: #c8ae71; --color-accent-100: #f5edd9; --color-accent-200: #ebdcb8; --color-accent-300: #ddc794; --color-accent-400: #d3b97e; --color-accent-500: #c8ae71; --color-accent-600: #ac9358; --color-accent-700: #86733f; --color-accent-800: #5f512c; --color-accent-900: #3a3119; background: var(--color-bg); color: var(--color-text); font-family: var(--font-body); min-height: 100vh;">
+
+  <!-- HLAVIČKA (převzato z homepage) -->
+  <header style="position: sticky; top: 0; z-index: 50; backdrop-filter: blur(14px); background: color-mix(in srgb, #161718 60%, transparent); border-bottom: 1px solid var(--color-divider);">
+    <nav aria-label="Main navigation" style="max-width: 1180px; margin: 0 auto; display: flex; align-items: center; gap: clamp(12px, 3vw, 32px); padding: 14px clamp(20px, 4vw, 56px);">
+      <a href="/en/" style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 32px; color: var(--color-text); letter-spacing: -0.01em; line-height: 1; text-decoration: none;">headofai<span class="accent">.cz</span></a>
+      <div id="nav-links" style="display: flex; gap: clamp(14px, 2.5vw, 26px); flex: 1; justify-content: center;">
+        <a href="/en/#o-mne" style="color: color-mix(in srgb, var(--color-text) 62%, transparent); font-size: 15px; text-decoration: none;">About me</a>
+        <a href="/en/#proces" style="color: color-mix(in srgb, var(--color-text) 62%, transparent); font-size: 15px; text-decoration: none;">Process</a>
+        <a href="/en/#ceny" style="color: color-mix(in srgb, var(--color-text) 62%, transparent); font-size: 15px; text-decoration: none;">Pricing</a>
+        <a href="/en/blog/" style="color: color-mix(in srgb, var(--color-text) 62%, transparent); font-size: 15px; text-decoration: none;">Blog</a>
+      </div>
+      <div class="lang-switch" role="group" aria-label="Language"><a href="/eu-ai-act-zmeny-2026-pro-ceske-firmy" hreflang="cs" title="Česky" aria-label="Česky"><svg viewBox="0 0 6 4" aria-hidden="true" focusable="false"><path fill="#fff" d="M0 0h6v2H0z"/><path fill="#d7141a" d="M0 2h6v2H0z"/><path fill="#11457e" d="M0 0l3 2-3 2z"/></svg></a><a href="/en/eu-ai-act-after-the-omnibus" hreflang="en" title="English" aria-label="English" aria-current="true"><svg viewBox="0 0 60 30" aria-hidden="true" focusable="false"><path fill="#012169" d="M0 0h60v30H0z"/><path stroke="#fff" stroke-width="6" d="M0 0l60 30M60 0L0 30"/><path stroke="#c8102e" stroke-width="4" d="M0 0l60 30M60 0L0 30"/><path stroke="#fff" stroke-width="10" d="M30 0v30M0 15h60"/><path stroke="#c8102e" stroke-width="6" d="M30 0v30M0 15h60"/></svg></a></div><a href="/en/#kontakt" class="btn btn-primary" style="text-decoration: none; padding: 11px 20px; font-size: 14px; white-space: nowrap;">Book a call</a>
+    </nav>
+  </header>
+
+  <main>
+    <article class="article">
+      <nav class="breadcrumb" aria-label="Breadcrumb navigation">
+        <a href="/en/">Home</a><span>›</span><a href="/en/blog/">Blog</a><span>›</span>The EU AI Act after the Omnibus
+      </nav>
+
+      <!-- 1. H1 -->
+      <h1 class="article-h1">The EU AI Act after the Omnibus: <span class="accent">what a CEO must do now</span></h1>
+      <p class="article-meta">Regulatory analysis · Published <time datetime="2026-07-28">28 July 2026</time> · David Veselý</p>
+
+      <figure class="article-hero">
+        <img src="/assets/blog/eu-act.webp" alt="The European Union flag alongside an AI Act document symbol" width="1200" height="800" fetchpriority="high" decoding="async">
+      </figure>
+
+      <!-- 2. Přímá odpověď -->
+      <p class="article-answer"><strong>The AI Omnibus deferred part of the obligations for high-risk systems. It did not defer executive accountability for the AI already running in your company.</strong> From 2 August 2026 further parts of the AI Act start to apply, including transparency for certain AI systems. The obligation to support AI literacy has applied since February 2025.</p>
+
+      <div class="prose">
+        <p>For most companies, therefore, the main question is not whether to commission a legal analysis.</p>
+        <p>The main question is this:</p>
+        <div class="callout">
+          <p><strong>Do you know which AI systems you use, who owns them, what data they can reach and who is accountable for their outputs?</strong></p>
+        </div>
+        <p>If you do not, the problem is not created by the AI Act. The regulation merely makes visible the fact that your company is using technology without a clear operational owner.</p>
+
+        <!-- 3. Rozhodnutí pro vedení -->
+        <h2>Decisions for the executive team</h2>
+        <div class="table-wrap">
+          <table class="cmp">
+            <thead>
+              <tr>
+                <th scope="col">Question</th>
+                <th scope="col">Practical conclusion</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Do we have to stop AI projects because of the AI Omnibus?</th><td>No. But you do have to map, classify and manage them.</td></tr>
+              <tr><th scope="row">Were all obligations deferred?</th><td>No. What was deferred is mainly part of the rules for high-risk systems.</td></tr>
+              <tr><th scope="row">Does the AI Act cover ordinary use of ChatGPT or Copilot?</th><td>Yes, at minimum in the area of AI literacy and responsible use.</td></tr>
+              <tr><th scope="row">Must we label everything created with AI?</th><td>No. Obligations differ by system type, content and the company's role.</td></tr>
+              <tr><th scope="row">Do we need a register of the AI systems we use?</th><td>Without one you cannot reliably determine obligations, risk or return.</td></tr>
+              <tr><th scope="row">Must we appoint a Head of AI?</th><td>The law does not mandate a specific function. But someone has to own and coordinate the AI agenda.</td></tr>
+              <tr class="role-hi"><th scope="row">What should the CEO approve first?</th><td>A single owner of the AI agenda and a 30-day inventory of all AI use cases.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 4. Co se zmenilo -->
+        <h2>What changed on 27 July 2026</h2>
+        <p>On 27 July 2026, Regulation (EU) 2026/1744, known as the Digital Omnibus on AI, entered into force. It amended the original AI Act and shifted some deadlines, because European standards, methodologies and national supervisory infrastructure were not ready in time.<span class="fn"><a href="#zdroj-1">[1]</a><a href="#zdroj-2">[2]</a></span></p>
+        <p>For an ordinary company, four changes matter.</p>
+
+        <h3>1. Rules for high-risk systems were deferred</h3>
+        <p>Obligations for systems classified as high-risk under Annex III start to apply from <strong>2 December 2027</strong>.</p>
+        <p>This covers, for example, certain AI systems used in:</p>
+        <ul>
+          <li>recruitment, selection and evaluation of employees;</li>
+          <li>education;</li>
+          <li>creditworthiness assessment;</li>
+          <li>access to certain essential services;</li>
+          <li>biometrics;</li>
+          <li>critical infrastructure.</li>
+        </ul>
+        <p>Rules for AI embedded in regulated products apply from <strong>2 August 2028</strong>.<span class="fn"><a href="#zdroj-2">[2]</a><a href="#zdroj-3">[3]</a></span></p>
+        <p>That does not mean you can deploy a risky system today and start caring about it in a year's time.</p>
+        <p>GDPR, employment law, consumer protection, cybersecurity requirements, contractual liability and the duty of executives to act with due managerial care all still apply. An expensive AI solution deployed without an owner, documentation and human oversight is a badly managed investment regardless of when a particular AI Act article takes effect.</p>
+
+        <h3>2. AI literacy remains an obligation</h3>
+        <p>Article 4 of the AI Act has applied since 2 February 2025.</p>
+        <p>The AI Omnibus softened its wording: a company no longer has to guarantee a specific or "sufficient" level of AI literacy for each individual. It must, however, continue to take proportionate measures supporting the development of AI literacy among staff and other persons working with AI on its behalf.<span class="fn"><a href="#zdroj-2">[2]</a><a href="#zdroj-4">[4]</a></span></p>
+        <p>That does not mean buying everyone a generic webinar on prompting.</p>
+        <p>The scope of measures should match:</p>
+        <ul>
+          <li>the systems in use;</li>
+          <li>the knowledge of the specific users;</li>
+          <li>the purpose of use;</li>
+          <li>the associated risks;</li>
+          <li>the groups of people the AI outputs may affect.</li>
+        </ul>
+        <p>Someone using AI to proofread marketing copy needs a different level of preparation than an HR specialist working with AI candidate scoring, or an employee approving the output of an autonomous agent operating over the CRM.</p>
+        <p>The company does not need to obtain a special certificate. It should, however, be able to evidence what measures it took, whom they covered and why they were proportionate given the systems in use.<span class="fn"><a href="#zdroj-4">[4]</a></span></p>
+
+        <h3>3. Transparency was not deferred</h3>
+        <p>Article 50 starts to apply from <strong>2 August 2026</strong>.</p>
+        <p>Obligations differ depending on whether the company is a provider of the AI system or merely uses it. They may include in particular:</p>
+        <ul>
+          <li>informing a person that they are communicating with AI;</li>
+          <li>technical marking of AI-generated or AI-modified content;</li>
+          <li>informing people exposed to emotion recognition or biometric categorisation systems;</li>
+          <li>labelling deepfake content;</li>
+          <li>labelling certain AI-generated texts published to inform the public on matters of public interest.</li>
+        </ul>
+        <p>For systems generating synthetic content placed on the market before 2 August 2026, there is a limited transitional period until 2 December 2026. It applies only to the provider obligation to ensure machine-readable marking under Article 50(2). It is not a general deferral of transparency.<span class="fn"><a href="#zdroj-2">[2]</a><a href="#zdroj-5">[5]</a></span></p>
+
+        <h3>4. Supervision becomes a practical question</h3>
+        <p>The AI Act is a European regulation and therefore applies directly. National law mainly designates the supervisory and support infrastructure, the competences of authorities and practical enforcement.</p>
+        <p>In the Czech Republic, the Ministry of Industry and Trade leads implementation. The proposed national infrastructure splits competences across several institutions depending on the type of system and the regulated area.<span class="fn"><a href="#zdroj-9">[9]</a></span></p>
+        <p>For a CEO, the conclusion is simple:</p>
+        <div class="callout">
+          <p><strong>A legal memorandum stored on SharePoint is not enough. You must be able to show how AI is actually governed in the company.</strong></p>
+        </div>
+
+        <!-- 5. Role -->
+        <h2>First, determine your role</h2>
+        <p>The AI Act distinguishes several roles. For most companies, two matter most.</p>
+
+        <h3>Deployer: you use the system</h3>
+        <p>A deployer is an organisation using an AI system under its authority in the course of a professional activity.<span class="fn"><a href="#zdroj-6">[6]</a></span></p>
+        <p>Typical examples:</p>
+        <ul>
+          <li>staff use Microsoft Copilot;</li>
+          <li>the sales team uses AI features in the CRM;</li>
+          <li>marketing uses ChatGPT or Claude;</li>
+          <li>the contact centre uses a voice agent supplied by an external vendor;</li>
+          <li>HR uses a third-party tool for candidate pre-screening.</li>
+        </ul>
+        <p>For most of their tools, most ordinary companies will be deployers.</p>
+
+        <h3>Provider: you place the system on the market under your own name</h3>
+        <p>A provider is an entity that develops an AI system, or has one developed, and places it on the market or puts it into service under its own name or trademark.<span class="fn"><a href="#zdroj-6">[6]</a></span></p>
+        <p>You can find yourself in this role when, for example, you:</p>
+        <ul>
+          <li>sell your own AI service to customers;</li>
+          <li>supply a white-label chatbot under your brand;</li>
+          <li>have an AI product built and offer it as your own;</li>
+          <li>substantially change the purpose or functioning of someone else's system;</li>
+          <li>integrate a third-party model into a product whose resulting function you are answerable for.</li>
+        </ul>
+        <p>The fact that a system uses a model from OpenAI, Anthropic or Google does not automatically mean that company carries all the obligations.</p>
+        <p>The model, the resulting AI system, the user interface and the specific corporate deployment are different layers of accountability.</p>
+
+        <!-- 6. Use-casy -->
+        <h2>Seven common use cases</h2>
+
+        <h3>1. Staff use ChatGPT, Claude or Copilot</h3>
+        <p class="uc-meta"><span><b>Likely role:</b> deployer</span><span><b>Immediate problem:</b> AI literacy, data and accountability for the output</span></p>
+        <p>The company should know:</p>
+        <ul>
+          <li>who uses the tools;</li>
+          <li>what types of data may be entered into them;</li>
+          <li>whether personal or client data is involved;</li>
+          <li>who checks the results;</li>
+          <li>in which processes AI is merely an assistant and where it already influences decisions.</li>
+        </ul>
+        <p>Buying an enterprise licence is not governance.</p>
+        <p>A licence may address part of the data processing terms. It does not address whether an employee can spot a hallucination, whether they are authorised to process a given document, and whether an AI output may be used as the basis for a decision.</p>
+
+        <h3>2. A chatbot or voice agent runs on your website</h3>
+        <p class="uc-meta"><span><b>Likely role:</b> deployer; provider for an in-house or white-label solution</span><span><b>Immediate problem:</b> transparency and accountability for what the system does</span></p>
+        <p>In relevant situations, the customer must know they are communicating with AI.<span class="fn"><a href="#zdroj-5">[5]</a></span></p>
+        <p>But that is not the only question.</p>
+        <p>The executive team must decide:</p>
+        <ul>
+          <li>what the agent may promise a customer;</li>
+          <li>which systems and data it can reach;</li>
+          <li>whether it can change orders or delivery dates;</li>
+          <li>when it must hand the conversation to a human;</li>
+          <li>who is accountable for incorrect information;</li>
+          <li>how incidents are recorded;</li>
+          <li>how the commercial benefit is measured.</li>
+        </ul>
+        <p>Adding "I am an AI assistant" is the easiest part of the whole deployment.</p>
+
+        <h3>3. Marketing generates text, images and video</h3>
+        <p class="uc-meta"><span><b>Likely role:</b> deployer</span><span><b>Immediate problem:</b> content provenance, human review and reputational risk</span></p>
+        <p>The AI Act does not mean every text touched up with AI needs a visible label.</p>
+        <p>Particular attention is needed for:</p>
+        <ul>
+          <li>deepfake image, audio or video;</li>
+          <li>content that could be mistaken for authentic;</li>
+          <li>AI-generated publications on matters of public interest;</li>
+          <li>automated publishing without human review;</li>
+          <li>content for which nobody took editorial responsibility.</li>
+        </ul>
+        <p>Providers of generative systems are expected to handle machine-readable marking of synthetic content. A company using such a tool should verify that its technology and publishing chain preserves the necessary metadata.<span class="fn"><a href="#zdroj-5">[5]</a></span></p>
+
+        <h3>4. AI screens candidates or evaluates employees</h3>
+        <p class="uc-meta"><span><b>Possible classification:</b> high-risk system depending on the specific purpose</span><span><b>Immediate problem:</b> discrimination, human oversight and documentation of decisions</span></p>
+        <p>AI systems intended for candidate selection, decisions on employment relationships, task allocation or performance evaluation may fall under Annex III of the AI Act.<span class="fn"><a href="#zdroj-7">[7]</a></span></p>
+        <p>The main obligations for this category were deferred to 2 December 2027. That is not a reason to introduce the system without control.</p>
+        <p>First you need to know:</p>
+        <ul>
+          <li>what the system actually evaluates;</li>
+          <li>what data it draws on;</li>
+          <li>whether the output merely prepares material or effectively decides;</li>
+          <li>who can override its recommendation;</li>
+          <li>whether the decision can be explained;</li>
+          <li>whether results are continuously checked for systematic bias.</li>
+        </ul>
+        <p>HR must not be the test lab for a tool whose logic nobody in the company can defend.</p>
+
+        <h3>5. An internal AI assistant works over company documents</h3>
+        <p class="uc-meta"><span><b>Likely classification:</b> ordinary or limited-risk system</span><span><b>Immediate problem:</b> permissions, knowledge quality and data leakage</span></p>
+        <p>An internal knowledge assistant will not usually be a high-risk system merely because it uses generative AI.</p>
+        <p>It can still cause real damage if it:</p>
+        <ul>
+          <li>exposes a document to someone without authorisation;</li>
+          <li>uses an outdated policy;</li>
+          <li>combines information from different client files;</li>
+          <li>presents an unverified note as binding procedure;</li>
+          <li>produces an output with no source reference.</li>
+        </ul>
+        <p>Regulatory classification is only one part of the decision. The second is operational risk and the third is economic return.</p>
+
+        <h3>6. AI assesses creditworthiness or access to a service</h3>
+        <p class="uc-meta"><span><b>Possible classification:</b> high-risk system</span><span><b>Immediate problem:</b> impact on people's rights and explainability of decisions</span></p>
+        <p>Some systems used for assessing creditworthiness, risk or access to essential services may fall among high-risk use cases.<span class="fn"><a href="#zdroj-7">[7]</a></span></p>
+        <p>Here it is not enough to ask whether the system "only recommends".</p>
+        <p>If an employee almost always confirms the AI recommendation mechanically, the human presence may not amount to genuine human oversight.</p>
+
+        <h3>7. AI recognises employees' emotions</h3>
+        <p class="uc-meta"><span><b>Classification:</b> some uses are prohibited</span><span><b>Immediate decision:</b> do not deploy without specialist assessment</span></p>
+        <p>Using AI to infer the emotions of people in the workplace is in principle prohibited, save for limited cases relating for example to medical or safety reasons.<span class="fn"><a href="#zdroj-8">[8]</a></span></p>
+        <p>If a vendor offers you analysis of employee mood from voice, face or biometric signals, this is not an innocent HR dashboard.</p>
+        <p>It is a reason to stop the project and have its lawfulness and actual purpose independently reviewed.</p>
+
+        <!-- 7. Registr -->
+        <h2>Without a register you do not know what you are managing</h2>
+        <p>The first practical output of AI governance should not be a fifty-page policy.</p>
+        <p>It should be a <strong>register of the AI systems and use cases in use</strong>.</p>
+        <p>At minimum it should contain:</p>
+        <div class="table-wrap">
+          <table class="cmp">
+            <thead>
+              <tr>
+                <th scope="col">Field</th>
+                <th scope="col">What to record</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">System</th><td>Name of the tool or solution</td></tr>
+              <tr><th scope="row">Use case</th><td>What the company actually uses it for</td></tr>
+              <tr><th scope="row">Owner</th><td>The person accountable for the operational result</td></tr>
+              <tr><th scope="row">Supplier</th><td>Vendor, model and implementation partner</td></tr>
+              <tr><th scope="row">Company's role</th><td>Provider, deployer or another role</td></tr>
+              <tr><th scope="row">Users</th><td>Who operates the system</td></tr>
+              <tr><th scope="row">Affected persons</th><td>Who the outputs may affect</td></tr>
+              <tr><th scope="row">Data</th><td>What data the system receives and where it sends it</td></tr>
+              <tr><th scope="row">Output</th><td>What the system recommends, generates or executes</td></tr>
+              <tr><th scope="row">Human oversight</th><td>Who must intervene and when</td></tr>
+              <tr><th scope="row">Risk</th><td>Preliminary regulatory and operational classification</td></tr>
+              <tr><th scope="row">Transparency</th><td>How the customer, employee or public is informed</td></tr>
+              <tr><th scope="row">KPI</th><td>How benefit, quality and error rate are measured</td></tr>
+              <tr><th scope="row">Status</th><td>Experiment, pilot, production, suspended, terminated</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Without a register you cannot:</p>
+        <ul>
+          <li>determine which obligations apply to you;</li>
+          <li>design proportionate AI literacy;</li>
+          <li>manage access to data;</li>
+          <li>assess suppliers;</li>
+          <li>track incidents;</li>
+          <li>evidence human oversight;</li>
+          <li>calculate the real return;</li>
+          <li>decide which experiment to stop.</li>
+        </ul>
+        <p>The register is not compliance paperwork produced for an inspector.</p>
+        <p>It is a management tool for steering investment and risk.</p>
+
+        <!-- 8. Kdo to vlastni -->
+        <h2>Why a lawyer, IT or the vendor is not enough</h2>
+        <p>The AI Act is a cross-disciplinary problem. That is precisely why it often ends up with no real owner.</p>
+        <div class="table-wrap">
+          <table class="cmp">
+            <thead>
+              <tr>
+                <th scope="col">Role</th>
+                <th scope="col">What they do well</th>
+                <th scope="col">What they typically do not own</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Lawyer</th><td>Interpreting the regulation and legal risk</td><td>System operation, architecture, adoption and ROI</td></tr>
+              <tr><th scope="row">DPO</th><td>Personal data and GDPR</td><td>The whole AI portfolio and commercial priorities</td></tr>
+              <tr><th scope="row">IT and security</th><td>Identity, access, integration and infrastructure protection</td><td>Use case selection and accountability for business impact</td></tr>
+              <tr><th scope="row">Supplier</th><td>Their own product and its implementation</td><td>The company's interest across vendors and the return on the whole portfolio</td></tr>
+              <tr><th scope="row">Department head</th><td>A specific process and its needs</td><td>Consistent rules and risks across the company</td></tr>
+              <tr class="role-hi"><th scope="row">Head of AI</th><td>Priorities, governance, architecture, deployment and measured impact</td><td>The final specialist legal opinion</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>The AI Act does not require you to create a <a href="/en/what-is-head-of-ai">Head of AI</a> position or a particular governance structure.<span class="fn"><a href="#zdroj-4">[4]</a></span></p>
+        <p>It imposes, or progressively introduces, obligations that someone has to translate into reality.</p>
+        <p>That is a meaningful difference.</p>
+        <p>A lawyer can establish the legal interpretation. They cannot decide alone whether a voice agent pays off, what permissions it needs, where it must hand over to a human and which vendor offers the best architecture without lock-in.</p>
+        <p>IT can connect the system to the CRM. It cannot decide alone whether the agent has the right to change a price, promise a date or turn a customer away.</p>
+        <p>The vendor will explain why their product is safe. They will not independently tell you their product makes no economic sense in your process.</p>
+        <p>Someone has to hold the whole chain:</p>
+        <div class="callout">
+          <p><strong>Business case → classification → data → architecture → human oversight → operations → KPI → board reporting.</strong></p>
+        </div>
+        <p>If that person does not exist, the AI agenda is effectively run by a mixture of employees, suppliers, IT and randomly purchased licences.</p>
+
+        <!-- 9. Plan -->
+        <h2>A thirty-day plan for the CEO</h2>
+
+        <h3>Week 1: find out what is actually running</h3>
+        <p>Do not rely only on centrally purchased licences.</p>
+        <p>Also map:</p>
+        <ul>
+          <li>individually adopted generative tools;</li>
+          <li>AI features built into CRM, ERP and office applications;</li>
+          <li>automations built by individual departments;</li>
+          <li>external agencies using AI on your behalf;</li>
+          <li>pilots that already affect customers or employees.</li>
+        </ul>
+        <p>The output is the first version of the AI register.</p>
+
+        <h3>Week 2: determine role, risk and owner</h3>
+        <p>For each use case, determine:</p>
+        <ul>
+          <li>why it exists;</li>
+          <li>who owns it;</li>
+          <li>whether you are a provider or a deployer;</li>
+          <li>what data it uses;</li>
+          <li>whom it affects;</li>
+          <li>whether it may fall among prohibited or high-risk uses;</li>
+          <li>whether transparency obligations apply;</li>
+          <li>who is legally and operationally accountable for the output.</li>
+        </ul>
+        <p>A system without a named owner must not go to production.</p>
+
+        <h3>Week 3: set the minimum control layer</h3>
+        <p>For each approved system, define:</p>
+        <ul>
+          <li>access and least-privilege permissions;</li>
+          <li>permitted and prohibited data;</li>
+          <li>human approval points;</li>
+          <li>logging;</li>
+          <li>how to report an incident;</li>
+          <li>transparency rules;</li>
+          <li>the required preparation of users;</li>
+          <li>a fallback on failure;</li>
+          <li>the ability to reverse an action or switch the system off.</li>
+        </ul>
+        <p>The goal is not zero risk. The goal is known, proportionate and managed risk.</p>
+
+        <h3>Week 4: turn the register into board decisions</h3>
+        <p>Put each use case into one of four categories:</p>
+        <ul>
+          <li><strong>Continue</strong> — proceed under current conditions;</li>
+          <li><strong>Remediate</strong> — proceed once a specific gap is closed;</li>
+          <li><strong>Pilot only</strong> — restrict to a controlled pilot;</li>
+          <li><strong>Suspend</strong> — pause, because the risk or the economics are not acceptable.</li>
+        </ul>
+        <p>The board should not receive a list of AI tools.</p>
+        <p>It should receive an overview of:</p>
+        <ul>
+          <li>what AI earns or saves the company;</li>
+          <li>where risk arises;</li>
+          <li>who is accountable for each system;</li>
+          <li>what must be fixed;</li>
+          <li>what the next phase will cost;</li>
+          <li>which projects should be stopped.</li>
+        </ul>
+
+        <!-- 10. Riziko -->
+        <h2>The biggest risk is not the fine</h2>
+        <p>Fines are the visible part of regulation. For most mid-sized companies, though, the first regulatory sanction will not be the biggest cost.</p>
+        <p>Larger operational costs often arise earlier:</p>
+        <ul>
+          <li>several departments pay for the same or overlapping tools;</li>
+          <li>company data ends up in services nobody approved;</li>
+          <li>an AI agent takes an action nobody accepted accountability for;</li>
+          <li>the company has to expensively rebuild a finished integration;</li>
+          <li>employees stop trusting the system's outputs;</li>
+          <li>a customer receives an incorrect promise;</li>
+          <li>vendor lock-in makes changing the model expensive;</li>
+          <li>the system has no KPI, so you cannot decide whether to scale it or end it.</li>
+        </ul>
+        <p>Good AI governance is therefore not a cost invented in Brussels.</p>
+        <p>It is operational discipline the company would need even if the AI Act did not exist.</p>
+
+        <!-- 11. Co schvalit -->
+        <h2>What the CEO should approve this week</h2>
+        <ol>
+          <li><strong>Appoint a single owner of the AI agenda.</strong> Not a working group without authority. One person where accountability stops.</li>
+          <li><strong>Start an inventory of all AI use cases.</strong> Including unofficial tools and AI features embedded in existing software.</li>
+          <li><strong>Prohibit any new system going to production without registration.</strong> Every production use case must have a purpose, an owner, data, human oversight and a KPI.</li>
+          <li><strong>Review customer-facing systems before 2 August 2026.</strong> Especially chatbots, voice agents, deepfake content and automatically published content.</li>
+          <li><strong>Introduce targeted AI literacy.</strong> By role and system, not as one generic course for everyone.</li>
+          <li><strong>Increase scrutiny of HR, scoring, biometrics and decisions about people.</strong> Deferral of high-risk obligations is not consent to uncontrolled deployment.</li>
+          <li><strong>Separate the legal opinion from operational ownership.</strong> A lawyer confirms contested classifications. Someone else must run the whole system.</li>
+        </ol>
+
+        <!-- 12. Doporuceni -->
+        <h2>My recommendation</h2>
+        <p>Do not start with a sprawling "AI Act compliance project".</p>
+        <p>Start by taking control of the AI you already use.</p>
+        <p>For a company with one simple AI tool, the agenda can temporarily be handled by the CEO, the CTO or another capable internal owner.</p>
+        <p>But once AI:</p>
+        <ul>
+          <li>runs across multiple departments;</li>
+          <li>uses company or personal data;</li>
+          <li>communicates with customers;</li>
+          <li>affects employees;</li>
+          <li>performs actions in enterprise systems;</li>
+          <li>consumes a significant budget;</li>
+          <li>or is expected to deliver measurable impact,</li>
+        </ul>
+        <p>it is no longer a side IT task.</p>
+        <p>The company needs someone with the mandate to join business case, technology, governance, vendors, deployment and board reporting into one managed system.</p>
+        <p>That is the <a href="/en/chief-ai-officer">Head of AI</a> role.</p>
+
+        <!-- 13. CTA -->
+        <div class="cta-block">
+          <p><strong>Map the AI systems and accountability in your company.</strong> In an initial AI Leadership Call we establish where AI is already running, which systems need immediate attention, whether an internal owner is enough, whether you need a narrow remediation — or whether a 90-day AI Leadership Sprint makes sense. No sales deck. If a wider mandate does not make economic sense, I will say so.</p>
+          <a href="/en/#kontakt" class="btn btn-primary">Book an AI Leadership Call</a>
+        </div>
+
+        <!-- 14. FAQ -->
+        <h2>Frequently asked questions</h2>
+        <div class="faq">
+          <details class="faq-item">
+            <summary>Does the AI Act apply to a company whose staff merely use ChatGPT?</summary>
+            <p>Yes. The company is generally a deployer of an AI system and is subject at minimum to the obligation to take proportionate measures supporting AI literacy. Depending on how it is used, obligations relating to transparency, personal data protection, employment law or a specific regulated process may be added.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Do we have to label every text produced with AI?</summary>
+            <p>No. The AI Act does not impose a general obligation to label every text AI was involved in. Specific obligations apply for example to deepfake content and to certain texts published for the purpose of informing the public on matters of public interest. Human review and taking editorial responsibility also matter.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Is sending staff a set of AI usage rules enough?</summary>
+            <p>Simply circulating a document may not be proportionate. Measures should reflect the systems in use, the experience of the users, the purpose of use and the associated risks. The company should be able to evidence what it did and why it considered that proportionate.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Are we legally required to appoint an AI officer or Head of AI?</summary>
+            <p>No. The AI Act does not mandate a specific organisational structure. The company must, however, ensure obligations are met and AI is used responsibly. With multiple systems across departments, keeping consistent rules, accountability and impact measurement without a single owner is very difficult.</p>
+          </details>
+          <details class="faq-item">
+            <summary>If the high-risk rules were deferred, can we wait before preparing?</summary>
+            <p>Technically you have more time to meet the specific high-risk requirements. Operationally, waiting makes no sense. Classification, contracts, data flows, human oversight and documentation are hard to retrofit into a finished system. And the other legal and operational requirements continue to apply.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Does a Head of AI replace a lawyer?</summary>
+            <p>No. A Head of AI prepares the system register, use case classification, operating rules, technical groundwork and the accountability model. A specialist lawyer should confirm contested legal questions. The point of a Head of AI is to make sure the legal conclusion does not stay on paper but is reflected in architecture, processes and day-to-day operations.</p>
+          </details>
+        </div>
+
+        <!-- 15. Zdroje -->
+        <h2 id="zdroje">Trusted sources</h2>
+        <ol class="sources">
+          <li id="zdroj-1"><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj" target="_blank" rel="noopener"><b>Regulation (EU) 2024/1689 of the European Parliament and of the Council — Artificial Intelligence Act.</b></a> The foundational text of European AI regulation, in force since 1 August 2024. <span class="src-dom">eur-lex.europa.eu</span></li>
+          <li id="zdroj-2"><a href="https://eur-lex.europa.eu/eli/reg/2026/1744/oj" target="_blank" rel="noopener"><b>Regulation (EU) 2026/1744 of the European Parliament and of the Council — Digital Omnibus on AI.</b></a> The final legal text of the amendments, published in the Official Journal of the EU and in force since 27 July 2026. <span class="src-dom">eur-lex.europa.eu</span></li>
+          <li id="zdroj-3"><a href="https://ai-act-service-desk.ec.europa.eu/en/ai-act/timeline/timeline-implementation-eu-ai-act" target="_blank" rel="noopener"><b>European Commission: AI Act — application timeline.</b></a> Current overview of deadlines including 2 December 2027 for Annex III and 2 August 2028 for regulated products. <span class="src-dom">ai-act-service-desk.ec.europa.eu</span></li>
+          <li id="zdroj-4"><a href="https://digital-strategy.ec.europa.eu/en/faqs/ai-literacy-questions-answers" target="_blank" rel="noopener"><b>European Commission: AI Literacy — Questions &amp; Answers.</b></a> Official interpretation of the amended Article 4, proportionate measures, documentation and oversight. <span class="src-dom">digital-strategy.ec.europa.eu</span></li>
+          <li id="zdroj-5"><a href="https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act" target="_blank" rel="noopener"><b>European Commission: Transparency obligations under Article 50.</b></a> Guidelines and FAQ on chatbots, marking of synthetic content, deepfakes and texts on matters of public interest. <span class="src-dom">digital-strategy.ec.europa.eu</span></li>
+          <li id="zdroj-6"><a href="https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-3" target="_blank" rel="noopener"><b>EU AI Act Service Desk: Article 3 — Definitions.</b></a> The official European information portal with definitions of provider, deployer and other roles. <span class="src-dom">ai-act-service-desk.ec.europa.eu</span></li>
+          <li id="zdroj-7"><a href="https://ai-act-service-desk.ec.europa.eu/en/ai-act/annex-3" target="_blank" rel="noopener"><b>EU AI Act Service Desk: Annex III and deployer obligations for high-risk systems.</b></a> Categories of sensitive uses including employment, education, biometrics and essential services. <span class="src-dom">ai-act-service-desk.ec.europa.eu</span></li>
+          <li id="zdroj-8"><a href="https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-prohibited-artificial-intelligence-ai-practices-defined-ai-act" target="_blank" rel="noopener"><b>European Commission: Guidelines on prohibited AI practices.</b></a> Interpretation of prohibited practices including emotion recognition in the workplace and in education. <span class="src-dom">digital-strategy.ec.europa.eu</span></li>
+          <li id="zdroj-9"><a href="https://mpo.gov.cz/cz/podnikani/digitalni-ekonomika/umela-inteligence/" target="_blank" rel="noopener"><b>Ministry of Industry and Trade of the Czech Republic: AI Act implementation in Czechia.</b></a> Information on the Czech implementation, supervisory infrastructure and transparency of AI content. <span class="src-dom">mpo.gov.cz</span></li>
+        </ol>
+        <p class="disclaimer">Sources and legislative deadlines verified as at 28 July 2026. This text is a practical AI governance analysis for company leadership, not individual legal advice.</p>
+
+        <!-- Související průvodce -->
+        <nav class="related" aria-label="Related guides">
+          <h2>Related guides</h2>
+          <ul class="related-list">
+            <li><a href="/en/chief-ai-officer"><span>Chief AI Officer (CAIO): who is accountable for AI</span><span class="arrow" aria-hidden="true">→</span></a></li>
+            <li><a href="/en/what-is-head-of-ai"><span>What is a Head of AI / Chief AI Officer: a complete guide</span><span class="arrow" aria-hidden="true">→</span></a></li>
+            <li><a href="/en/when-does-a-company-need-a-head-of-ai"><span>When a company needs a Head of AI (and when it does not)</span><span class="arrow" aria-hidden="true">→</span></a></li>
+            <li><a href="/en/fractional-vs-fulltime-caio"><span>Fractional Head of AI vs full-time CAIO</span><span class="arrow" aria-hidden="true">→</span></a></li>
+          </ul>
+        </nav>
+      </div>
+    </article>
+  </main>
+
+  <!-- PATIČKA (převzato z homepage) -->
+  <footer style="border-top: 1px solid var(--color-divider); text-align: center;">
+    <div style="max-width: 1180px; margin: 0 auto; padding: clamp(44px, 6vw, 64px) clamp(20px, 4vw, 56px) 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 32px;">
+      <div>
+        <span style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 26px; line-height: 1;">headofai<span class="accent">.cz</span></span>
+        <p style="font-size: 15px; line-height: 1.6; margin: 12px auto 0; max-width: 40ch; color: color-mix(in srgb, var(--color-text) 55%, transparent);">Fractional AI leadership for companies that want control, measurable impact and their first AI workers in operation.</p>
+      </div>
+      <div>
+        <h4 style="font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 12px; color: color-mix(in srgb, var(--color-text) 45%, transparent);">Contact</h4>
+        <p style="display: flex; justify-content: center; align-items: center; gap: 8px; font-size: 15px; margin: 0 0 8px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; color: color-mix(in srgb, var(--color-text) 45%, transparent);"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg><a href="mailto:hello@headofai.cz">hello@headofai.cz</a></p>
+        <p style="display: flex; justify-content: center; align-items: center; gap: 8px; font-size: 15px; margin: 0 0 8px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; color: color-mix(in srgb, var(--color-text) 45%, transparent);"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg><a href="https://x.com/headofaicz">@headofaicz</a></p><p style="display: flex; justify-content: center; align-items: center; gap: 8px; font-size: 15px; margin: 0;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; color: color-mix(in srgb, var(--color-text) 45%, transparent);"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg><a href="https://www.linkedin.com/in/davidvesely/">David Veselý</a></p>
+      </div>
+      <div>
+        <h4 style="font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 12px; color: color-mix(in srgb, var(--color-text) 45%, transparent);">Operator</h4>
+        <p style="font-size: 15px; margin: 0 0 4px; color: color-mix(in srgb, var(--color-text) 55%, transparent);">Vesely.ai s.r.o.</p>
+        <p style="font-size: 14px; margin: 0 0 4px; color: color-mix(in srgb, var(--color-text) 45%, transparent);">Reg. No.: 23702907 · VAT No.: CZ23702907</p>
+        <p style="font-size: 14px; margin: 0; color: color-mix(in srgb, var(--color-text) 45%, transparent);">Czechia</p>
+      </div>
+    </div>
+    <div style="max-width: 1180px; margin: 32px auto 0; padding: 0 clamp(20px, 4vw, 56px);">
+      <p style="font-size: 14px; color: color-mix(in srgb, var(--color-text) 40%, transparent); border-top: 1px solid var(--color-divider); padding: 20px 0 28px; margin: 0;">© 2026 Vesely.ai s.r.o. · headofai.cz</p>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>

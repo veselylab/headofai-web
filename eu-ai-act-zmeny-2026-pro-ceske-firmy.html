@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EU AI Act po AI Omnibusu: co musí český CEO udělat teď | headofai.cz</title>
+  <meta name="description" content="AI Omnibus odložil část high-risk povinností, ne odpovědnost vedení. Co platí od 2. srpna 2026, jak si udělat registr AI systémů a co má CEO schválit tento týden.">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+  <link rel="canonical" href="https://headofai.cz/eu-ai-act-zmeny-2026-pro-ceske-firmy">
+  <meta name="author" content="David Veselý">
+  <meta name="theme-color" content="#161718">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="EU AI Act po AI Omnibusu: co musí český CEO udělat teď">
+  <meta property="og:description" content="Co se změnilo nařízením 2026/1744, co se naopak neodložilo — a třicetidenní plán, jak dostat AI ve firmě pod kontrolu.">
+  <meta property="og:url" content="https://headofai.cz/eu-ai-act-zmeny-2026-pro-ceske-firmy">
+  <meta property="og:site_name" content="headofai.cz">
+  <meta property="og:locale" content="cs_CZ">
+  <meta property="og:image" content="https://headofai.cz/assets/profile.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@headofaicz">
+  <meta name="twitter:creator" content="@headofaicz">
+  <meta name="twitter:image" content="https://headofai.cz/assets/profile.webp">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="_ds/industry-0ef2ebb3-0745-41f6-a970-aac61ad8f5fb/styles.css">
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Article","headline":"EU AI Act po AI Omnibusu: co musí český CEO udělat teď","description":"AI Omnibus odložil část povinností pro vysoce rizikové systémy, ne odpovědnost vedení za AI, která už ve firmě běží. Co platí od 2. srpna 2026, jak sestavit registr AI systémů a co má CEO schválit tento týden.","datePublished":"2026-07-28","dateModified":"2026-07-29","inLanguage":"cs-CZ","articleSection":"Regulatory analysis","author":{"@type":"Person","name":"David Veselý","url":"https://headofai.cz"},"publisher":{"@type":"Organization","name":"Vesely.ai s.r.o.","url":"https://headofai.cz"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://headofai.cz/eu-ai-act-zmeny-2026-pro-ceske-firmy"},"image":"https://headofai.cz/assets/profile.webp","about":[{"@type":"Thing","name":"EU AI Act"},{"@type":"Thing","name":"AI governance"},{"@type":"Thing","name":"Odpovědnost vedení za AI"},{"@type":"Thing","name":"Registr AI systémů"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Domů","item":"https://headofai.cz/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://headofai.cz/blog/"},{"@type":"ListItem","position":3,"name":"EU AI Act po AI Omnibusu","item":"https://headofai.cz/eu-ai-act-zmeny-2026-pro-ceske-firmy"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Týká se AI Act firmy, jejíž zaměstnanci jen používají ChatGPT?","acceptedAnswer":{"@type":"Answer","text":"Ano. Firma je zpravidla deployerem AI systému a týká se jí minimálně povinnost přijímat přiměřená opatření na podporu AI gramotnosti. Podle způsobu použití se mohou přidat povinnosti související s transparentností, ochranou osobních údajů, pracovním právem nebo konkrétním regulovaným procesem."}},{"@type":"Question","name":"Musíme označovat každý text vytvořený pomocí AI?","acceptedAnswer":{"@type":"Answer","text":"Ne. AI Act nestanoví všeobecnou povinnost označit každý text, na kterém se AI jakkoliv podílela. Specifické povinnosti se týkají například deepfake obsahu a některých textů publikovaných za účelem informování veřejnosti o otázkách veřejného zájmu. Význam má také lidská kontrola a převzetí redakční odpovědnosti."}},{"@type":"Question","name":"Stačí zaměstnancům poslat pravidla používání AI?","acceptedAnswer":{"@type":"Answer","text":"Samotné zaslání dokumentu nemusí být přiměřené. Opatření mají vycházet z používaných systémů, zkušeností uživatelů, účelu použití a souvisejících rizik. Firma by měla být schopna doložit, co udělala a proč to považovala za přiměřené."}},{"@type":"Question","name":"Musíme mít ze zákona AI officera nebo Head of AI?","acceptedAnswer":{"@type":"Answer","text":"Ne. AI Act konkrétní organizační strukturu nenařizuje. Firma však musí zajistit plnění povinností a odpovědné používání AI. U více systémů napříč odděleními je bez jednoho vlastníka velmi obtížné udržet jednotná pravidla, odpovědnost a měření dopadu."}},{"@type":"Question","name":"Když se high-risk pravidla odložila, můžeme s přípravou počkat?","acceptedAnswer":{"@type":"Answer","text":"Technicky máte více času na splnění specifických high-risk požadavků. Provozně čekat nedává smysl. Klasifikace, smlouvy, datové toky, lidská kontrola a dokumentace se obtížně přidávají až do hotového systému. Navíc dál platí ostatní právní a provozní požadavky."}},{"@type":"Question","name":"Nahrazuje Head of AI právníka?","acceptedAnswer":{"@type":"Answer","text":"Ne. Head of AI připraví registr systémů, klasifikaci use-casů, provozní pravidla, technické podklady a odpovědnostní model. Specializovaný advokát má potvrdit sporné právní otázky. Smyslem Head of AI je zajistit, aby právní závěr nezůstal na papíře, ale promítl se do architektury, procesů a reálného provozu."}}]}
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { margin: 0; text-wrap: pretty; }
+    *, *::before, *::after { box-sizing: border-box; }
+    a { color: #e7e2d6; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; text-decoration-color: color-mix(in srgb, #e7e2d6 32%, transparent); }
+    a:hover { color: #ffffff; text-decoration-color: currentColor; }
+    img { max-width: 100%; }
+
+    /* ---- převzato z homepage (konzistence) ---- */
+    .wrap { max-width: 1180px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); }
+    .accent { color: var(--color-accent); }
+
+    /* ==== ZNOVUPOUŽITELNÁ ŠABLONA ČLÁNKU (kopíruj pro další články) ==== */
+    .article { max-width: 760px; margin: 0 auto; padding: clamp(30px, 6vw, 56px) clamp(20px, 4vw, 40px) clamp(48px, 7vw, 80px); }
+    .breadcrumb { font-size: 13px; letter-spacing: 0.01em; color: color-mix(in srgb, var(--color-text) 45%, transparent); margin: 0 0 26px; }
+    .breadcrumb a { color: color-mix(in srgb, var(--color-text) 62%, transparent); }
+    .breadcrumb span { color: color-mix(in srgb, var(--color-text) 32%, transparent); margin: 0 8px; }
+    .article-h1 { font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(32px, 5.5vw, 52px); line-height: 1.08; letter-spacing: -0.02em; margin: 0; }
+    .article-meta { font-size: 14px; color: color-mix(in srgb, var(--color-text) 48%, transparent); margin: 18px 0 0; }
+    .article-answer { font-size: clamp(18px, 2.2vw, 21px); line-height: 1.62; color: color-mix(in srgb, var(--color-text) 85%, transparent); margin: 26px 0 0; padding: 24px 0 0; border-top: 1px solid var(--color-divider); }
+    .article-answer strong { color: var(--color-text); font-weight: 600; }
+
+    .prose h2 { font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(26px, 3.6vw, 34px); line-height: 1.15; letter-spacing: -0.01em; margin: 52px 0 0; }
+    .prose h3 { font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 20px; margin: 32px 0 0; }
+    .prose p { font-size: 17px; line-height: 1.75; color: color-mix(in srgb, var(--color-text) 80%, transparent); margin: 18px 0 0; }
+    .prose strong { color: var(--color-text); font-weight: 600; }
+    .prose ul { margin: 18px 0 0; padding: 0; list-style: none; }
+    .prose li { position: relative; padding-left: 22px; font-size: 17px; line-height: 1.7; color: color-mix(in srgb, var(--color-text) 80%, transparent); margin: 0 0 10px; }
+    .prose li:last-child { margin-bottom: 0; }
+    .prose li::before { content: "+"; position: absolute; left: 0; top: 0; color: var(--color-accent); font-weight: 600; }
+    .prose ol { margin: 18px 0 0; padding: 0 0 0 24px; }
+    .prose ol li { padding-left: 6px; }
+    .prose ol li::before { content: none; }
+
+    .table-wrap { overflow-x: auto; margin: 26px 0 0; border: 1px solid var(--color-divider); }
+    table.cmp { border-collapse: collapse; width: 100%; min-width: 660px; font-size: 15px; }
+    table.cmp th, table.cmp td { text-align: left; padding: 14px 16px; border-bottom: 1px solid var(--color-divider); vertical-align: top; line-height: 1.5; }
+    table.cmp thead th { font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 16px; color: var(--color-text); background: color-mix(in srgb, var(--color-surface) 50%, transparent); }
+    table.cmp tbody th { font-weight: 600; color: var(--color-text); }
+    table.cmp td { color: color-mix(in srgb, var(--color-text) 72%, transparent); }
+    table.cmp tbody tr:last-child th, table.cmp tbody tr:last-child td { border-bottom: none; }
+    table.cmp .role-hi th, table.cmp .role-hi td { background: color-mix(in srgb, #c8ae71 8%, transparent); }
+    table.cmp .role-hi th { color: var(--color-accent-100); }
+
+    .faq { margin: 26px 0 0; border-top: 1px solid var(--color-divider); }
+    .faq-item { border-bottom: 1px solid var(--color-divider); }
+    .faq-item summary { cursor: pointer; list-style: none; padding: 20px 0; font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 20px; line-height: 1.25; color: var(--color-text); display: flex; justify-content: space-between; gap: 16px; align-items: center; }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after { content: "+"; color: color-mix(in srgb, var(--color-text) 55%, transparent); font-size: 24px; line-height: 1; flex: none; }
+    .faq-item[open] summary::after { content: "\2212"; }
+    .faq-item p { font-size: 16px; line-height: 1.7; color: color-mix(in srgb, var(--color-text) 78%, transparent); margin: 0; padding: 0 0 22px; max-width: 66ch; }
+
+    .cta-block { border: 1px solid color-mix(in srgb, #c8ae71 45%, transparent); background: color-mix(in srgb, #c8ae71 7%, transparent); padding: clamp(24px, 4vw, 34px); margin: 52px 0 0; text-align: center; }
+    .cta-block p { font-size: 18px; line-height: 1.6; margin: 0 0 20px; color: var(--color-text); }
+    .cta-block .btn { display: inline-block; text-decoration: none; padding: 13px 24px; font-size: 15px; }
+    /* ==== /ŠABLONA ČLÁNKU ==== */
+
+    /* Zvýrazněná otázka / závěr pro vedení */
+    .callout { border-left: 2px solid var(--color-accent); padding: 4px 0 4px 20px; margin: 28px 0 0; }
+    .callout p { font-size: clamp(17px, 2vw, 19px); line-height: 1.6; color: var(--color-text); margin: 0; }
+
+    /* Blok use-casu: role + problém */
+    .uc-meta { display: flex; flex-wrap: wrap; gap: 8px 22px; margin: 14px 0 0; font-size: 14.5px; line-height: 1.5; color: color-mix(in srgb, var(--color-text) 55%, transparent); }
+    .uc-meta b { color: color-mix(in srgb, var(--color-text) 78%, transparent); font-weight: 600; }
+
+    /* Poznámky pod čarou / zdroje */
+    .fn { font-size: 12px; vertical-align: super; line-height: 0; margin-left: 1px; }
+    .fn a { text-decoration: none; color: var(--color-accent); }
+    .sources { margin: 26px 0 0; padding: 0; list-style: none; counter-reset: src; }
+    .sources li { position: relative; padding: 14px 0 14px 34px; border-bottom: 1px solid var(--color-divider); font-size: 15px; line-height: 1.6; color: color-mix(in srgb, var(--color-text) 68%, transparent); margin: 0; }
+    .sources li::before { counter-increment: src; content: "[" counter(src) "]"; position: absolute; left: 0; top: 14px; color: var(--color-accent); font-size: 13px; }
+    .sources li b { color: color-mix(in srgb, var(--color-text) 88%, transparent); font-weight: 600; }
+    .disclaimer { font-size: 14px; line-height: 1.65; color: color-mix(in srgb, var(--color-text) 48%, transparent); margin: 22px 0 0; font-style: italic; }
+
+    /* Související průvodce (cross-link cluster) */
+    .related { margin: 52px 0 0; padding-top: 30px; border-top: 1px solid var(--color-divider); }
+    .related h2 { margin: 0; }
+    .related-list { margin: 20px 0 0; padding: 0; list-style: none; }
+    .related-list li { margin: 0; padding: 0; }
+    .related-list li::before { content: none; }
+    .related-list a { display: flex; justify-content: space-between; align-items: baseline; gap: 20px; padding: 16px 0; border-bottom: 1px solid var(--color-divider); font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 18px; line-height: 1.3; color: var(--color-text); text-decoration: none; }
+    .related-list li:first-child a { border-top: 1px solid var(--color-divider); }
+    .related-list a:hover { color: var(--color-accent); }
+    .related-list a .arrow { color: var(--color-accent); flex: none; }
+
+    @media (max-width: 768px) { #nav-links { display: none !important; } }
+  </style>
+</head>
+
+<body>
+<div style="--color-bg: #161718; --color-surface: #212224; --color-text: #f2f2f3; --color-divider: color-mix(in srgb, #f2f2f3 13%, transparent); --color-accent: #c8ae71; --color-accent-100: #f5edd9; --color-accent-200: #ebdcb8; --color-accent-300: #ddc794; --color-accent-400: #d3b97e; --color-accent-500: #c8ae71; --color-accent-600: #ac9358; --color-accent-700: #86733f; --color-accent-800: #5f512c; --color-accent-900: #3a3119; background: var(--color-bg); color: var(--color-text); font-family: var(--font-body); min-height: 100vh;">
+
+  <!-- HLAVIČKA (převzato z homepage) -->
+  <header style="position: sticky; top: 0; z-index: 50; backdrop-filter: blur(14px); background: color-mix(in srgb, #161718 60%, transparent); border-bottom: 1px solid var(--color-divider);">
+    <nav aria-label="Hlavní navigace" style="max-width: 1180px; margin: 0 auto; display: flex; align-items: center; gap: clamp(12px, 3vw, 32px); padding: 14px clamp(20px, 4vw, 56px);">
+      <a href="/" style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 32px; color: var(--color-text); letter-spacing: -0.01em; line-height: 1; text-decoration: none;">headofai<span class="accent">.cz</span></a>
+      <div id="nav-links" style="display: flex; gap: clamp(14px, 2.5vw, 26px); flex: 1; justify-content: center;">
+        <a href="/#o-mne" style="color: color-mix(in srgb, var(--color-text) 62%, transparent); font-size: 15px; text-decoration: none;">O mně</a>
+        <a href="/#proces" style="color: color-mix(in srgb, var(--color-text) 62%, transparent); font-size: 15px; text-decoration: none;">Proces</a>
+        <a href="/#ceny" style="color: color-mix(in srgb, var(--color-text) 62%, transparent); font-size: 15px; text-decoration: none;">Ceny</a>
+        <a href="/blog/" style="color: color-mix(in srgb, var(--color-text) 62%, transparent); font-size: 15px; text-decoration: none;">Blog</a>
+      </div>
+      <a href="/#kontakt" class="btn btn-primary" style="margin-left: auto; text-decoration: none; padding: 11px 20px; font-size: 14px; white-space: nowrap;">Domluvit call</a>
+    </nav>
+  </header>
+
+  <main>
+    <article class="article">
+      <nav class="breadcrumb" aria-label="Drobečková navigace">
+        <a href="/">Domů</a><span>›</span><a href="/blog/">Blog</a><span>›</span>EU AI Act po AI Omnibusu
+      </nav>
+
+      <!-- 1. H1 -->
+      <h1 class="article-h1">EU AI Act po AI Omnibusu: <span class="accent">co musí český CEO udělat teď</span></h1>
+      <p class="article-meta">Regulatory analysis · Publikováno <time datetime="2026-07-28">28. července 2026</time> · David Veselý</p>
+
+      <!-- 2. Přímá odpověď (featured snippet / LLM citace) -->
+      <p class="article-answer"><strong>AI Omnibus odložil část povinností pro vysoce rizikové systémy. Neodložil však odpovědnost vedení za AI, která už ve firmě běží.</strong> Od 2. srpna 2026 se začnou používat další části AI Actu včetně transparentnosti některých AI systémů. Povinnost podporovat AI gramotnost platí už od února 2025.</p>
+
+      <div class="prose">
+        <p>Pro většinu českých firem proto není hlavní otázkou, zda mají objednat právní analýzu.</p>
+        <p>Hlavní otázka zní:</p>
+        <div class="callout">
+          <p><strong>Víte, jaké AI systémy ve firmě používáte, kdo je vlastní, k jakým datům mají přístup a kdo odpovídá za jejich výstupy?</strong></p>
+        </div>
+        <p>Pokud ne, problém nevytváří AI Act. Regulace pouze zviditelňuje skutečnost, že vaše firma používá technologii bez jasného provozního vlastníka.</p>
+
+        <!-- 3. Rozhodnutí pro vedení -->
+        <h2>Rozhodnutí pro vedení</h2>
+        <div class="table-wrap">
+          <table class="cmp">
+            <thead>
+              <tr>
+                <th scope="col">Otázka</th>
+                <th scope="col">Praktický závěr</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Musíme kvůli AI Omnibusu zastavit AI projekty?</th><td>Ne. Musíte je ale zmapovat, klasifikovat a řídit.</td></tr>
+              <tr><th scope="row">Byly všechny povinnosti odloženy?</th><td>Ne. Odložila se především část pravidel pro vysoce rizikové systémy.</td></tr>
+              <tr><th scope="row">Týká se AI Act i běžného používání ChatGPT nebo Copilotu?</th><td>Ano, minimálně v oblasti AI gramotnosti a odpovědného používání.</td></tr>
+              <tr><th scope="row">Musíme označovat vše, co vzniklo pomocí AI?</th><td>Ne. Povinnosti se liší podle typu systému, obsahu a role firmy.</td></tr>
+              <tr><th scope="row">Potřebujeme registr používaných AI systémů?</th><td>Bez něj nelze spolehlivě určit povinnosti, rizika ani návratnost.</td></tr>
+              <tr><th scope="row">Musíme jmenovat Head of AI?</th><td>Zákon konkrétní funkci nenařizuje. Někdo ale musí AI agendu vlastnit a koordinovat.</td></tr>
+              <tr class="role-hi"><th scope="row">Co má CEO schválit jako první?</th><td>Jednoho vlastníka AI agendy a 30denní inventuru všech AI use-casů.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 4. Co se změnilo -->
+        <h2>Co se změnilo 27. července 2026</h2>
+        <p>Dne 27. července 2026 vstoupilo v platnost nařízení EU 2026/1744, označované jako Digital Omnibus on AI. Upravilo původní AI Act a posunulo některé termíny, protože evropské standardy, metodiky a národní dozorová infrastruktura nebyly připraveny včas.<span class="fn"><a href="#zdroj-1">[1]</a><a href="#zdroj-2">[2]</a></span></p>
+        <p>Pro běžnou českou firmu jsou podstatné čtyři změny.</p>
+
+        <h3>1. Pravidla pro vysoce rizikové systémy se odložila</h3>
+        <p>Povinnosti pro systémy zařazené mezi vysoce rizikové podle přílohy III se začnou používat od <strong>2. prosince 2027</strong>.</p>
+        <p>Týká se to například některých AI systémů používaných:</p>
+        <ul>
+          <li>při náboru, výběru a hodnocení zaměstnanců;</li>
+          <li>ve vzdělávání;</li>
+          <li>při posuzování úvěruschopnosti;</li>
+          <li>při přístupu k některým základním službám;</li>
+          <li>v biometrice;</li>
+          <li>v kritické infrastruktuře.</li>
+        </ul>
+        <p>Pravidla pro AI zabudovanou do regulovaných výrobků se použijí od <strong>2. srpna 2028</strong>.<span class="fn"><a href="#zdroj-2">[2]</a><a href="#zdroj-3">[3]</a></span></p>
+        <p>To ale neznamená, že můžete rizikový systém nasadit dnes a začít se o něj zajímat až za rok.</p>
+        <p>Stále platí GDPR, pracovní právo, ochrana spotřebitele, kybernetické požadavky, smluvní odpovědnost a povinnosti vedení jednat s péčí řádného hospodáře. Nákladné AI řešení nasazené bez vlastníka, dokumentace a lidské kontroly je špatně řízená investice bez ohledu na datum účinnosti konkrétního článku AI Actu.</p>
+
+        <h3>2. AI gramotnost zůstává povinností</h3>
+        <p>Článek 4 AI Actu platí od 2. února 2025.</p>
+        <p>AI Omnibus jeho znění zmírnil: firma už nemusí garantovat konkrétní nebo „dostatečnou“ úroveň AI gramotnosti každého jednotlivce. Nadále ale musí přijímat přiměřená opatření podporující rozvoj AI gramotnosti zaměstnanců a dalších osob, které jejím jménem s AI pracují.<span class="fn"><a href="#zdroj-2">[2]</a><a href="#zdroj-4">[4]</a></span></p>
+        <p>To neznamená koupit všem zaměstnancům jeden obecný webinář o promptování.</p>
+        <p>Rozsah opatření má odpovídat:</p>
+        <ul>
+          <li>používaným systémům;</li>
+          <li>znalostem konkrétních uživatelů;</li>
+          <li>účelu použití;</li>
+          <li>souvisejícím rizikům;</li>
+          <li>skupinám lidí, na které mohou výstupy AI dopadat.</li>
+        </ul>
+        <p>Člověk, který používá AI na korekturu marketingového textu, potřebuje jinou úroveň přípravy než personalista pracující s AI hodnocením kandidátů nebo zaměstnanec, který schvaluje výstup autonomního agenta nad CRM.</p>
+        <p>Firma nemusí získávat zvláštní certifikát. Měla by však být schopna doložit, jaká opatření přijala, koho se týkala a proč byla vzhledem k používaným systémům přiměřená.<span class="fn"><a href="#zdroj-4">[4]</a></span></p>
+
+        <h3>3. Transparentnost se neodkládá</h3>
+        <p>Článek 50 se začne používat od <strong>2. srpna 2026</strong>.</p>
+        <p>Povinnosti se liší podle toho, zda je firma poskytovatelem AI systému, nebo jej pouze používá. Mohou zahrnovat zejména:</p>
+        <ul>
+          <li>informování člověka, že komunikuje s AI;</li>
+          <li>technické označení AI generovaného nebo upraveného obsahu;</li>
+          <li>informování osob vystavených systémům rozpoznávání emocí nebo biometrické kategorizace;</li>
+          <li>označení deepfake obsahu;</li>
+          <li>označení některých AI generovaných textů publikovaných za účelem informování veřejnosti o otázkách veřejného zájmu.</li>
+        </ul>
+        <p>Pro systémy generující syntetický obsah, které byly uvedeny na trh před 2. srpnem 2026, existuje omezené přechodné období do 2. prosince 2026. Týká se však pouze poskytovatelské povinnosti zajistit strojově čitelné označení podle čl. 50 odst. 2. Nejde o všeobecný odklad transparentnosti.<span class="fn"><a href="#zdroj-2">[2]</a><a href="#zdroj-5">[5]</a></span></p>
+
+        <h3>4. Dozor se stává praktickou otázkou</h3>
+        <p>AI Act je evropské nařízení, a proto se používá přímo. Český zákon má zejména určit národní dozorovou a podpůrnou infrastrukturu, kompetence orgánů a praktické vymáhání.</p>
+        <p>V českém prostředí je gestorem implementace Ministerstvo průmyslu a obchodu. Návrh národní infrastruktury počítá s rozdělením kompetencí mezi více institucí podle typu systému a regulované oblasti.<span class="fn"><a href="#zdroj-9">[9]</a></span></p>
+        <p>Pro CEO z toho plyne jednoduchý závěr:</p>
+        <div class="callout">
+          <p><strong>Nestačí mít právní memorandum uložené na SharePointu. Musíte být schopni ukázat, jak se AI ve firmě skutečně řídí.</strong></p>
+        </div>
+
+        <!-- 5. Role -->
+        <h2>Nejdřív určete svou roli</h2>
+        <p>AI Act rozlišuje několik rolí. Pro většinu firem jsou nejdůležitější dvě.</p>
+
+        <h3>Deployer: systém používáte</h3>
+        <p>Deployer je organizace, která používá AI systém pod svou pravomocí v rámci profesionální činnosti.<span class="fn"><a href="#zdroj-6">[6]</a></span></p>
+        <p>Typický příklad:</p>
+        <ul>
+          <li>zaměstnanci používají Microsoft Copilot;</li>
+          <li>obchodní tým používá AI funkce v CRM;</li>
+          <li>marketing používá ChatGPT nebo Claude;</li>
+          <li>zákaznické centrum používá voice agenta dodaného externím vendorem;</li>
+          <li>HR používá cizí nástroj pro předvýběr kandidátů.</li>
+        </ul>
+        <p>Většina běžných firem bude u většiny svých nástrojů v roli deployera.</p>
+
+        <h3>Provider: systém uvádíte pod vlastním jménem</h3>
+        <p>Provider je subjekt, který AI systém vyvíjí nebo si jej nechá vyvinout a uvádí jej na trh či do provozu pod vlastním jménem nebo značkou.<span class="fn"><a href="#zdroj-6">[6]</a></span></p>
+        <p>Do této role se můžete dostat například tehdy, když:</p>
+        <ul>
+          <li>prodáváte vlastní AI službu zákazníkům;</li>
+          <li>dodáváte white-label chatbot pod svou značkou;</li>
+          <li>necháte si vytvořit AI produkt a nabízíte jej jako vlastní;</li>
+          <li>významně měníte účel nebo fungování cizího systému;</li>
+          <li>integrujete model třetí strany do produktu, za jehož výslednou funkci odpovídáte vy.</li>
+        </ul>
+        <p>To, že systém používá model OpenAI, Anthropic nebo Google, automaticky neznamená, že všechny povinnosti nese tato společnost.</p>
+        <p>Model, výsledný AI systém, uživatelské rozhraní a konkrétní firemní nasazení jsou různé vrstvy odpovědnosti.</p>
+
+        <!-- 6. Use-casy -->
+        <h2>Sedm běžných use-casů české firmy</h2>
+
+        <h3>1. Zaměstnanci používají ChatGPT, Claude nebo Copilot</h3>
+        <p class="uc-meta"><span><b>Pravděpodobná role:</b> deployer</span><span><b>Bezprostřední problém:</b> AI gramotnost, data a odpovědnost za výstup</span></p>
+        <p>Firma by měla vědět:</p>
+        <ul>
+          <li>kdo nástroje používá;</li>
+          <li>jaké typy dat do nich smí vkládat;</li>
+          <li>zda se používají osobní nebo klientská data;</li>
+          <li>kdo kontroluje výsledky;</li>
+          <li>ve kterých procesech je AI pouze pomocník a kde už ovlivňuje rozhodnutí.</li>
+        </ul>
+        <p>Pouhé zakoupení enterprise licence není governance.</p>
+        <p>Licence může řešit část podmínek zpracování dat. Neřeší, zda zaměstnanec pozná halucinaci, zda má oprávnění daný dokument zpracovat a zda výstup AI smí použít jako podklad pro rozhodnutí.</p>
+
+        <h3>2. Na webu běží chatbot nebo voice agent</h3>
+        <p class="uc-meta"><span><b>Pravděpodobná role:</b> deployer, u vlastního nebo white-label řešení případně provider</span><span><b>Bezprostřední problém:</b> transparentnost a odpovědnost za jednání systému</span></p>
+        <p>Zákazník musí v relevantních situacích vědět, že komunikuje s AI.<span class="fn"><a href="#zdroj-5">[5]</a></span></p>
+        <p>To ale není jediná otázka.</p>
+        <p>Vedení musí rozhodnout:</p>
+        <ul>
+          <li>co agent smí zákazníkovi slíbit;</li>
+          <li>k jakým systémům a datům má přístup;</li>
+          <li>zda může měnit objednávky nebo termíny;</li>
+          <li>kdy musí předat konverzaci člověku;</li>
+          <li>kdo odpovídá za chybnou informaci;</li>
+          <li>jak se zaznamenávají incidenty;</li>
+          <li>jak se měří obchodní přínos.</li>
+        </ul>
+        <p>Označení „Jsem AI asistent“ je nejsnazší část celého nasazení.</p>
+
+        <h3>3. Marketing generuje texty, obrázky a videa</h3>
+        <p class="uc-meta"><span><b>Pravděpodobná role:</b> deployer</span><span><b>Bezprostřední problém:</b> původ obsahu, lidská kontrola a reputační riziko</span></p>
+        <p>AI Act neznamená, že každý text opravený pomocí AI musí mít viditelný štítek.</p>
+        <p>Zvláštní pozornost je ale potřeba u:</p>
+        <ul>
+          <li>deepfake obrazu, zvuku nebo videa;</li>
+          <li>obsahu, který by mohl být mylně považován za autentický;</li>
+          <li>AI generovaných publikací o otázkách veřejného zájmu;</li>
+          <li>automatického publikování bez lidské kontroly;</li>
+          <li>obsahu, za který nikdo nepřevzal redakční odpovědnost.</li>
+        </ul>
+        <p>Poskytovatelé generativních systémů mají řešit strojově čitelné označení syntetického obsahu. Firma používající takový nástroj by měla ověřit, zda její technologický a publikační řetězec potřebná metadata zachovává.<span class="fn"><a href="#zdroj-5">[5]</a></span></p>
+
+        <h3>4. AI vybírá kandidáty nebo hodnotí zaměstnance</h3>
+        <p class="uc-meta"><span><b>Možná klasifikace:</b> vysoce rizikový systém podle konkrétního účelu</span><span><b>Bezprostřední problém:</b> diskriminace, lidská kontrola a dokumentace rozhodnutí</span></p>
+        <p>AI systémy určené například pro výběr kandidátů, rozhodování o pracovních vztazích, přidělování úkolů nebo hodnocení výkonu mohou spadat do přílohy III AI Actu.<span class="fn"><a href="#zdroj-7">[7]</a></span></p>
+        <p>Hlavní povinnosti pro tuto kategorii byly odloženy do 2. prosince 2027. To ale není důvod systém nekontrolovaně zavést.</p>
+        <p>Nejdřív musíte vědět:</p>
+        <ul>
+          <li>co systém skutečně hodnotí;</li>
+          <li>z jakých dat vychází;</li>
+          <li>zda výstup pouze připravuje podklady, nebo fakticky rozhoduje;</li>
+          <li>kdo může jeho doporučení změnit;</li>
+          <li>zda je možné rozhodnutí vysvětlit;</li>
+          <li>zda jsou výsledky průběžně kontrolovány na systematické zkreslení.</li>
+        </ul>
+        <p>HR nesmí být testovací laboratoř pro nástroj, jehož logiku nikdo ve firmě neumí obhájit.</p>
+
+        <h3>5. Interní AI asistent pracuje nad firemními dokumenty</h3>
+        <p class="uc-meta"><span><b>Pravděpodobná klasifikace:</b> běžný nebo omezeně rizikový systém</span><span><b>Bezprostřední problém:</b> oprávnění, kvalita znalostí a únik dat</span></p>
+        <p>Interní knowledge assistant zpravidla nebude vysoce rizikovým systémem jen proto, že používá generativní AI.</p>
+        <p>Může však způsobit reálné škody, pokud:</p>
+        <ul>
+          <li>zpřístupní dokument člověku bez oprávnění;</li>
+          <li>použije zastaralou směrnici;</li>
+          <li>spojí informace z různých klientských složek;</li>
+          <li>prezentuje nepotvrzenou poznámku jako závazný postup;</li>
+          <li>vytvoří výstup bez odkazu na zdroj.</li>
+        </ul>
+        <p>Regulatorní klasifikace je pouze jedna část rozhodnutí. Druhou je provozní riziko a třetí ekonomická návratnost.</p>
+
+        <h3>6. AI hodnotí bonitu nebo přístup ke službě</h3>
+        <p class="uc-meta"><span><b>Možná klasifikace:</b> vysoce rizikový systém</span><span><b>Bezprostřední problém:</b> dopad na práva osob a vysvětlitelnost rozhodnutí</span></p>
+        <p>Některé systémy používané pro posuzování úvěruschopnosti, rizika nebo přístupu k základním službám mohou spadat mezi vysoce rizikové use-casy.<span class="fn"><a href="#zdroj-7">[7]</a></span></p>
+        <p>Zde nestačí otázka, zda systém „jen doporučuje“.</p>
+        <p>Pokud zaměstnanec doporučení AI téměř vždy mechanicky potvrdí, lidská přítomnost nemusí představovat skutečnou lidskou kontrolu.</p>
+
+        <h3>7. AI rozpoznává emoce zaměstnanců</h3>
+        <p class="uc-meta"><span><b>Klasifikace:</b> některá použití jsou zakázána</span><span><b>Bezprostřední rozhodnutí:</b> nenasazovat bez specializovaného posouzení</span></p>
+        <p>Používání AI k odvozování emocí lidí na pracovišti je v zásadě zakázáno, kromě omezených případů souvisejících například s medicínou nebo bezpečností.<span class="fn"><a href="#zdroj-8">[8]</a></span></p>
+        <p>Pokud vám vendor nabízí analýzu nálady zaměstnanců z hlasu, obličeje nebo biometrických projevů, nejde o nevinný HR dashboard.</p>
+        <p>Je to důvod projekt zastavit a nechat jeho zákonnost i skutečný účel nezávisle prověřit.</p>
+
+        <!-- 7. Registr -->
+        <h2>Bez registru AI nevíte, co řídíte</h2>
+        <p>Prvním praktickým výstupem AI governance nemá být padesátistránková směrnice.</p>
+        <p>Má to být <strong>registr používaných AI systémů a use-casů</strong>.</p>
+        <p>Minimálně by měl obsahovat:</p>
+        <div class="table-wrap">
+          <table class="cmp">
+            <thead>
+              <tr>
+                <th scope="col">Pole</th>
+                <th scope="col">Co evidovat</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Systém</th><td>Název nástroje nebo řešení</td></tr>
+              <tr><th scope="row">Use-case</th><td>K čemu jej firma skutečně používá</td></tr>
+              <tr><th scope="row">Vlastník</th><td>Člověk odpovědný za provozní výsledek</td></tr>
+              <tr><th scope="row">Dodavatel</th><td>Vendor, model a implementační partner</td></tr>
+              <tr><th scope="row">Role firmy</th><td>Provider, deployer nebo jiná role</td></tr>
+              <tr><th scope="row">Uživatelé</th><td>Kdo systém ovládá</td></tr>
+              <tr><th scope="row">Dotčené osoby</th><td>Koho mohou výstupy ovlivnit</td></tr>
+              <tr><th scope="row">Data</th><td>Jaká data systém přijímá a kam je předává</td></tr>
+              <tr><th scope="row">Výstup</th><td>Co systém doporučuje, generuje nebo vykonává</td></tr>
+              <tr><th scope="row">Lidská kontrola</th><td>Kdo a kdy musí zasáhnout</td></tr>
+              <tr><th scope="row">Riziko</th><td>Předběžná regulatorní a provozní klasifikace</td></tr>
+              <tr><th scope="row">Transparentnost</th><td>Jak je informován zákazník, zaměstnanec nebo veřejnost</td></tr>
+              <tr><th scope="row">KPI</th><td>Jak se měří přínos, kvalita a chybovost</td></tr>
+              <tr><th scope="row">Stav</th><td>Experiment, pilot, produkce, pozastaveno, ukončeno</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Bez registru nemůžete:</p>
+        <ul>
+          <li>určit, které povinnosti se vás týkají;</li>
+          <li>navrhnout přiměřenou AI gramotnost;</li>
+          <li>řídit přístupy k datům;</li>
+          <li>posoudit dodavatele;</li>
+          <li>sledovat incidenty;</li>
+          <li>doložit lidskou kontrolu;</li>
+          <li>spočítat skutečnou návratnost;</li>
+          <li>rozhodnout, který experiment zastavit.</li>
+        </ul>
+        <p>Registr není compliance evidence vytvořená pro kontrolní orgán.</p>
+        <p>Je to manažerský nástroj pro řízení investic a rizika.</p>
+
+        <!-- 8. Kdo to vlastní -->
+        <h2>Proč nestačí právník, IT ani vendor</h2>
+        <p>AI Act je mezioborový problém. Právě proto často zůstane bez skutečného vlastníka.</p>
+        <div class="table-wrap">
+          <table class="cmp">
+            <thead>
+              <tr>
+                <th scope="col">Role</th>
+                <th scope="col">Co umí dobře</th>
+                <th scope="col">Co typicky nevlastní</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Právník</th><td>Výklad nařízení a právní riziko</td><td>Provoz systému, architekturu, adopci a ROI</td></tr>
+              <tr><th scope="row">DPO</th><td>Osobní údaje a GDPR</td><td>Celé AI portfolio a obchodní priority</td></tr>
+              <tr><th scope="row">IT a bezpečnost</th><td>Identity, přístupy, integrace a ochranu infrastruktury</td><td>Výběr use-casů a odpovědnost za byznysový dopad</td></tr>
+              <tr><th scope="row">Dodavatel</th><td>Vlastní produkt a jeho implementaci</td><td>Zájem firmy napříč vendory a návratnost celého portfolia</td></tr>
+              <tr><th scope="row">Vedoucí oddělení</th><td>Konkrétní proces a jeho potřeby</td><td>Jednotná pravidla a rizika napříč firmou</td></tr>
+              <tr class="role-hi"><th scope="row">Head of AI</th><td>Priority, governance, architekturu, nasazení a měřený dopad</td><td>Finální specializované právní stanovisko</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>AI Act vám nepřikazuje vytvořit pozici <a href="/co-je-head-of-ai">Head of AI</a> ani konkrétní governance strukturu.<span class="fn"><a href="#zdroj-4">[4]</a></span></p>
+        <p>Přikazuje nebo postupně zavádí povinnosti, které musí někdo převést do reality.</p>
+        <p>To je podstatný rozdíl.</p>
+        <p>Právník může určit právní interpretaci. Nemůže sám rozhodnout, zda se voice agent ekonomicky vyplatí, jaká oprávnění potřebuje, kde musí předávat konverzaci člověku a který vendor nabízí nejlepší architekturu bez lock-inu.</p>
+        <p>IT může připojit systém k CRM. Nemůže samo rozhodnout, zda má agent právo měnit cenu, slibovat termín nebo odmítnout zákazníka.</p>
+        <p>Vendor vám vysvětlí, proč je jeho produkt bezpečný. Nebude vám však nezávisle říkat, že jeho produkt ve vašem procesu nedává ekonomický smysl.</p>
+        <p>Někdo musí držet celý řetězec:</p>
+        <div class="callout">
+          <p><strong>Business case → klasifikace → data → architektura → lidská kontrola → provoz → KPI → board reporting.</strong></p>
+        </div>
+        <p>Pokud tento člověk neexistuje, AI agendu fakticky řídí směs zaměstnanců, dodavatelů, IT a náhodně zakoupených licencí.</p>
+
+        <!-- 9. Plán -->
+        <h2>Třicetidenní plán pro CEO</h2>
+
+        <h3>Týden 1: zjistěte, co ve firmě skutečně běží</h3>
+        <p>Nespoléhejte pouze na centrálně nakoupené licence.</p>
+        <p>Zmapujte také:</p>
+        <ul>
+          <li>individuálně používané generativní nástroje;</li>
+          <li>AI funkce zabudované v CRM, ERP a kancelářských aplikacích;</li>
+          <li>automatizace vytvořené jednotlivými odděleními;</li>
+          <li>externí agentury používající AI vaším jménem;</li>
+          <li>piloty, které už ovlivňují zákazníky nebo zaměstnance.</li>
+        </ul>
+        <p>Výstupem je první verze registru AI.</p>
+
+        <h3>Týden 2: určete roli, riziko a vlastníka</h3>
+        <p>U každého use-casu určete:</p>
+        <ul>
+          <li>proč existuje;</li>
+          <li>kdo jej vlastní;</li>
+          <li>zda jste provider nebo deployer;</li>
+          <li>jaká data používá;</li>
+          <li>koho ovlivňuje;</li>
+          <li>zda může spadat mezi zakázaná nebo vysoce riziková použití;</li>
+          <li>zda se na něj vztahuje transparentnost;</li>
+          <li>kdo právně a provozně odpovídá za výstup.</li>
+        </ul>
+        <p>Systém bez jmenovaného vlastníka nesmí přejít do produkce.</p>
+
+        <h3>Týden 3: nastavte minimální kontrolní vrstvu</h3>
+        <p>Pro každý schválený systém definujte:</p>
+        <ul>
+          <li>přístupy a minimální oprávnění;</li>
+          <li>povolená a zakázaná data;</li>
+          <li>lidské schvalovací body;</li>
+          <li>logování;</li>
+          <li>způsob hlášení incidentu;</li>
+          <li>pravidla pro transparentnost;</li>
+          <li>požadovanou přípravu uživatelů;</li>
+          <li>fallback při selhání;</li>
+          <li>možnost zásah vrátit nebo systém vypnout.</li>
+        </ul>
+        <p>Cílem není nulové riziko. Cílem je známé, přiměřené a řízené riziko.</p>
+
+        <h3>Týden 4: převeďte registr do board rozhodnutí</h3>
+        <p>Každý use-case zařaďte do jedné ze čtyř kategorií:</p>
+        <ul>
+          <li><strong>Continue</strong> — pokračovat za současných podmínek;</li>
+          <li><strong>Remediate</strong> — pokračovat až po odstranění konkrétní mezery;</li>
+          <li><strong>Pilot only</strong> — omezit na kontrolovaný pilot;</li>
+          <li><strong>Suspend</strong> — pozastavit, protože riziko nebo ekonomika nejsou přijatelné.</li>
+        </ul>
+        <p>Board nemá dostat seznam AI nástrojů.</p>
+        <p>Má dostat přehled:</p>
+        <ul>
+          <li>co AI firmě vydělává nebo šetří;</li>
+          <li>kde vzniká riziko;</li>
+          <li>kdo za systém odpovídá;</li>
+          <li>co musí být opraveno;</li>
+          <li>kolik bude stát další fáze;</li>
+          <li>které projekty mají být zastaveny.</li>
+        </ul>
+
+        <!-- 10. Riziko -->
+        <h2>Největší riziko není pokuta</h2>
+        <p>Pokuty jsou viditelná část regulace. Pro většinu středních firem ale nebude největším nákladem první regulatorní sankce.</p>
+        <p>Větší provozní náklady často vzniknou dříve:</p>
+        <ul>
+          <li>několik oddělení platí stejné nebo překrývající se nástroje;</li>
+          <li>firemní data končí ve službách bez schválení;</li>
+          <li>AI agent provede akci, za kterou nikdo nepřevzal odpovědnost;</li>
+          <li>firma musí hotovou integraci nákladně předělat;</li>
+          <li>zaměstnanci přestanou výstupům systému věřit;</li>
+          <li>zákazník dostane chybný slib;</li>
+          <li>vendor lock-in znemožní levnou změnu modelu;</li>
+          <li>systém nemá KPI, takže nelze rozhodnout, zda jej rozšířit nebo ukončit.</li>
+        </ul>
+        <p>Dobrá AI governance proto není náklad vytvořený Bruselem.</p>
+        <p>Je to provozní disciplína, kterou firma potřebuje i v případě, že by AI Act neexistoval.</p>
+
+        <!-- 11. Co schválit -->
+        <h2>Co by měl CEO schválit tento týden</h2>
+        <ol>
+          <li><strong>Jmenovat jednoho vlastníka AI agendy.</strong> Ne pracovní skupinu bez pravomoci. Jednoho člověka, u kterého končí odpovědnost.</li>
+          <li><strong>Zahájit inventuru všech AI use-casů.</strong> Včetně neoficiálních nástrojů a AI funkcí zabudovaných v existujícím softwaru.</li>
+          <li><strong>Zakázat přechod nového systému do produkce bez registrace.</strong> Každý produkční use-case musí mít účel, vlastníka, data, lidskou kontrolu a KPI.</li>
+          <li><strong>Prověřit zákaznicky orientované systémy před 2. srpnem 2026.</strong> Zejména chatboty, voice agenty, deepfake obsah a automaticky publikovaný obsah.</li>
+          <li><strong>Zavést cílenou AI gramotnost.</strong> Podle rolí a systémů, nikoliv jako jeden obecný kurz pro všechny.</li>
+          <li><strong>Zvýšeně kontrolovat HR, scoring, biometrii a rozhodování o lidech.</strong> Odklad high-risk povinností není souhlas s nekontrolovaným nasazením.</li>
+          <li><strong>Oddělit právní stanovisko od provozního vlastnictví.</strong> Právník má potvrdit sporné klasifikace. Někdo jiný musí řídit celý systém.</li>
+        </ol>
+
+        <!-- 12. Doporučení -->
+        <h2>Moje doporučení</h2>
+        <p>Nezačínejte rozsáhlým „AI Act compliance projektem“.</p>
+        <p>Začněte převzetím kontroly nad AI, kterou už používáte.</p>
+        <p>Pro firmu s jedním jednoduchým AI nástrojem může agendu dočasně zvládnout CEO, CTO nebo jiný schopný interní vlastník.</p>
+        <p>Ve chvíli, kdy ale AI:</p>
+        <ul>
+          <li>běží napříč více odděleními;</li>
+          <li>používá firemní nebo osobní data;</li>
+          <li>komunikuje se zákazníky;</li>
+          <li>ovlivňuje zaměstnance;</li>
+          <li>provádí akce v podnikových systémech;</li>
+          <li>spotřebovává významný rozpočet;</li>
+          <li>nebo má přinést měřitelný dopad,</li>
+        </ul>
+        <p>už nejde o vedlejší IT úkol.</p>
+        <p>Firma potřebuje člověka s mandátem spojit business case, technologii, governance, dodavatele, nasazení a board reporting do jednoho řízeného systému.</p>
+        <p>To je role <a href="/chief-ai-officer">Head of AI</a>.</p>
+
+        <!-- 13. CTA -->
+        <div class="cta-block">
+          <p><strong>Zmapujte AI systémy a odpovědnost ve firmě.</strong> Během úvodního AI Leadership Call zjistíme, kde už AI ve firmě běží, které systémy potřebují okamžitou pozornost, zda vám stačí interní vlastník, zda potřebujete úzkou nápravu — nebo zda dává smysl 90denní AI Leadership Sprint. Bez prodejní prezentace. Pokud širší mandát nedává ekonomický smysl, řeknu to.</p>
+          <a href="/#kontakt" class="btn btn-primary">Domluvit AI Leadership Call</a>
+        </div>
+
+        <!-- 14. FAQ -->
+        <h2>Časté otázky</h2>
+        <div class="faq">
+          <details class="faq-item">
+            <summary>Týká se AI Act firmy, jejíž zaměstnanci jen používají ChatGPT?</summary>
+            <p>Ano. Firma je zpravidla deployerem AI systému a týká se jí minimálně povinnost přijímat přiměřená opatření na podporu AI gramotnosti. Podle způsobu použití se mohou přidat povinnosti související s transparentností, ochranou osobních údajů, pracovním právem nebo konkrétním regulovaným procesem.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Musíme označovat každý text vytvořený pomocí AI?</summary>
+            <p>Ne. AI Act nestanoví všeobecnou povinnost označit každý text, na kterém se AI jakkoliv podílela. Specifické povinnosti se týkají například deepfake obsahu a některých textů publikovaných za účelem informování veřejnosti o otázkách veřejného zájmu. Význam má také lidská kontrola a převzetí redakční odpovědnosti.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Stačí zaměstnancům poslat pravidla používání AI?</summary>
+            <p>Samotné zaslání dokumentu nemusí být přiměřené. Opatření mají vycházet z používaných systémů, zkušeností uživatelů, účelu použití a souvisejících rizik. Firma by měla být schopna doložit, co udělala a proč to považovala za přiměřené.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Musíme mít ze zákona AI officera nebo Head of AI?</summary>
+            <p>Ne. AI Act konkrétní organizační strukturu nenařizuje. Firma však musí zajistit plnění povinností a odpovědné používání AI. U více systémů napříč odděleními je bez jednoho vlastníka velmi obtížné udržet jednotná pravidla, odpovědnost a měření dopadu.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Když se high-risk pravidla odložila, můžeme s přípravou počkat?</summary>
+            <p>Technicky máte více času na splnění specifických high-risk požadavků. Provozně čekat nedává smysl. Klasifikace, smlouvy, datové toky, lidská kontrola a dokumentace se obtížně přidávají až do hotového systému. Navíc dál platí ostatní právní a provozní požadavky.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Nahrazuje Head of AI právníka?</summary>
+            <p>Ne. Head of AI připraví registr systémů, klasifikaci use-casů, provozní pravidla, technické podklady a odpovědnostní model. Specializovaný advokát má potvrdit sporné právní otázky. Smyslem Head of AI je zajistit, aby právní závěr nezůstal na papíře, ale promítl se do architektury, procesů a reálného provozu.</p>
+          </details>
+        </div>
+
+        <!-- 15. Zdroje -->
+        <h2 id="zdroje">Důvěryhodné zdroje</h2>
+        <ol class="sources">
+          <li id="zdroj-1"><b>Nařízení Evropského parlamentu a Rady (EU) 2024/1689 — Artificial Intelligence Act.</b> Základní text evropské regulace AI, účinný od 1. srpna 2024.</li>
+          <li id="zdroj-2"><b>Nařízení Evropského parlamentu a Rady (EU) 2026/1744 — Digital Omnibus on AI.</b> Finální právní text změn, publikovaný v Úředním věstníku EU a účinný od 27. července 2026.</li>
+          <li id="zdroj-3"><b>Evropská komise: AI Act — application timeline.</b> Aktuální přehled termínů včetně 2. prosince 2027 pro přílohu III a 2. srpna 2028 pro regulované výrobky.</li>
+          <li id="zdroj-4"><b>Evropská komise: AI Literacy — Questions &amp; Answers.</b> Oficiální výklad změněného článku 4, přiměřených opatření, dokumentace a dohledu.</li>
+          <li id="zdroj-5"><b>Evropská komise: Transparency obligations under Article 50.</b> Pokyny a FAQ k chatbotům, označování syntetického obsahu, deepfake a textům o veřejném zájmu.</li>
+          <li id="zdroj-6"><b>EU AI Act Service Desk: Article 3 — Definitions.</b> Oficiální evropský informační portál s definicemi provider, deployer a dalších rolí.</li>
+          <li id="zdroj-7"><b>EU AI Act Service Desk: Annex III a povinnosti deployerů high-risk systémů.</b> Kategorie citlivých použití včetně zaměstnávání, vzdělávání, biometriky a základních služeb.</li>
+          <li id="zdroj-8"><b>Evropská komise: Guidelines on prohibited AI practices.</b> Výklad zakázaných praktik včetně rozpoznávání emocí na pracovišti a ve vzdělávání.</li>
+          <li id="zdroj-9"><b>Ministerstvo průmyslu a obchodu ČR: implementace AI Actu v Česku.</b> Informace o české implementaci, dozorové infrastruktuře a transparentnosti AI obsahu.</li>
+        </ol>
+        <p class="disclaimer">Stav zdrojů a legislativních termínů ověřen 28. července 2026. Text je praktickou analýzou AI governance pro vedení firem, nikoliv individuálním právním stanoviskem.</p>
+
+        <!-- Související průvodce -->
+        <nav class="related" aria-label="Související průvodce">
+          <h2>Související průvodce</h2>
+          <ul class="related-list">
+            <li><a href="/chief-ai-officer"><span>Chief AI Officer (CAIO): kdo ve firmě odpovídá za AI</span><span class="arrow" aria-hidden="true">→</span></a></li>
+            <li><a href="/co-je-head-of-ai"><span>Co je Head of AI / Chief AI Officer: kompletní průvodce rolí</span><span class="arrow" aria-hidden="true">→</span></a></li>
+            <li><a href="/kdy-firma-potrebuje-head-of-ai"><span>Kdy firma potřebuje Head of AI (a kdy ještě ne)</span><span class="arrow" aria-hidden="true">→</span></a></li>
+            <li><a href="/fractional-vs-fulltime-caio"><span>Fractional Head of AI vs full-time CAIO</span><span class="arrow" aria-hidden="true">→</span></a></li>
+          </ul>
+        </nav>
+      </div>
+    </article>
+  </main>
+
+  <!-- PATIČKA (převzato z homepage) -->
+  <footer style="border-top: 1px solid var(--color-divider); text-align: center;">
+    <div style="max-width: 1180px; margin: 0 auto; padding: clamp(44px, 6vw, 64px) clamp(20px, 4vw, 56px) 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 32px;">
+      <div>
+        <span style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 26px; line-height: 1;">headofai<span class="accent">.cz</span></span>
+        <p style="font-size: 15px; line-height: 1.6; margin: 12px auto 0; max-width: 40ch; color: color-mix(in srgb, var(--color-text) 55%, transparent);">Fractional AI leadership pro firmy, které chtějí kontrolu, měřitelný dopad a první AI pracovníky v provozu.</p>
+      </div>
+      <div>
+        <h4 style="font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 12px; color: color-mix(in srgb, var(--color-text) 45%, transparent);">Kontakt</h4>
+        <p style="display: flex; justify-content: center; align-items: center; gap: 8px; font-size: 15px; margin: 0 0 8px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; color: color-mix(in srgb, var(--color-text) 45%, transparent);"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg><a href="mailto:hello@headofai.cz">hello@headofai.cz</a></p>
+        <p style="display: flex; justify-content: center; align-items: center; gap: 8px; font-size: 15px; margin: 0 0 8px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; color: color-mix(in srgb, var(--color-text) 45%, transparent);"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg><a href="https://x.com/headofaicz">@headofaicz</a></p><p style="display: flex; justify-content: center; align-items: center; gap: 8px; font-size: 15px; margin: 0;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; color: color-mix(in srgb, var(--color-text) 45%, transparent);"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg><a href="https://www.linkedin.com/in/davidvesely/">David Veselý</a></p>
+      </div>
+      <div>
+        <h4 style="font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 12px; color: color-mix(in srgb, var(--color-text) 45%, transparent);">Provozovatel</h4>
+        <p style="font-size: 15px; margin: 0 0 4px; color: color-mix(in srgb, var(--color-text) 55%, transparent);">Vesely.ai s.r.o.</p>
+        <p style="font-size: 14px; margin: 0 0 4px; color: color-mix(in srgb, var(--color-text) 45%, transparent);">IČO: 23702907 · DIČ: CZ23702907</p>
+        <p style="font-size: 14px; margin: 0; color: color-mix(in srgb, var(--color-text) 45%, transparent);">Česko</p>
+      </div>
+    </div>
+    <div style="max-width: 1180px; margin: 32px auto 0; padding: 0 clamp(20px, 4vw, 56px);">
+      <p style="font-size: 14px; color: color-mix(in srgb, var(--color-text) 40%, transparent); border-top: 1px solid var(--color-divider); padding: 20px 0 28px; margin: 0;">© 2026 Vesely.ai s.r.o. · headofai.cz</p>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>

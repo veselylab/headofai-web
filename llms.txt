@@ -28,6 +28,7 @@
 
 Rozcestník: https://headofai.cz/blog/ — česká znalostní báze o řízení AI ve firmě pro foundery, CEO a vedení. Pokrývá vlastnictví AI agendy, role Head of AI / Chief AI Officer / CAIO, AI governance, registr AI systémů, EU AI Act v kontextu řízení firmy, řízení dodavatelů, měření návratnosti AI a reporting AI agendy boardu.
 
+- https://headofai.cz/eu-ai-act-zmeny-2026-pro-ceske-firmy — EU AI Act po AI Omnibusu: co musí český CEO udělat teď. Co změnilo nařízení (EU) 2026/1744 účinné od 27. 7. 2026 (odklad přílohy III na 2. 12. 2027, regulované výrobky 2. 8. 2028, zmírněný čl. 4 o AI gramotnosti, transparentnost dle čl. 50 od 2. 8. 2026), rozdíl rolí provider vs deployer, sedm typických use-casů české firmy, struktura registru AI systémů a třicetidenní plán pro CEO. Praktická analýza pro vedení, ne právní stanovisko.
 - https://headofai.cz/chief-ai-officer — Chief AI Officer (CAIO): kdo ve firmě odpovídá za AI. Pět složek mandátu role, srovnání s IT/CTO/právním oddělením/CEO, čtyři oblasti řízení (portfolio, governance, dodavatelé, dopad), KPI a kdy stačí externí CAIO.
 - https://headofai.cz/co-je-head-of-ai — Co je Head of AI / Chief AI Officer: co role dělá, čím se liší od CTO, CDO a AI Engineera, jak se liší označení Head of AI / Chief AI Officer / CAIO a jaké kompetence role vyžaduje.
 - https://headofai.cz/plat-chief-ai-officer — Plat Head of AI / Chief AI Officer: reálná rozpětí v ČR podle velikosti firmy, srovnání se zahraničím a náklad fractional modelu.

@@ -105,10 +105,15 @@
     /* Poznámky pod čarou / zdroje */
     .fn { font-size: 12px; vertical-align: super; line-height: 0; margin-left: 1px; }
     .fn a { text-decoration: none; color: var(--color-accent); }
-    .sources { margin: 26px 0 0; padding: 0; list-style: none; counter-reset: src; }
-    .sources li { position: relative; padding: 14px 0 14px 34px; border-bottom: 1px solid var(--color-divider); font-size: 15px; line-height: 1.6; color: color-mix(in srgb, var(--color-text) 68%, transparent); margin: 0; }
-    .sources li::before { counter-increment: src; content: "[" counter(src) "]"; position: absolute; left: 0; top: 14px; color: var(--color-accent); font-size: 13px; }
+    .prose ol.sources { margin: 26px 0 0; padding: 0; list-style: none; counter-reset: src; }
+    .prose ol.sources li { position: relative; padding: 14px 0 14px 34px; border-bottom: 1px solid var(--color-divider); font-size: 15px; line-height: 1.6; color: color-mix(in srgb, var(--color-text) 68%, transparent); margin: 0; }
+    .prose ol.sources li::before { counter-increment: src; content: "[" counter(src) "]"; position: absolute; left: 0; top: 14px; color: var(--color-accent); font-size: 13px; }
     .sources li b { color: color-mix(in srgb, var(--color-text) 88%, transparent); font-weight: 600; }
+    .sources li a { color: inherit; text-decoration: none; }
+    .sources li a:hover b { color: var(--color-accent); }
+    .sources li a:hover { text-decoration: none; }
+    .src-dom { display: inline-block; margin-left: 6px; font-size: 13px; color: color-mix(in srgb, var(--color-text) 40%, transparent); white-space: nowrap; }
+    .src-dom::before { content: "↗ "; color: var(--color-accent); }
     .disclaimer { font-size: 14px; line-height: 1.65; color: color-mix(in srgb, var(--color-text) 48%, transparent); margin: 22px 0 0; font-style: italic; }
 
     /* Související průvodce (cross-link cluster) */
@@ -587,15 +592,15 @@
         <!-- 15. Zdroje -->
         <h2 id="zdroje">Důvěryhodné zdroje</h2>
         <ol class="sources">
-          <li id="zdroj-1"><b>Nařízení Evropského parlamentu a Rady (EU) 2024/1689 — Artificial Intelligence Act.</b> Základní text evropské regulace AI, účinný od 1. srpna 2024.</li>
-          <li id="zdroj-2"><b>Nařízení Evropského parlamentu a Rady (EU) 2026/1744 — Digital Omnibus on AI.</b> Finální právní text změn, publikovaný v Úředním věstníku EU a účinný od 27. července 2026.</li>
-          <li id="zdroj-3"><b>Evropská komise: AI Act — application timeline.</b> Aktuální přehled termínů včetně 2. prosince 2027 pro přílohu III a 2. srpna 2028 pro regulované výrobky.</li>
-          <li id="zdroj-4"><b>Evropská komise: AI Literacy — Questions &amp; Answers.</b> Oficiální výklad změněného článku 4, přiměřených opatření, dokumentace a dohledu.</li>
-          <li id="zdroj-5"><b>Evropská komise: Transparency obligations under Article 50.</b> Pokyny a FAQ k chatbotům, označování syntetického obsahu, deepfake a textům o veřejném zájmu.</li>
-          <li id="zdroj-6"><b>EU AI Act Service Desk: Article 3 — Definitions.</b> Oficiální evropský informační portál s definicemi provider, deployer a dalších rolí.</li>
-          <li id="zdroj-7"><b>EU AI Act Service Desk: Annex III a povinnosti deployerů high-risk systémů.</b> Kategorie citlivých použití včetně zaměstnávání, vzdělávání, biometriky a základních služeb.</li>
-          <li id="zdroj-8"><b>Evropská komise: Guidelines on prohibited AI practices.</b> Výklad zakázaných praktik včetně rozpoznávání emocí na pracovišti a ve vzdělávání.</li>
-          <li id="zdroj-9"><b>Ministerstvo průmyslu a obchodu ČR: implementace AI Actu v Česku.</b> Informace o české implementaci, dozorové infrastruktuře a transparentnosti AI obsahu.</li>
+          <li id="zdroj-1"><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj" target="_blank" rel="noopener"><b>Nařízení Evropského parlamentu a Rady (EU) 2024/1689 — Artificial Intelligence Act.</b></a> Základní text evropské regulace AI, účinný od 1. srpna 2024. <span class="src-dom">eur-lex.europa.eu</span></li>
+          <li id="zdroj-2"><a href="https://eur-lex.europa.eu/eli/reg/2026/1744/oj" target="_blank" rel="noopener"><b>Nařízení Evropského parlamentu a Rady (EU) 2026/1744 — Digital Omnibus on AI.</b></a> Finální právní text změn, publikovaný v Úředním věstníku EU a účinný od 27. července 2026. <span class="src-dom">eur-lex.europa.eu</span></li>
+          <li id="zdroj-3"><a href="https://ai-act-service-desk.ec.europa.eu/en/ai-act/timeline/timeline-implementation-eu-ai-act" target="_blank" rel="noopener"><b>Evropská komise: AI Act — application timeline.</b></a> Aktuální přehled termínů včetně 2. prosince 2027 pro přílohu III a 2. srpna 2028 pro regulované výrobky. <span class="src-dom">ai-act-service-desk.ec.europa.eu</span></li>
+          <li id="zdroj-4"><a href="https://digital-strategy.ec.europa.eu/en/faqs/ai-literacy-questions-answers" target="_blank" rel="noopener"><b>Evropská komise: AI Literacy — Questions &amp; Answers.</b></a> Oficiální výklad změněného článku 4, přiměřených opatření, dokumentace a dohledu. <span class="src-dom">digital-strategy.ec.europa.eu</span></li>
+          <li id="zdroj-5"><a href="https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act" target="_blank" rel="noopener"><b>Evropská komise: Transparency obligations under Article 50.</b></a> Pokyny a FAQ k chatbotům, označování syntetického obsahu, deepfake a textům o veřejném zájmu. <span class="src-dom">digital-strategy.ec.europa.eu</span></li>
+          <li id="zdroj-6"><a href="https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-3" target="_blank" rel="noopener"><b>EU AI Act Service Desk: Article 3 — Definitions.</b></a> Oficiální evropský informační portál s definicemi provider, deployer a dalších rolí. <span class="src-dom">ai-act-service-desk.ec.europa.eu</span></li>
+          <li id="zdroj-7"><a href="https://ai-act-service-desk.ec.europa.eu/en/ai-act/annex-3" target="_blank" rel="noopener"><b>EU AI Act Service Desk: Annex III a povinnosti deployerů high-risk systémů.</b></a> Kategorie citlivých použití včetně zaměstnávání, vzdělávání, biometriky a základních služeb. <span class="src-dom">ai-act-service-desk.ec.europa.eu</span></li>
+          <li id="zdroj-8"><a href="https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-prohibited-artificial-intelligence-ai-practices-defined-ai-act" target="_blank" rel="noopener"><b>Evropská komise: Guidelines on prohibited AI practices.</b></a> Výklad zakázaných praktik včetně rozpoznávání emocí na pracovišti a ve vzdělávání. <span class="src-dom">digital-strategy.ec.europa.eu</span></li>
+          <li id="zdroj-9"><a href="https://mpo.gov.cz/cz/podnikani/digitalni-ekonomika/umela-inteligence/" target="_blank" rel="noopener"><b>Ministerstvo průmyslu a obchodu ČR: implementace AI Actu v Česku.</b></a> Informace o české implementaci, dozorové infrastruktuře a transparentnosti AI obsahu. <span class="src-dom">mpo.gov.cz</span></li>
         </ol>
         <p class="disclaimer">Stav zdrojů a legislativních termínů ověřen 28. července 2026. Text je praktickou analýzou AI governance pro vedení firem, nikoliv individuálním právním stanoviskem.</p>
 

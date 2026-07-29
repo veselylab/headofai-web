@@ -118,6 +118,12 @@
     .guide-card .garw { margin: 14px 0 0; font-size: 14px; color: color-mix(in srgb, var(--color-text) 42%, transparent); }
     .guide-card:hover .garw { color: color-mix(in srgb, var(--color-text) 72%, transparent); }
     @media (max-width: 620px) { .guide-grid { grid-template-columns: 1fr; } }
+    /* Blog: 6 rovnocenných karet — stejná vizuální váha, žádná zvýrazněná */
+    .blog-grid { grid-template-columns: repeat(3, 1fr); }
+    .guide-card .gk { font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent); margin: 0 0 9px; }
+    .blog-more { margin: 26px 0 0; font-size: 15px; }
+    @media (max-width: 980px) { .blog-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 620px) { .blog-grid { grid-template-columns: 1fr; } }
 
     @media (max-width: 900px) { .g4 { grid-template-columns: repeat(2, 1fr); } .g3 { grid-template-columns: 1fr; } .g2 { grid-template-columns: 1fr; } }
     @media (max-width: 820px) { .bio-grid { grid-template-columns: 1fr; } }
@@ -140,6 +146,7 @@
         <a href="#o-mne" style="color: color-mix(in srgb, var(--color-text) 62%, transparent); font-size: 15px; text-decoration: none;" style-hover="color: var(--color-text);">O mně</a>
         <a href="#proces" style="color: color-mix(in srgb, var(--color-text) 62%, transparent); font-size: 15px; text-decoration: none;" style-hover="color: var(--color-text);">Proces</a>
         <a href="#ceny" style="color: color-mix(in srgb, var(--color-text) 62%, transparent); font-size: 15px; text-decoration: none;" style-hover="color: var(--color-text);">Ceny</a>
+        <a href="/blog/" style="color: color-mix(in srgb, var(--color-text) 62%, transparent); font-size: 15px; text-decoration: none;" style-hover="color: var(--color-text);">Blog</a>
       </div>
       <div class="lang-switch" role="group" aria-label="Jazyk"><a href="/" hreflang="cs" title="Česky" aria-label="Česky" aria-current="true"><svg viewBox="0 0 6 4" aria-hidden="true" focusable="false"><path fill="#fff" d="M0 0h6v2H0z"/><path fill="#d7141a" d="M0 2h6v2H0z"/><path fill="#11457e" d="M0 0l3 2-3 2z"/></svg></a><a href="/en/" hreflang="en" title="English" aria-label="English"><svg viewBox="0 0 60 30" aria-hidden="true" focusable="false"><path fill="#012169" d="M0 0h60v30H0z"/><path stroke="#fff" stroke-width="6" d="M0 0l60 30M60 0L0 30"/><path stroke="#c8102e" stroke-width="4" d="M0 0l60 30M60 0L0 30"/><path stroke="#fff" stroke-width="10" d="M30 0v30M0 15h60"/><path stroke="#c8102e" stroke-width="6" d="M30 0v30M0 15h60"/></svg></a></div><a href="#kontakt" class="btn btn-primary" style="text-decoration: none; padding: 11px 20px; font-size: 14px; white-space: nowrap;">Domluvit call</a>
     </nav>
@@ -651,34 +658,45 @@
       </div>
     </section>
 
-    <!-- 9b. PRŮVODCE (odkazy na články) -->
-    <section id="pruvodce" class="section" aria-label="Průvodce rolí Head of AI">
+    <!-- 9b. BLOG (nahradilo sekci Průvodce 29. 7. 2026) -->
+    <section id="blog" class="section" aria-label="Blog">
       <div class="wrap">
-        <span class="eyebrow">Průvodce</span>
-        <h2 class="h2">Průvodce rolí Head of AI</h2>
-        <p class="lead" style="margin: 22px 0 0;">Role Head of AI je v Česku nová. Tady najdete odpovědi na nejčastější otázky — od definice po plat a načasování.</p>
-        <div class="guide-grid">
+        <span class="eyebrow">Blog</span>
+        <h2 class="h2">Jak se AI ve firmě <span class="accent">řídí</span></h2>
+        <p class="lead" style="margin: 22px 0 0;">Píšu pro vedení firem, které AI už používají — ale potřebují ji řídit. Každý článek řeší jedno konkrétní rozhodnutí, ne přehled novinek.</p>
+        <div class="guide-grid blog-grid">
+          <a class="guide-card" href="/chief-ai-officer">
+            <span class="gk">Odpovědnost</span>
+            <span class="gt">Chief AI Officer (CAIO): kdo ve firmě odpovídá za AI</span>
+            <span class="gd">Jaký mandát role potřebuje, co reálně řídí a kdy stačí externí CAIO místo interní pozice.</span>
+            <span class="garw">Číst článek →</span>
+          </a>
           <a class="guide-card" href="/co-je-head-of-ai">
+            <span class="gk">Role</span>
             <span class="gt">Co je Head of AI / Chief AI Officer</span>
             <span class="gd">Co role obnáší, čím se liší od CTO, CDO a AI Engineera a kdy ji firma potřebuje.</span>
-            <span class="garw">Číst průvodce →</span>
-          </a>
-          <a class="guide-card" href="/plat-chief-ai-officer">
-            <span class="gt">Plat Head of AI: ČR vs zahraničí</span>
-            <span class="gd">Kolik stojí Head of AI v Česku i v zahraničí — a proč se vyplatí fractional model.</span>
-            <span class="garw">Číst průvodce →</span>
+            <span class="garw">Číst článek →</span>
           </a>
           <a class="guide-card" href="/kdy-firma-potrebuje-head-of-ai">
+            <span class="gk">Rozhodnutí</span>
             <span class="gt">Kdy firma potřebuje Head of AI</span>
-            <span class="gd">Signály, podle kterých poznáte, že je čas dát AI jasného vlastníka.</span>
-            <span class="garw">Číst průvodce →</span>
+            <span class="gd">Sedm signálů, podle kterých poznáte, že je čas dát AI jasného vlastníka — a kdy roli ještě nepotřebujete.</span>
+            <span class="garw">Číst článek →</span>
           </a>
           <a class="guide-card" href="/fractional-vs-fulltime-caio">
-            <span class="gt">Fractional vs full-time CAIO</span>
-            <span class="gd">Kdy stačí part-time CAIO a kdy se vyplatí full-time role.</span>
-            <span class="garw">Číst průvodce →</span>
+            <span class="gk">Model spolupráce</span>
+            <span class="gt">Fractional Head of AI vs full-time CAIO</span>
+            <span class="gd">Kdy stačí role na část úvazku a kdy se vyplatí full-time pozice: náklady, riziko a rychlost.</span>
+            <span class="garw">Číst článek →</span>
+          </a>
+          <a class="guide-card" href="/plat-chief-ai-officer">
+            <span class="gk">Náklady</span>
+            <span class="gt">Plat Head of AI: ČR vs zahraničí</span>
+            <span class="gd">Kolik stojí Head of AI v Česku i v zahraničí — a jaký je skutečný náklad fractional modelu.</span>
+            <span class="garw">Číst článek →</span>
           </a>
         </div>
+        <p class="blog-more"><a href="/blog/" style="color: var(--color-accent);">Všechny články a témata na blogu →</a></p>
       </div>
     </section>
 

@@ -24,9 +24,12 @@
 - Fractional AI Retainer: měsíční paušál podle rozsahu, typicky zlomek nákladu na full-time Head of AI
 - Spolupráce začíná bezplatným 30min AI Leadership Call, běží pod NDA, bez vendor lock-inu
 
-## Průvodce (články)
+## Blog (odborné články)
 
-- https://headofai.cz/co-je-head-of-ai — Co je Head of AI / Chief AI Officer: co role dělá, čím se liší od CTO, CDO a AI Engineera a jaké kompetence vyžaduje.
+Rozcestník: https://headofai.cz/blog/ — česká znalostní báze o řízení AI ve firmě pro foundery, CEO a vedení. Pokrývá vlastnictví AI agendy, role Head of AI / Chief AI Officer / CAIO, AI governance, registr AI systémů, EU AI Act v kontextu řízení firmy, řízení dodavatelů, měření návratnosti AI a reporting AI agendy boardu.
+
+- https://headofai.cz/chief-ai-officer — Chief AI Officer (CAIO): kdo ve firmě odpovídá za AI. Pět složek mandátu role, srovnání s IT/CTO/právním oddělením/CEO, čtyři oblasti řízení (portfolio, governance, dodavatelé, dopad), KPI a kdy stačí externí CAIO.
+- https://headofai.cz/co-je-head-of-ai — Co je Head of AI / Chief AI Officer: co role dělá, čím se liší od CTO, CDO a AI Engineera, jak se liší označení Head of AI / Chief AI Officer / CAIO a jaké kompetence role vyžaduje.
 - https://headofai.cz/plat-chief-ai-officer — Plat Head of AI / Chief AI Officer: reálná rozpětí v ČR podle velikosti firmy, srovnání se zahraničím a náklad fractional modelu.
 - https://headofai.cz/kdy-firma-potrebuje-head-of-ai — Kdy firma potřebuje Head of AI: 7 signálů, kdy roli ještě nepotřebujete a srovnání full-time vs fractional vs konzultant.
 - https://headofai.cz/fractional-vs-fulltime-caio — Fractional Head of AI vs full-time CAIO: definice modelu, srovnání nákladů a rizika a pro koho se hodí a pro koho ne.

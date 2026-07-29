@@ -56,6 +56,24 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://headofai.cz/model-registry</loc>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://headofai.cz/model-registry"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://headofai.cz/en/model-registry"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://headofai.cz/model-registry"/>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://headofai.cz/en/model-registry</loc>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://headofai.cz/model-registry"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://headofai.cz/en/model-registry"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://headofai.cz/model-registry"/>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://headofai.cz/chief-ai-officer</loc>
     <xhtml:link rel="alternate" hreflang="cs" href="https://headofai.cz/chief-ai-officer"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://headofai.cz/en/chief-ai-officer"/>

@@ -6,6 +6,7 @@ Generator blogu pro headofai.cz.
 Jediny zdroj pravdy je .build/blog.json. Tenhle skript z nej vygeneruje:
 
   index.html            karty v sekci #blog          (mezi <!-- BLOG:CARDS --> a <!-- /BLOG:CARDS -->)
+                        pocet omezuje "homepage_limit" v manifestu (hub ukazuje vsechny)
   en/index.html         totez anglicky
   blog/index.html       karty v hubu + ItemList JSON-LD
   en/blog/index.html    totez anglicky
@@ -58,9 +59,13 @@ def esc(text):
 # ---------------------------------------------------------------- generatory
 
 def homepage_cards(data, lang):
-    """Karty do sekce #blog na homepage."""
+    """Karty do sekce #blog na homepage. Homepage ukazuje jen prvnich N (mrizka 3
+    sloupce vypada nejlip pri nasobku 3); kompletni vypis je na /blog/."""
+    limit = data.get('homepage_limit')
     out = []
     for a in data['articles']:
+        if limit is not None and len(out) >= limit:
+            break
         loc = a.get(lang)
         if not loc:
             continue

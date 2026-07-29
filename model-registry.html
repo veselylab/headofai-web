@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Model registry: co je a proč ji firmy potřebují | headofai.cz</title>
+  <meta name="description" content="Model registry eviduje verze, původ, schválení, nasazení a odpovědnost za AI modely. Vysvětlujeme rozdíl mezi technickou registry, model inventory a AI governance.">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+  <link rel="canonical" href="https://headofai.cz/model-registry"><link rel="alternate" hreflang="cs" href="https://headofai.cz/model-registry"><link rel="alternate" hreflang="en" href="https://headofai.cz/en/model-registry"><link rel="alternate" hreflang="x-default" href="https://headofai.cz/model-registry">
+  <meta name="author" content="David Veselý">
+  <meta name="theme-color" content="#161718">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Model registry: proč firmy potřebují systém řízení AI modelů">
+  <meta property="og:description" content="Firma nemůže spolehlivě řídit AI model, pokud neví, která verze běží v produkci, z jakých dat vznikla, kdo ji schválil a kde je používána.">
+  <meta property="og:url" content="https://headofai.cz/model-registry">
+  <meta property="og:site_name" content="headofai.cz">
+  <meta property="og:locale" content="cs_CZ">
+  <meta property="og:image" content="https://headofai.cz/assets/profile.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@headofaicz">
+  <meta name="twitter:creator" content="@headofaicz">
+  <meta name="twitter:image" content="https://headofai.cz/assets/profile.webp">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="_ds/industry-0ef2ebb3-0745-41f6-a970-aac61ad8f5fb/styles.css">
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Article","headline":"Model registry: proč firmy potřebují systém řízení AI modelů","description":"Model registry eviduje verze, původ, schválení, nasazení a odpovědnost za AI modely. Rozdíl mezi technickou registry, enterprise model inventory a AI governance — a co mění generativní AI.","datePublished":"2026-07-29","dateModified":"2026-07-29","inLanguage":"cs-CZ","articleSection":"AI governance","author":{"@type":"Person","name":"David Veselý","url":"https://headofai.cz"},"publisher":{"@type":"Organization","name":"Vesely.ai s.r.o.","url":"https://headofai.cz"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://headofai.cz/model-registry"},"image":"https://headofai.cz/assets/profile.webp","about":[{"@type":"Thing","name":"Model registry"},{"@type":"Thing","name":"MLOps"},{"@type":"Thing","name":"AI governance"},{"@type":"Thing","name":"Model risk management"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Domů","item":"https://headofai.cz/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://headofai.cz/blog/"},{"@type":"ListItem","position":3,"name":"Model registry","item":"https://headofai.cz/model-registry"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Co je model registry?","acceptedAnswer":{"@type":"Answer","text":"Model registry je centrální systém pro evidenci a správu modelů v průběhu jejich životního cyklu. Nepropojuje jen soubor s natrénovaným modelem, ale váže na něj informace potřebné pro pochopení, validaci, schválení, nasazení, monitoring a případné vyřazení: název a účel, verze, artefakty, původ, použité datasety a trénovací běhy, výsledky evaluací, schvalovací stav, vlastníka, produkční nasazení a historii změn."}},{"@type":"Question","name":"Jaký je rozdíl mezi model registry a model inventory?","acceptedAnswer":{"@type":"Answer","text":"Technická model registry v MLOps spravuje modelové artefakty a jejich verze — odpovídá, která verze je produkční, který experiment ji vytvořil a jak provést rollback. Enterprise model inventory v model risk managementu a AI governance eviduje navíc obchodní účel, vlastníka, kritičnost, povolené a zakázané použití, validační stav, závislost na dodavateli, historii incidentů a plán vyřazení. Nemusí jít o jeden systém, ve vyspělé organizaci by ale měly tvořit propojený celek."}},{"@type":"Question","name":"Proč nestačí uložit model jako soubor?","acceptedAnswer":{"@type":"Answer","text":"Název souboru neřekne, zda jde o dvanáctý experiment nebo dvanáctou produkční verzi, z jaké verze dat model vznikl, který commit kódu byl použit, jaké proměnné očekává, jakých výsledků dosáhl, zda prošel nezávislou validací, kdo povolil nasazení a zda se někde stále nepoužívá starší verze. Název souboru není systém řízení."}},{"@type":"Question","name":"Potřebuje model registry každá firma?","acceptedAnswer":{"@type":"Answer","text":"Ne. Firma používající jen několik hotových SaaS aplikací bude potřebovat hlavně AI system inventory a pravidla pro dodavatele. Model registry je důležitá zejména tehdy, když organizace sama vyvíjí nebo dolaďuje modely, provozuje více verzí téhož modelu, používá modely v důležitých rozhodovacích procesech, potřebuje formální validaci, reprodukovatelnost a rychlý rollback, nebo podléhá přísnějším požadavkům auditu."}},{"@type":"Question","name":"Co mění generativní AI na model registry?","acceptedAnswer":{"@type":"Answer","text":"U generativní AI firma často nevlastní modelové váhy ani neřídí trénování — používá externí foundation model přes API. Chování aplikace pak neurčuje jen model, ale i systémový prompt, parametry, znalostní báze, embedding model, retrieval logika, dostupné nástroje, oprávnění agenta, guardrails a následné zpracování výstupu. Řízenou jednotkou proto není verze modelu, ale kombinace modelu, promptu, dat, nástrojů, konfigurace a evaluace."}},{"@type":"Question","name":"Zbavuje použití externího modelu firmu odpovědnosti?","acceptedAnswer":{"@type":"Answer","text":"Ne. Poskytovatel může změnit model, jeho chování, dostupné verze, cenu, limity, bezpečnostní filtry i podmínky zpracování dat. U proprietárního modelu může být evidence dokonce důležitější, protože organizace nemá přístup ke všem informacím o jeho konstrukci, datech a interních změnách."}}]}
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { margin: 0; text-wrap: pretty; }
+    *, *::before, *::after { box-sizing: border-box; }
+    a { color: #e7e2d6; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; text-decoration-color: color-mix(in srgb, #e7e2d6 32%, transparent); }
+    a:hover { color: #ffffff; text-decoration-color: currentColor; }
+    img { max-width: 100%; }
+
+    /* ---- převzato z homepage (konzistence) ---- */
+    .wrap { max-width: 1180px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); }
+    .accent { color: var(--color-accent); }
+
+    /* ==== ZNOVUPOUŽITELNÁ ŠABLONA ČLÁNKU (kopíruj pro další články) ==== */
+    .article { max-width: 760px; margin: 0 auto; padding: clamp(30px, 6vw, 56px) clamp(20px, 4vw, 40px) clamp(48px, 7vw, 80px); }
+    .breadcrumb { font-size: 13px; letter-spacing: 0.01em; color: color-mix(in srgb, var(--color-text) 45%, transparent); margin: 0 0 26px; }
+    .breadcrumb a { color: color-mix(in srgb, var(--color-text) 62%, transparent); }
+    .breadcrumb span { color: color-mix(in srgb, var(--color-text) 32%, transparent); margin: 0 8px; }
+    .article-h1 { font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(32px, 5.5vw, 52px); line-height: 1.08; letter-spacing: -0.02em; margin: 0; }
+    .article-meta { font-size: 14px; color: color-mix(in srgb, var(--color-text) 48%, transparent); margin: 18px 0 0; }
+    .article-hero { margin: 26px 0 0; }
+    .article-hero img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; border: 1px solid var(--color-divider); }
+    .article-answer { font-size: clamp(18px, 2.2vw, 21px); line-height: 1.62; color: color-mix(in srgb, var(--color-text) 85%, transparent); margin: 26px 0 0; padding: 24px 0 0; border-top: 1px solid var(--color-divider); }
+    .article-answer strong { color: var(--color-text); font-weight: 600; }
+
+    .prose h2 { font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(26px, 3.6vw, 34px); line-height: 1.15; letter-spacing: -0.01em; margin: 52px 0 0; }
+    .prose h3 { font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 20px; margin: 32px 0 0; }
+    .prose p { font-size: 17px; line-height: 1.75; color: color-mix(in srgb, var(--color-text) 80%, transparent); margin: 18px 0 0; }
+    .prose strong { color: var(--color-text); font-weight: 600; }
+    .prose ul { margin: 18px 0 0; padding: 0; list-style: none; }
+    .prose li { position: relative; padding-left: 22px; font-size: 17px; line-height: 1.7; color: color-mix(in srgb, var(--color-text) 80%, transparent); margin: 0 0 10px; }
+    .prose li:last-child { margin-bottom: 0; }
+    .prose li::before { content: "+"; position: absolute; left: 0; top: 0; color: var(--color-accent); font-weight: 600; }
+    .prose ol { margin: 18px 0 0; padding: 0 0 0 24px; }
+    .prose ol li { padding-left: 6px; }
+    .prose ol li::before { content: none; }
+    .prose code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.92em; background: color-mix(in srgb, var(--color-surface) 70%, transparent); border: 1px solid var(--color-divider); padding: 2px 6px; border-radius: 3px; word-break: break-all; }
+
+    .table-wrap { overflow-x: auto; margin: 26px 0 0; border: 1px solid var(--color-divider); }
+    table.cmp { border-collapse: collapse; width: 100%; min-width: 660px; font-size: 15px; }
+    table.cmp th, table.cmp td { text-align: left; padding: 14px 16px; border-bottom: 1px solid var(--color-divider); vertical-align: top; line-height: 1.5; }
+    table.cmp thead th { font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 16px; color: var(--color-text); background: color-mix(in srgb, var(--color-surface) 50%, transparent); }
+    table.cmp tbody th { font-weight: 600; color: var(--color-text); }
+    table.cmp td { color: color-mix(in srgb, var(--color-text) 72%, transparent); }
+    table.cmp tbody tr:last-child th, table.cmp tbody tr:last-child td { border-bottom: none; }
+    table.cmp .role-hi th, table.cmp .role-hi td { background: color-mix(in srgb, #c8ae71 8%, transparent); }
+    table.cmp .role-hi th { color: var(--color-accent-100); }
+
+    .faq { margin: 26px 0 0; border-top: 1px solid var(--color-divider); }
+    .faq-item { border-bottom: 1px solid var(--color-divider); }
+    .faq-item summary { cursor: pointer; list-style: none; padding: 20px 0; font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 20px; line-height: 1.25; color: var(--color-text); display: flex; justify-content: space-between; gap: 16px; align-items: center; }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after { content: "+"; color: color-mix(in srgb, var(--color-text) 55%, transparent); font-size: 24px; line-height: 1; flex: none; }
+    .faq-item[open] summary::after { content: "\2212"; }
+    .faq-item p { font-size: 16px; line-height: 1.7; color: color-mix(in srgb, var(--color-text) 78%, transparent); margin: 0; padding: 0 0 22px; max-width: 66ch; }
+
+    .cta-block { border: 1px solid color-mix(in srgb, #c8ae71 45%, transparent); background: color-mix(in srgb, #c8ae71 7%, transparent); padding: clamp(24px, 4vw, 34px); margin: 52px 0 0; text-align: center; }
+    .cta-block p { font-size: 18px; line-height: 1.6; margin: 0 0 20px; color: var(--color-text); }
+    .cta-block .btn { display: inline-block; text-decoration: none; padding: 13px 24px; font-size: 15px; }
+    /* ==== /ŠABLONA ČLÁNKU ==== */
+
+    /* Zvýrazněná teze */
+    .callout { border-left: 2px solid var(--color-accent); padding: 4px 0 4px 20px; margin: 28px 0 0; }
+    .callout p { font-size: clamp(17px, 2vw, 19px); line-height: 1.6; color: var(--color-text); margin: 0; }
+
+    /* Vrstva výkladu: co který systém odpovídá */
+    .qa { margin: 14px 0 0; padding-left: 20px; border-left: 1px solid var(--color-divider); }
+    .qa p { font-size: 16px; margin: 0; color: color-mix(in srgb, var(--color-text) 62%, transparent); font-style: italic; }
+
+    /* Nabídka domény — vizuálně oddělené od těla článku, aby to nečetlo jako obsah */
+    .offer { border: 1px solid var(--color-divider); background: color-mix(in srgb, var(--color-surface) 45%, transparent); padding: clamp(22px, 4vw, 34px); margin: 56px 0 0; }
+    .offer .offer-label { font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: color-mix(in srgb, var(--color-text) 42%, transparent); margin: 0; }
+    .offer h2 { margin: 10px 0 0 !important; font-size: clamp(22px, 3vw, 27px) !important; }
+    .offer p { font-size: 16px; }
+    .offer li { font-size: 16px; }
+    .offer .terms { font-size: 15px; line-height: 1.6; margin: 20px 0 0; color: color-mix(in srgb, var(--color-text) 70%, transparent); }
+    .offer .btn { display: inline-block; text-decoration: none; padding: 12px 22px; font-size: 15px; margin: 22px 0 0; }
+
+    /* Poznámky pod čarou / zdroje */
+    .fn { font-size: 12px; vertical-align: super; line-height: 0; margin-left: 1px; }
+    .fn a { text-decoration: none; color: var(--color-accent); }
+    .prose ol.sources { margin: 26px 0 0; padding: 0; list-style: none; counter-reset: src; }
+    .prose ol.sources li { position: relative; padding: 14px 0 14px 34px; border-bottom: 1px solid var(--color-divider); font-size: 15px; line-height: 1.6; color: color-mix(in srgb, var(--color-text) 68%, transparent); margin: 0; }
+    .prose ol.sources li::before { counter-increment: src; content: "[" counter(src) "]"; position: absolute; left: 0; top: 14px; color: var(--color-accent); font-size: 13px; }
+    .sources li b { color: color-mix(in srgb, var(--color-text) 88%, transparent); font-weight: 600; }
+    .sources li a { color: inherit; text-decoration: none; }
+    .sources li a:hover b { color: var(--color-accent); }
+    .sources li a:hover { text-decoration: none; }
+    .src-dom { display: inline-block; margin-left: 6px; font-size: 13px; color: color-mix(in srgb, var(--color-text) 40%, transparent); white-space: nowrap; }
+    .src-dom::before { content: "↗ "; color: var(--color-accent); }
+    .disclaimer { font-size: 14px; line-height: 1.65; color: color-mix(in srgb, var(--color-text) 48%, transparent); margin: 22px 0 0; font-style: italic; }
+
+    /* Související průvodce (cross-link cluster) */
+    .related { margin: 52px 0 0; padding-top: 30px; border-top: 1px solid var(--color-divider); }
+    .related h2 { margin: 0; }
+    .related-list { margin: 20px 0 0; padding: 0; list-style: none; }
+    .related-list li { margin: 0; padding: 0; }
+    .related-list li::before { content: none; }
+    .related-list a { display: flex; justify-content: space-between; align-items: baseline; gap: 20px; padding: 16px 0; border-bottom: 1px solid var(--color-divider); font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 18px; line-height: 1.3; color: var(--color-text); text-decoration: none; }
+    .related-list li:first-child a { border-top: 1px solid var(--color-divider); }
+    .related-list a:hover { color: var(--color-accent); }
+    .related-list a .arrow { color: var(--color-accent); flex: none; }
+
+    @media (max-width: 768px) { #nav-links { display: none !important; } header nav > .lang-switch { margin-left: auto; } }
+    .lang-switch { display: flex; align-items: center; gap: 8px; }
+    .lang-switch a { display: block; width: 26px; height: 18px; border-radius: 3px; overflow: hidden; line-height: 0; opacity: 0.45; box-shadow: 0 0 0 1px rgba(255,255,255,0.16); transition: opacity 180ms ease, box-shadow 180ms ease; }
+    .lang-switch a:hover, .lang-switch a:focus-visible { opacity: 0.9; }
+    .lang-switch a[aria-current="true"] { opacity: 1; box-shadow: 0 0 0 1px var(--color-accent); }
+    .lang-switch svg { display: block; width: 100%; height: 100%; }
+  </style>
+</head>
+
+<body>
+<div style="--color-bg: #161718; --color-surface: #212224; --color-text: #f2f2f3; --color-divider: color-mix(in srgb, #f2f2f3 13%, transparent); --color-accent: #c8ae71; --color-accent-100: #f5edd9; --color-accent-200: #ebdcb8; --color-accent-300: #ddc794; --color-accent-400: #d3b97e; --color-accent-500: #c8ae71; --color-accent-600: #ac9358; --color-accent-700: #86733f; --color-accent-800: #5f512c; --color-accent-900: #3a3119; background: var(--color-bg); color: var(--color-text); font-family: var(--font-body); min-height: 100vh;">
+
+  <!-- HLAVIČKA (převzato z homepage) -->
+  <header style="position: sticky; top: 0; z-index: 50; backdrop-filter: blur(14px); background: color-mix(in srgb, #161718 60%, transparent); border-bottom: 1px solid var(--color-divider);">
+    <nav aria-label="Hlavní navigace" style="max-width: 1180px; margin: 0 auto; display: flex; align-items: center; gap: clamp(12px, 3vw, 32px); padding: 14px clamp(20px, 4vw, 56px);">
+      <a href="/" style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 32px; color: var(--color-text); letter-spacing: -0.01em; line-height: 1; text-decoration: none;">headofai<span class="accent">.cz</span></a>
+      <div id="nav-links" style="display: flex; gap: clamp(14px, 2.5vw, 26px); flex: 1; justify-content: center;">
+        <a href="/#o-mne" style="color: color-mix(in srgb, var(--color-text) 62%, transparent); font-size: 15px; text-decoration: none;">O mně</a>
+        <a href="/#proces" style="color: color-mix(in srgb, var(--color-text) 62%, transparent); font-size: 15px; text-decoration: none;">Proces</a>
+        <a href="/#ceny" style="color: color-mix(in srgb, var(--color-text) 62%, transparent); font-size: 15px; text-decoration: none;">Ceny</a>
+        <a href="/blog/" style="color: color-mix(in srgb, var(--color-text) 62%, transparent); font-size: 15px; text-decoration: none;">Blog</a>
+      </div>
+      <div class="lang-switch" role="group" aria-label="Jazyk"><a href="/model-registry" hreflang="cs" title="Česky" aria-label="Česky" aria-current="true"><svg viewBox="0 0 6 4" aria-hidden="true" focusable="false"><path fill="#fff" d="M0 0h6v2H0z"/><path fill="#d7141a" d="M0 2h6v2H0z"/><path fill="#11457e" d="M0 0l3 2-3 2z"/></svg></a><a href="/en/model-registry" hreflang="en" title="English" aria-label="English"><svg viewBox="0 0 60 30" aria-hidden="true" focusable="false"><path fill="#012169" d="M0 0h60v30H0z"/><path stroke="#fff" stroke-width="6" d="M0 0l60 30M60 0L0 30"/><path stroke="#c8102e" stroke-width="4" d="M0 0l60 30M60 0L0 30"/><path stroke="#fff" stroke-width="10" d="M30 0v30M0 15h60"/><path stroke="#c8102e" stroke-width="6" d="M30 0v30M0 15h60"/></svg></a></div><a href="/#kontakt" class="btn btn-primary" style="text-decoration: none; padding: 11px 20px; font-size: 14px; white-space: nowrap;">Domluvit call</a>
+    </nav>
+  </header>
+
+  <main>
+    <article class="article">
+      <nav class="breadcrumb" aria-label="Drobečková navigace">
+        <a href="/">Domů</a><span>›</span><a href="/blog/">Blog</a><span>›</span>Model registry
+      </nav>
+
+      <!-- 1. H1 -->
+      <h1 class="article-h1">Model registry: <span class="accent">proč firmy potřebují systém řízení AI modelů</span></h1>
+      <p class="article-meta">AI governance · Publikováno <time datetime="2026-07-29">29. července 2026</time> · David Veselý</p>
+
+      <!-- 2. Přímá odpověď -->
+      <p class="article-answer"><strong>Firma nemůže spolehlivě řídit model, který nedokáže jednoznačně identifikovat.</strong> Model registry eviduje verze, původ, schválení, nasazení a odpovědnost za AI modely — a mění je z izolovaných souborů na spravovaná produkční aktiva.</p>
+
+      <div class="prose">
+        <p>Při vývoji strojového učení obvykle vznikají desítky nebo stovky variant modelu. Liší se trénovacími daty, algoritmem, parametry, zdrojovým kódem, rychlostí, náklady i kvalitou výsledků.</p>
+        <p>Dokud jde pouze o experiment, lze část tohoto kontextu udržovat v notebooku, repozitáři nebo v hlavě vývojáře.</p>
+        <p>V okamžiku, kdy model začne ovlivňovat skutečný firemní proces, však musí organizace odpovědět na konkrétní otázky:</p>
+        <ul>
+          <li>Která verze modelu právě běží?</li>
+          <li>Z jakých dat vznikla?</li>
+          <li>Jak byla otestována?</li>
+          <li>Kdo ji schválil?</li>
+          <li>Ve kterých aplikacích se používá?</li>
+          <li>Jaká má známá omezení?</li>
+          <li>Co se změnilo oproti předchozí verzi?</li>
+          <li>Lze vadnou verzi rychle stáhnout a nahradit?</li>
+          <li>Kdo odpovídá za její další provoz?</li>
+        </ul>
+        <p>Právě tuto provozní mezeru řeší <strong>model registry</strong>.</p>
+
+        <!-- 3. Co to je -->
+        <h2>Co je model registry</h2>
+        <p>Model registry je centrální systém pro evidenci a správu modelů v průběhu jejich životního cyklu.</p>
+        <p>Jejím úkolem není pouze uchovávat soubor obsahující natrénovaný model. Propojuje konkrétní modelový artefakt s informacemi potřebnými pro jeho pochopení, validaci, schválení, nasazení, monitoring a případné vyřazení.</p>
+        <p>Typická model registry eviduje:</p>
+        <ul>
+          <li>název a účel modelu,</li>
+          <li>jednotlivé verze,</li>
+          <li>modelové artefakty,</li>
+          <li>původ modelu,</li>
+          <li>použité datasety a trénovací běhy,</li>
+          <li>výsledky evaluací,</li>
+          <li>metadata a dokumentaci,</li>
+          <li>schvalovací stav,</li>
+          <li>vlastníka,</li>
+          <li>produkční nasazení,</li>
+          <li>historii změn.</li>
+        </ul>
+        <p>MLflow ji popisuje jako centralizované úložiště, API a uživatelské rozhraní pro správu životního cyklu modelů. Podporuje verzování, lineage, aliasy, metadata a návaznost na experiment, ze kterého model vznikl.<span class="fn"><a href="#zdroj-1">[1]</a></span></p>
+        <p>Podobné komponenty nabízejí také AWS SageMaker, Microsoft Azure Machine Learning a Google Vertex AI.<span class="fn"><a href="#zdroj-2">[2]</a><a href="#zdroj-3">[3]</a><a href="#zdroj-4">[4]</a></span></p>
+        <p>To ukazuje důležitou skutečnost:</p>
+        <div class="callout">
+          <p><strong>Model registry není marketingový výraz jednoho dodavatele. Je to ustálený název technické kategorie používaný napříč hlavními ML platformami.</strong></p>
+        </div>
+
+        <!-- 4. Proc nestaci soubor -->
+        <h2>Proč nestačí model uložit jako soubor</h2>
+        <p>Představme si soubor nazvaný <code>fraud_detection_model_v12.pkl</code>.</p>
+        <p>Z názvu lze odhadnout, že jde o dvanáctou variantu modelu pro detekci podvodů. Samotný soubor ale neříká:</p>
+        <ul>
+          <li>zda jde o dvanáctý experiment, nebo dvanáctou produkční verzi;</li>
+          <li>z jaké verze dat model vznikl;</li>
+          <li>který commit zdrojového kódu byl použit;</li>
+          <li>jaké proměnné model očekává;</li>
+          <li>jakých výsledků dosáhl;</li>
+          <li>zda prošel nezávislou validací;</li>
+          <li>kdo povolil jeho nasazení;</li>
+          <li>zda se stále někde nepoužívá starší verze.</li>
+        </ul>
+        <p>Název souboru není systém řízení.</p>
+        <p>Model registry zajišťuje, aby model nebyl pouze technickým artefaktem, ale <strong>identifikovatelným, dohledatelným a spravovaným produkčním aktivem</strong>.</p>
+
+        <!-- 5. Dva vyznamy -->
+        <h2>Dva významy, které je nutné rozlišovat</h2>
+        <p>Pojem model registry se dnes nachází na průsečíku dvou souvisejících disciplín.</p>
+
+        <h3>1. Technická model registry</h3>
+        <p>V MLOps jde především o správu modelových artefaktů a jejich verzí.</p>
+        <p>Odpovídá například na otázky:</p>
+        <ul>
+          <li>Jaká verze modelu je produkční?</li>
+          <li>Který experiment ji vytvořil?</li>
+          <li>Kde se nachází její artefakt?</li>
+          <li>Jaké má technické parametry?</li>
+          <li>Kterou verzi má aplikace načíst?</li>
+          <li>Jak lze provést rollback?</li>
+        </ul>
+        <p>Tuto podobu používají MLflow a hlavní cloudové ML platformy.</p>
+
+        <h3>2. Enterprise model inventory</h3>
+        <p>V model risk managementu a AI governance je záběr širší.</p>
+        <p>Evidence se nesoustředí pouze na soubor modelu, ale také na:</p>
+        <ul>
+          <li>obchodní účel,</li>
+          <li>vlastníka,</li>
+          <li>kritičnost modelu,</li>
+          <li>povolené a zakázané použití,</li>
+          <li>použité datové zdroje,</li>
+          <li>validační stav,</li>
+          <li>známá omezení,</li>
+          <li>závislost na dodavateli,</li>
+          <li>historii incidentů,</li>
+          <li>datum příští kontroly,</li>
+          <li>plán vyřazení.</li>
+        </ul>
+        <p>Americké regulatorní pokyny pro model risk management používají pojem <strong>model inventory</strong> jako soubor informací potřebných k pochopení rizik jednotlivých modelů i celého modelového portfolia.<span class="fn"><a href="#zdroj-5">[5]</a></span></p>
+        <p>Technická registry a enterprise inventory nemusí být vždy jeden systém.</p>
+        <p>Technická registry může být napojena na vývojové a deployment pipeline. Enterprise inventory může být součástí governance platformy, risk systému nebo interního registru.</p>
+        <p>Ve vyspělé organizaci by však měly tvořit propojený celek.</p>
+
+        <!-- 6. Co evidovat -->
+        <h2>Co má model registry evidovat</h2>
+        <p>Základní záznam lze rozdělit do šesti vrstev:</p>
+        <div class="table-wrap">
+          <table class="cmp">
+            <thead>
+              <tr>
+                <th scope="col">Vrstva</th>
+                <th scope="col">Co eviduje</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Identita</th><td>Název, verze, účel a vlastník modelu</td></tr>
+              <tr><th scope="row">Původ</th><td>Data, kód, trénovací běh a technické prostředí</td></tr>
+              <tr><th scope="row">Evaluace</th><td>Výsledky testů, limity a podmínky přijetí</td></tr>
+              <tr><th scope="row">Schválení</th><td>Stav modelu, odpovědné osoby a povolené použití</td></tr>
+              <tr><th scope="row">Nasazení</th><td>Aplikace, prostředí a procesy používající danou verzi</td></tr>
+              <tr><th scope="row">Provoz</th><td>Monitoring, incidenty, změny, rollback a vyřazení</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Identita</h3>
+        <p>Model potřebuje stabilní název a jasně vymezený účel. Například:</p>
+        <div class="callout">
+          <p>Predikce pravděpodobnosti, že zákazník během následujících 90 dnů ukončí smlouvu.</p>
+        </div>
+        <p>Obecné označení typu „AI pro obchod“ nestačí. Bez konkrétního účelu nelze určit vhodné metriky, přijatelné riziko ani hranice použití.</p>
+
+        <h3>Původ</h3>
+        <p>Model lineage popisuje řetězec, ze kterého model vznikl:</p>
+        <ul>
+          <li>trénovací běh,</li>
+          <li>verzi datasetu,</li>
+          <li>použitý kód,</li>
+          <li>parametry,</li>
+          <li>knihovny,</li>
+          <li>výpočetní prostředí,</li>
+          <li>autora,</li>
+          <li>datum vytvoření.</li>
+        </ul>
+        <p>Bez lineage lze model možná znovu načíst, ale nelze jej spolehlivě reprodukovat ani vysvětlit jeho původ.</p>
+
+        <h3>Evaluace</h3>
+        <p>Nestačí uvést jednu hodnotu přesnosti. Podle účelu mohou být důležité například:</p>
+        <ul>
+          <li>přesnost,</li>
+          <li>precision a recall,</li>
+          <li>míra falešně pozitivních výsledků,</li>
+          <li>stabilita mezi skupinami dat,</li>
+          <li>robustnost,</li>
+          <li>latence,</li>
+          <li>provozní náklady,</li>
+          <li>vysvětlitelnost,</li>
+          <li>bezpečnostní testy.</li>
+        </ul>
+        <p>Registry má zachytit nejen to, který model byl vybrán, ale také <strong>podle jakých podmínek byl přijat</strong>.</p>
+
+        <h3>Schválení</h3>
+        <p>Verze modelu může být například:</p>
+        <ul>
+          <li>experimentální,</li>
+          <li>kandidátní,</li>
+          <li>čekající na validaci,</li>
+          <li>schválená,</li>
+          <li>produkční,</li>
+          <li>nahrazovaná,</li>
+          <li>archivovaná,</li>
+          <li>zakázaná.</li>
+        </ul>
+        <p>Záznam má zároveň uvádět, kdo provedl technickou kontrolu, kdo schválil obchodní použití a kdo za model odpovídá.</p>
+
+        <h3>Nasazení</h3>
+        <p>Registry musí ukazovat, kde se daná verze používá. Může jít například o:</p>
+        <ul>
+          <li>online API,</li>
+          <li>dávkové zpracování,</li>
+          <li>mobilní aplikaci,</li>
+          <li>interní rozhodovací systém,</li>
+          <li>zařízení na hraně sítě,</li>
+          <li>několik regionů nebo prostředí.</li>
+        </ul>
+        <p>Pokud se objeví kritická chyba, firma musí rychle určit všechny procesy a aplikace, kterých se problém týká.</p>
+
+        <h3>Provoz</h3>
+        <p>Registrace nekončí nasazením. Záznam by měl být propojen s informacemi o:</p>
+        <ul>
+          <li>výkonu v produkci,</li>
+          <li>změnách vstupních dat,</li>
+          <li>poklesu kvality,</li>
+          <li>incidentech,</li>
+          <li>výjimkách,</li>
+          <li>omezeních,</li>
+          <li>rekalibracích,</li>
+          <li>nahrazení nebo vyřazení modelu.</li>
+        </ul>
+        <p>Model, který byl vhodný při nasazení, nemusí být vhodný navždy.</p>
+
+        <!-- 7. Zivotni cyklus -->
+        <h2>Jak vypadá životní cyklus modelu</h2>
+        <p>Typický proces má několik kroků:</p>
+        <ol>
+          <li><strong>Experimentování:</strong> tým zkouší různé datasety, algoritmy a konfigurace.</li>
+          <li><strong>Výběr kandidáta:</strong> jedna nebo více variant splní základní kritéria.</li>
+          <li><strong>Registrace:</strong> kandidát je zapsán jako nová verze v model registry.</li>
+          <li><strong>Evaluace a validace:</strong> model je porovnán s požadavky a současnou produkční verzí.</li>
+          <li><strong>Schválení:</strong> oprávněná osoba nebo pipeline povolí jeho použití.</li>
+          <li><strong>Nasazení:</strong> schválená verze je uvolněna do testovacího nebo produkčního prostředí.</li>
+          <li><strong>Monitoring:</strong> sleduje se výkon, kvalita dat, náklady a odchylky.</li>
+          <li><strong>Nahrazení nebo rollback:</strong> nová verze převezme provoz, případně se systém vrátí ke starší.</li>
+          <li><strong>Vyřazení:</strong> nepoužívaná verze je archivována, ale její historie zůstává dohledatelná.</li>
+        </ol>
+        <p>Model registry tedy není pasivní archiv.</p>
+        <p>Je to kontrolní bod mezi experimentem a produkčním provozem.</p>
+
+        <!-- 8. Co to neni -->
+        <h2>Co model registry není</h2>
+        <p>Model registry je součást širšího prostředí. Nenahrazuje několik dalších systémů.</p>
+
+        <h3>Experiment tracking</h3>
+        <p>Eviduje všechny vývojové pokusy, jejich parametry a výsledky.</p>
+        <div class="qa"><p>Co jsme zkusili a jak to dopadlo?</p></div>
+
+        <h3>Model registry</h3>
+        <p>Spravuje vybrané modely a verze, které mají provozní význam.</p>
+        <div class="qa"><p>Kterou verzi jsme přijali, schválili a nasadili?</p></div>
+
+        <h3>Model monitoring</h3>
+        <p>Sleduje chování modelu po nasazení.</p>
+        <div class="qa"><p>Funguje model stále podle očekávání?</p></div>
+
+        <h3>Model hub nebo katalog</h3>
+        <p>Pomáhá objevovat modely, které jsou dostupné k použití.</p>
+        <div class="qa"><p>Jaké modely můžeme použít?</p></div>
+
+        <h3>AI system inventory</h3>
+        <p>Eviduje celé AI systémy, jejich použití, vlastníky, data, dodavatele a rizika.</p>
+        <div class="qa"><p>Kde a proč naše organizace používá AI?</p></div>
+
+        <p>Tyto vrstvy se mohou nacházet v jedné platformě, ale řeší odlišné otázky.</p>
+
+        <!-- 9. Generativni AI -->
+        <h2>Co mění generativní AI</h2>
+        <p>Tradiční model registry vznikaly především pro modely, které firma sama trénovala.</p>
+        <p>U generativní AI často firma nevlastní modelové váhy ani neřídí trénování. Používá externí foundation model přes API a nad ním staví vlastní aplikaci.</p>
+        <p>Chování takové aplikace neurčuje pouze model. Výsledek ovlivňuje také:</p>
+        <ul>
+          <li>systémový prompt,</li>
+          <li>parametry modelu,</li>
+          <li>znalostní báze,</li>
+          <li>embedding model,</li>
+          <li>retrieval logika,</li>
+          <li>dostupné nástroje,</li>
+          <li>oprávnění agenta,</li>
+          <li>guardrails,</li>
+          <li>následné zpracování výstupu.</li>
+        </ul>
+        <p>U RAG systému může změna dokumentů nebo retrieval pipeline ovlivnit chování stejně zásadně jako výměna jazykového modelu.</p>
+        <p>Řízenou jednotkou proto už není pouze verze modelu, ale spíše:</p>
+        <div class="callout">
+          <p><strong>model + prompt + data + nástroje + konfigurace + evaluace</strong></p>
+        </div>
+        <p>Moderní model registry se tím rozšiřuje směrem k evidenci AI komponent, agentů a celých systémových konfigurací.</p>
+
+        <!-- 10. Externi model -->
+        <h2>Externí model neodstraňuje odpovědnost</h2>
+        <p>Při použití externího modelu má firma méně informací a menší technickou kontrolu. Poskytovatel může změnit:</p>
+        <ul>
+          <li>model nebo jeho chování,</li>
+          <li>dostupné verze,</li>
+          <li>cenu,</li>
+          <li>limity,</li>
+          <li>bezpečnostní filtry,</li>
+          <li>podmínky zpracování dat.</li>
+        </ul>
+        <p>Záznam externího modelu by proto měl obsahovat alespoň:</p>
+        <ul>
+          <li>poskytovatele,</li>
+          <li>označení modelu,</li>
+          <li>způsob přístupu,</li>
+          <li>používanou verzi nebo endpoint,</li>
+          <li>datum zavedení,</li>
+          <li>zpracovávané datové kategorie,</li>
+          <li>známá omezení,</li>
+          <li>cenu,</li>
+          <li>záložní model,</li>
+          <li>postup při ukončení služby.</li>
+        </ul>
+        <p>To, že firma model netrénovala, neznamená, že jej nemusí řídit.</p>
+        <p>Naopak: u proprietárního modelu může být evidence ještě důležitější, protože organizace nemá přístup ke všem informacím o jeho konstrukci, datech a interních změnách.</p>
+
+        <!-- 11. Governance -->
+        <h2>Model registry a AI governance</h2>
+        <p>Model registry sama nezajistí odpovědné používání AI. Poskytuje však infrastrukturu, bez níž je governance obtížně proveditelná.</p>
+        <p>Pomáhá doložit:</p>
+        <ul>
+          <li>jaká verze byla použita,</li>
+          <li>jak byla testována,</li>
+          <li>kdo ji schválil,</li>
+          <li>kde byla nasazena,</li>
+          <li>jaká měla omezení,</li>
+          <li>kdy byla změněna,</li>
+          <li>zda byla později nahrazena.</li>
+        </ul>
+        <p><a href="/eu-ai-act-zmeny-2026-pro-ceske-firmy">EU AI Act</a> nepřikazuje organizacím používat produkt nazvaný „model registry“.<span class="fn"><a href="#zdroj-6">[6]</a></span></p>
+        <p>U regulovaných AI systémů však pracuje s řízením rizik, technickou dokumentací, záznamy, lidským dohledem, monitoringem a odpovědností během životního cyklu systému.</p>
+        <p>Model registry může být jednou z technických vrstev, které tyto procesy podporují.</p>
+        <p>Je však nutné rozlišovat samotný model a celý AI systém.</p>
+        <p>Model registry může evidovat modelové komponenty. Právní, bezpečnostní a obchodní posouzení se zpravidla vztahuje na konkrétní AI systém a způsob jeho použití.</p>
+
+        <!-- 12. Kdy ji potrebujete -->
+        <h2>Kdy firma model registry skutečně potřebuje</h2>
+        <p>Komplexní technickou registry nepotřebuje každá organizace.</p>
+        <p>Firma používající pouze několik hotových SaaS aplikací bude pravděpodobně potřebovat hlavně AI system inventory a pravidla pro dodavatele.</p>
+        <p>Model registry začíná být důležitá zejména tehdy, když organizace:</p>
+        <ul>
+          <li>sama vyvíjí nebo dolaďuje modely;</li>
+          <li>provozuje několik verzí stejného modelu;</li>
+          <li>používá modely v důležitých rozhodovacích procesech;</li>
+          <li>potřebuje formální validaci a schvalování;</li>
+          <li>musí zajistit reprodukovatelnost;</li>
+          <li>potřebuje rychlý rollback;</li>
+          <li>používá více cloudů nebo deployment prostředí;</li>
+          <li>buduje větší množství RAG aplikací a agentů;</li>
+          <li>podléhá přísnějším požadavkům auditu nebo model risk managementu.</li>
+        </ul>
+        <p>První implementace nemusí být rozsáhlá. Musí však vytvořit jeden autoritativní zdroj pravdy a být propojena se skutečným procesem nasazování.</p>
+        <p>Registry, kterou lze obejít tím, že vývojář nahraje jiný model přímo do produkce, neřídí skutečný provoz. Pouze dokumentuje jeho idealizovanou verzi.</p>
+
+        <!-- 13. Chyby -->
+        <h2>Nejčastější chyby</h2>
+
+        <h3>Registry se změní v odkladiště experimentů</h3>
+        <p>Pokud se do ní automaticky uloží každý pokus, rychle se zaplní stovkami variant bez provozního významu.</p>
+        <p>Od evidence všech experimentů slouží experiment tracking. Do registry mají vstupovat modely, které se staly kandidátem na validaci, nasazení nebo další řízené použití.</p>
+
+        <h3>Model nemá konkrétního vlastníka</h3>
+        <p>Technický tým model vytvořil, ale nikdo neodpovídá za jeho obchodní účel, správné použití a další provoz.</p>
+        <p>Registr bez odpovědnosti se mění v katalog souborů.</p>
+
+        <h3>Chybí vazba na data a kód</h3>
+        <p>Firma eviduje modelový artefakt, ale neví, z jakého datasetu a kódu vznikl.</p>
+        <p>Takový model nelze spolehlivě reprodukovat ani vysvětlit.</p>
+
+        <h3>Schválení je pouze formální</h3>
+        <p>Model je označen jako schválený, ale není jasné:</p>
+        <ul>
+          <li>kdo jej schválil,</li>
+          <li>podle jakých kritérií,</li>
+          <li>pro jaký účel,</li>
+          <li>na jak dlouhou dobu,</li>
+          <li>co má schválení zneplatnit.</li>
+        </ul>
+
+        <h3>Registry není propojena s nasazením</h3>
+        <p>Model se sice zaregistruje, ale produkční tým může nasadit libovolný artefakt mimo schvalovací proces.</p>
+        <p>Registry pak eviduje jinou realitu, než jaká skutečně běží.</p>
+
+        <h3>Evidence nahrazuje řízení</h3>
+        <p>Detailní metadata sama o sobě neurčí, zda je model vhodný, bezpečný nebo obchodně přínosný.</p>
+        <p>Model registry dokáže vynutit a zaznamenat proces. Nedokáže sama nahradit rozhodování, odpovědnost a skutečný dohled.</p>
+
+        <!-- 14. Zaver -->
+        <h2>Závěr</h2>
+        <p>Model registry řeší základní provozní otázku:</p>
+        <div class="callout">
+          <p>Jak zajistit, aby firma přesně věděla, který model vytvořila nebo převzala, jak jej otestovala, kdo jej schválil a kde jej používá?</p>
+        </div>
+        <p>Bez registry mohou modely existovat jako izolované soubory, API endpointy a experimenty.</p>
+        <p>S registry se z nich stávají spravovaná aktiva s dohledatelným původem, odpovědností a životním cyklem.</p>
+        <p>Její hlavní přínosy jsou:</p>
+        <ul>
+          <li>verzování,</li>
+          <li>lineage a reprodukovatelnost,</li>
+          <li>řízené schvalování,</li>
+          <li>vazba na produkční nasazení,</li>
+          <li>možnost rollbacku,</li>
+          <li>evidence vlastníků a odpovědnosti,</li>
+          <li>podpora auditu a governance.</li>
+        </ul>
+        <p>V tradičním machine learningu byl hlavním objektem řízení samotný model.</p>
+        <p>V generativní AI je model pouze jednou součástí širší konfigurace zahrnující prompty, data, nástroje a oprávnění. Model registry se proto postupně mění z technického úložiště na <strong>řídicí vrstvu podnikové AI</strong>.</p>
+        <p>Firma totiž nepotřebuje pouze vědět, jaký model používá.</p>
+        <p>Potřebuje být schopna vysvětlit, <strong>jak vzniká chování její AI</strong>.</p>
+
+        <!-- 15. FAQ -->
+        <h2>Časté otázky</h2>
+        <div class="faq">
+          <details class="faq-item">
+            <summary>Co je model registry?</summary>
+            <p>Model registry je centrální systém pro evidenci a správu modelů v průběhu jejich životního cyklu. Nepropojuje jen soubor s natrénovaným modelem, ale váže na něj informace potřebné pro pochopení, validaci, schválení, nasazení, monitoring a případné vyřazení: název a účel, verze, artefakty, původ, použité datasety a trénovací běhy, výsledky evaluací, schvalovací stav, vlastníka, produkční nasazení a historii změn.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Jaký je rozdíl mezi model registry a model inventory?</summary>
+            <p>Technická model registry v MLOps spravuje modelové artefakty a jejich verze — odpovídá, která verze je produkční, který experiment ji vytvořil a jak provést rollback. Enterprise model inventory v model risk managementu a AI governance eviduje navíc obchodní účel, vlastníka, kritičnost, povolené a zakázané použití, validační stav, závislost na dodavateli, historii incidentů a plán vyřazení. Nemusí jít o jeden systém, ve vyspělé organizaci by ale měly tvořit propojený celek.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Proč nestačí uložit model jako soubor?</summary>
+            <p>Název souboru neřekne, zda jde o dvanáctý experiment nebo dvanáctou produkční verzi, z jaké verze dat model vznikl, který commit kódu byl použit, jaké proměnné očekává, jakých výsledků dosáhl, zda prošel nezávislou validací, kdo povolil nasazení a zda se někde stále nepoužívá starší verze. Název souboru není systém řízení.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Potřebuje model registry každá firma?</summary>
+            <p>Ne. Firma používající jen několik hotových SaaS aplikací bude potřebovat hlavně AI system inventory a pravidla pro dodavatele. Model registry je důležitá zejména tehdy, když organizace sama vyvíjí nebo dolaďuje modely, provozuje více verzí téhož modelu, používá modely v důležitých rozhodovacích procesech, potřebuje formální validaci, reprodukovatelnost a rychlý rollback, nebo podléhá přísnějším požadavkům auditu.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Co mění generativní AI na model registry?</summary>
+            <p>U generativní AI firma často nevlastní modelové váhy ani neřídí trénování — používá externí foundation model přes API. Chování aplikace pak neurčuje jen model, ale i systémový prompt, parametry, znalostní báze, embedding model, retrieval logika, dostupné nástroje, oprávnění agenta, guardrails a následné zpracování výstupu. Řízenou jednotkou proto není verze modelu, ale kombinace modelu, promptu, dat, nástrojů, konfigurace a evaluace.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Zbavuje použití externího modelu firmu odpovědnosti?</summary>
+            <p>Ne. Poskytovatel může změnit model, jeho chování, dostupné verze, cenu, limity, bezpečnostní filtry i podmínky zpracování dat. U proprietárního modelu může být evidence dokonce důležitější, protože organizace nemá přístup ke všem informacím o jeho konstrukci, datech a interních změnách.</p>
+          </details>
+        </div>
+
+        <!-- 16. CTA -->
+        <div class="cta-block">
+          <p>Nevíte, které AI modely a systémy u vás běží a kdo za ně odpovídá? První krok je registr — a jeden vlastník AI agendy.</p>
+          <a href="/#kontakt" class="btn btn-primary">Domluvit AI Leadership Call</a>
+        </div>
+
+        <!-- 17. Nabidka domeny (oddelene od tela clanku) -->
+        <aside class="offer" aria-label="Nabídka akvizice domény">
+          <p class="offer-label">Nabídka akvizice domény</p>
+          <h2>ModelRegistry.ai je dostupná k akvizici</h2>
+          <p><code>ModelRegistry.ai</code> je přesná kategoriální doména pro společnost budující infrastrukturu pro správu a governance podnikových AI modelů.</p>
+          <p>Název má širší strategický záběr než alternativy typu <em>AI Inventory</em> nebo <em>Model Governance</em>:</p>
+          <ul>
+            <li><strong>registry</strong> označuje autoritativní systém záznamu, nikoliv pouze seznam;</li>
+            <li>zahrnuje technické verzování, lineage a deployment;</li>
+            <li>současně přirozeně pokrývá schvalování, odpovědnost, audit a model risk management;</li>
+            <li>není svázán s jednou regulatorní jurisdikcí ani konkrétním dodavatelem;</li>
+            <li>koncovka <code>.ai</code> jednoznačně ukotvuje kategorii v infrastruktuře umělé inteligence.</li>
+          </ul>
+          <p>Doména je vhodná zejména pro:</p>
+          <ul>
+            <li>AI governance platformu,</li>
+            <li>enterprise model inventory,</li>
+            <li>model risk management,</li>
+            <li>MLOps nebo LLMOps infrastrukturu,</li>
+            <li>AI compliance řešení,</li>
+            <li>enterprise AI control plane.</li>
+          </ul>
+          <p>Doména je nabízena selektivně strategickému koncovému zájemci nebo financované společnosti, která v této kategorii buduje skutečný produkt a dlouhodobou značku.</p>
+          <p class="terms"><strong>Bez splátkového prodeje. Bez leasingu domény. Bez nabídek doménových investorů. Bezpečný převod prostřednictvím zavedené escrow služby.</strong></p>
+          <a href="https://modelregistry.ai/" class="btn btn-primary" target="_blank" rel="noopener">Zobrazit ModelRegistry.ai a vyžádat podmínky akvizice →</a>
+        </aside>
+
+        <!-- 18. Zdroje -->
+        <h2 id="zdroje">Zdroje a další čtení</h2>
+        <ol class="sources">
+          <li id="zdroj-1"><a href="https://mlflow.org/docs/latest/ml/model-registry/" target="_blank" rel="noopener"><b>MLflow: ML Model Registry.</b></a> Referenční open-source implementace: verzování, lineage, aliasy a návaznost na experiment. <span class="src-dom">mlflow.org</span></li>
+          <li id="zdroj-2"><a href="https://docs.aws.amazon.com/sagemaker/latest/dg/model-registry.html" target="_blank" rel="noopener"><b>Amazon Web Services: SageMaker Model Registry.</b></a> Model groups, verze a schvalovací stavy napojené na deployment pipeline. <span class="src-dom">docs.aws.amazon.com</span></li>
+          <li id="zdroj-3"><a href="https://learn.microsoft.com/en-us/azure/machine-learning/how-to-manage-models" target="_blank" rel="noopener"><b>Microsoft: Register and work with models in Azure Machine Learning.</b></a> Registrace modelů, verzování a správa v rámci workspace. <span class="src-dom">learn.microsoft.com</span></li>
+          <li id="zdroj-4"><a href="https://cloud.google.com/vertex-ai/docs/model-registry/introduction" target="_blank" rel="noopener"><b>Google Cloud: Vertex AI Model Registry.</b></a> Centrální přehled modelů a jejich verzí napříč nasazeními. <span class="src-dom">cloud.google.com</span></li>
+          <li id="zdroj-5"><a href="https://www.federalreserve.gov/supervisionreg/srletters/SR2602.htm" target="_blank" rel="noopener"><b>Federal Reserve: SR 26-2 — Revised Guidance on Model Risk Management.</b></a> Aktualizované americké pokyny k řízení modelového rizika (nahrazují SR 11-7 a SR 21-8). <span class="src-dom">federalreserve.gov</span></li>
+          <li id="zdroj-6"><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj" target="_blank" rel="noopener"><b>Nařízení (EU) 2024/1689 — Artificial Intelligence Act.</b></a> Základní text evropské regulace AI: řízení rizik, dokumentace, záznamy a lidský dohled. <span class="src-dom">eur-lex.europa.eu</span></li>
+        </ol>
+        <p class="disclaimer">Článek má informační charakter a nepředstavuje právní stanovisko.</p>
+
+        <!-- Související průvodce -->
+        <nav class="related" aria-label="Související průvodce">
+          <h2>Související průvodce</h2>
+          <ul class="related-list">
+            <li><a href="/eu-ai-act-zmeny-2026-pro-ceske-firmy"><span>EU AI Act po AI Omnibusu: co musí český CEO udělat teď</span><span class="arrow" aria-hidden="true">→</span></a></li>
+            <li><a href="/chief-ai-officer"><span>Chief AI Officer (CAIO): kdo ve firmě odpovídá za AI</span><span class="arrow" aria-hidden="true">→</span></a></li>
+            <li><a href="/co-je-head-of-ai"><span>Co je Head of AI / Chief AI Officer: kompletní průvodce rolí</span><span class="arrow" aria-hidden="true">→</span></a></li>
+            <li><a href="/kdy-firma-potrebuje-head-of-ai"><span>Kdy firma potřebuje Head of AI (a kdy ještě ne)</span><span class="arrow" aria-hidden="true">→</span></a></li>
+          </ul>
+        </nav>
+      </div>
+    </article>
+  </main>
+
+  <!-- PATIČKA (převzato z homepage) -->
+  <footer style="border-top: 1px solid var(--color-divider); text-align: center;">
+    <div style="max-width: 1180px; margin: 0 auto; padding: clamp(44px, 6vw, 64px) clamp(20px, 4vw, 56px) 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 32px;">
+      <div>
+        <span style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 26px; line-height: 1;">headofai<span class="accent">.cz</span></span>
+        <p style="font-size: 15px; line-height: 1.6; margin: 12px auto 0; max-width: 40ch; color: color-mix(in srgb, var(--color-text) 55%, transparent);">Fractional AI leadership pro firmy, které chtějí kontrolu, měřitelný dopad a první AI pracovníky v provozu.</p>
+      </div>
+      <div>
+        <h4 style="font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 12px; color: color-mix(in srgb, var(--color-text) 45%, transparent);">Kontakt</h4>
+        <p style="display: flex; justify-content: center; align-items: center; gap: 8px; font-size: 15px; margin: 0 0 8px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; color: color-mix(in srgb, var(--color-text) 45%, transparent);"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg><a href="mailto:hello@headofai.cz">hello@headofai.cz</a></p>
+        <p style="display: flex; justify-content: center; align-items: center; gap: 8px; font-size: 15px; margin: 0 0 8px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; color: color-mix(in srgb, var(--color-text) 45%, transparent);"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg><a href="https://x.com/headofaicz">@headofaicz</a></p><p style="display: flex; justify-content: center; align-items: center; gap: 8px; font-size: 15px; margin: 0;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; color: color-mix(in srgb, var(--color-text) 45%, transparent);"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg><a href="https://www.linkedin.com/in/davidvesely/">David Veselý</a></p>
+      </div>
+      <div>
+        <h4 style="font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 12px; color: color-mix(in srgb, var(--color-text) 45%, transparent);">Provozovatel</h4>
+        <p style="font-size: 15px; margin: 0 0 4px; color: color-mix(in srgb, var(--color-text) 55%, transparent);">Vesely.ai s.r.o.</p>
+        <p style="font-size: 14px; margin: 0 0 4px; color: color-mix(in srgb, var(--color-text) 45%, transparent);">IČO: 23702907 · DIČ: CZ23702907</p>
+        <p style="font-size: 14px; margin: 0; color: color-mix(in srgb, var(--color-text) 45%, transparent);">Česko</p>
+      </div>
+    </div>
+    <div style="max-width: 1180px; margin: 32px auto 0; padding: 0 clamp(20px, 4vw, 56px);">
+      <p style="font-size: 14px; color: color-mix(in srgb, var(--color-text) 40%, transparent); border-top: 1px solid var(--color-divider); padding: 20px 0 28px; margin: 0;">© 2026 Vesely.ai s.r.o. · headofai.cz</p>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>

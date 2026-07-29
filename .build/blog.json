@@ -1,6 +1,7 @@
 {
   "_comment": "Jediny zdroj pravdy pro blog. Po zmene spust: python3 .build/blog_build.py",
   "site": "https://headofai.cz",
+  "homepage_limit": 6,
   "pages": [
     { "cs": "/",       "en": "/en/",      "priority": "1.0", "changefreq": "weekly",  "lastmod": "2026-07-29" },
     { "cs": "/blog/",  "en": "/en/blog/", "priority": "0.9", "changefreq": "weekly",  "lastmod": "2026-07-29" }
@@ -31,6 +32,33 @@
         "alt": "The European Union flag alongside an AI Act document symbol",
         "date_label": "28 Jul 2026",
         "llms": "The EU AI Act after the Omnibus: what a CEO must do now. What Regulation (EU) 2026/1744 changed, provider vs deployer roles, seven typical use cases, the structure of an AI system register and a thirty-day plan for the CEO."
+      }
+    },
+    {
+      "id": "model-registry",
+      "date": "2026-07-29",
+      "lastmod": "2026-07-29",
+      "priority": "0.8",
+      "image": null,
+      "cs": {
+        "slug": "model-registry",
+        "kicker": "AI governance",
+        "title": "Model registry: proč firmy potřebují systém řízení AI modelů",
+        "card": "Která verze modelu běží v produkci, z jakých dat vznikla a kdo ji schválil — a kdy registry firma opravdu potřebuje.",
+        "hub": "Co model registry eviduje, rozdíl mezi technickou registry a enterprise model inventory, co mění generativní AI a nejčastější chyby při zavádění.",
+        "alt": null,
+        "date_label": "29. 7. 2026",
+        "llms": "Model registry: proč firmy potřebují systém řízení AI modelů. Šest vrstev záznamu (identita, původ, evaluace, schválení, nasazení, provoz), rozdíl mezi technickou model registry v MLOps a enterprise model inventory v model risk managementu, životní cyklus modelu, co mění generativní AI (model + prompt + data + nástroje + konfigurace) a nejčastější chyby při zavádění."
+      },
+      "en": {
+        "slug": "en/model-registry",
+        "kicker": "AI governance",
+        "title": "Model registry: why companies need a system for governing AI models",
+        "card": "Which model version runs in production, what data it came from and who approved it — and when a registry is actually needed.",
+        "hub": "What a model registry records, the difference between a technical registry and an enterprise model inventory, what generative AI changes and the most common implementation mistakes.",
+        "alt": null,
+        "date_label": "29 Jul 2026",
+        "llms": "Model registry: why companies need a system for governing AI models. Six record layers (identity, provenance, evaluation, approval, deployment, operations), the difference between a technical MLOps model registry and an enterprise model inventory in model risk management, the model lifecycle, what generative AI changes (model + prompt + data + tools + configuration) and the most common implementation mistakes."
       }
     },
     {

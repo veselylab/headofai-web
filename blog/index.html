@@ -59,6 +59,9 @@
     .post-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin: 22px 0 0; }
     .post-card { display: flex; flex-direction: column; border: 1px solid var(--color-divider); background: color-mix(in srgb, var(--color-surface) 35%, transparent); padding: clamp(20px, 3vw, 26px); text-decoration: none; color: var(--color-text); transition: border-color 0.2s, background 0.2s; }
     .post-card:hover { border-color: color-mix(in srgb, var(--color-text) 32%, transparent); background: color-mix(in srgb, var(--color-surface) 55%, transparent); text-decoration: none; color: var(--color-text); }
+    /* Náhledový obrázek karty — full-bleed přes padding karty; .is-empty = placeholder, dokud obrázek není */
+    .post-card .pthumb { display: block; max-width: none; width: calc(100% + 2 * clamp(20px, 3vw, 26px)); height: auto; aspect-ratio: 3 / 2; object-fit: cover; margin: calc(-1 * clamp(20px, 3vw, 26px)) calc(-1 * clamp(20px, 3vw, 26px)) 18px; border-bottom: 1px solid var(--color-divider); background: color-mix(in srgb, var(--color-surface) 70%, transparent); }
+    .post-card .pthumb.is-empty { background: repeating-linear-gradient(135deg, color-mix(in srgb, var(--color-surface) 70%, transparent) 0 10px, color-mix(in srgb, var(--color-surface) 45%, transparent) 10px 20px); }
     .post-card .pk { font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent); }
     .post-card .pt { font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(19px, 2.2vw, 22px); line-height: 1.22; letter-spacing: -0.01em; margin: 10px 0 0; }
     .post-card .pd { font-size: 15px; line-height: 1.6; margin: 10px 0 0; color: color-mix(in srgb, var(--color-text) 62%, transparent); }
@@ -112,6 +115,7 @@
       <div class="post-grid">
 
         <a class="post-card" href="/eu-ai-act-zmeny-2026-pro-ceske-firmy">
+          <img class="pthumb" src="/assets/blog/eu-act-card.webp" alt="Vlajka Evropské unie a symbol dokumentu AI Act" width="720" height="480" loading="lazy" decoding="async">
           <span class="pk">Regulace</span>
           <span class="pt">EU AI Act po AI Omnibusu: co musí český CEO udělat teď</span>
           <span class="pd">Co se nařízením 2026/1744 odložilo a co naopak platí od 2. srpna 2026, sedm typických use-casů, registr AI systémů a třicetidenní plán pro vedení.</span>
@@ -119,6 +123,7 @@
         </a>
 
         <a class="post-card" href="/chief-ai-officer">
+          <span class="pthumb is-empty" aria-hidden="true"></span>
           <span class="pk">Odpovědnost</span>
           <span class="pt">Chief AI Officer (CAIO): kdo ve firmě odpovídá za AI</span>
           <span class="pd">Jaký mandát role potřebuje, co reálně řídí, podle čeho se měří — a kdy českým firmám stačí externí CAIO místo interní pozice.</span>
@@ -126,6 +131,7 @@
         </a>
 
         <a class="post-card" href="/co-je-head-of-ai">
+          <span class="pthumb is-empty" aria-hidden="true"></span>
           <span class="pk">Role</span>
           <span class="pt">Co je Head of AI / Chief AI Officer</span>
           <span class="pd">Kompletní průvodce rolí: co obnáší, čím se liší od CTO, CDO a AI Engineera, jaké kompetence vyžaduje a jak vypadá v českém kontextu.</span>
@@ -133,6 +139,7 @@
         </a>
 
         <a class="post-card" href="/kdy-firma-potrebuje-head-of-ai">
+          <span class="pthumb is-empty" aria-hidden="true"></span>
           <span class="pk">Rozhodnutí</span>
           <span class="pt">Kdy firma potřebuje Head of AI</span>
           <span class="pd">Sedm signálů, podle kterých poznáte, že je čas dát AI jasného vlastníka — a situace, kdy roli ještě nepotřebujete.</span>
@@ -140,6 +147,7 @@
         </a>
 
         <a class="post-card" href="/fractional-vs-fulltime-caio">
+          <span class="pthumb is-empty" aria-hidden="true"></span>
           <span class="pk">Model spolupráce</span>
           <span class="pt">Fractional Head of AI vs full-time CAIO</span>
           <span class="pd">Kdy stačí role na část úvazku a kdy se vyplatí full-time pozice: srovnání nákladů, rizika a rychlosti nasazení.</span>
@@ -147,6 +155,7 @@
         </a>
 
         <a class="post-card" href="/plat-chief-ai-officer">
+          <span class="pthumb is-empty" aria-hidden="true"></span>
           <span class="pk">Náklady</span>
           <span class="pt">Plat Head of AI / Chief AI Officer: ČR vs zahraničí</span>
           <span class="pd">Reálná rozpětí v Česku podle velikosti firmy, srovnání se zahraničím a skutečný náklad fractional modelu.</span>

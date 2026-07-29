@@ -121,6 +121,9 @@
     /* Blog: 6 rovnocenných karet — stejná vizuální váha, žádná zvýrazněná */
     .blog-grid { grid-template-columns: repeat(3, 1fr); }
     .guide-card .gk { font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent); margin: 0 0 9px; }
+    /* Náhledový obrázek karty — full-bleed přes padding karty; .is-empty = placeholder, dokud obrázek není */
+    .guide-card .gthumb { display: block; max-width: none; width: calc(100% + 48px); height: auto; aspect-ratio: 3 / 2; object-fit: cover; margin: -22px -24px 18px; border-bottom: 1px solid var(--color-divider); background: color-mix(in srgb, var(--color-surface) 70%, transparent); }
+    .guide-card .gthumb.is-empty { background: repeating-linear-gradient(135deg, color-mix(in srgb, var(--color-surface) 70%, transparent) 0 10px, color-mix(in srgb, var(--color-surface) 45%, transparent) 10px 20px); }
     .blog-more { margin: 26px 0 0; font-size: 15px; }
     @media (max-width: 980px) { .blog-grid { grid-template-columns: repeat(2, 1fr); } }
     @media (max-width: 620px) { .blog-grid { grid-template-columns: 1fr; } }
@@ -666,36 +669,42 @@
         <p class="lead" style="margin: 22px 0 0;">Píšu pro vedení firem, které AI už používají — ale potřebují ji řídit. Každý článek řeší jedno konkrétní rozhodnutí, ne přehled novinek.</p>
         <div class="guide-grid blog-grid">
           <a class="guide-card" href="/eu-ai-act-zmeny-2026-pro-ceske-firmy">
+            <img class="gthumb" src="/assets/blog/eu-act-card.webp" alt="Vlajka Evropské unie a symbol dokumentu AI Act" width="720" height="480" loading="lazy" decoding="async">
             <span class="gk">Regulace</span>
             <span class="gt">EU AI Act po AI Omnibusu: co musí český CEO udělat teď</span>
             <span class="gd">Co se odložilo, co naopak platí od 2. srpna 2026 — a třicetidenní plán, jak dostat AI ve firmě pod kontrolu.</span>
             <span class="garw">Číst článek →</span>
           </a>
           <a class="guide-card" href="/chief-ai-officer">
+            <span class="gthumb is-empty" aria-hidden="true"></span>
             <span class="gk">Odpovědnost</span>
             <span class="gt">Chief AI Officer (CAIO): kdo ve firmě odpovídá za AI</span>
             <span class="gd">Jaký mandát role potřebuje, co reálně řídí a kdy stačí externí CAIO místo interní pozice.</span>
             <span class="garw">Číst článek →</span>
           </a>
           <a class="guide-card" href="/co-je-head-of-ai">
+            <span class="gthumb is-empty" aria-hidden="true"></span>
             <span class="gk">Role</span>
             <span class="gt">Co je Head of AI / Chief AI Officer</span>
             <span class="gd">Co role obnáší, čím se liší od CTO, CDO a AI Engineera a kdy ji firma potřebuje.</span>
             <span class="garw">Číst článek →</span>
           </a>
           <a class="guide-card" href="/kdy-firma-potrebuje-head-of-ai">
+            <span class="gthumb is-empty" aria-hidden="true"></span>
             <span class="gk">Rozhodnutí</span>
             <span class="gt">Kdy firma potřebuje Head of AI</span>
             <span class="gd">Sedm signálů, podle kterých poznáte, že je čas dát AI jasného vlastníka — a kdy roli ještě nepotřebujete.</span>
             <span class="garw">Číst článek →</span>
           </a>
           <a class="guide-card" href="/fractional-vs-fulltime-caio">
+            <span class="gthumb is-empty" aria-hidden="true"></span>
             <span class="gk">Model spolupráce</span>
             <span class="gt">Fractional Head of AI vs full-time CAIO</span>
             <span class="gd">Kdy stačí role na část úvazku a kdy se vyplatí full-time pozice: náklady, riziko a rychlost.</span>
             <span class="garw">Číst článek →</span>
           </a>
           <a class="guide-card" href="/plat-chief-ai-officer">
+            <span class="gthumb is-empty" aria-hidden="true"></span>
             <span class="gk">Náklady</span>
             <span class="gt">Plat Head of AI: ČR vs zahraničí</span>
             <span class="gd">Kolik stojí Head of AI v Česku i v zahraničí — a jaký je skutečný náklad fractional modelu.</span>

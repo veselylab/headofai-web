@@ -148,14 +148,18 @@
       "date": "2026-07-22",
       "lastmod": "2026-07-29",
       "priority": "0.8",
-      "image": null,
+      "image": {
+        "card": "/assets/blog/costs-card.webp",
+        "w": 720,
+        "h": 480
+      },
       "cs": {
         "slug": "fractional-vs-fulltime-caio",
         "kicker": "Model spolupráce",
         "title": "Fractional Head of AI vs full-time CAIO",
         "card": "Kdy stačí role na část úvazku a kdy se vyplatí full-time pozice: náklady, riziko a rychlost.",
         "hub": "Kdy stačí role na část úvazku a kdy se vyplatí full-time pozice: srovnání nákladů, rizika a rychlosti nasazení.",
-        "alt": null,
+        "alt": "Váhy porovnávající fractional Head of AI s full-time CAIO — na jedné misce měsíční paušál, na druhé plat, odvody, benefity, nábor a onboarding",
         "date_label": "22. 7. 2026",
         "llms": "Fractional Head of AI vs full-time CAIO: definice modelu, srovnání nákladů a rizika a pro koho se hodí a pro koho ne."
       },

@@ -113,14 +113,18 @@
       "date": "2026-07-22",
       "lastmod": "2026-07-29",
       "priority": "0.9",
-      "image": null,
+      "image": {
+        "card": "/assets/blog/ai-chaos-card.webp",
+        "w": 720,
+        "h": 480
+      },
       "cs": {
         "slug": "kdy-firma-potrebuje-head-of-ai",
         "kicker": "Rozhodnutí",
         "title": "Kdy firma potřebuje Head of AI",
         "card": "Sedm signálů, podle kterých poznáte, že je čas dát AI jasného vlastníka — a kdy roli ještě nepotřebujete.",
         "hub": "Sedm signálů, podle kterých poznáte, že je čas dát AI jasného vlastníka — a situace, kdy roli ještě nepotřebujete.",
-        "alt": null,
+        "alt": "Porada u stolu plného notebooků s různými AI nástroji a tabule s otázkou, kdo ve firmě AI vlastní",
         "date_label": "22. 7. 2026",
         "llms": "Kdy firma potřebuje Head of AI: 7 signálů, kdy roli ještě nepotřebujete a srovnání full-time vs fractional vs konzultant."
       },
@@ -130,7 +134,7 @@
         "title": "When a company needs a Head of AI",
         "card": "Seven signals that it is time to give AI a clear owner — and when you do not need the role yet.",
         "hub": "Seven signals that it is time to give AI a clear owner — and the situations where you do not need the role yet.",
-        "alt": null,
+        "alt": "A meeting around a table full of laptops running different AI tools, with a whiteboard asking who owns AI in the company",
         "date_label": "22 Jul 2026",
         "llms": "When a company needs a Head of AI: 7 signals, when you do not need the role yet, and full-time vs fractional vs consultant."
       }

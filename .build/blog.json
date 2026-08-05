@@ -210,14 +210,18 @@
       "date": "2026-07-22",
       "lastmod": "2026-07-29",
       "priority": "0.8",
-      "image": null,
+      "image": {
+        "card": "/assets/blog/euros-card.webp",
+        "w": 652,
+        "h": 435
+      },
       "cs": {
         "slug": "plat-chief-ai-officer",
         "kicker": "Náklady",
         "title": "Plat Head of AI: ČR vs zahraničí",
         "card": "Kolik stojí Head of AI v Česku i v zahraničí — a jaký je skutečný náklad fractional modelu.",
         "hub": "Reálná rozpětí v Česku podle velikosti firmy, srovnání se zahraničím a skutečný náklad fractional modelu.",
-        "alt": null,
+        "alt": "Eurové bankovky a mince rozložené na sobě — odměňování Head of AI v ČR a v zahraničí",
         "date_label": "22. 7. 2026",
         "llms": "Plat Head of AI / Chief AI Officer: reálná rozpětí v ČR podle velikosti firmy, srovnání se zahraničím a náklad fractional modelu."
       },
@@ -227,7 +231,7 @@
         "title": "Head of AI pay: Czechia vs abroad",
         "card": "What a Head of AI costs in Czechia and abroad — and the real cost of the fractional model.",
         "hub": "Real ranges in Czechia by company size, a comparison with other markets and the real cost of the fractional model.",
-        "alt": null,
+        "alt": "Euro banknotes and coins spread out — Head of AI pay in Czechia and abroad",
         "date_label": "22 Jul 2026",
         "llms": "Head of AI / Chief AI Officer pay: real ranges in Czechia by company size, comparison with other markets and the cost of the fractional model."
       }

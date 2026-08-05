@@ -25,7 +25,7 @@
       "lastmod": "2026-07-29",
       "priority": "0.9",
       "image": {
-        "card": "/assets/blog/eu-act-card.webp",
+        "card": "/assets/blog/eu-flag-card.webp",
         "w": 720,
         "h": 480
       },
@@ -35,7 +35,7 @@
         "title": "EU AI Act po AI Omnibusu: co musí český CEO udělat teď",
         "card": "Co se odložilo, co naopak platí od 2. srpna 2026 — a třicetidenní plán, jak dostat AI ve firmě pod kontrolu.",
         "hub": "Co se nařízením 2026/1744 odložilo a co naopak platí od 2. srpna 2026, sedm typických use-casů, registr AI systémů a třicetidenní plán pro vedení.",
-        "alt": "Vlajka Evropské unie a symbol dokumentu AI Act",
+        "alt": "Vlajka Evropské unie vlající na stožáru proti modré obloze",
         "date_label": "28. 7. 2026",
         "llms": "EU AI Act po AI Omnibusu: co musí český CEO udělat teď. Co změnilo nařízení (EU) 2026/1744 účinné od 27. 7. 2026 (odklad přílohy III na 2. 12. 2027, regulované výrobky 2. 8. 2028, zmírněný čl. 4 o AI gramotnosti, transparentnost dle čl. 50 od 2. 8. 2026), rozdíl rolí provider vs deployer, sedm typických use-casů české firmy, struktura registru AI systémů a třicetidenní plán pro CEO."
       },
@@ -45,7 +45,7 @@
         "title": "The EU AI Act after the Omnibus: what a CEO must do now",
         "card": "What was deferred, what applies from 2 August 2026 — and a thirty-day plan to get AI in your company under control.",
         "hub": "What Regulation (EU) 2026/1744 deferred and what applies from 2 August 2026, seven typical use cases, an AI system register and a thirty-day plan for leadership.",
-        "alt": "The European Union flag alongside an AI Act document symbol",
+        "alt": "The European Union flag flying on a pole against a blue sky",
         "date_label": "28 Jul 2026",
         "llms": "The EU AI Act after the Omnibus: what a CEO must do now. What Regulation (EU) 2026/1744 changed, provider vs deployer roles, seven typical use cases, the structure of an AI system register and a thirty-day plan for the CEO."
       }

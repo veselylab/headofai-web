@@ -86,14 +86,18 @@
       "date": "2026-07-22",
       "lastmod": "2026-07-29",
       "priority": "0.8",
-      "image": null,
+      "image": {
+        "card": "/assets/blog/who-is-caio-card.webp",
+        "w": 720,
+        "h": 480
+      },
       "cs": {
         "slug": "co-je-head-of-ai",
         "kicker": "Role",
         "title": "Co je Head of AI / Chief AI Officer",
         "card": "Co role obnáší, čím se liší od CTO, CDO a AI Engineera a kdy ji firma potřebuje.",
         "hub": "Kompletní průvodce rolí: co obnáší, čím se liší od CTO, CDO a AI Engineera, jaké kompetence vyžaduje a jak vypadá v českém kontextu.",
-        "alt": null,
+        "alt": "Manažer u notebooku v kanceláři, na flipchartu seznam priorit AI a metrik úspěchu",
         "date_label": "22. 7. 2026",
         "llms": "Co je Head of AI / Chief AI Officer: co role dělá, čím se liší od CTO, CDO a AI Engineera, jak se liší označení Head of AI / Chief AI Officer / CAIO a jaké kompetence role vyžaduje."
       },
@@ -103,7 +107,7 @@
         "title": "What is a Head of AI / Chief AI Officer",
         "card": "What the role involves, how it differs from a CTO, CDO and AI Engineer, and when a company needs it.",
         "hub": "A complete guide to the role: what it involves, how it differs from a CTO, CDO and AI Engineer, and what competencies it requires.",
-        "alt": null,
+        "alt": "An executive working at a laptop in an office, with a flip chart listing AI priorities and success metrics",
         "date_label": "22 Jul 2026",
         "llms": "What is a Head of AI / Chief AI Officer: what the role does, how it differs from a CTO, CDO and AI Engineer, and what competencies it requires."
       }

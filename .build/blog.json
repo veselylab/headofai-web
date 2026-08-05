@@ -2,6 +2,26 @@
   "_comment": "Jediny zdroj pravdy pro blog. Po zmene spust: python3 .build/blog_build.py",
   "site": "https://headofai.cz",
   "homepage_limit": 6,
+  "languages": [
+    {
+      "code": "cs",
+      "x_default": true,
+      "home_file": "index.html",
+      "hub_file": "blog/index.html",
+      "read_more": "Číst článek →",
+      "read_more_hub": "Číst →",
+      "itemlist": "Články na headofai.cz"
+    },
+    {
+      "code": "en",
+      "home_file": "en/index.html",
+      "hub_file": "en/blog/index.html",
+      "read_more": "Read article →",
+      "read_more_hub": "Read →",
+      "itemlist": "Articles on headofai.cz",
+      "llms_heading": "Anglické mutace:"
+    }
+  ],
   "pages": [
     {
       "cs": "/",

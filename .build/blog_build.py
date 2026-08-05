@@ -3,14 +3,16 @@
 """
 Generator blogu pro headofai.cz.
 
-Jediny zdroj pravdy je .build/blog.json. Tenhle skript z nej vygeneruje:
+Jediny zdroj pravdy je .build/blog.json. Tenhle skript z nej vygeneruje pro
+kazdy jazyk z bloku "languages":
 
-  index.html            karty v sekci #blog          (mezi <!-- BLOG:CARDS --> a <!-- /BLOG:CARDS -->)
+  <home_file>           karty v sekci #blog na homepage  (mezi <!-- BLOG:CARDS --> a <!-- /BLOG:CARDS -->)
                         pocet omezuje "homepage_limit" v manifestu (hub ukazuje vsechny)
-  en/index.html         totez anglicky
-  blog/index.html       karty v hubu + ItemList JSON-LD
-  en/blog/index.html    totez anglicky
-  sitemap.xml           cely soubor vcetne hreflang paru
+  <hub_file>            karty v hubu /blog/ + ItemList JSON-LD
+
+a dale spolecne:
+
+  sitemap.xml           cely soubor vcetne hreflang alternate pro vsechny jazyky
   llms.txt              seznam clanku      (mezi <!-- BLOG:LINKS --> a <!-- /BLOG:LINKS -->)
 
 Pouziti:
@@ -19,13 +21,23 @@ Pouziti:
 
 Pridani noveho clanku:
     1. napsat CZ HTML na rootu (kopie sablony z co-je-head-of-ai.html)
-    2. napsat EN HTML do en/  (nebo vynechat -> clanek bude jen CZ, viz nize)
+    2. napsat mutace do en/ resp. de/  (nebo vynechat, viz nize)
     3. pridat zaznam do .build/blog.json (poradi v poli = poradi na webu)
     4. spustit tenhle skript
 
-Clanek bez EN mutace: v manifestu nastav "en": null. Nezobrazi se v EN vypisech
-a v sitemap dostane jen CZ URL bez hreflang alternate (falesny alternate je horsi
-nez zadny).
+Clanek bez mutace v nejakem jazyce: v manifestu nastav "en": null / "de": null.
+Nezobrazi se ve vypisech daneho jazyka a v sitemap nedostane jeho hreflang
+alternate (falesny alternate je horsi nez zadny).
+
+Clanek s obrazkem jen v nekterych jazycich: obrazek je spolecny ("image"), ale
+karta se vykresli jen tam, kde ma jazykova mutace vyplneny "alt". Tim jde nechat
+grafiku s vypalenym ceskym textem mimo cizojazycne vypisy.
+
+Pridani dalsiho jazyka:
+    1. do "languages" pridat blok (code, home, hub, home_file, hub_file, texty)
+    2. do "pages" doplnit URL homepage a hubu pod klicem jazyka
+    3. do clanku doplnit jazykovy blok (nebo null)
+    4. vytvorit HTML soubory a spustit skript
 """
 
 import json
@@ -56,6 +68,18 @@ def esc(text):
     return (text.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;'))
 
 
+def languages(data):
+    return data['languages']
+
+
+def x_default(data):
+    """Jazyk, na ktery miri hreflang x-default (vychozi = prvni v seznamu)."""
+    for lg in languages(data):
+        if lg.get('x_default'):
+            return lg
+    return languages(data)[0]
+
+
 # ---------------------------------------------------------------- generatory
 
 def homepage_cards(data, lang):
@@ -66,7 +90,7 @@ def homepage_cards(data, lang):
     for a in data['articles']:
         if limit is not None and len(out) >= limit:
             break
-        loc = a.get(lang)
+        loc = a.get(lang['code'])
         if not loc:
             continue
         img = a.get('image')
@@ -75,7 +99,6 @@ def homepage_cards(data, lang):
                      'loading="lazy" decoding="async">' % (img['card'], esc(loc['alt']), img['w'], img['h']))
         else:
             thumb = '            <span class="gthumb is-empty" aria-hidden="true"></span>'
-        read_more = 'Číst článek →' if lang == 'cs' else 'Read article →'
         out.append(
             '          <a class="guide-card" href="%s">\n%s\n'
             '            <span class="gk">%s</span>\n'
@@ -83,7 +106,7 @@ def homepage_cards(data, lang):
             '            <span class="gd">%s</span>\n'
             '            <span class="garw">%s</span>\n'
             '          </a>' % (url_for(loc['slug']), thumb, esc(loc['kicker']),
-                                esc(loc['title']), esc(loc['card']), read_more))
+                                esc(loc['title']), esc(loc['card']), lang['read_more']))
     return '\n'.join(out)
 
 
@@ -91,7 +114,7 @@ def hub_cards(data, lang):
     """Karty do hubu /blog/."""
     out = []
     for a in data['articles']:
-        loc = a.get(lang)
+        loc = a.get(lang['code'])
         if not loc:
             continue
         img = a.get('image')
@@ -100,7 +123,6 @@ def hub_cards(data, lang):
                      'loading="lazy" decoding="async">' % (img['card'], esc(loc['alt']), img['w'], img['h']))
         else:
             thumb = '          <span class="pthumb is-empty" aria-hidden="true"></span>'
-        read_more = 'Číst →' if lang == 'cs' else 'Read →'
         out.append(
             '        <a class="post-card" href="%s">\n%s\n'
             '          <span class="pk">%s</span>\n'
@@ -109,7 +131,7 @@ def hub_cards(data, lang):
             '          <span class="pm"><time datetime="%s">%s</time>'
             '<span class="parw" aria-hidden="true">%s</span></span>\n'
             '        </a>' % (url_for(loc['slug']), thumb, esc(loc['kicker']), esc(loc['title']),
-                              esc(loc['hub']), a['date'], loc['date_label'], read_more))
+                              esc(loc['hub']), a['date'], loc['date_label'], lang['read_more_hub']))
     return '\n\n'.join(out)
 
 
@@ -118,14 +140,13 @@ def itemlist(data, lang, site):
     items = []
     pos = 0
     for a in data['articles']:
-        loc = a.get(lang)
+        loc = a.get(lang['code'])
         if not loc:
             continue
         pos += 1
         items.append({'@type': 'ListItem', 'position': pos,
                       'url': site + url_for(loc['slug']), 'name': loc['title']})
-    name = 'Články na headofai.cz' if lang == 'cs' else 'Articles on headofai.cz'
-    blob = {'@context': 'https://schema.org', '@type': 'ItemList', 'name': name,
+    blob = {'@context': 'https://schema.org', '@type': 'ItemList', 'name': lang['itemlist'],
             'itemListOrder': 'https://schema.org/ItemListOrderAscending',
             'itemListElement': items}
     return json.dumps(blob, ensure_ascii=False, separators=(',', ':'))
@@ -133,30 +154,37 @@ def itemlist(data, lang, site):
 
 def sitemap(data):
     site = data['site']
+    default = x_default(data)['code']
     rows = []
 
-    def block(loc, lastmod, changefreq, priority, cs=None, en=None):
+    def block(loc, lastmod, changefreq, priority, urls):
+        """urls = {kod jazyka: absolutni URL}. Alternate se vypisuje jen kdyz
+        existuje vic nez jedna mutace — falesny alternate je horsi nez zadny."""
         alt = ''
-        if cs and en:
-            alt = ('    <xhtml:link rel="alternate" hreflang="cs" href="%s"/>\n'
-                   '    <xhtml:link rel="alternate" hreflang="en" href="%s"/>\n'
-                   '    <xhtml:link rel="alternate" hreflang="x-default" href="%s"/>\n' % (cs, en, cs))
+        if len(urls) > 1:
+            parts = ['    <xhtml:link rel="alternate" hreflang="%s" href="%s"/>\n'
+                     % (lg['code'], urls[lg['code']])
+                     for lg in languages(data) if lg['code'] in urls]
+            if default in urls:
+                parts.append('    <xhtml:link rel="alternate" hreflang="x-default" href="%s"/>\n'
+                             % urls[default])
+            alt = ''.join(parts)
         return ('  <url>\n    <loc>%s</loc>\n%s    <lastmod>%s</lastmod>\n'
                 '    <changefreq>%s</changefreq>\n    <priority>%s</priority>\n  </url>'
                 % (loc, alt, lastmod, changefreq, priority))
 
     for p in data['pages']:
-        cs_url, en_url = site + p['cs'], site + p['en'] if p.get('en') else None
-        rows.append(block(cs_url, p['lastmod'], p['changefreq'], p['priority'], cs_url, en_url))
-        if en_url:
-            rows.append(block(en_url, p['lastmod'], p['changefreq'], p['priority'], cs_url, en_url))
+        urls = {lg['code']: site + p[lg['code']] for lg in languages(data) if p.get(lg['code'])}
+        for lg in languages(data):
+            if lg['code'] in urls:
+                rows.append(block(urls[lg['code']], p['lastmod'], p['changefreq'], p['priority'], urls))
 
     for a in data['articles']:
-        cs_url = site + url_for(a['cs']['slug'])
-        en_url = site + url_for(a['en']['slug']) if a.get('en') else None
-        rows.append(block(cs_url, a['lastmod'], 'monthly', a['priority'], cs_url, en_url))
-        if en_url:
-            rows.append(block(en_url, a['lastmod'], 'monthly', a['priority'], cs_url, en_url))
+        urls = {lg['code']: site + url_for(a[lg['code']]['slug'])
+                for lg in languages(data) if a.get(lg['code'])}
+        for lg in languages(data):
+            if lg['code'] in urls:
+                rows.append(block(urls[lg['code']], a['lastmod'], 'monthly', a['priority'], urls))
 
     return ('<?xml version="1.0" encoding="UTF-8"?>\n'
             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n'
@@ -165,15 +193,23 @@ def sitemap(data):
 
 
 def llms_links(data):
+    """Vychozi jazyk jako hlavni seznam, ostatni mutace pod vlastnim nadpisem."""
     site = data['site']
+    default = x_default(data)
     out = []
     for a in data['articles']:
-        out.append('- %s%s — %s' % (site, url_for(a['cs']['slug']), a['cs']['llms']))
-    out.append('')
-    out.append('Anglické mutace:')
-    for a in data['articles']:
-        if a.get('en'):
-            out.append('- %s%s — %s' % (site, url_for(a['en']['slug']), a['en']['llms']))
+        loc = a.get(default['code'])
+        if loc:
+            out.append('- %s%s — %s' % (site, url_for(loc['slug']), loc['llms']))
+    for lg in languages(data):
+        if lg['code'] == default['code']:
+            continue
+        rows = ['- %s%s — %s' % (site, url_for(a[lg['code']]['slug']), a[lg['code']]['llms'])
+                for a in data['articles'] if a.get(lg['code'])]
+        if rows:
+            out.append('')
+            out.append(lg['llms_heading'])
+            out.extend(rows)
     return '\n'.join(out)
 
 
@@ -200,10 +236,11 @@ def main():
     site = data['site']
     planned = {}
 
-    for path, lang in (('index.html', 'cs'), ('en/index.html', 'en')):
+    for lang in languages(data):
+        path = lang['home_file']
         planned[path] = replace_marked(read(path), 'BLOG:CARDS', homepage_cards(data, lang), path)
 
-    for path, lang in (('blog/index.html', 'cs'), ('en/blog/index.html', 'en')):
+        path = lang['hub_file']
         t = replace_marked(read(path), 'BLOG:POSTS', hub_cards(data, lang), path)
         planned[path] = replace_itemlist(t, itemlist(data, lang, site), path)
 
@@ -218,16 +255,16 @@ def main():
                 with open(os.path.join(ROOT, path), 'w', encoding='utf-8') as f:
                     f.write(new)
 
-    n_cs = len(data['articles'])
-    n_en = sum(1 for a in data['articles'] if a.get('en'))
+    counts = ', '.join('%d %s' % (sum(1 for a in data['articles'] if a.get(lg['code'])), lg['code'].upper())
+                       for lg in languages(data))
     if check:
         if changed:
             print('NEAKTUALNI: ' + ', '.join(sorted(changed)))
             sys.exit(1)
-        print('vse aktualni (%d clanku CZ, %d EN)' % (n_cs, n_en))
+        print('vse aktualni (clanku: %s)' % counts)
     else:
         print('zapsano: ' + (', '.join(sorted(changed)) if changed else 'nic (uz bylo aktualni)'))
-        print('%d clanku CZ, %d EN' % (n_cs, n_en))
+        print('clanku: %s' % counts)
 
 
 if __name__ == '__main__':

@@ -80,7 +80,16 @@
         "date_label": "28 Jul 2026",
         "llms": "The EU AI Act after the Omnibus: what a CEO must do now. What Regulation (EU) 2026/1744 changed, provider vs deployer roles, seven typical use cases, the structure of an AI system register and a thirty-day plan for the CEO."
       },
-      "de": null
+      "de": {
+        "slug": "de/eu-ai-act-nach-dem-omnibus",
+        "kicker": "Regulierung",
+        "title": "Der EU AI Act nach dem Omnibus: Was ein CEO jetzt tun muss",
+        "card": "Was verschoben wurde, was ab dem 2. August 2026 gilt — und ein 30-Tage-Plan, um KI im Unternehmen unter Kontrolle zu bekommen.",
+        "hub": "Was die Verordnung 2026/1744 verschoben hat und was ab dem 2. August 2026 gilt, sieben typische Use Cases, ein Register der KI-Systeme und ein 30-Tage-Plan für die Führung.",
+        "alt": "Flagge der Europäischen Union, die an einem Mast vor blauem Himmel weht",
+        "date_label": "28. Juli 2026",
+        "llms": "Der EU AI Act nach dem Omnibus: Was ein CEO jetzt tun muss. Was die Verordnung (EU) 2026/1744 geändert hat, der Unterschied zwischen Anbieter und Betreiber, sieben typische Use Cases, die Struktur eines Registers der KI-Systeme und ein 30-Tage-Plan für den CEO."
+      }
     },
     {
       "id": "caio",
@@ -112,7 +121,16 @@
         "date_label": "29 Jul 2026",
         "llms": "Chief AI Officer (CAIO): who is accountable for AI. The five components of the role's mandate, comparison with IT/CTO/legal/CEO, four areas of management (portfolio, governance, vendors, impact), KPIs and when a fractional CAIO is enough."
       },
-      "de": null
+      "de": {
+        "slug": "de/chief-ai-officer",
+        "kicker": "Verantwortung",
+        "title": "Chief AI Officer (CAIO): Wer im Unternehmen KI verantwortet",
+        "card": "Welches Mandat die Rolle braucht, was sie tatsächlich steuert und wann ein externer CAIO statt einer internen Stelle reicht.",
+        "hub": "Welches Mandat die Rolle braucht, was sie tatsächlich steuert, woran sie gemessen wird — und wann ein externer CAIO statt einer internen Stelle reicht.",
+        "alt": "Sitzung der Geschäftsleitung am Konferenztisch — wer die Verantwortung für das Thema KI trägt",
+        "date_label": "29. Juli 2026",
+        "llms": "Chief AI Officer (CAIO): Wer im Unternehmen KI verantwortet. Fünf Bestandteile des Mandats, Vergleich mit IT, CTO, Rechtsabteilung und CEO, vier Steuerungsbereiche, KPIs und wann ein externer CAIO reicht."
+      }
     },
     {
       "id": "co-je-head-of-ai",
@@ -185,7 +203,16 @@
         "date_label": "22 Jul 2026",
         "llms": "When a company needs a Head of AI: 7 signals, when you do not need the role yet, and full-time vs fractional vs consultant."
       },
-      "de": null
+      "de": {
+        "slug": "de/wann-braucht-ein-unternehmen-einen-head-of-ai",
+        "kicker": "Die Entscheidung",
+        "title": "Wann ein Unternehmen einen Head of AI braucht",
+        "card": "Sieben Signale, dass es Zeit ist, KI einen klaren Owner zu geben — und wann Sie die Rolle noch nicht brauchen.",
+        "hub": "Sieben Signale, dass es Zeit ist, KI einen klaren Owner zu geben — und die Situationen, in denen Sie die Rolle noch nicht brauchen.",
+        "alt": "Besprechung an einem Tisch voller Laptops mit verschiedenen KI-Tools und ein Whiteboard mit der Frage, wem KI im Unternehmen gehört",
+        "date_label": "22. Juli 2026",
+        "llms": "Wann ein Unternehmen einen Head of AI braucht: 7 Signale, wann Sie die Rolle noch nicht brauchen und der Vergleich Vollzeit vs. Fractional vs. Berater."
+      }
     },
     {
       "id": "fractional-vs-fulltime",
@@ -217,7 +244,16 @@
         "date_label": "22 Jul 2026",
         "llms": "Fractional Head of AI vs full-time CAIO: definition of the model, comparison of cost and risk, and who it suits."
       },
-      "de": null
+      "de": {
+        "slug": "de/fractional-vs-fulltime-caio",
+        "kicker": "Modell der Zusammenarbeit",
+        "title": "Fractional Head of AI vs. Vollzeit-CAIO",
+        "card": "Wann eine Rolle in Teilzeit reicht und wann sich eine Vollzeitstelle lohnt: Kosten, Risiko und Geschwindigkeit.",
+        "hub": "Wann eine Rolle in Teilzeit reicht und wann sich eine Vollzeitstelle lohnt: Vergleich von Kosten, Risiko und Geschwindigkeit des Einsatzes.",
+        "alt": null,
+        "date_label": "22. Juli 2026",
+        "llms": "Fractional Head of AI vs. Vollzeit-CAIO: Definition des Modells, Kostenvergleich, für wen sich das Modell eignet und wie die Zusammenarbeit in der Praxis aussieht."
+      }
     },
     {
       "id": "model-registry",
@@ -249,7 +285,16 @@
         "date_label": "29 Jul 2026",
         "llms": "Model registry: why companies need a system for governing AI models. Six record layers (identity, provenance, evaluation, approval, deployment, operations), the difference between a technical MLOps model registry and an enterprise model inventory in model risk management, the model lifecycle, what generative AI changes (model + prompt + data + tools + configuration) and the most common implementation mistakes."
       },
-      "de": null
+      "de": {
+        "slug": "de/model-registry",
+        "kicker": "KI-Governance",
+        "title": "Model Registry: Warum Unternehmen ein System zur Steuerung von KI-Modellen brauchen",
+        "card": "Welche Modellversion produktiv läuft, aus welchen Daten sie entstand und wer sie freigegeben hat — und wann ein Unternehmen eine Registry wirklich braucht.",
+        "hub": "Was eine Model Registry erfasst, der Unterschied zwischen technischer Registry und Enterprise Model Inventory, was generative KI ändert und die häufigsten Fehler bei der Einführung.",
+        "alt": "Laptop mit einer Übersicht der KI-Modellversionen — Liste der Modelle mit Freigabestatus und Kennzahlen",
+        "date_label": "29. Juli 2026",
+        "llms": "Model Registry: Warum Unternehmen ein System zur Steuerung von KI-Modellen brauchen. Was die Registry erfasst, Unterschied zu Model Inventory, Lebenszyklus eines Modells, was generative KI ändert und die häufigsten Fehler."
+      }
     },
     {
       "id": "plat",

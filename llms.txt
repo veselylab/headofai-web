@@ -47,7 +47,12 @@ Anglické mutace:
 - https://headofai.cz/en/chief-ai-officer-salary — Head of AI / Chief AI Officer pay: real ranges in Czechia by company size, comparison with other markets and the cost of the fractional model.
 
 Německé mutace:
+- https://headofai.cz/de/eu-ai-act-nach-dem-omnibus — Der EU AI Act nach dem Omnibus: Was ein CEO jetzt tun muss. Was die Verordnung (EU) 2026/1744 geändert hat, der Unterschied zwischen Anbieter und Betreiber, sieben typische Use Cases, die Struktur eines Registers der KI-Systeme und ein 30-Tage-Plan für den CEO.
+- https://headofai.cz/de/chief-ai-officer — Chief AI Officer (CAIO): Wer im Unternehmen KI verantwortet. Fünf Bestandteile des Mandats, Vergleich mit IT, CTO, Rechtsabteilung und CEO, vier Steuerungsbereiche, KPIs und wann ein externer CAIO reicht.
 - https://headofai.cz/de/was-ist-head-of-ai — Was ist ein Head of AI / Chief AI Officer: was die Rolle tut, Vergleich mit CTO, CDO und AI Engineer, notwendige Kompetenzen und häufige Fragen zur Rolle.
+- https://headofai.cz/de/wann-braucht-ein-unternehmen-einen-head-of-ai — Wann ein Unternehmen einen Head of AI braucht: 7 Signale, wann Sie die Rolle noch nicht brauchen und der Vergleich Vollzeit vs. Fractional vs. Berater.
+- https://headofai.cz/de/fractional-vs-fulltime-caio — Fractional Head of AI vs. Vollzeit-CAIO: Definition des Modells, Kostenvergleich, für wen sich das Modell eignet und wie die Zusammenarbeit in der Praxis aussieht.
+- https://headofai.cz/de/model-registry — Model Registry: Warum Unternehmen ein System zur Steuerung von KI-Modellen brauchen. Was die Registry erfasst, Unterschied zu Model Inventory, Lebenszyklus eines Modells, was generative KI ändert und die häufigsten Fehler.
 <!-- /BLOG:LINKS -->
 
 ## Kontakt

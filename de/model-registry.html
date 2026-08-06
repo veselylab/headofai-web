@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Model Registry: was sie ist und warum Unternehmen sie brauchen | headofai.cz</title>
+  <meta name="description" content="Eine Model Registry erfasst Versionen, Herkunft, Freigaben, Einsätze und die Verantwortung für KI-Modelle. Wir erklären den Unterschied zwischen technischer Registry, Model Inventory und KI-Governance.">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+  <link rel="canonical" href="https://headofai.cz/de/model-registry"><link rel="alternate" hreflang="cs" href="https://headofai.cz/model-registry"><link rel="alternate" hreflang="en" href="https://headofai.cz/en/model-registry"><link rel="alternate" hreflang="de" href="https://headofai.cz/de/model-registry">
+<link rel="alternate" hreflang="x-default" href="https://headofai.cz/model-registry">
+  <meta name="author" content="David Veselý">
+  <meta name="theme-color" content="#161718">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Model Registry: Warum Unternehmen ein System zur Steuerung von KI-Modellen brauchen">
+  <meta property="og:description" content="Ein Unternehmen kann ein KI-Modell nicht zuverlässig steuern, wenn es nicht weiß, welche Version produktiv läuft, aus welchen Daten sie entstand, wer sie freigegeben hat und wo sie eingesetzt wird.">
+  <meta property="og:url" content="https://headofai.cz/de/model-registry">
+  <meta property="og:site_name" content="headofai.cz">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:image" content="https://headofai.cz/assets/blog/model-registry.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@headofaicz">
+  <meta name="twitter:creator" content="@headofaicz">
+  <meta name="twitter:image" content="https://headofai.cz/assets/blog/model-registry.webp">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="/_ds/industry-0ef2ebb3-0745-41f6-a970-aac61ad8f5fb/styles.css">
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Article","headline":"Model Registry: Warum Unternehmen ein System zur Steuerung von KI-Modellen brauchen","description":"Was eine Model Registry erfasst, der Unterschied zwischen technischer Registry und Enterprise Model Inventory, was generative KI daran ändert und die häufigsten Fehler bei der Einführung.","datePublished":"2026-07-29","dateModified":"2026-08-06","inLanguage":"de-DE","author":{"@type":"Person","name":"David Veselý","url":"https://headofai.cz"},"publisher":{"@type":"Organization","name":"Vesely.ai s.r.o.","url":"https://headofai.cz"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://headofai.cz/de/model-registry"},"image":"https://headofai.cz/assets/blog/model-registry.webp"}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Startseite","item":"https://headofai.cz/de/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://headofai.cz/de/blog/"},{"@type":"ListItem","position":3,"name":"Model Registry","item":"https://headofai.cz/de/model-registry"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Was ist eine Model Registry?","acceptedAnswer":{"@type":"Answer","text":"Eine Model Registry ist ein zentrales System zur Erfassung und Verwaltung von Modellen über ihren gesamten Lebenszyklus. Sie verknüpft nicht nur die Datei mit dem trainierten Modell, sondern bindet daran die Informationen, die für Verständnis, Validierung, Freigabe, Einsatz, Monitoring und eine mögliche Außerbetriebnahme nötig sind: Name und Zweck, Versionen, Artefakte, Herkunft, verwendete Datensätze und Trainingsläufe, Evaluationsergebnisse, Freigabestatus, Owner, produktive Einsätze und die Änderungshistorie."}},{"@type":"Question","name":"Worin unterscheiden sich Model Registry und Model Inventory?","acceptedAnswer":{"@type":"Answer","text":"Die technische Model Registry im MLOps verwaltet Modellartefakte und ihre Versionen — sie beantwortet, welche Version produktiv ist, welches Experiment sie erzeugt hat und wie ein Rollback funktioniert. Das Enterprise Model Inventory im Model Risk Management und in der KI-Governance erfasst zusätzlich den geschäftlichen Zweck, den Owner, die Kritikalität, erlaubte und verbotene Nutzung, den Validierungsstand, die Abhängigkeit vom Anbieter, die Incident-Historie und den Plan zur Außerbetriebnahme. Es muss nicht ein System sein, in einer reifen Organisation sollten beide aber ein verbundenes Ganzes bilden."}},{"@type":"Question","name":"Warum reicht es nicht, das Modell als Datei zu speichern?","acceptedAnswer":{"@type":"Answer","text":"Ein Dateiname sagt nicht, ob es das zwölfte Experiment oder die zwölfte Produktionsversion ist, aus welcher Datenversion das Modell entstand, welcher Code-Commit verwendet wurde, welche Variablen es erwartet, welche Ergebnisse es erreicht hat, ob es eine unabhängige Validierung durchlaufen hat, wer den Einsatz freigegeben hat und ob irgendwo noch eine ältere Version läuft. Ein Dateiname ist kein Steuerungssystem."}},{"@type":"Question","name":"Braucht jedes Unternehmen eine Model Registry?","acceptedAnswer":{"@type":"Answer","text":"Nein. Ein Unternehmen, das nur einige fertige SaaS-Anwendungen nutzt, braucht vor allem ein AI System Inventory und Regeln für Anbieter. Eine Model Registry wird vor allem dann wichtig, wenn eine Organisation selbst Modelle entwickelt oder feinjustiert, mehrere Versionen desselben Modells betreibt, Modelle in wichtigen Entscheidungsprozessen einsetzt, formale Validierung, Reproduzierbarkeit und schnellen Rollback braucht oder strengeren Audit-Anforderungen unterliegt."}},{"@type":"Question","name":"Was verändert generative KI an der Model Registry?","acceptedAnswer":{"@type":"Answer","text":"Bei generativer KI besitzt ein Unternehmen die Modellgewichte oft nicht und steuert das Training nicht — es nutzt ein externes Foundation Model über eine API. Das Verhalten der Anwendung bestimmt dann nicht nur das Modell, sondern auch der System-Prompt, die Parameter, die Wissensbasis, das Embedding-Modell, die Retrieval-Logik, die verfügbaren Werkzeuge, die Berechtigungen des Agenten, die Guardrails und die Nachverarbeitung der Ausgabe. Die gesteuerte Einheit ist deshalb nicht die Modellversion, sondern die Kombination aus Modell, Prompt, Daten, Werkzeugen, Konfiguration und Evaluation."}},{"@type":"Question","name":"Entbindet die Nutzung eines externen Modells das Unternehmen von der Verantwortung?","acceptedAnswer":{"@type":"Answer","text":"Nein. Der Anbieter kann das Modell, sein Verhalten, die verfügbaren Versionen, den Preis, die Limits, die Sicherheitsfilter und die Bedingungen der Datenverarbeitung ändern. Bei einem proprietären Modell kann die Erfassung sogar wichtiger sein, weil die Organisation keinen Zugang zu allen Informationen über Konstruktion, Daten und interne Änderungen hat."}}]}
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { margin: 0; text-wrap: pretty; }
+    *, *::before, *::after { box-sizing: border-box; }
+    a { color: #e7e2d6; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; text-decoration-color: color-mix(in srgb, #e7e2d6 32%, transparent); }
+    a:hover { color: #ffffff; text-decoration-color: currentColor; }
+    img { max-width: 100%; }
+
+    /* ---- převzato z homepage (konzistence) ---- */
+    .wrap { max-width: 1180px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); }
+    .accent { color: var(--color-accent); }
+
+    /* ==== ZNOVUPOUŽITELNÁ ŠABLONA ČLÁNKU (kopíruj pro další články) ==== */
+    .article { max-width: 760px; margin: 0 auto; padding: clamp(30px, 6vw, 56px) clamp(20px, 4vw, 40px) clamp(48px, 7vw, 80px); }
+    .breadcrumb { font-size: 13px; letter-spacing: 0.01em; color: color-mix(in srgb, var(--color-text) 45%, transparent); margin: 0 0 26px; }
+    .breadcrumb a { color: color-mix(in srgb, var(--color-text) 62%, transparent); }
+    .breadcrumb span { color: color-mix(in srgb, var(--color-text) 32%, transparent); margin: 0 8px; }
+    .article-h1 { font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(32px, 5.5vw, 52px); line-height: 1.08; letter-spacing: -0.02em; margin: 0; }
+    .article-meta { font-size: 14px; color: color-mix(in srgb, var(--color-text) 48%, transparent); margin: 18px 0 0; }
+    .article-hero { margin: 26px 0 0; }
+    .article-hero img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; border: 1px solid var(--color-divider); }
+    .article-answer { font-size: clamp(18px, 2.2vw, 21px); line-height: 1.62; color: color-mix(in srgb, var(--color-text) 85%, transparent); margin: 26px 0 0; padding: 24px 0 0; border-top: 1px solid var(--color-divider); }
+    .article-answer strong { color: var(--color-text); font-weight: 600; }
+
+    .prose h2 { font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(26px, 3.6vw, 34px); line-height: 1.15; letter-spacing: -0.01em; margin: 52px 0 0; }
+    .prose h3 { font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 20px; margin: 32px 0 0; }
+    .prose p { font-size: 17px; line-height: 1.75; color: color-mix(in srgb, var(--color-text) 80%, transparent); margin: 18px 0 0; }
+    .prose strong { color: var(--color-text); font-weight: 600; }
+    .prose ul { margin: 18px 0 0; padding: 0; list-style: none; }
+    .prose li { position: relative; padding-left: 22px; font-size: 17px; line-height: 1.7; color: color-mix(in srgb, var(--color-text) 80%, transparent); margin: 0 0 10px; }
+    .prose li:last-child { margin-bottom: 0; }
+    .prose li::before { content: "+"; position: absolute; left: 0; top: 0; color: var(--color-accent); font-weight: 600; }
+    .prose ol { margin: 18px 0 0; padding: 0 0 0 24px; }
+    .prose ol li { padding-left: 6px; }
+    .prose ol li::before { content: none; }
+    .prose code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.92em; background: color-mix(in srgb, var(--color-surface) 70%, transparent); border: 1px solid var(--color-divider); padding: 2px 6px; border-radius: 3px; word-break: break-all; }
+
+    .table-wrap { overflow-x: auto; margin: 26px 0 0; border: 1px solid var(--color-divider); }
+    table.cmp { border-collapse: collapse; width: 100%; min-width: 660px; font-size: 15px; }
+    table.cmp th, table.cmp td { text-align: left; padding: 14px 16px; border-bottom: 1px solid var(--color-divider); vertical-align: top; line-height: 1.5; }
+    table.cmp thead th { font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 16px; color: var(--color-text); background: color-mix(in srgb, var(--color-surface) 50%, transparent); }
+    table.cmp tbody th { font-weight: 600; color: var(--color-text); }
+    table.cmp td { color: color-mix(in srgb, var(--color-text) 72%, transparent); }
+    table.cmp tbody tr:last-child th, table.cmp tbody tr:last-child td { border-bottom: none; }
+    table.cmp .role-hi th, table.cmp .role-hi td { background: color-mix(in srgb, #c8ae71 8%, transparent); }
+    table.cmp .role-hi th { color: var(--color-accent-100); }
+
+    .faq { margin: 26px 0 0; border-top: 1px solid var(--color-divider); }
+    .faq-item { border-bottom: 1px solid var(--color-divider); }
+    .faq-item summary { cursor: pointer; list-style: none; padding: 20px 0; font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 20px; line-height: 1.25; color: var(--color-text); display: flex; justify-content: space-between; gap: 16px; align-items: center; }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after { content: "+"; color: color-mix(in srgb, var(--color-text) 55%, transparent); font-size: 24px; line-height: 1; flex: none; }
+    .faq-item[open] summary::after { content: "\2212"; }
+    .faq-item p { font-size: 16px; line-height: 1.7; color: color-mix(in srgb, var(--color-text) 78%, transparent); margin: 0; padding: 0 0 22px; max-width: 66ch; }
+
+    .cta-block { border: 1px solid color-mix(in srgb, #c8ae71 45%, transparent); background: color-mix(in srgb, #c8ae71 7%, transparent); padding: clamp(24px, 4vw, 34px); margin: 52px 0 0; text-align: center; }
+    .cta-block p { font-size: 18px; line-height: 1.6; margin: 0 0 20px; color: var(--color-text); }
+    .cta-block .btn { display: inline-block; text-decoration: none; padding: 13px 24px; font-size: 15px; }
+    /* ==== /ŠABLONA ČLÁNKU ==== */
+
+    /* Zvýrazněná teze */
+    .callout { border-left: 2px solid var(--color-accent); padding: 4px 0 4px 20px; margin: 28px 0 0; }
+    .callout p { font-size: clamp(17px, 2vw, 19px); line-height: 1.6; color: var(--color-text); margin: 0; }
+
+    /* Vrstva výkladu: co který systém odpovídá */
+    .qa { margin: 14px 0 0; padding-left: 20px; border-left: 1px solid var(--color-divider); }
+    .qa p { font-size: 16px; margin: 0; color: color-mix(in srgb, var(--color-text) 62%, transparent); font-style: italic; }
+
+    /* Nabídka domény — vizuálně oddělené od těla článku, aby to nečetlo jako obsah */
+    .offer { border: 1px solid var(--color-divider); background: color-mix(in srgb, var(--color-surface) 45%, transparent); padding: clamp(22px, 4vw, 34px); margin: 56px 0 0; }
+    .offer .offer-label { font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: color-mix(in srgb, var(--color-text) 42%, transparent); margin: 0; }
+    .offer h2 { margin: 10px 0 0 !important; font-size: clamp(22px, 3vw, 27px) !important; }
+    .offer p { font-size: 16px; }
+    .offer li { font-size: 16px; }
+    .offer .terms { font-size: 15px; line-height: 1.6; margin: 20px 0 0; color: color-mix(in srgb, var(--color-text) 70%, transparent); }
+    .offer .btn { display: inline-block; text-decoration: none; padding: 12px 22px; font-size: 15px; margin: 22px 0 0; }
+
+    /* Poznámky pod čarou / zdroje */
+    .fn { font-size: 12px; vertical-align: super; line-height: 0; margin-left: 1px; }
+    .fn a { text-decoration: none; color: var(--color-accent); }
+    .prose ol.sources { margin: 26px 0 0; padding: 0; list-style: none; counter-reset: src; }
+    .prose ol.sources li { position: relative; padding: 14px 0 14px 34px; border-bottom: 1px solid var(--color-divider); font-size: 15px; line-height: 1.6; color: color-mix(in srgb, var(--color-text) 68%, transparent); margin: 0; }
+    .prose ol.sources li::before { counter-increment: src; content: "[" counter(src) "]"; position: absolute; left: 0; top: 14px; color: var(--color-accent); font-size: 13px; }
+    .sources li b { color: color-mix(in srgb, var(--color-text) 88%, transparent); font-weight: 600; }
+    .sources li a { color: inherit; text-decoration: none; }
+    .sources li a:hover b { color: var(--color-accent); }
+    .sources li a:hover { text-decoration: none; }
+    .src-dom { display: inline-block; margin-left: 6px; font-size: 13px; color: color-mix(in srgb, var(--color-text) 40%, transparent); white-space: nowrap; }
+    .src-dom::before { content: "↗ "; color: var(--color-accent); }
+    .disclaimer { font-size: 14px; line-height: 1.65; color: color-mix(in srgb, var(--color-text) 48%, transparent); margin: 22px 0 0; font-style: italic; }
+
+    /* Související průvodce (cross-link cluster) */
+    .related { margin: 52px 0 0; padding-top: 30px; border-top: 1px solid var(--color-divider); }
+    .related h2 { margin: 0; }
+    .related-list { margin: 20px 0 0; padding: 0; list-style: none; }
+    .related-list li { margin: 0; padding: 0; }
+    .related-list li::before { content: none; }
+    .related-list a { display: flex; justify-content: space-between; align-items: baseline; gap: 20px; padding: 16px 0; border-bottom: 1px solid var(--color-divider); font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 18px; line-height: 1.3; color: var(--color-text); text-decoration: none; }
+    .related-list li:first-child a { border-top: 1px solid var(--color-divider); }
+    .related-list a:hover { color: var(--color-accent); }
+    .related-list a .arrow { color: var(--color-accent); flex: none; }
+
+    @media (max-width: 768px) { #nav-links { display: none !important; } header nav > .lang-switch { margin-left: auto; } }
+    .lang-switch { display: flex; align-items: center; gap: 8px; }
+    .lang-switch a { display: block; width: 26px; height: 18px; border-radius: 3px; overflow: hidden; line-height: 0; opacity: 0.45; box-shadow: 0 0 0 1px rgba(255,255,255,0.16); transition: opacity 180ms ease, box-shadow 180ms ease; }
+    .lang-switch a:hover, .lang-switch a:focus-visible { opacity: 0.9; }
+    .lang-switch a[aria-current="true"] { opacity: 1; box-shadow: 0 0 0 1px var(--color-accent); }
+    .lang-switch svg { display: block; width: 100%; height: 100%; }
+  </style>
+</head>
+
+<body>
+<div style="--color-bg: #161718; --color-surface: #212224; --color-text: #f2f2f3; --color-divider: color-mix(in srgb, #f2f2f3 13%, transparent); --color-accent: #c8ae71; --color-accent-100: #f5edd9; --color-accent-200: #ebdcb8; --color-accent-300: #ddc794; --color-accent-400: #d3b97e; --color-accent-500: #c8ae71; --color-accent-600: #ac9358; --color-accent-700: #86733f; --color-accent-800: #5f512c; --color-accent-900: #3a3119; background: var(--color-bg); color: var(--color-text); font-family: var(--font-body); min-height: 100vh;">
+
+  <!-- HLAVIČKA (převzato z homepage) -->
+  <header style="position: sticky; top: 0; z-index: 50; backdrop-filter: blur(14px); background: color-mix(in srgb, #161718 60%, transparent); border-bottom: 1px solid var(--color-divider);">
+    <nav aria-label="Hauptnavigation" style="max-width: 1180px; margin: 0 auto; display: flex; align-items: center; gap: clamp(12px, 3vw, 32px); padding: 14px clamp(20px, 4vw, 56px);">
+      <a href="/de/" style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 32px; color: var(--color-text); letter-spacing: -0.01em; line-height: 1; text-decoration: none;">headofai<span class="accent">.cz</span></a>
+      <div id="nav-links" style="display: flex; gap: clamp(14px, 2.5vw, 26px); flex: 1; justify-content: center;">
+        <a href="/de/#o-mne" style="color: color-mix(in srgb, var(--color-text) 62%, transparent); font-size: 15px; text-decoration: none;">Über mich</a>
+        <a href="/de/#proces" style="color: color-mix(in srgb, var(--color-text) 62%, transparent); font-size: 15px; text-decoration: none;">Vorgehen</a>
+        <a href="/de/#ceny" style="color: color-mix(in srgb, var(--color-text) 62%, transparent); font-size: 15px; text-decoration: none;">Preise</a>
+        <a href="/de/blog/" style="color: color-mix(in srgb, var(--color-text) 62%, transparent); font-size: 15px; text-decoration: none;">Blog</a>
+      </div>
+      <div class="lang-switch" role="group" aria-label="Sprache"><a href="/model-registry" hreflang="cs" title="Česky" aria-label="Česky"><svg viewBox="0 0 6 4" aria-hidden="true" focusable="false"><path fill="#fff" d="M0 0h6v2H0z"/><path fill="#d7141a" d="M0 2h6v2H0z"/><path fill="#11457e" d="M0 0l3 2-3 2z"/></svg></a><a href="/en/model-registry" hreflang="en" title="English" aria-label="English"><svg viewBox="0 0 60 30" aria-hidden="true" focusable="false"><path fill="#012169" d="M0 0h60v30H0z"/><path stroke="#fff" stroke-width="6" d="M0 0l60 30M60 0L0 30"/><path stroke="#c8102e" stroke-width="4" d="M0 0l60 30M60 0L0 30"/><path stroke="#fff" stroke-width="10" d="M30 0v30M0 15h60"/><path stroke="#c8102e" stroke-width="6" d="M30 0v30M0 15h60"/></svg></a><a href="/de/model-registry" hreflang="de" title="Deutsch" aria-label="Deutsch" aria-current="true"><svg viewBox="0 0 5 3" aria-hidden="true" focusable="false"><path fill="#000" d="M0 0h5v1H0z"/><path fill="#d00" d="M0 1h5v1H0z"/><path fill="#ffce00" d="M0 2h5v1H0z"/></svg></a></div><a href="/de/#kontakt" class="btn btn-primary" style="text-decoration: none; padding: 11px 20px; font-size: 14px; white-space: nowrap;">Termin vereinbaren</a>
+    </nav>
+  </header>
+
+  <main>
+    <article class="article">
+      <nav class="breadcrumb" aria-label="Brotkrümelnavigation">
+        <a href="/de/">Startseite</a><span>›</span><a href="/de/blog/">Blog</a><span>›</span>Model Registry
+      </nav>
+
+      <!-- 1. H1 -->
+      <h1 class="article-h1">Model Registry: <span class="accent">Warum Unternehmen ein System zur Steuerung von KI-Modellen brauchen</span></h1>
+      <p class="article-meta">KI-Governance · Veröffentlicht am <time datetime="2026-07-29">29. Juli 2026</time> · David Veselý</p>
+
+      <figure class="article-hero">
+        <img src="/assets/blog/model-registry.webp" alt="Laptop mit einer Übersicht der KI-Modellversionen — Liste der Modelle mit Freigabestatus und Kennzahlen" width="1200" height="800" fetchpriority="high" decoding="async">
+      </figure>
+
+      <!-- 2. Přímá odpověď -->
+      <p class="article-answer"><strong>Ein Unternehmen kann kein Modell zuverlässig steuern, das es nicht eindeutig identifizieren kann.</strong> Eine Model Registry erfasst Versionen, Herkunft, Freigaben, Einsätze und die Verantwortung für KI-Modelle — und macht aus isolierten Dateien verwaltete Produktivwerte.</p>
+
+      <div class="prose">
+        <p>Bei der Entwicklung von maschinellem Lernen entstehen üblicherweise dutzende oder hunderte Varianten eines Modells. Sie unterscheiden sich in Trainingsdaten, Algorithmus, Parametern, Quellcode, Geschwindigkeit, Kosten und Ergebnisqualität.</p>
+        <p>Solange es nur ein Experiment ist, lässt sich ein Teil dieses Kontexts im Notebook, im Repository oder im Kopf der Entwicklerin halten.</p>
+        <p>Sobald ein Modell jedoch einen echten Unternehmensprozess beeinflusst, muss die Organisation konkrete Fragen beantworten:</p>
+        <ul>
+          <li>Welche Modellversion läuft gerade?</li>
+          <li>Aus welchen Daten ist sie entstanden?</li>
+          <li>Wie wurde sie getestet?</li>
+          <li>Wer hat sie freigegeben?</li>
+          <li>In welchen Anwendungen wird sie eingesetzt?</li>
+          <li>Welche bekannten Einschränkungen hat sie?</li>
+          <li>Was hat sich gegenüber der Vorversion geändert?</li>
+          <li>Lässt sich eine fehlerhafte Version schnell zurückziehen und ersetzen?</li>
+          <li>Wer verantwortet ihren weiteren Betrieb?</li>
+        </ul>
+        <p>Genau diese operative Lücke schließt eine <strong>model registry</strong>.</p>
+
+        <!-- 3. Co to je -->
+        <h2>Was eine Model Registry ist</h2>
+        <p>Eine Model Registry ist ein zentrales System zur Erfassung und Verwaltung von Modellen über ihren Lebenszyklus.</p>
+        <p>Ihre Aufgabe ist nicht nur, die Datei mit dem trainierten Modell aufzubewahren. Sie verknüpft das konkrete Modellartefakt mit den Informationen, die für Verständnis, Validierung, Freigabe, Einsatz, Monitoring und eine mögliche Außerbetriebnahme nötig sind.</p>
+        <p>Eine typische Model Registry erfasst:</p>
+        <ul>
+          <li>Name und Zweck des Modells,</li>
+          <li>die einzelnen Versionen,</li>
+          <li>die Modellartefakte,</li>
+          <li>die Herkunft des Modells,</li>
+          <li>die verwendeten Datensätze und Trainingsläufe,</li>
+          <li>die Evaluationsergebnisse,</li>
+          <li>Metadaten und Dokumentation,</li>
+          <li>den Freigabestatus,</li>
+          <li>den Owner,</li>
+          <li>die produktiven Einsätze,</li>
+          <li>die Änderungshistorie.</li>
+        </ul>
+        <p>MLflow beschreibt sie als zentralisierten Speicher, API und Benutzeroberfläche für die Verwaltung des Modelllebenszyklus. Unterstützt werden Versionierung, Lineage, Aliase, Metadaten und der Bezug zum Experiment, aus dem das Modell hervorging.<span class="fn"><a href="#zdroj-1">[1]</a></span></p>
+        <p>Ähnliche Komponenten bieten auch AWS SageMaker, Microsoft Azure Machine Learning und Google Vertex AI.<span class="fn"><a href="#zdroj-2">[2]</a><a href="#zdroj-3">[3]</a><a href="#zdroj-4">[4]</a></span></p>
+        <p>Das zeigt eine wichtige Tatsache:</p>
+        <div class="callout">
+          <p><strong>Model Registry ist kein Marketingbegriff eines einzelnen Anbieters. Es ist die etablierte Bezeichnung einer technischen Kategorie, die auf den großen ML-Plattformen einheitlich verwendet wird.</strong></p>
+        </div>
+
+        <!-- 4. Proc nestaci soubor -->
+        <h2>Warum es nicht reicht, das Modell als Datei zu speichern</h2>
+        <p>Stellen wir uns eine Datei vor mit dem Namen <code>fraud_detection_model_v12.pkl</code>.</p>
+        <p>Aus dem Namen lässt sich ableiten, dass es die zwölfte Variante eines Modells zur Betrugserkennung ist. Die Datei selbst sagt aber nicht:</p>
+        <ul>
+          <li>ob es das zwölfte Experiment oder die zwölfte Produktionsversion ist;</li>
+          <li>aus welcher Datenversion das Modell entstand;</li>
+          <li>welcher Commit des Quellcodes verwendet wurde;</li>
+          <li>welche Variablen das Modell erwartet;</li>
+          <li>welche Ergebnisse es erreicht hat;</li>
+          <li>ob es eine unabhängige Validierung durchlaufen hat;</li>
+          <li>wer seinen Einsatz freigegeben hat;</li>
+          <li>ob irgendwo noch eine ältere Version im Einsatz ist.</li>
+        </ul>
+        <p>Ein Dateiname ist kein Steuerungssystem.</p>
+        <p>Eine Model Registry sorgt dafür, dass ein Modell nicht nur ein technisches Artefakt ist, sondern ein <strong>identifizierbarer, nachvollziehbarer und verwalteter Produktivwert</strong>.</p>
+
+        <!-- 5. Dva vyznamy -->
+        <h2>Zwei Bedeutungen, die man unterscheiden muss</h2>
+        <p>Der Begriff Model Registry liegt heute im Schnittpunkt zweier verwandter Disziplinen.</p>
+
+        <h3>1. Die technische Model Registry</h3>
+        <p>Im MLOps geht es vor allem um die Verwaltung von Modellartefakten und ihren Versionen.</p>
+        <p>Sie beantwortet zum Beispiel die Fragen:</p>
+        <ul>
+          <li>Welche Modellversion ist produktiv?</li>
+          <li>Welches Experiment hat sie erzeugt?</li>
+          <li>Wo liegt ihr Artefakt?</li>
+          <li>Welche technischen Parameter hat sie?</li>
+          <li>Welche Version soll die Anwendung laden?</li>
+          <li>Wie lässt sich ein Rollback durchführen?</li>
+        </ul>
+        <p>Diese Ausprägung nutzen MLflow und die großen Cloud-ML-Plattformen.</p>
+
+        <h3>2. Das Enterprise Model Inventory</h3>
+        <p>Im Model Risk Management und in der KI-Governance ist der Umfang breiter.</p>
+        <p>Die Erfassung konzentriert sich nicht nur auf die Modelldatei, sondern auch auf:</p>
+        <ul>
+          <li>den geschäftlichen Zweck,</li>
+          <li>den Owner,</li>
+          <li>die Kritikalität des Modells,</li>
+          <li>erlaubte und verbotene Nutzung,</li>
+          <li>die verwendeten Datenquellen,</li>
+          <li>den Validierungsstand,</li>
+          <li>bekannte Einschränkungen,</li>
+          <li>die Abhängigkeit vom Anbieter,</li>
+          <li>die Incident-Historie,</li>
+          <li>das Datum der nächsten Überprüfung,</li>
+          <li>den Plan zur Außerbetriebnahme.</li>
+        </ul>
+        <p>Die US-Aufsichtsleitlinien zum Model Risk Management verwenden den Begriff <strong>model inventory</strong> als die Gesamtheit der Informationen, die nötig sind, um die Risiken einzelner Modelle und des gesamten Modellportfolios zu verstehen.<span class="fn"><a href="#zdroj-5">[5]</a></span></p>
+        <p>Technische Registry und Enterprise Inventory müssen nicht immer ein System sein.</p>
+        <p>Die technische Registry kann an Entwicklungs- und Deployment-Pipelines angebunden sein. Das Enterprise Inventory kann Teil einer Governance-Plattform, eines Risikosystems oder eines internen Registers sein.</p>
+        <p>In einer reifen Organisation sollten sie jedoch ein verbundenes Ganzes bilden.</p>
+
+        <!-- 6. Co evidovat -->
+        <h2>Was eine Model Registry erfassen sollte</h2>
+        <p>Der Basiseintrag lässt sich in sechs Schichten gliedern:</p>
+        <div class="table-wrap">
+          <table class="cmp">
+            <thead>
+              <tr>
+                <th scope="col">Schicht</th>
+                <th scope="col">Was erfasst wird</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Identität</th><td>Name, Version, Zweck und Owner des Modells</td></tr>
+              <tr><th scope="row">Herkunft</th><td>Daten, Code, Trainingslauf und technische Umgebung</td></tr>
+              <tr><th scope="row">Evaluation</th><td>Testergebnisse, Grenzwerte und Abnahmebedingungen</td></tr>
+              <tr><th scope="row">Freigabe</th><td>Status des Modells, verantwortliche Personen und erlaubte Nutzung</td></tr>
+              <tr><th scope="row">Einsatz</th><td>Anwendungen, Umgebungen und Prozesse, die diese Version nutzen</td></tr>
+              <tr><th scope="row">Betrieb</th><td>Monitoring, Incidents, Änderungen, Rollback und Außerbetriebnahme</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Identität</h3>
+        <p>Ein Modell braucht einen stabilen Namen und einen klar abgegrenzten Zweck. Zum Beispiel:</p>
+        <div class="callout">
+          <p>Vorhersage der Wahrscheinlichkeit, dass ein Kunde innerhalb der nächsten 90 Tage den Vertrag kündigt.</p>
+        </div>
+        <p>Eine allgemeine Bezeichnung wie „KI für den Vertrieb“ reicht nicht. Ohne konkreten Zweck lassen sich weder passende Kennzahlen noch akzeptables Risiko oder Nutzungsgrenzen bestimmen.</p>
+
+        <h3>Herkunft</h3>
+        <p>Die Model Lineage beschreibt die Kette, aus der das Modell entstanden ist:</p>
+        <ul>
+          <li>den Trainingslauf,</li>
+          <li>die Version des Datensatzes,</li>
+          <li>den verwendeten Code,</li>
+          <li>die Parameter,</li>
+          <li>die Bibliotheken,</li>
+          <li>die Rechenumgebung,</li>
+          <li>die Autorin oder den Autor,</li>
+          <li>das Erstellungsdatum.</li>
+        </ul>
+        <p>Ohne Lineage lässt sich ein Modell vielleicht wieder laden, aber nicht zuverlässig reproduzieren und seine Herkunft nicht erklären.</p>
+
+        <h3>Evaluation</h3>
+        <p>Ein einzelner Genauigkeitswert reicht nicht. Je nach Zweck können zum Beispiel wichtig sein:</p>
+        <ul>
+          <li>Genauigkeit,</li>
+          <li>Precision und Recall,</li>
+          <li>die Rate falsch positiver Ergebnisse,</li>
+          <li>die Stabilität zwischen Datengruppen,</li>
+          <li>Robustheit,</li>
+          <li>Latenz,</li>
+          <li>Betriebskosten,</li>
+          <li>Erklärbarkeit,</li>
+          <li>Sicherheitstests.</li>
+        </ul>
+        <p>Die Registry soll nicht nur festhalten, welches Modell gewählt wurde, sondern auch <strong>unter welchen Bedingungen es angenommen wurde</strong>.</p>
+
+        <h3>Freigabe</h3>
+        <p>Eine Modellversion kann zum Beispiel sein:</p>
+        <ul>
+          <li>experimentell,</li>
+          <li>Kandidat,</li>
+          <li>wartend auf Validierung,</li>
+          <li>freigegeben,</li>
+          <li>produktiv,</li>
+          <li>in Ablösung,</li>
+          <li>archiviert,</li>
+          <li>gesperrt.</li>
+        </ul>
+        <p>Der Eintrag soll zugleich ausweisen, wer die technische Prüfung durchgeführt hat, wer die geschäftliche Nutzung freigegeben hat und wer das Modell verantwortet.</p>
+
+        <h3>Einsatz</h3>
+        <p>Die Registry muss zeigen, wo eine Version eingesetzt wird. Das kann zum Beispiel sein:</p>
+        <ul>
+          <li>eine Online-API,</li>
+          <li>Batch-Verarbeitung,</li>
+          <li>eine mobile Anwendung,</li>
+          <li>ein internes Entscheidungssystem,</li>
+          <li>Geräte am Netzwerkrand,</li>
+          <li>mehrere Regionen oder Umgebungen.</li>
+        </ul>
+        <p>Tritt ein kritischer Fehler auf, muss das Unternehmen schnell alle betroffenen Prozesse und Anwendungen bestimmen können.</p>
+
+        <h3>Betrieb</h3>
+        <p>Die Registrierung endet nicht mit dem Einsatz. Der Eintrag sollte mit Informationen verknüpft sein über:</p>
+        <ul>
+          <li>die Leistung im Produktivbetrieb,</li>
+          <li>Änderungen der Eingangsdaten,</li>
+          <li>Qualitätsverluste,</li>
+          <li>Incidents,</li>
+          <li>Ausnahmen,</li>
+          <li>Einschränkungen,</li>
+          <li>Rekalibrierungen,</li>
+          <li>Ablösung oder Außerbetriebnahme des Modells.</li>
+        </ul>
+        <p>Ein Modell, das beim Einsatz geeignet war, muss es nicht für immer bleiben.</p>
+
+        <!-- 7. Zivotni cyklus -->
+        <h2>Wie der Lebenszyklus eines Modells aussieht</h2>
+        <p>Der typische Prozess hat mehrere Schritte:</p>
+        <ol>
+          <li><strong>Experimentieren:</strong> das Team probiert verschiedene Datensätze, Algorithmen und Konfigurationen aus.</li>
+          <li><strong>Auswahl des Kandidaten:</strong> eine oder mehrere Varianten erfüllen die Basiskriterien.</li>
+          <li><strong>Registrierung:</strong> der Kandidat wird als neue Version in der Model Registry eingetragen.</li>
+          <li><strong>Evaluation und Validierung:</strong> das Modell wird mit den Anforderungen und der aktuellen Produktionsversion verglichen.</li>
+          <li><strong>Freigabe:</strong> eine berechtigte Person oder Pipeline erlaubt seine Nutzung.</li>
+          <li><strong>Einsatz:</strong> die freigegebene Version wird in die Test- oder Produktivumgebung ausgerollt.</li>
+          <li><strong>Monitoring:</strong> Leistung, Datenqualität, Kosten und Abweichungen werden beobachtet.</li>
+          <li><strong>Ablösung oder Rollback:</strong> eine neue Version übernimmt den Betrieb, oder das System kehrt zur älteren zurück.</li>
+          <li><strong>Außerbetriebnahme:</strong> eine nicht mehr genutzte Version wird archiviert, ihre Historie bleibt aber nachvollziehbar.</li>
+        </ol>
+        <p>Eine Model Registry ist also kein passives Archiv.</p>
+        <p>Sie ist der Kontrollpunkt zwischen Experiment und Produktivbetrieb.</p>
+
+        <!-- 8. Co to neni -->
+        <h2>Was eine Model Registry nicht ist</h2>
+        <p>Eine Model Registry ist Teil einer größeren Landschaft. Sie ersetzt mehrere andere Systeme nicht.</p>
+
+        <h3>Experiment tracking</h3>
+        <p>Erfasst alle Entwicklungsversuche, ihre Parameter und Ergebnisse.</p>
+        <div class="qa"><p>Was haben wir probiert und wie ist es ausgegangen?</p></div>
+
+        <h3>Model registry</h3>
+        <p>Verwaltet ausgewählte Modelle und Versionen mit operativer Bedeutung.</p>
+        <div class="qa"><p>Welche Version haben wir angenommen, freigegeben und eingesetzt?</p></div>
+
+        <h3>Model monitoring</h3>
+        <p>Beobachtet das Verhalten des Modells nach dem Einsatz.</p>
+        <div class="qa"><p>Funktioniert das Modell weiterhin wie erwartet?</p></div>
+
+        <h3>Model Hub oder Katalog</h3>
+        <p>Hilft dabei, verfügbare Modelle zu entdecken.</p>
+        <div class="qa"><p>Welche Modelle können wir nutzen?</p></div>
+
+        <h3>AI system inventory</h3>
+        <p>Erfasst ganze KI-Systeme, ihre Nutzung, Owner, Daten, Anbieter und Risiken.</p>
+        <div class="qa"><p>Wo und warum setzt unsere Organisation KI ein?</p></div>
+
+        <p>Diese Schichten können in einer Plattform liegen, beantworten aber unterschiedliche Fragen.</p>
+
+        <!-- 9. Generativni AI -->
+        <h2>Was generative KI verändert</h2>
+        <p>Klassische Model Registries entstanden vor allem für Modelle, die ein Unternehmen selbst trainiert hat.</p>
+        <p>Bei generativer KI besitzt ein Unternehmen die Modellgewichte oft nicht und steuert das Training nicht. Es nutzt ein externes Foundation Model über eine API und baut darauf die eigene Anwendung.</p>
+        <p>Das Verhalten einer solchen Anwendung bestimmt nicht nur das Modell. Das Ergebnis beeinflussen auch:</p>
+        <ul>
+          <li>der System-Prompt,</li>
+          <li>die Modellparameter,</li>
+          <li>die Wissensbasis,</li>
+          <li>das Embedding-Modell,</li>
+          <li>die Retrieval-Logik,</li>
+          <li>die verfügbaren Werkzeuge,</li>
+          <li>die Berechtigungen des Agenten,</li>
+          <li>die Guardrails,</li>
+          <li>die Nachverarbeitung der Ausgabe.</li>
+        </ul>
+        <p>Bei einem RAG-System kann eine Änderung der Dokumente oder der Retrieval-Pipeline das Verhalten genauso grundlegend verändern wie der Austausch des Sprachmodells.</p>
+        <p>Die gesteuerte Einheit ist deshalb nicht mehr nur die Modellversion, sondern eher:</p>
+        <div class="callout">
+          <p><strong>Modell + Prompt + Daten + Werkzeuge + Konfiguration + Evaluation</strong></p>
+        </div>
+        <p>Eine moderne Model Registry erweitert sich damit in Richtung Erfassung von KI-Komponenten, Agenten und ganzen Systemkonfigurationen.</p>
+
+        <!-- 10. Externi model -->
+        <h2>Ein externes Modell hebt die Verantwortung nicht auf</h2>
+        <p>Beim Einsatz eines externen Modells hat ein Unternehmen weniger Informationen und weniger technische Kontrolle. Der Anbieter kann ändern:</p>
+        <ul>
+          <li>das Modell oder sein Verhalten,</li>
+          <li>die verfügbaren Versionen,</li>
+          <li>den Preis,</li>
+          <li>die Limits,</li>
+          <li>die Sicherheitsfilter,</li>
+          <li>die Bedingungen der Datenverarbeitung.</li>
+        </ul>
+        <p>Der Eintrag eines externen Modells sollte deshalb mindestens enthalten:</p>
+        <ul>
+          <li>den Anbieter,</li>
+          <li>die Modellbezeichnung,</li>
+          <li>die Zugriffsart,</li>
+          <li>die genutzte Version oder den Endpunkt,</li>
+          <li>das Einführungsdatum,</li>
+          <li>die verarbeiteten Datenkategorien,</li>
+          <li>bekannte Einschränkungen,</li>
+          <li>den Preis,</li>
+          <li>das Ersatzmodell,</li>
+          <li>das Vorgehen bei Einstellung des Dienstes.</li>
+        </ul>
+        <p>Dass ein Unternehmen ein Modell nicht trainiert hat, heißt nicht, dass es dieses nicht steuern muss.</p>
+        <p>Im Gegenteil: Bei einem proprietären Modell kann die Erfassung noch wichtiger sein, weil die Organisation keinen Zugang zu allen Informationen über Konstruktion, Daten und interne Änderungen hat.</p>
+
+        <!-- 11. Governance -->
+        <h2>Model Registry und KI-Governance</h2>
+        <p>Eine Model Registry allein sorgt nicht für verantwortungsvolle Nutzung von KI. Sie liefert aber die Infrastruktur, ohne die Governance kaum umsetzbar ist.</p>
+        <p>Sie hilft zu belegen:</p>
+        <ul>
+          <li>welche Version verwendet wurde,</li>
+          <li>wie sie getestet wurde,</li>
+          <li>wer sie freigegeben hat,</li>
+          <li>wo sie eingesetzt wurde,</li>
+          <li>welche Einschränkungen sie hatte,</li>
+          <li>wann sie geändert wurde,</li>
+          <li>ob sie später abgelöst wurde.</li>
+        </ul>
+        <p><a href="/eu-ai-act-zmeny-2026-pro-ceske-firmy">EU AI Act</a> schreibt Organisationen kein Produkt namens „Model Registry“ vor.<span class="fn"><a href="#zdroj-6">[6]</a></span></p>
+        <p>Bei regulierten KI-Systemen arbeitet er jedoch mit Risikomanagement, technischer Dokumentation, Aufzeichnungen, menschlicher Aufsicht, Monitoring und Verantwortung über den Lebenszyklus des Systems.</p>
+        <p>Eine Model Registry kann eine der technischen Schichten sein, die diese Prozesse stützen.</p>
+        <p>Man muss jedoch das Modell selbst und das gesamte KI-System unterscheiden.</p>
+        <p>Eine Model Registry kann Modellkomponenten erfassen. Die rechtliche, sicherheitsbezogene und geschäftliche Bewertung bezieht sich in der Regel auf das konkrete KI-System und die Art seiner Nutzung.</p>
+
+        <!-- 12. Kdy ji potrebujete -->
+        <h2>Wann ein Unternehmen eine Model Registry wirklich braucht</h2>
+        <p>Eine umfassende technische Registry braucht nicht jede Organisation.</p>
+        <p>Ein Unternehmen, das nur einige fertige SaaS-Anwendungen nutzt, wird vor allem ein AI System Inventory und Regeln für Anbieter brauchen.</p>
+        <p>Eine Model Registry wird vor allem dann wichtig, wenn eine Organisation:</p>
+        <ul>
+          <li>selbst Modelle entwickelt oder feinjustiert;</li>
+          <li>mehrere Versionen desselben Modells betreibt;</li>
+          <li>Modelle in wichtigen Entscheidungsprozessen einsetzt;</li>
+          <li>formale Validierung und Freigaben braucht;</li>
+          <li>Reproduzierbarkeit sicherstellen muss;</li>
+          <li>einen schnellen Rollback braucht;</li>
+          <li>mehrere Clouds oder Deployment-Umgebungen nutzt;</li>
+          <li>eine größere Zahl von RAG-Anwendungen und Agenten aufbaut;</li>
+          <li>strengeren Anforderungen aus Audit oder Model Risk Management unterliegt.</li>
+        </ul>
+        <p>Die erste Umsetzung muss nicht umfangreich sein. Sie muss aber eine einzige verbindliche Quelle der Wahrheit schaffen und mit dem tatsächlichen Deployment-Prozess verbunden sein.</p>
+        <p>Eine Registry, die man umgehen kann, indem eine Entwicklerin ein anderes Modell direkt in die Produktion lädt, steuert nicht den echten Betrieb. Sie dokumentiert nur dessen idealisierte Fassung.</p>
+
+        <!-- 13. Chyby -->
+        <h2>Die häufigsten Fehler</h2>
+
+        <h3>Die Registry wird zur Abstellkammer für Experimente</h3>
+        <p>Wird darin automatisch jeder Versuch abgelegt, füllt sie sich schnell mit hunderten Varianten ohne operative Bedeutung.</p>
+        <p>Für die Erfassung aller Experimente ist das Experiment Tracking da. In die Registry gehören Modelle, die Kandidat für Validierung, Einsatz oder weitere gesteuerte Nutzung geworden sind.</p>
+
+        <h3>Das Modell hat keinen konkreten Owner</h3>
+        <p>Das technische Team hat das Modell erstellt, aber niemand verantwortet seinen geschäftlichen Zweck, die richtige Nutzung und den weiteren Betrieb.</p>
+        <p>Ein Register ohne Verantwortung wird zum Dateikatalog.</p>
+
+        <h3>Die Verbindung zu Daten und Code fehlt</h3>
+        <p>Das Unternehmen erfasst das Modellartefakt, weiß aber nicht, aus welchem Datensatz und Code es entstanden ist.</p>
+        <p>Ein solches Modell lässt sich weder zuverlässig reproduzieren noch erklären.</p>
+
+        <h3>Die Freigabe ist bloß formal</h3>
+        <p>Das Modell ist als freigegeben markiert, aber es ist unklar:</p>
+        <ul>
+          <li>wer es freigegeben hat,</li>
+          <li>nach welchen Kriterien,</li>
+          <li>für welchen Zweck,</li>
+          <li>für welchen Zeitraum,</li>
+          <li>was die Freigabe ungültig machen soll.</li>
+        </ul>
+
+        <h3>Die Registry ist nicht mit dem Deployment verbunden</h3>
+        <p>Das Modell wird zwar registriert, aber das Produktionsteam kann ein beliebiges Artefakt am Freigabeprozess vorbei ausrollen.</p>
+        <p>Die Registry erfasst dann eine andere Realität als die, die tatsächlich läuft.</p>
+
+        <h3>Erfassung ersetzt Steuerung</h3>
+        <p>Detaillierte Metadaten allein bestimmen nicht, ob ein Modell geeignet, sicher oder geschäftlich sinnvoll ist.</p>
+        <p>Eine Model Registry kann einen Prozess erzwingen und festhalten. Sie kann Entscheidung, Verantwortung und echte Aufsicht nicht ersetzen.</p>
+
+        <!-- 14. Zaver -->
+        <h2>Fazit</h2>
+        <p>Eine Model Registry löst eine grundlegende operative Frage:</p>
+        <div class="callout">
+          <p>Wie stellt man sicher, dass ein Unternehmen genau weiß, welches Modell es erstellt oder übernommen hat, wie es getestet wurde, wer es freigegeben hat und wo es eingesetzt wird?</p>
+        </div>
+        <p>Ohne Registry existieren Modelle als isolierte Dateien, API-Endpunkte und Experimente.</p>
+        <p>Mit Registry werden daraus verwaltete Werte mit nachvollziehbarer Herkunft, Verantwortung und Lebenszyklus.</p>
+        <p>Ihre wichtigsten Vorteile sind:</p>
+        <ul>
+          <li>Versionierung,</li>
+          <li>Lineage und Reproduzierbarkeit,</li>
+          <li>gesteuerte Freigaben,</li>
+          <li>die Verbindung zum produktiven Einsatz,</li>
+          <li>die Möglichkeit eines Rollbacks,</li>
+          <li>die Erfassung von Ownern und Verantwortung,</li>
+          <li>die Unterstützung von Audit und Governance.</li>
+        </ul>
+        <p>Im klassischen Machine Learning war das Modell selbst das Hauptobjekt der Steuerung.</p>
+        <p>In der generativen KI ist das Modell nur ein Teil einer breiteren Konfiguration aus Prompts, Daten, Werkzeugen und Berechtigungen. Die Model Registry wandelt sich deshalb schrittweise vom technischen Speicher zur <strong>Steuerungsschicht der Unternehmens-KI</strong>.</p>
+        <p>Ein Unternehmen muss nämlich nicht nur wissen, welches Modell es einsetzt.</p>
+        <p>Es muss erklären können, <strong>wie das Verhalten seiner KI zustande kommt</strong>.</p>
+
+        <!-- 15. FAQ -->
+        <h2>Häufige Fragen</h2>
+        <div class="faq">
+          <details class="faq-item">
+            <summary>Was ist eine Model Registry?</summary>
+            <p>Eine Model Registry ist ein zentrales System zur Erfassung und Verwaltung von Modellen über ihren gesamten Lebenszyklus. Sie verknüpft nicht nur die Datei mit dem trainierten Modell, sondern bindet daran die Informationen, die für Verständnis, Validierung, Freigabe, Einsatz, Monitoring und eine mögliche Außerbetriebnahme nötig sind: Name und Zweck, Versionen, Artefakte, Herkunft, verwendete Datensätze und Trainingsläufe, Evaluationsergebnisse, Freigabestatus, Owner, produktive Einsätze und die Änderungshistorie.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Worin unterscheiden sich Model Registry und Model Inventory?</summary>
+            <p>Die technische Model Registry im MLOps verwaltet Modellartefakte und ihre Versionen — sie beantwortet, welche Version produktiv ist, welches Experiment sie erzeugt hat und wie ein Rollback funktioniert. Das Enterprise Model Inventory im Model Risk Management und in der KI-Governance erfasst zusätzlich den geschäftlichen Zweck, den Owner, die Kritikalität, erlaubte und verbotene Nutzung, den Validierungsstand, die Abhängigkeit vom Anbieter, die Incident-Historie und den Plan zur Außerbetriebnahme. Es muss nicht ein System sein, in einer reifen Organisation sollten beide aber ein verbundenes Ganzes bilden.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Warum reicht es nicht, das Modell als Datei zu speichern?</summary>
+            <p>Ein Dateiname sagt nicht, ob es das zwölfte Experiment oder die zwölfte Produktionsversion ist, aus welcher Datenversion das Modell entstand, welcher Code-Commit verwendet wurde, welche Variablen es erwartet, welche Ergebnisse es erreicht hat, ob es eine unabhängige Validierung durchlaufen hat, wer den Einsatz freigegeben hat und ob irgendwo noch eine ältere Version läuft. Ein Dateiname ist kein Steuerungssystem.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Braucht jedes Unternehmen eine Model Registry?</summary>
+            <p>Nein. Ein Unternehmen, das nur einige fertige SaaS-Anwendungen nutzt, braucht vor allem ein AI System Inventory und Regeln für Anbieter. Eine Model Registry wird vor allem dann wichtig, wenn eine Organisation selbst Modelle entwickelt oder feinjustiert, mehrere Versionen desselben Modells betreibt, Modelle in wichtigen Entscheidungsprozessen einsetzt, formale Validierung, Reproduzierbarkeit und schnellen Rollback braucht oder strengeren Audit-Anforderungen unterliegt.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Was verändert generative KI an der Model Registry?</summary>
+            <p>Bei generativer KI besitzt ein Unternehmen die Modellgewichte oft nicht und steuert das Training nicht — es nutzt ein externes Foundation Model über eine API. Das Verhalten der Anwendung bestimmt dann nicht nur das Modell, sondern auch der System-Prompt, die Parameter, die Wissensbasis, das Embedding-Modell, die Retrieval-Logik, die verfügbaren Werkzeuge, die Berechtigungen des Agenten, die Guardrails und die Nachverarbeitung der Ausgabe. Die gesteuerte Einheit ist deshalb nicht die Modellversion, sondern die Kombination aus Modell, Prompt, Daten, Werkzeugen, Konfiguration und Evaluation.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Entbindet die Nutzung eines externen Modells das Unternehmen von der Verantwortung?</summary>
+            <p>Nein. Der Anbieter kann das Modell, sein Verhalten, die verfügbaren Versionen, den Preis, die Limits, die Sicherheitsfilter und die Bedingungen der Datenverarbeitung ändern. Bei einem proprietären Modell kann die Erfassung sogar wichtiger sein, weil die Organisation keinen Zugang zu allen Informationen über Konstruktion, Daten und interne Änderungen hat.</p>
+          </details>
+        </div>
+
+        <!-- 16. CTA -->
+        <div class="cta-block">
+          <p>Sie wissen nicht, welche KI-Modelle und -Systeme bei Ihnen laufen und wer sie verantwortet? Der erste Schritt ist ein Register — und ein Owner für das Thema KI.</p>
+          <a href="/de/#kontakt" class="btn btn-primary">AI Leadership Call vereinbaren</a>
+        </div>
+
+        <!-- 17. Nabidka domeny (oddelene od tela clanku) -->
+        <aside class="offer" aria-label="Angebot zum Domain-Erwerb">
+          <p class="offer-label">Angebot zum Domain-Erwerb</p>
+          <h2>ModelRegistry.ai steht zum Erwerb</h2>
+          <p><code>ModelRegistry.ai</code> ist die exakte Kategoriedomain für ein Unternehmen, das Infrastruktur für Verwaltung und Governance von Unternehmens-KI-Modellen baut.</p>
+          <p>Der Name hat einen breiteren strategischen Rahmen als Alternativen wie <em>AI Inventory</em> nebo <em>Model Governance</em>:</p>
+          <ul>
+            <li><strong>registry</strong> bezeichnet ein verbindliches System der Aufzeichnung, nicht bloß eine Liste;</li>
+            <li>umfasst technische Versionierung, Lineage und Deployment;</li>
+            <li>deckt zugleich natürlich Freigaben, Verantwortung, Audit und Model Risk Management ab;</li>
+            <li>ist weder an eine Regulierungsjurisdiktion noch an einen bestimmten Anbieter gebunden;</li>
+            <li>koncovka <code>.ai</code> verankert die Kategorie eindeutig in der Infrastruktur künstlicher Intelligenz.</li>
+          </ul>
+          <p>Die Domain eignet sich vor allem für:</p>
+          <ul>
+            <li>eine KI-Governance-Plattform,</li>
+            <li>ein Enterprise Model Inventory,</li>
+            <li>Model Risk Management,</li>
+            <li>MLOps- oder LLMOps-Infrastruktur,</li>
+            <li>eine KI-Compliance-Lösung,</li>
+            <li>eine Enterprise-AI-Control-Plane.</li>
+          </ul>
+          <p>Die Domain wird selektiv einem strategischen Endinteressenten oder einem finanzierten Unternehmen angeboten, das in dieser Kategorie ein echtes Produkt und eine langfristige Marke aufbaut.</p>
+          <p class="terms"><strong>Kein Ratenkauf. Kein Domain-Leasing. Keine Angebote von Domain-Investoren. Sichere Übertragung über einen etablierten Treuhanddienst.</strong></p>
+          <a href="https://modelregistry.ai/" class="btn btn-primary" target="_blank" rel="noopener">ModelRegistry.ai ansehen und Erwerbskonditionen anfragen →</a>
+        </aside>
+
+        <!-- 18. Zdroje -->
+        <h2 id="zdroje">Quellen und weiterführende Literatur</h2>
+        <ol class="sources">
+          <li id="zdroj-1"><a href="https://mlflow.org/docs/latest/ml/model-registry/" target="_blank" rel="noopener"><b>MLflow: ML Model Registry.</b></a> Referenz-Open-Source-Implementierung: Versionierung, Lineage, Aliase und Bezug zum Experiment. <span class="src-dom">mlflow.org</span></li>
+          <li id="zdroj-2"><a href="https://docs.aws.amazon.com/sagemaker/latest/dg/model-registry.html" target="_blank" rel="noopener"><b>Amazon Web Services: SageMaker Model Registry.</b></a> Model Groups, Versionen und Freigabestatus, angebunden an die Deployment-Pipeline. <span class="src-dom">docs.aws.amazon.com</span></li>
+          <li id="zdroj-3"><a href="https://learn.microsoft.com/en-us/azure/machine-learning/how-to-manage-models" target="_blank" rel="noopener"><b>Microsoft: Register and work with models in Azure Machine Learning.</b></a> Registrierung von Modellen, Versionierung und Verwaltung innerhalb des Workspace. <span class="src-dom">learn.microsoft.com</span></li>
+          <li id="zdroj-4"><a href="https://cloud.google.com/vertex-ai/docs/model-registry/introduction" target="_blank" rel="noopener"><b>Google Cloud: Vertex AI Model Registry.</b></a> Zentrale Übersicht der Modelle und ihrer Versionen über alle Einsätze hinweg. <span class="src-dom">cloud.google.com</span></li>
+          <li id="zdroj-5"><a href="https://www.federalreserve.gov/supervisionreg/srletters/SR2602.htm" target="_blank" rel="noopener"><b>Federal Reserve: SR 26-2 — Revised Guidance on Model Risk Management.</b></a> Aktualisierte US-Leitlinien zum Management von Modellrisiken (ersetzen SR 11-7 und SR 21-8). <span class="src-dom">federalreserve.gov</span></li>
+          <li id="zdroj-6"><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj" target="_blank" rel="noopener"><b>Verordnung (EU) 2024/1689 — Artificial Intelligence Act.</b></a> Der Grundtext der europäischen KI-Regulierung: Risikomanagement, Dokumentation, Aufzeichnungen und menschliche Aufsicht. <span class="src-dom">eur-lex.europa.eu</span></li>
+        </ol>
+        <p class="disclaimer">Der Artikel hat informativen Charakter und stellt keine Rechtsauskunft dar.</p>
+
+        <!-- Související průvodce -->
+        <nav class="related" aria-label="Verwandte Leitfäden">
+          <h2>Verwandte Leitfäden</h2>
+          <ul class="related-list">
+            <li><a href="/de/eu-ai-act-nach-dem-omnibus"><span>Der EU AI Act nach dem Omnibus: Was ein CEO jetzt tun muss</span><span class="arrow" aria-hidden="true">→</span></a></li>
+            <li><a href="/de/chief-ai-officer"><span>Chief AI Officer (CAIO): Wer im Unternehmen KI verantwortet</span><span class="arrow" aria-hidden="true">→</span></a></li>
+            <li><a href="/de/was-ist-head-of-ai"><span>Was ist ein Head of AI / Chief AI Officer: der vollständige Leitfaden</span><span class="arrow" aria-hidden="true">→</span></a></li>
+            <li><a href="/de/wann-braucht-ein-unternehmen-einen-head-of-ai"><span>Wann ein Unternehmen einen Head of AI braucht (und wann noch nicht)</span><span class="arrow" aria-hidden="true">→</span></a></li>
+          </ul>
+        </nav>
+      </div>
+    </article>
+  </main>
+
+  <!-- PATIČKA (převzato z homepage) -->
+  <footer style="border-top: 1px solid var(--color-divider); text-align: center;">
+    <div style="max-width: 1180px; margin: 0 auto; padding: clamp(44px, 6vw, 64px) clamp(20px, 4vw, 56px) 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 32px;">
+      <div>
+        <span style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 26px; line-height: 1;">headofai<span class="accent">.cz</span></span>
+        <p style="font-size: 15px; line-height: 1.6; margin: 12px auto 0; max-width: 40ch; color: color-mix(in srgb, var(--color-text) 55%, transparent);">Fractional AI Leadership für Unternehmen, die Kontrolle, messbare Wirkung und die ersten KI-Mitarbeiter im Betrieb wollen.</p>
+      </div>
+      <div>
+        <h4 style="font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 12px; color: color-mix(in srgb, var(--color-text) 45%, transparent);">Kontakt</h4>
+        <p style="display: flex; justify-content: center; align-items: center; gap: 8px; font-size: 15px; margin: 0 0 8px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; color: color-mix(in srgb, var(--color-text) 45%, transparent);"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg><a href="mailto:hello@headofai.cz">hello@headofai.cz</a></p>
+        <p style="display: flex; justify-content: center; align-items: center; gap: 8px; font-size: 15px; margin: 0 0 8px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; color: color-mix(in srgb, var(--color-text) 45%, transparent);"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg><a href="https://x.com/headofaicz">@headofaicz</a></p><p style="display: flex; justify-content: center; align-items: center; gap: 8px; font-size: 15px; margin: 0;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; color: color-mix(in srgb, var(--color-text) 45%, transparent);"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg><a href="https://www.linkedin.com/in/davidvesely/">David Veselý</a></p>
+      </div>
+      <div>
+        <h4 style="font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 12px; color: color-mix(in srgb, var(--color-text) 45%, transparent);">Betreiber</h4>
+        <p style="font-size: 15px; margin: 0 0 4px; color: color-mix(in srgb, var(--color-text) 55%, transparent);">Vesely.ai s.r.o.</p>
+        <p style="font-size: 14px; margin: 0 0 4px; color: color-mix(in srgb, var(--color-text) 45%, transparent);">Reg.-Nr.: 23702907 · USt-IdNr.: CZ23702907</p>
+        <p style="font-size: 14px; margin: 0; color: color-mix(in srgb, var(--color-text) 45%, transparent);">Tschechien</p>
+      </div>
+    </div>
+    <div style="max-width: 1180px; margin: 32px auto 0; padding: 0 clamp(20px, 4vw, 56px);">
+      <p style="font-size: 14px; color: color-mix(in srgb, var(--color-text) 40%, transparent); border-top: 1px solid var(--color-divider); padding: 20px 0 28px; margin: 0;">© 2026 Vesely.ai s.r.o. · headofai.cz</p>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>

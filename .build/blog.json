@@ -20,6 +20,15 @@
       "read_more_hub": "Read →",
       "itemlist": "Articles on headofai.cz",
       "llms_heading": "Anglické mutace:"
+    },
+    {
+      "code": "de",
+      "home_file": "de/index.html",
+      "hub_file": "de/blog/index.html",
+      "read_more": "Artikel lesen →",
+      "read_more_hub": "Lesen →",
+      "itemlist": "Artikel auf headofai.cz",
+      "llms_heading": "Německé mutace:"
     }
   ],
   "pages": [
@@ -28,14 +37,16 @@
       "en": "/en/",
       "priority": "1.0",
       "changefreq": "weekly",
-      "lastmod": "2026-07-29"
+      "lastmod": "2026-07-29",
+      "de": "/de/"
     },
     {
       "cs": "/blog/",
       "en": "/en/blog/",
       "priority": "0.9",
       "changefreq": "weekly",
-      "lastmod": "2026-07-29"
+      "lastmod": "2026-07-29",
+      "de": "/de/blog/"
     }
   ],
   "articles": [
@@ -68,7 +79,8 @@
         "alt": "The European Union flag flying on a pole against a blue sky",
         "date_label": "28 Jul 2026",
         "llms": "The EU AI Act after the Omnibus: what a CEO must do now. What Regulation (EU) 2026/1744 changed, provider vs deployer roles, seven typical use cases, the structure of an AI system register and a thirty-day plan for the CEO."
-      }
+      },
+      "de": null
     },
     {
       "id": "caio",
@@ -99,7 +111,8 @@
         "alt": "An executive team meeting around a boardroom table — who carries accountability for the AI agenda",
         "date_label": "29 Jul 2026",
         "llms": "Chief AI Officer (CAIO): who is accountable for AI. The five components of the role's mandate, comparison with IT/CTO/legal/CEO, four areas of management (portfolio, governance, vendors, impact), KPIs and when a fractional CAIO is enough."
-      }
+      },
+      "de": null
     },
     {
       "id": "co-je-head-of-ai",
@@ -130,6 +143,16 @@
         "alt": "An executive working at a laptop in an office, with a flip chart listing AI priorities and success metrics",
         "date_label": "22 Jul 2026",
         "llms": "What is a Head of AI / Chief AI Officer: what the role does, how it differs from a CTO, CDO and AI Engineer, and what competencies it requires."
+      },
+      "de": {
+        "slug": "de/was-ist-head-of-ai",
+        "kicker": "Rolle",
+        "title": "Was ist ein Head of AI / Chief AI Officer",
+        "card": "Was die Rolle umfasst, worin sie sich von CTO, CDO und AI Engineer unterscheidet und wann ein Unternehmen sie braucht.",
+        "hub": "Der vollständige Leitfaden zur Rolle: was sie umfasst, worin sie sich von CTO, CDO und AI Engineer unterscheidet, welche Kompetenzen sie verlangt.",
+        "alt": "Führungskraft am Laptop im Büro, auf dem Flipchart eine Liste der KI-Prioritäten und Erfolgskennzahlen",
+        "date_label": "22. Juli 2026",
+        "llms": "Was ist ein Head of AI / Chief AI Officer: was die Rolle tut, Vergleich mit CTO, CDO und AI Engineer, notwendige Kompetenzen und häufige Fragen zur Rolle."
       }
     },
     {
@@ -161,7 +184,8 @@
         "alt": "A meeting around a table full of laptops running different AI tools, with a whiteboard asking who owns AI in the company",
         "date_label": "22 Jul 2026",
         "llms": "When a company needs a Head of AI: 7 signals, when you do not need the role yet, and full-time vs fractional vs consultant."
-      }
+      },
+      "de": null
     },
     {
       "id": "fractional-vs-fulltime",
@@ -192,7 +216,8 @@
         "alt": null,
         "date_label": "22 Jul 2026",
         "llms": "Fractional Head of AI vs full-time CAIO: definition of the model, comparison of cost and risk, and who it suits."
-      }
+      },
+      "de": null
     },
     {
       "id": "model-registry",
@@ -223,7 +248,8 @@
         "alt": "A laptop showing an overview of AI model versions — a list of models with approval statuses and metrics",
         "date_label": "29 Jul 2026",
         "llms": "Model registry: why companies need a system for governing AI models. Six record layers (identity, provenance, evaluation, approval, deployment, operations), the difference between a technical MLOps model registry and an enterprise model inventory in model risk management, the model lifecycle, what generative AI changes (model + prompt + data + tools + configuration) and the most common implementation mistakes."
-      }
+      },
+      "de": null
     },
     {
       "id": "plat",
@@ -254,7 +280,8 @@
         "alt": "Euro banknotes and coins spread out — Head of AI pay in Czechia and abroad",
         "date_label": "22 Jul 2026",
         "llms": "Head of AI / Chief AI Officer pay: real ranges in Czechia by company size, comparison with other markets and the cost of the fractional model."
-      }
+      },
+      "de": null
     }
   ]
 }

@@ -45,6 +45,9 @@ Anglické mutace:
 - https://headofai.cz/en/fractional-vs-fulltime-caio — Fractional Head of AI vs full-time CAIO: definition of the model, comparison of cost and risk, and who it suits.
 - https://headofai.cz/en/model-registry — Model registry: why companies need a system for governing AI models. Six record layers (identity, provenance, evaluation, approval, deployment, operations), the difference between a technical MLOps model registry and an enterprise model inventory in model risk management, the model lifecycle, what generative AI changes (model + prompt + data + tools + configuration) and the most common implementation mistakes.
 - https://headofai.cz/en/chief-ai-officer-salary — Head of AI / Chief AI Officer pay: real ranges in Czechia by company size, comparison with other markets and the cost of the fractional model.
+
+Německé mutace:
+- https://headofai.cz/de/was-ist-head-of-ai — Was ist ein Head of AI / Chief AI Officer: was die Rolle tut, Vergleich mit CTO, CDO und AI Engineer, notwendige Kompetenzen und häufige Fragen zur Rolle.
 <!-- /BLOG:LINKS -->
 
 ## Kontakt

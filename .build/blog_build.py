@@ -193,9 +193,11 @@ def sitemap(data):
 
 
 def llms_links(data):
-    """Vychozi jazyk jako hlavni seznam, ostatni mutace pod vlastnim nadpisem."""
+    """Prvni jazyk v seznamu je hlavni vypis, ostatni mutace pod vlastnim nadpisem.
+    Zamerne se neridi priznakem x_default — ten patri hreflangu (kam poslat
+    navstevnika s neznamym jazykem), zatimco llms.txt je psany cesky."""
     site = data['site']
-    default = x_default(data)
+    default = languages(data)[0]
     out = []
     for a in data['articles']:
         loc = a.get(default['code'])

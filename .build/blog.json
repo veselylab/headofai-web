@@ -5,7 +5,6 @@
   "languages": [
     {
       "code": "cs",
-      "x_default": true,
       "home_file": "index.html",
       "hub_file": "blog/index.html",
       "read_more": "Číst článek →",
@@ -19,7 +18,8 @@
       "read_more": "Read article →",
       "read_more_hub": "Read →",
       "itemlist": "Articles on headofai.cz",
-      "llms_heading": "Anglické mutace:"
+      "llms_heading": "Anglické mutace:",
+      "x_default": true
     },
     {
       "code": "de",
@@ -37,7 +37,7 @@
       "en": "/en/",
       "priority": "1.0",
       "changefreq": "weekly",
-      "lastmod": "2026-07-29",
+      "lastmod": "2026-08-06",
       "de": "/de/"
     },
     {
@@ -45,7 +45,7 @@
       "en": "/en/blog/",
       "priority": "0.9",
       "changefreq": "weekly",
-      "lastmod": "2026-07-29",
+      "lastmod": "2026-08-06",
       "de": "/de/blog/"
     }
   ],
@@ -53,7 +53,7 @@
     {
       "id": "eu-ai-act",
       "date": "2026-07-28",
-      "lastmod": "2026-07-29",
+      "lastmod": "2026-08-06",
       "priority": "0.9",
       "image": {
         "card": "/assets/blog/eu-flag-card.webp",
@@ -94,7 +94,7 @@
     {
       "id": "caio",
       "date": "2026-07-29",
-      "lastmod": "2026-07-29",
+      "lastmod": "2026-08-06",
       "priority": "0.9",
       "image": {
         "card": "/assets/blog/board-meeting.webp",
@@ -135,7 +135,7 @@
     {
       "id": "co-je-head-of-ai",
       "date": "2026-07-22",
-      "lastmod": "2026-07-29",
+      "lastmod": "2026-08-06",
       "priority": "0.8",
       "image": {
         "card": "/assets/blog/who-is-caio-card.webp",
@@ -176,7 +176,7 @@
     {
       "id": "kdy-potrebuje",
       "date": "2026-07-22",
-      "lastmod": "2026-07-29",
+      "lastmod": "2026-08-06",
       "priority": "0.9",
       "image": {
         "card": "/assets/blog/ai-chaos-card.webp",
@@ -217,7 +217,7 @@
     {
       "id": "fractional-vs-fulltime",
       "date": "2026-07-22",
-      "lastmod": "2026-07-29",
+      "lastmod": "2026-08-06",
       "priority": "0.8",
       "image": {
         "card": "/assets/blog/costs-card.webp",
@@ -258,7 +258,7 @@
     {
       "id": "model-registry",
       "date": "2026-07-29",
-      "lastmod": "2026-07-29",
+      "lastmod": "2026-08-06",
       "priority": "0.8",
       "image": {
         "card": "/assets/blog/model-registry-card.webp",
@@ -299,7 +299,7 @@
     {
       "id": "plat",
       "date": "2026-07-22",
-      "lastmod": "2026-07-29",
+      "lastmod": "2026-08-05",
       "priority": "0.8",
       "image": {
         "card": "/assets/blog/euros-card.webp",
